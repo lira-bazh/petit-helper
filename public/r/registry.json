@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "petit-helper",
+  "homepage": "http://localhost:3000",
+  "items": [
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "Вкладки на Base UI с обычным оформлением и вариантом с подчёркиванием.",
+      "dependencies": ["@base-ui/react", "class-variance-authority", "cn"],
+      "files": [
+        {
+          "path": "app/components/ui/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ]
+}
