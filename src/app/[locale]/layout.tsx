@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
 import { getRequestLocale } from "@/lib/i18n";
 import * as m from "@/paraglide/messages.js";
-import SiteHeader from "./components/site-header";
-import "./globals.css";
+import SiteHeader from "../components/site-header";
+import ThemeRoot from "../components/theme-root";
+import "../globals.css";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const locale = await getRequestLocale();
+export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Promise<Metadata> {
+  const locale = await getRequestLocale(params);
   return {
     title: m.site_name({}, { locale }),
     description: m.site_description({}, { locale }),
   };
 }
 
-export default async function RootLayout({ children }: LayoutProps<"/">) {
-  const locale = await getRequestLocale();
+export default async function RootLayout({ children, params }: LayoutProps<"/[locale]">) {
+  const locale = await getRequestLocale(params);
   return (
-    <html lang={locale} className="scheme-light dark:scheme-dark" suppressHydrationWarning>
+    <ThemeRoot locale={locale}>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -34,6 +35,6 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         <SiteHeader locale={locale} />
         {children}
       </body>
-    </html>
+    </ThemeRoot>
   );
 }

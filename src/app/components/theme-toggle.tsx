@@ -1,22 +1,15 @@
 "use client";
 
 import { Moon, Sun } from "lucide-react";
+import { useContext } from "react";
 import * as m from "@/paraglide/messages.js";
 import type { Locale } from "@/paraglide/runtime.js";
 import { Button } from "./ui/button";
+import { ThemeContext } from "./theme-root";
 
 export default function ThemeToggle({ locale }: { locale: Locale }) {
-  function toggleTheme() {
-    const root = document.documentElement;
-    const theme = root.dataset.theme === "dark" ? "light" : "dark";
-    root.dataset.theme = theme;
-
-    try {
-      localStorage.setItem("petit-helper-theme", theme);
-    } catch {
-      // Switching still works when browser storage is unavailable.
-    }
-  }
+  const toggleTheme = useContext(ThemeContext);
+  if (!toggleTheme) throw new Error("ThemeToggle must be rendered inside ThemeRoot");
 
   return (
     <Button
