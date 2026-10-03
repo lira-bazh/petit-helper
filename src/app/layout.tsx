@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
+import { getRequestLocale } from "@/lib/i18n";
+import * as m from "@/paraglide/messages.js";
 import SiteHeader from "./components/site-header";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Помощник Petit Planet",
-  description: "Помощник для игры Petit Planet: рецепты и цветы.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getRequestLocale();
+  return {
+    title: m.site_name({}, { locale }),
+    description: m.site_description({}, { locale }),
+  };
+}
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: LayoutProps<"/">) {
+  const locale = await getRequestLocale();
   return (
-    <html lang="ru" suppressHydrationWarning>
+    <html lang={locale} className="scheme-light dark:scheme-dark" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -24,8 +30,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           }}
         />
       </head>
-      <body>
-        <SiteHeader />
+      <body className="min-h-screen bg-background font-sans text-foreground antialiased">
+        <SiteHeader locale={locale} />
         {children}
       </body>
     </html>

@@ -11,7 +11,7 @@
       "dependencies": ["@base-ui/react", "class-variance-authority", "cn"],
       "files": [
         {
-          "path": "app/components/ui/tabs.tsx",
+          "path": "src/app/components/ui/tabs.tsx",
           "type": "registry:ui"
         }
       ]

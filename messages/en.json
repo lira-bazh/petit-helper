@@ -1,0 +1,14 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "example_message": "Hello world {username}",
+  "site_name": "Petit Planet Helper",
+  "site_description": "A helper for Petit Planet: recipes and flowers.",
+  "nav_sections": "Site sections",
+  "nav_recipes": "Recipes",
+  "nav_flowers": "Flowers",
+  "recipes_title": "Recipes — Petit Planet Helper",
+  "flowers_title": "Flowers — Petit Planet Helper",
+  "theme_toggle_label": "Switch between light and dark themes",
+  "theme_toggle_title": "Switch theme",
+  "language_toggle_label": "Switch language to Russian"
+}

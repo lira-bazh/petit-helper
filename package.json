@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "pnpm i18n:compile && node scripts/dev.mjs",
+    "build": "pnpm i18n:compile && next build",
+    "i18n:compile": "paraglide-js compile --project ./project.inlang --outdir ./src/paraglide --strategy cookie preferredLanguage baseLocale --emit-ts-declarations",
     "start": "next start",
     "lint": "eslint",
     "registry:build": "shadcn build"
@@ -28,7 +29,8 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "@inlang/paraglide-js": "^2.25.4"
   },
   "packageManager": "pnpm@11.9.0"
 }

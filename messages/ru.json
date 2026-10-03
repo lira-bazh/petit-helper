@@ -1,0 +1,14 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "example_message": "Привет, {username}",
+  "site_name": "Помощник Petit Planet",
+  "site_description": "Помощник для игры Petit Planet: рецепты и цветы.",
+  "nav_sections": "Разделы сайта",
+  "nav_recipes": "Рецепты",
+  "nav_flowers": "Цветы",
+  "recipes_title": "Рецепты — Помощник Petit Planet",
+  "flowers_title": "Цветы — Помощник Petit Planet",
+  "theme_toggle_label": "Переключить светлую и тёмную тему",
+  "theme_toggle_title": "Переключить тему",
+  "language_toggle_label": "Переключить язык на английский"
+}
