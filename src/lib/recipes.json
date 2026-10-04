@@ -1,0 +1,2840 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "url": "https://docs.google.com/spreadsheets/d/1RZSJ9CwGovfZB26nj_x_OsYsH6eGAysWCnb12LG9Q7A/edit",
+    "title": "Рецепты",
+    "sheet": "Лист1",
+    "sheetId": 0,
+    "range": "A1:G77",
+    "locale": "ru",
+    "retrievedOn": "2026-10-04"
+  },
+  "notes": [
+    "Структура основана на recipe-site-architecture.md. recipes и ingredients подготовлены для последующего переноса в отдельные коллекции.",
+    "Локальные строковые id и ingredientId не являются MongoDB ObjectId: при импорте нужно сопоставить идентификаторы. createdAt и updatedAt следует установить при импорте.",
+    "Повторяющиеся требования с одинаковым качеством объединены через quantity. Один заполненный столбец ингредиента означает одну единицу.",
+    "normal означает отсутствие отдельного требования к качеству в исходной ячейке. gold добавлен для явно указанного золотого качества.",
+    "null в power, effect или effect.level означает отсутствие значения в источнике, а не подтверждённое отсутствие силы или эффекта.",
+    "Требования с вопросительными знаками сохранены как type: unknown с исходным raw и quality: null; их нельзя считать подтверждёнными ингредиентами.",
+    "Категория meat-or-fish-or-seafood с anyOf сохраняет выбор одного из трёх типов, а не требование всех трёх одновременно.",
+    "Членство конкретных ингредиентов в категориях не задано в таблице: массивы ingredients.categories оставлены пустыми до проверки.",
+    "Бамбук и побег бамбука сохранены отдельно, поскольку в источнике используются разные названия.",
+    "source.rawIngredients сохраняет все четыре исходных столбца, включая пустые ячейки и сомнения автора; source.rawEffect сохраняет исходный эффект."
+  ],
+  "categories": [
+    {
+      "id": "fruit",
+      "name": "Фрукт"
+    },
+    {
+      "id": "vegetable",
+      "name": "Овощ"
+    },
+    {
+      "id": "grain",
+      "name": "Зерновые"
+    },
+    {
+      "id": "seafood",
+      "name": "Морепродукт"
+    },
+    {
+      "id": "fish",
+      "name": "Рыба"
+    },
+    {
+      "id": "sea-fish",
+      "name": "Морская рыба"
+    },
+    {
+      "id": "freshwater-fish",
+      "name": "Пресноводная рыба"
+    },
+    {
+      "id": "meat",
+      "name": "Мясо"
+    },
+    {
+      "id": "flower",
+      "name": "Цветок"
+    },
+    {
+      "id": "red-fruit",
+      "name": "Красный фрукт"
+    },
+    {
+      "id": "yellow-fruit",
+      "name": "Жёлтый фрукт"
+    },
+    {
+      "id": "green-fruit",
+      "name": "Зелёный фрукт"
+    },
+    {
+      "id": "red-vegetable",
+      "name": "Красный овощ"
+    },
+    {
+      "id": "yellow-vegetable",
+      "name": "Жёлтый овощ"
+    },
+    {
+      "id": "green-vegetable",
+      "name": "Зелёный овощ"
+    },
+    {
+      "id": "meat-or-fish-or-seafood",
+      "name": "Мясо, рыба или морепродукт",
+      "anyOf": [
+        "meat",
+        "fish",
+        "seafood"
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "wheat",
+      "name": "Пшеница",
+      "slug": "wheat",
+      "categories": []
+    },
+    {
+      "id": "milk",
+      "name": "Молоко",
+      "slug": "milk",
+      "categories": []
+    },
+    {
+      "id": "rice",
+      "name": "Рис",
+      "slug": "rice",
+      "categories": []
+    },
+    {
+      "id": "bamboo-shoot",
+      "name": "Побег бамбука",
+      "slug": "bamboo-shoot",
+      "categories": []
+    },
+    {
+      "id": "sea-urchin",
+      "name": "Морской ёж",
+      "slug": "sea-urchin",
+      "categories": []
+    },
+    {
+      "id": "lobster",
+      "name": "Лобстер",
+      "slug": "lobster",
+      "categories": []
+    },
+    {
+      "id": "tomato",
+      "name": "Помидор",
+      "slug": "tomato",
+      "categories": []
+    },
+    {
+      "id": "potato",
+      "name": "Картофель",
+      "slug": "potato",
+      "categories": []
+    },
+    {
+      "id": "mushroom",
+      "name": "Гриб",
+      "slug": "mushroom",
+      "categories": []
+    },
+    {
+      "id": "cucumber",
+      "name": "Огурец",
+      "slug": "cucumber",
+      "categories": []
+    },
+    {
+      "id": "shrimp",
+      "name": "Креветка",
+      "slug": "shrimp",
+      "categories": []
+    },
+    {
+      "id": "crab",
+      "name": "Краб",
+      "slug": "crab",
+      "categories": []
+    },
+    {
+      "id": "shellfish",
+      "name": "Моллюск",
+      "slug": "shellfish",
+      "categories": []
+    },
+    {
+      "id": "strawberry",
+      "name": "Клубника",
+      "slug": "strawberry",
+      "categories": []
+    },
+    {
+      "id": "eggplant",
+      "name": "Баклажан",
+      "slug": "eggplant",
+      "categories": []
+    },
+    {
+      "id": "chili-pepper",
+      "name": "Острый перчик",
+      "slug": "chili-pepper",
+      "categories": []
+    },
+    {
+      "id": "egg",
+      "name": "Яйцо",
+      "slug": "egg",
+      "categories": []
+    },
+    {
+      "id": "bamboo",
+      "name": "Бамбук",
+      "slug": "bamboo",
+      "categories": []
+    },
+    {
+      "id": "carrot",
+      "name": "Морковь",
+      "slug": "carrot",
+      "categories": []
+    },
+    {
+      "id": "cabbage",
+      "name": "Капуста",
+      "slug": "cabbage",
+      "categories": []
+    },
+    {
+      "id": "pineapple",
+      "name": "Ананас",
+      "slug": "pineapple",
+      "categories": []
+    },
+    {
+      "id": "corn",
+      "name": "Кукуруза",
+      "slug": "corn",
+      "categories": []
+    },
+    {
+      "id": "apple",
+      "name": "Яблоко",
+      "slug": "apple",
+      "categories": []
+    },
+    {
+      "id": "plum",
+      "name": "Слива",
+      "slug": "plum",
+      "categories": []
+    },
+    {
+      "id": "avocado",
+      "name": "Авокадо",
+      "slug": "avocado",
+      "categories": []
+    },
+    {
+      "id": "cactus-fruit",
+      "name": "Плод кактуса",
+      "slug": "cactus-fruit",
+      "categories": []
+    },
+    {
+      "id": "mango",
+      "name": "Манго",
+      "slug": "mango",
+      "categories": []
+    },
+    {
+      "id": "melon",
+      "name": "Дыня",
+      "slug": "melon",
+      "categories": []
+    },
+    {
+      "id": "garlic",
+      "name": "Чеснок",
+      "slug": "garlic",
+      "categories": []
+    }
+  ],
+  "recipes": [
+    {
+      "id": "recipe-sheet-002",
+      "name": "Аппетитные фруктовые шашлычки",
+      "power": 30,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 2,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 2,
+        "rawIngredients": [
+          "фрукт",
+          "фрукт",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-003",
+      "name": "Ароматное фруктово-злаковое молоко",
+      "power": 60,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "milk",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 3,
+        "rawIngredients": [
+          "фрукт (фиолетовое качество)",
+          "пшеница",
+          "молоко",
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-004",
+      "name": "Ароматный рисовый десерт",
+      "power": 50,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "grain",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "rice",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "milk",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 4,
+        "rawIngredients": [
+          "зерновые",
+          "рис",
+          "молоко",
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-005",
+      "name": "Ароматный фруктовый чай",
+      "power": 30,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 2,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 5,
+        "rawIngredients": [
+          "фрукт",
+          "фрукт",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-006",
+      "name": "Бамбуково-яблочная гранита",
+      "power": 60,
+      "effect": {
+        "name": "Мощный удар",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "bamboo-shoot",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 6,
+        "rawIngredients": [
+          "фрукт (фиолетовое качество)",
+          "побег бамбука",
+          null,
+          null
+        ],
+        "rawEffect": "Мощный удар I"
+      }
+    },
+    {
+      "id": "recipe-sheet-007",
+      "name": "Биск из морского ежа и лобстера",
+      "power": 40,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "sea-urchin",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "lobster",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 7,
+        "rawIngredients": [
+          "морской ёж",
+          "лобстер",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-008",
+      "name": "Большие суши темаки",
+      "power": 90,
+      "effect": {
+        "name": "Быстрое рыхление",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "sea-fish",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "rice",
+          "quantity": 1,
+          "quality": "purple"
+        }
+      ],
+      "source": {
+        "row": 8,
+        "rawIngredients": [
+          "морская рыба",
+          "овощ",
+          "рис (фиолетовое качество)",
+          null
+        ],
+        "rawEffect": "Быстрое рыхление II"
+      }
+    },
+    {
+      "id": "recipe-sheet-009",
+      "name": "Борщ с томатами и бамбуком",
+      "power": 70,
+      "effect": {
+        "name": "Быстрое рыхление",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "tomato",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "bamboo-shoot",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "potato",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 9,
+        "rawIngredients": [
+          "помидор (фиолетовое качество)",
+          "побег бамбука",
+          "картофель",
+          null
+        ],
+        "rawEffect": "Быстрое рыхление I"
+      }
+    },
+    {
+      "id": "recipe-sheet-010",
+      "name": "Боул с разноцветным рисом и фруктами",
+      "power": 110,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "grain",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "category",
+          "category": "yellow-fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "green-fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "red-fruit",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 10,
+        "rawIngredients": [
+          "зерновые (фиолетовое качество)",
+          "желтый фрукт",
+          "зеленый фрукт",
+          "красный фрукт"
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-011",
+      "name": "Вегетарианское барбекю-ассорти из сезонных овощей",
+      "power": 100,
+      "effect": {
+        "name": "Быстрое рыхление",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "potato",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "tomato",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "unknown",
+          "raw": "???",
+          "quantity": 2,
+          "quality": null
+        }
+      ],
+      "source": {
+        "row": 11,
+        "rawIngredients": [
+          "картофель (фиолетовое качество)",
+          "помидор (фиолетовое качество)",
+          "???",
+          "???"
+        ],
+        "rawEffect": "Быстрое рыхление II"
+      }
+    },
+    {
+      "id": "recipe-sheet-012",
+      "name": "Грибной суп",
+      "power": 30,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "mushroom",
+          "quantity": 2,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 12,
+        "rawIngredients": [
+          "гриб",
+          "гриб",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-013",
+      "name": "Деревенская овощная пицца",
+      "power": 60,
+      "effect": {
+        "name": "Быстрое рыхление",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "mushroom",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "cucumber",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 13,
+        "rawIngredients": [
+          "гриб",
+          "пшеница",
+          "огурец",
+          null
+        ],
+        "rawEffect": "Быстрое рыхление I"
+      }
+    },
+    {
+      "id": "recipe-sheet-014",
+      "name": "Жареные креветки с фруктами",
+      "power": 120,
+      "effect": {
+        "name": "Бесшумная поступь",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "shrimp",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "unknown",
+          "raw": "сказочный овощ?",
+          "quantity": 1,
+          "quality": null
+        }
+      ],
+      "source": {
+        "row": 14,
+        "rawIngredients": [
+          "креветка",
+          "фрукты",
+          "сказочный овощ?",
+          null
+        ],
+        "rawEffect": "Бесшумная поступь II"
+      }
+    },
+    {
+      "id": "recipe-sheet-015",
+      "name": "Жареные овощи",
+      "power": 40,
+      "effect": {
+        "name": "Большой размах",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 2,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 15,
+        "rawIngredients": [
+          "овощ",
+          "овощ",
+          null,
+          null
+        ],
+        "rawEffect": "Большой размах I"
+      }
+    },
+    {
+      "id": "recipe-sheet-016",
+      "name": "Жареный краб с моллюсками",
+      "power": 45,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "crab",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "shellfish",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 16,
+        "rawIngredients": [
+          "краб",
+          "моллюск",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-017",
+      "name": "Запечённый рис с морепродуктами",
+      "power": 70,
+      "effect": {
+        "name": "Бесшумная поступь",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "seafood",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "rice",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 17,
+        "rawIngredients": [
+          "морепродукты (фиолетовое качество)",
+          "рис",
+          null,
+          null
+        ],
+        "rawEffect": "Бесшумная поступь I"
+      }
+    },
+    {
+      "id": "recipe-sheet-018",
+      "name": "Запечённый рис с рыбой",
+      "power": 45,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fish",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "grain",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 18,
+        "rawIngredients": [
+          "рыба",
+          "зерновые",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-019",
+      "name": "Запечённый рисовый пудинг",
+      "power": 35,
+      "effect": {
+        "name": "Мощный удар",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "rice",
+          "quantity": 2,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 19,
+        "rawIngredients": [
+          "рис",
+          "рис",
+          null,
+          null
+        ],
+        "rawEffect": "Мощный удар I"
+      }
+    },
+    {
+      "id": "recipe-sheet-020",
+      "name": "Злаковая каша",
+      "power": 40,
+      "effect": {
+        "name": "Мощный удар",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "grain",
+          "quantity": 2,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 20,
+        "rawIngredients": [
+          "зерновые",
+          "зерновые",
+          null,
+          null
+        ],
+        "rawEffect": "Мощный удар I"
+      }
+    },
+    {
+      "id": "recipe-sheet-021",
+      "name": "Злаковое молоко Хэся",
+      "power": 45,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "rice",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "milk",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 21,
+        "rawIngredients": [
+          "пшеница",
+          "рис",
+          "молоко",
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-022",
+      "name": "Изысканный овощной напиток со злаками",
+      "power": 70,
+      "effect": {
+        "name": "Большой размах",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 2,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "purple"
+        }
+      ],
+      "source": {
+        "row": 22,
+        "rawIngredients": [
+          "пшеница",
+          "овощ (фиолетовое качество)",
+          "пшеница",
+          null
+        ],
+        "rawEffect": "Большой размах I"
+      }
+    },
+    {
+      "id": "recipe-sheet-023",
+      "name": "Карамелизированная рыба с рисом",
+      "power": 90,
+      "effect": {
+        "name": "Рыбацкая сноровка",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "freshwater-fish",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "rice",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 23,
+        "rawIngredients": [
+          "пресноводная рыба (фиолетовое качество)",
+          "рис",
+          "овощ",
+          null
+        ],
+        "rawEffect": "Рыбацкая сноровка II"
+      }
+    },
+    {
+      "id": "recipe-sheet-024",
+      "name": "Карапулькра",
+      "power": 90,
+      "effect": {
+        "name": "Быстрое рыхление",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "meat-or-fish-or-seafood",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "category",
+          "category": "grain",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 24,
+        "rawIngredients": [
+          "мясо/рыба/морепродукты (фиолетовое качество)",
+          "зерновые",
+          null,
+          null
+        ],
+        "rawEffect": "Быстрое рыхление II"
+      }
+    },
+    {
+      "id": "recipe-sheet-025",
+      "name": "Каша по-деревенски",
+      "power": 40,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "grain",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 25,
+        "rawIngredients": [
+          "овощ",
+          "зерновые",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-026",
+      "name": "Каша с моллюсками",
+      "power": 45,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "shellfish",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "grain",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 26,
+        "rawIngredients": [
+          "моллюск",
+          "зерновые",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-027",
+      "name": "Каша с морепродуктами",
+      "power": 45,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "seafood",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "grain",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 27,
+        "rawIngredients": [
+          "морепродукт",
+          "зерновые",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-028",
+      "name": "Клубничный шорткейк",
+      "power": 50,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "strawberry",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "milk",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 28,
+        "rawIngredients": [
+          "пшеница",
+          "клубника",
+          "молоко",
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-029",
+      "name": "Креветки в кляре и жареная рыба",
+      "power": 80,
+      "effect": {
+        "name": "Рыбацкая сноровка",
+        "level": null
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fish",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "grain",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "shrimp",
+          "quantity": 1,
+          "quality": "purple"
+        }
+      ],
+      "source": {
+        "row": 29,
+        "rawIngredients": [
+          "рыба",
+          "зерновые",
+          "креветка (фиолетовое качество)",
+          null
+        ],
+        "rawEffect": "Рыбацкая сноровка"
+      }
+    },
+    {
+      "id": "recipe-sheet-030",
+      "name": "Морепродукты на пару",
+      "power": 45,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "seafood",
+          "quantity": 2,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 30,
+        "rawIngredients": [
+          "морепродукт",
+          "морепродукт",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-031",
+      "name": "Моряцкий суп",
+      "power": 40,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "sea-fish",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "shrimp",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 31,
+        "rawIngredients": [
+          "морская рыба",
+          "креветка",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-032",
+      "name": "Нежный фруктово-цветочный чай",
+      "power": 30,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "flower",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 32,
+        "rawIngredients": [
+          "фрукт",
+          "цветок",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-033",
+      "name": "Освежающая фруктовая лапша",
+      "power": 60,
+      "effect": {
+        "name": "Большой размах",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 1,
+          "quality": "purple"
+        }
+      ],
+      "source": {
+        "row": 33,
+        "rawIngredients": [
+          "фрукт",
+          "пшеница (фиолетовое качество)",
+          null,
+          null
+        ],
+        "rawEffect": "Большой размах I"
+      }
+    },
+    {
+      "id": "recipe-sheet-034",
+      "name": "Острый рис с толчёными баклажанами и помидорами",
+      "power": 70,
+      "effect": {
+        "name": "Большой размах",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "eggplant",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "chili-pepper",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "rice",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 34,
+        "rawIngredients": [
+          "баклажан (фиолетовое качество)",
+          "острый перчик",
+          "рис",
+          null
+        ],
+        "rawEffect": "Большой размах I"
+      }
+    },
+    {
+      "id": "recipe-sheet-035",
+      "name": "Пицца \"Морской бриз\"",
+      "power": 110,
+      "effect": {
+        "name": "Быстрое рыхление",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "category",
+          "category": "seafood",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 35,
+        "rawIngredients": [
+          "пшеница (фиолетовое качество)",
+          "морепродукты",
+          "овощ",
+          null
+        ],
+        "rawEffect": "Быстрое рыхление II"
+      }
+    },
+    {
+      "id": "recipe-sheet-036",
+      "name": "Пицца с жареной рыбой и помидорами",
+      "power": 60,
+      "effect": {
+        "name": "Рыбацкая сноровка",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "tomato",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "fish",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 36,
+        "rawIngredients": [
+          "помидор",
+          "рыба",
+          "пшеница",
+          null
+        ],
+        "rawEffect": "Рыбацкая сноровка I"
+      }
+    },
+    {
+      "id": "recipe-sheet-037",
+      "name": "Пляжные шашлычки",
+      "power": 70,
+      "effect": {
+        "name": "Бесшумная поступь",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "seafood",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "category",
+          "category": "meat",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 37,
+        "rawIngredients": [
+          "фрукт",
+          "морепродукты (фиолетовое качество)",
+          "мясо",
+          null
+        ],
+        "rawEffect": "Бесшумная поступь I"
+      }
+    },
+    {
+      "id": "recipe-sheet-038",
+      "name": "Пшеничное молоко с облачной пенкой",
+      "power": 50,
+      "effect": {
+        "name": "Быстрое рыхление",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "grain",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "milk",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 38,
+        "rawIngredients": [
+          "зерновые (фиолетовое качество)",
+          "молоко",
+          null,
+          null
+        ],
+        "rawEffect": "Быстрое рыхление I"
+      }
+    },
+    {
+      "id": "recipe-sheet-039",
+      "name": "Пшеничный пирог",
+      "power": 35,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "grain",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "egg",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 39,
+        "rawIngredients": [
+          "зерновые",
+          "яйцо",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-040",
+      "name": "Разноцветный овощной сок",
+      "power": 50,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "red-fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "green-vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "yellow-fruit",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 40,
+        "rawIngredients": [
+          "красный фрукт",
+          "зелёный овощ",
+          "желтый фрукт",
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-041",
+      "name": "Рамен с клёцками, овощами и грибами",
+      "power": 80,
+      "effect": {
+        "name": "Мощный удар",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "mushroom",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "unknown",
+          "raw": "???",
+          "quantity": 1,
+          "quality": null
+        }
+      ],
+      "source": {
+        "row": 41,
+        "rawIngredients": [
+          "пшеница",
+          "гриб",
+          "овощ",
+          "???"
+        ],
+        "rawEffect": "Мощный удар I"
+      }
+    },
+    {
+      "id": "recipe-sheet-042",
+      "name": "Рамен с морепродуктами",
+      "power": 70,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "crab",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 42,
+        "rawIngredients": [
+          "краб",
+          "пшеница",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-043",
+      "name": "Редкий томлёный суп из краба",
+      "power": null,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "bamboo",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "unknown",
+          "raw": "???",
+          "quantity": 2,
+          "quality": null
+        }
+      ],
+      "source": {
+        "row": 43,
+        "rawIngredients": [
+          "бамбук",
+          "???",
+          "???"
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-044",
+      "name": "Рис с овощами по бабулиному рецепту",
+      "power": 160,
+      "effect": {
+        "name": "Быстрое рыхление",
+        "level": 3
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "carrot",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "tomato",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "cabbage",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "unknown",
+          "raw": "???",
+          "quantity": 1,
+          "quality": null
+        }
+      ],
+      "source": {
+        "row": 44,
+        "rawIngredients": [
+          "морковь",
+          "помидор",
+          "капуста",
+          "???"
+        ],
+        "rawEffect": "Быстрое рыхление III"
+      }
+    },
+    {
+      "id": "recipe-sheet-045",
+      "name": "Рисовый настой с овощами",
+      "power": 35,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "rice",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 45,
+        "rawIngredients": [
+          "рис",
+          "овощ",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-046",
+      "name": "Рыба на гриле с овощами",
+      "power": 45,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "freshwater-fish",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 46,
+        "rawIngredients": [
+          "пресноводная рыба",
+          "овощ",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-047",
+      "name": "Рыба по-походному",
+      "power": 90,
+      "effect": {
+        "name": "Рыбацкая сноровка",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fish",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "category",
+          "category": "fish",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 47,
+        "rawIngredients": [
+          "рыба (фиолетовое качество)",
+          "рыба",
+          null,
+          null
+        ],
+        "rawEffect": "Рыбацкая сноровка II"
+      }
+    },
+    {
+      "id": "recipe-sheet-048",
+      "name": "Рыба с фруктами в горшочке",
+      "power": 70,
+      "effect": {
+        "name": "Рыбацкая сноровка",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "fish",
+          "quantity": 1,
+          "quality": "purple"
+        }
+      ],
+      "source": {
+        "row": 48,
+        "rawIngredients": [
+          "фрукт",
+          "рыба (фиолетовое качество)",
+          null,
+          null
+        ],
+        "rawEffect": "Рыбацкая сноровка I"
+      }
+    },
+    {
+      "id": "recipe-sheet-049",
+      "name": "Рыбная похлёбка с грибами",
+      "power": 40,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "mushroom",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "fish",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 49,
+        "rawIngredients": [
+          "гриб",
+          "рыба",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-050",
+      "name": "Рыбная солянка",
+      "power": 40,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fish",
+          "quantity": 2,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 50,
+        "rawIngredients": [
+          "рыба",
+          "рыба",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-051",
+      "name": "Рыбные шашлычки с ананасом",
+      "power": 45,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fish",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "pineapple",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 51,
+        "rawIngredients": [
+          "рыба",
+          "ананас",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-052",
+      "name": "Рыбный суп с бамбуком",
+      "power": 80,
+      "effect": {
+        "name": "Рыбацкая сноровка",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fish",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "bamboo",
+          "quantity": 2,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 52,
+        "rawIngredients": [
+          "рыба (фиолетовое качество)",
+          "бамбук",
+          "бамбук",
+          null
+        ],
+        "rawEffect": "Рыбацкая сноровка I"
+      }
+    },
+    {
+      "id": "recipe-sheet-053",
+      "name": "Сказочное двухцветное большое рыбное ассорти",
+      "power": 140,
+      "effect": {
+        "name": "Рыбацкая сноровка",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "green-vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "red-vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "unknown",
+          "raw": "??? рыба качества выше фиолетовой?",
+          "quantity": 1,
+          "quality": null
+        }
+      ],
+      "source": {
+        "row": 53,
+        "rawIngredients": [
+          "зеленый овощ",
+          "красный овощ",
+          "??? рыба качества выше фиолетовой?",
+          null
+        ],
+        "rawEffect": "Рыбацкая сноровка II"
+      }
+    },
+    {
+      "id": "recipe-sheet-054",
+      "name": "Сказочное лобстеровое рагу свежего ветра",
+      "power": 120,
+      "effect": {
+        "name": "Рыбацкая сноровка",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "lobster",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "category",
+          "category": "freshwater-fish",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "shellfish",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "mushroom",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 54,
+        "rawIngredients": [
+          "лобстер (фиолетовое качество)",
+          "пресноводная рыба",
+          "моллюск",
+          "гриб"
+        ],
+        "rawEffect": "Рыбацкая сноровка II"
+      }
+    },
+    {
+      "id": "recipe-sheet-055",
+      "name": "Сказочные суши со свежей рыбой",
+      "power": 180,
+      "effect": {
+        "name": "Рыбацкая сноровка",
+        "level": 3
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fish",
+          "quantity": 1,
+          "quality": "gold"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "rice",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "unknown",
+          "raw": "???",
+          "quantity": 1,
+          "quality": null
+        }
+      ],
+      "source": {
+        "row": 55,
+        "rawIngredients": [
+          "рыба (золотое качество)",
+          "рис",
+          "овощ",
+          "???"
+        ],
+        "rawEffect": "Рыбацкая сноровка III"
+      }
+    },
+    {
+      "id": "recipe-sheet-056",
+      "name": "Соба с овощами",
+      "power": 40,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 56,
+        "rawIngredients": [
+          "пшеница",
+          "овощ",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-057",
+      "name": "Солнечная лапша",
+      "power": 40,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 2,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 57,
+        "rawIngredients": [
+          "пшеница",
+          "пшеница",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-058",
+      "name": "Сытное рагу",
+      "power": 70,
+      "effect": {
+        "name": "Быстрое рыхление",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "corn",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "mushroom",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 58,
+        "rawIngredients": [
+          "кукуруза (фиолетовое качество)",
+          "овощ",
+          "гриб",
+          null
+        ],
+        "rawEffect": "Быстрое рыхление I"
+      }
+    },
+    {
+      "id": "recipe-sheet-059",
+      "name": "Сытный рамен с рыбой и овощами",
+      "power": 90,
+      "effect": {
+        "name": "Быстрое рыхление",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fish",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 1,
+          "quality": "purple"
+        }
+      ],
+      "source": {
+        "row": 59,
+        "rawIngredients": [
+          "рыба",
+          "овощ",
+          "пшеница (фиолетовое качество)",
+          null
+        ],
+        "rawEffect": "Быстрое рыхление II"
+      }
+    },
+    {
+      "id": "recipe-sheet-060",
+      "name": "Тарелка морской рыбы и морепродуктов-гриль",
+      "power": 80,
+      "effect": {
+        "name": "Рыбацкая сноровка",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "sea-fish",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "shrimp",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "shellfish",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 60,
+        "rawIngredients": [
+          "морская рыба (фиолетовое качество)",
+          "креветка",
+          "моллюск",
+          null
+        ],
+        "rawEffect": "Рыбацкая сноровка I"
+      }
+    },
+    {
+      "id": "recipe-sheet-061",
+      "name": "Томатный суп с лобстером",
+      "power": 40,
+      "effect": {
+        "name": "Большой размах",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "tomato",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "lobster",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 61,
+        "rawIngredients": [
+          "помидор",
+          "лобстер",
+          null,
+          null
+        ],
+        "rawEffect": "Большой размах I"
+      }
+    },
+    {
+      "id": "recipe-sheet-062",
+      "name": "Томатный суп с рыбой",
+      "power": 45,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "tomato",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "freshwater-fish",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 62,
+        "rawIngredients": [
+          "помидор",
+          "пресноводная рыба",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-063",
+      "name": "Трехцветный запечёный рис с овощами",
+      "power": 110,
+      "effect": {
+        "name": "Большой размах",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "green-vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "red-vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "yellow-vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "unknown",
+          "raw": "???",
+          "quantity": 1,
+          "quality": null
+        }
+      ],
+      "source": {
+        "row": 63,
+        "rawIngredients": [
+          "зеленый овощ",
+          "красный овощ",
+          "желтый овощ",
+          "???"
+        ],
+        "rawEffect": "Большой размах II"
+      }
+    },
+    {
+      "id": "recipe-sheet-064",
+      "name": "Трехцветный фруктово-рисовый пирог",
+      "power": 110,
+      "effect": {
+        "name": "Большой размах",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "yellow-fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "green-fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "red-fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "unknown",
+          "raw": "???",
+          "quantity": 1,
+          "quality": null
+        }
+      ],
+      "source": {
+        "row": 64,
+        "rawIngredients": [
+          "желтый фрукт",
+          "зеленый фрукт",
+          "красный фрукт",
+          "???"
+        ],
+        "rawEffect": "Большой размах II"
+      }
+    },
+    {
+      "id": "recipe-sheet-065",
+      "name": "Тушёное мясо с морковью",
+      "power": 50,
+      "effect": {
+        "name": "Мощный удар",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "meat",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "carrot",
+          "quantity": 1,
+          "quality": "purple"
+        }
+      ],
+      "source": {
+        "row": 65,
+        "rawIngredients": [
+          "мясо",
+          "морковь (фиолетовое качество)",
+          null,
+          null
+        ],
+        "rawEffect": "Мощный удар I"
+      }
+    },
+    {
+      "id": "recipe-sheet-066",
+      "name": "Фруктово-овощной салат",
+      "power": 60,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "yellow-fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "red-fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "unknown",
+          "raw": "???",
+          "quantity": 1,
+          "quality": null
+        }
+      ],
+      "source": {
+        "row": 66,
+        "rawIngredients": [
+          "желтый фрукт",
+          "красный фрукт",
+          "???",
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-067",
+      "name": "Фруктово-овощной сок",
+      "power": 35,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 67,
+        "rawIngredients": [
+          "фрукт",
+          "овощ",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-068",
+      "name": "Фруктово-овощной суп \"Четыре сезона\"",
+      "power": 50,
+      "effect": {
+        "name": "Быстрое рыхление",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 68,
+        "rawIngredients": [
+          "фрукт (фиолетовое качество)",
+          "овощ",
+          null,
+          null
+        ],
+        "rawEffect": "Быстрое рыхление I"
+      }
+    },
+    {
+      "id": "recipe-sheet-069",
+      "name": "Фруктово-рисовый настой Хэся",
+      "power": 50,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "rice",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "apple",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "plum",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 69,
+        "rawIngredients": [
+          "рис",
+          "яблоко",
+          "слива",
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-070",
+      "name": "Фруктовый боул Тефиса",
+      "power": 40,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "avocado",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "cactus-fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "mango",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 70,
+        "rawIngredients": [
+          "авокадо",
+          "плод кактуса",
+          "манго",
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-071",
+      "name": "Хрустящая жареная рыба с фруктами",
+      "power": 45,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "fish",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 71,
+        "rawIngredients": [
+          "фрукт",
+          "рыба",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-072",
+      "name": "Цветочно-дынный пирог",
+      "power": 70,
+      "effect": {
+        "name": "Большой размах",
+        "level": 1
+      },
+      "ingredients": [
+        {
+          "type": "unknown",
+          "raw": "дыня (фиолетовое качество) ???",
+          "quantity": 1,
+          "quality": null
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "wheat",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "flower",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 72,
+        "rawIngredients": [
+          "дыня (фиолетовое качество) ???",
+          "пшеница",
+          "цветок",
+          null
+        ],
+        "rawEffect": "Большой размах I"
+      }
+    },
+    {
+      "id": "recipe-sheet-073",
+      "name": "Цветочный чай с дыней",
+      "power": 40,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "melon",
+          "quantity": 2,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "flower",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 73,
+        "rawIngredients": [
+          "дыня",
+          "дыня",
+          "цветок",
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-074",
+      "name": "Чесночная булочка со взбитым маслом",
+      "power": 50,
+      "effect": {
+        "name": "Быстрое рыхление",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "garlic",
+          "quantity": 1,
+          "quality": "purple"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "milk",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "grain",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 74,
+        "rawIngredients": [
+          "чеснок (фиолетовое качество)",
+          "молоко",
+          "зерновые",
+          null
+        ],
+        "rawEffect": "Быстрое рыхление II"
+      }
+    },
+    {
+      "id": "recipe-sheet-075",
+      "name": "Шашлычки из грибов, овощей и фруктов",
+      "power": 40,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "ingredient",
+          "ingredientId": "mushroom",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "vegetable",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 75,
+        "rawIngredients": [
+          "гриб",
+          "овощ",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-076",
+      "name": "Ягодно-рисовое смузи",
+      "power": 35,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "category",
+          "category": "grain",
+          "quantity": 1,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 76,
+        "rawIngredients": [
+          "фрукт",
+          "зерновые",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    },
+    {
+      "id": "recipe-sheet-077",
+      "name": "Яркий сок",
+      "power": 30,
+      "effect": null,
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 2,
+          "quality": "normal"
+        }
+      ],
+      "source": {
+        "row": 77,
+        "rawIngredients": [
+          "фрукт",
+          "фрукт",
+          null,
+          null
+        ],
+        "rawEffect": null
+      }
+    }
+  ]
+}
