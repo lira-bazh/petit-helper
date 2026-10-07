@@ -1,0 +1,1776 @@
+{
+  "species": [
+    {
+      "id": "sunflower",
+      "name": {
+        "ru": "Подсолнух",
+        "en": "Sunflower",
+        "fr": "Tournesol",
+        "es": "Girasol",
+        "de": "Sonnenblume",
+        "it": "Girasole",
+        "pt": "Girassol"
+      }
+    },
+    {
+      "id": "mooncycle-rose",
+      "name": {
+        "ru": "Чайная роза",
+        "en": "Mooncycle Rose",
+        "fr": "Rose lunaire",
+        "es": "Rosa ciclolunar",
+        "de": "Mondzyklus-Rose",
+        "it": "Rosa lunare",
+        "pt": "Rosa Lunar"
+      }
+    },
+    {
+      "id": "amaryllis",
+      "name": {
+        "ru": "Амариллис",
+        "en": "Amaryllis",
+        "fr": "Amaryllis",
+        "es": "Amarilis",
+        "de": "Ritterstern",
+        "it": "Amarillo",
+        "pt": "Amarílis"
+      }
+    },
+    {
+      "id": "dahlia",
+      "name": {
+        "ru": "Георгин",
+        "en": "Dwarf Dahlia",
+        "fr": "Dahlia nain",
+        "es": "Dalia enana",
+        "de": "Zwergdahlie",
+        "it": "Dalia nana",
+        "pt": "Dália Anã"
+      }
+    },
+    {
+      "id": "king-protea",
+      "name": {
+        "ru": "Протея",
+        "en": "King Protea",
+        "fr": "Protée royale",
+        "es": "Protea rey",
+        "de": "Königsprotea",
+        "it": "Protea re",
+        "pt": "Protea"
+      }
+    },
+    {
+      "id": "lily",
+      "name": {
+        "ru": "Лилия",
+        "en": "Lily",
+        "fr": "Lys",
+        "es": "Lirio",
+        "de": "Lilie",
+        "it": "Giglio",
+        "pt": "Lírio"
+      }
+    },
+    {
+      "id": "agapanthus",
+      "name": {
+        "ru": "Агапантус",
+        "en": "Agapanthus",
+        "fr": "Agapanthe",
+        "es": "Agapanto",
+        "de": "Schmucklilie",
+        "it": "Agapanto",
+        "pt": "Agapanto"
+      }
+    },
+    {
+      "id": "daisy",
+      "name": {
+        "ru": "Маргаритка",
+        "en": "Daisy",
+        "fr": "Marguerite",
+        "es": "Margarita",
+        "de": "Gänseblümchen",
+        "it": "Margherita",
+        "pt": "Margarida"
+      }
+    },
+    {
+      "id": "canna",
+      "name": {
+        "ru": "Канна",
+        "en": "Canna",
+        "fr": "Canna",
+        "es": "Canna",
+        "de": "Canna",
+        "it": "Canna",
+        "pt": "Canna"
+      }
+    },
+    {
+      "id": "moss-rose",
+      "name": {
+        "ru": "Портулак",
+        "en": "Moss Rose",
+        "fr": "Pourpier à grandes fleurs",
+        "es": "Verdolaga",
+        "de": "Portulakröschen",
+        "it": "Rosa moscata",
+        "pt": "Portulaca"
+      }
+    },
+    {
+      "id": "bellflower",
+      "name": {
+        "ru": "Колокольчик",
+        "en": "Bellflower",
+        "fr": "Campanule",
+        "es": "Campanilla",
+        "de": "Glockenblume",
+        "it": "Campanula",
+        "pt": "Campânula"
+      }
+    },
+    {
+      "id": "violet",
+      "name": {
+        "ru": "Фиалка",
+        "en": "Violet",
+        "fr": "Violette",
+        "es": "Violeta",
+        "de": "Veilchen",
+        "it": "Violetta",
+        "pt": "Violeta"
+      }
+    },
+    {
+      "id": "winter-adonis",
+      "name": {
+        "ru": "Горицвет",
+        "en": "Winter Adonis",
+        "fr": "Adonis de l'amour",
+        "es": "Adonis de invierno",
+        "de": "Winter-Adonisröschen",
+        "pt": "Flor Glacial"
+      }
+    },
+    {
+      "id": "petunia",
+      "name": {
+        "ru": "Петуния",
+        "en": "Petunia",
+        "fr": "Pétunia",
+        "es": "Petunia enana",
+        "de": "Petunie",
+        "pt": "Petúnia"
+      }
+    }
+  ],
+  "flowers": [
+    {
+      "id": "sunflower-yellow",
+      "speciesId": "sunflower",
+      "colorName": {
+        "ru": "Жёлтый",
+        "en": "Yellow",
+        "fr": "Jaune",
+        "es": "Amarillo",
+        "de": "Gelbe",
+        "it": "Giallo",
+        "pt": "Amarelo"
+      },
+      "image": "/images/flowers/sunflower-yellow.webp",
+      "quality": "white"
+    },
+    {
+      "id": "sunflower-red",
+      "speciesId": "sunflower",
+      "colorName": {
+        "ru": "Красный",
+        "en": "Red",
+        "fr": "Rouge",
+        "es": "Rojo",
+        "de": "Rote",
+        "it": "Rosso",
+        "pt": "Vermelho"
+      },
+      "image": "/images/flowers/sunflower-red.webp",
+      "quality": "white"
+    },
+    {
+      "id": "sunflower-green",
+      "speciesId": "sunflower",
+      "colorName": {
+        "ru": "Зелёный",
+        "en": "Green",
+        "fr": "Vert",
+        "es": "Verde",
+        "de": "Grüne",
+        "it": "Verde",
+        "pt": "Verde"
+      },
+      "image": "/images/flowers/sunflower-green.webp",
+      "quality": "white"
+    },
+    {
+      "id": "sunflower-tangerine",
+      "speciesId": "sunflower",
+      "colorName": {
+        "ru": "Огненно-оранжевый",
+        "en": "Tangerine",
+        "fr": "Mandarine",
+        "es": "Naranja ardiente",
+        "de": "Knallorange",
+        "pt": "Laranja Ardente"
+      },
+      "image": "/images/flowers/sunflower-bright-orange.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "sunflower-cream",
+      "speciesId": "sunflower",
+      "colorName": {
+        "ru": "Кремово-жёлтый",
+        "en": "Cream",
+        "fr": "Crème",
+        "es": "Amarillo crema",
+        "de": "Cremefarbene",
+        "pt": "Amarelo Creme"
+      },
+      "image": "/images/flowers/sunflower-cream-yellow.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "sunflower-pastel-pink",
+      "speciesId": "sunflower",
+      "colorName": {
+        "ru": "Бледно-розовый",
+        "en": "Pastel Pink",
+        "fr": "Rose pâle",
+        "es": "Rosa palo",
+        "pt": "Rosa-claro"
+      },
+      "image": "/images/flowers/sunflower-pastel-pink.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "mooncycle-rose-blue",
+      "speciesId": "mooncycle-rose",
+      "colorName": {
+        "ru": "Синяя",
+        "en": "Blue",
+        "fr": "Bleue",
+        "es": "Azul",
+        "de": "Blaue",
+        "it": "Blu",
+        "pt": "Azul"
+      },
+      "image": "/images/flowers/mooncycle-rose-blue.webp",
+      "quality": "white"
+    },
+    {
+      "id": "mooncycle-rose-pink",
+      "speciesId": "mooncycle-rose",
+      "colorName": {
+        "ru": "Розовая",
+        "en": "Pink",
+        "fr": "Rose",
+        "es": "Rosa",
+        "de": "Rosa",
+        "it": "Rosa",
+        "pt": "Cor-de-rosa"
+      },
+      "image": "/images/flowers/mooncycle-rose-pink.webp",
+      "quality": "white"
+    },
+    {
+      "id": "mooncycle-rose-teal",
+      "speciesId": "mooncycle-rose",
+      "colorName": {
+        "ru": "Бирюзовая",
+        "en": "Teal",
+        "fr": "Turquoise",
+        "es": "Turquesa",
+        "de": "Türkise",
+        "it": "Turchese"
+      },
+      "image": "/images/flowers/mooncycle-rose-teal.webp",
+      "quality": "white"
+    },
+    {
+      "id": "mooncycle-rose-mauve",
+      "speciesId": "mooncycle-rose",
+      "colorName": {
+        "ru": "Сумеречно-пурпурная",
+        "en": "Mauve",
+        "fr": "Lavande",
+        "es": "Morada crepuscular",
+        "de": "Blasslila",
+        "pt": "Roxo Crepúsculo"
+      },
+      "image": "/images/flowers/mooncycle-rose-twilight-purple.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "mooncycle-rose-cream",
+      "speciesId": "mooncycle-rose",
+      "colorName": {
+        "ru": "Кремово-жёлтая",
+        "en": "Cream",
+        "fr": "Crème",
+        "es": "Amarillo crema",
+        "de": "Cremefarbene",
+        "pt": "Amarelo Creme"
+      },
+      "image": "/images/flowers/mooncycle-rose-cream-yellow.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "mooncycle-rose-black-velvet",
+      "speciesId": "mooncycle-rose",
+      "colorName": {
+        "ru": "Бархатно-чёрная",
+        "en": "Black Velvet",
+        "fr": "Velours noir",
+        "es": "De terciopelo negro",
+        "de": "Schwarzer Samt",
+        "pt": "Preto Veludo"
+      },
+      "image": "/images/flowers/mooncycle-rose-black-velvet.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "amaryllis-red",
+      "speciesId": "amaryllis",
+      "colorName": {
+        "ru": "Красный",
+        "en": "Red",
+        "fr": "Rouge",
+        "es": "Roja",
+        "de": "Roter",
+        "it": "Rosso",
+        "pt": "Vermelha"
+      },
+      "image": "/images/flowers/amaryllis-red.webp",
+      "quality": "white"
+    },
+    {
+      "id": "amaryllis-orange",
+      "speciesId": "amaryllis",
+      "colorName": {
+        "ru": "Оранжевый",
+        "en": "Orange",
+        "fr": "Orange",
+        "es": "Naranja",
+        "de": "Oranger",
+        "it": "Arancione",
+        "pt": "Laranja"
+      },
+      "image": "/images/flowers/amaryllis-orange.webp",
+      "quality": "white"
+    },
+    {
+      "id": "amaryllis-white",
+      "speciesId": "amaryllis",
+      "colorName": {
+        "ru": "Белый",
+        "en": "White",
+        "fr": "Blanche",
+        "es": "Blanca",
+        "de": "Weißer",
+        "it": "Bianco",
+        "pt": "Branca"
+      },
+      "image": "/images/flowers/amaryllis-white.webp",
+      "quality": "white"
+    },
+    {
+      "id": "amaryllis-blush",
+      "speciesId": "amaryllis",
+      "colorName": {
+        "ru": "Молочно-персиковый",
+        "en": "Blush",
+        "fr": "Rosée",
+        "es": "De melocotón cremoso",
+        "de": "Pfirsichfarbener",
+        "pt": "Pêssego Creme"
+      },
+      "image": "/images/flowers/amaryllis-peach-pink.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "amaryllis-canary",
+      "speciesId": "amaryllis",
+      "colorName": {
+        "ru": "Канареечно-желтый",
+        "en": "Canary",
+        "fr": "Canari",
+        "es": "Amarillo canario",
+        "de": "Kanariengelber",
+        "pt": "Amarelo Canário"
+      },
+      "image": "/images/flowers/amaryllis-canary.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "amaryllis-lime",
+      "speciesId": "amaryllis",
+      "colorName": {
+        "ru": "Лазурный",
+        "en": "Lime",
+        "fr": "Azurée",
+        "es": "De verano verde",
+        "pt": "Azul de verão"
+      },
+      "image": "/images/flowers/amaryllis-lime.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "dahlia-yellow",
+      "speciesId": "dahlia",
+      "colorName": {
+        "ru": "Жёлтый",
+        "en": "Yellow",
+        "fr": "Jaune",
+        "es": "Amarilla",
+        "de": "Gelbe",
+        "it": "Gialla",
+        "pt": "Amarela"
+      },
+      "image": "/images/flowers/dahlia-yellow.webp",
+      "quality": "white"
+    },
+    {
+      "id": "dahlia-orange",
+      "speciesId": "dahlia",
+      "colorName": {
+        "ru": "Оранжевый",
+        "en": "Orange",
+        "fr": "Orange",
+        "es": "Naranja",
+        "de": "Orange",
+        "it": "Arancione",
+        "pt": "Laranja"
+      },
+      "image": "/images/flowers/dahlia-orange.webp",
+      "quality": "white"
+    },
+    {
+      "id": "dahlia-teal",
+      "speciesId": "dahlia",
+      "colorName": {
+        "ru": "Бирюзовый",
+        "en": "Teal",
+        "fr": "Turquoise",
+        "es": "Turquesa",
+        "de": "Türkise",
+        "it": "Turchese",
+        "pt": "Azul"
+      },
+      "image": "/images/flowers/dahlia-teal.webp",
+      "quality": "white"
+    },
+    {
+      "id": "dahlia-cream",
+      "speciesId": "dahlia",
+      "colorName": {
+        "ru": "Кремово-жёлтый",
+        "en": "Cream",
+        "fr": "Crème",
+        "es": "Amarilla crema",
+        "de": "Cremefarbene",
+        "pt": "Amarelo Creme"
+      },
+      "image": "/images/flowers/dahlia-cream-yellow.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "dahlia-pastel-pink",
+      "speciesId": "dahlia",
+      "colorName": {
+        "ru": "Светло-розовый",
+        "en": "Pastel Pink",
+        "fr": "Rose pastel",
+        "es": "Rosa palo",
+        "de": "Zartrosa",
+        "pt": "Rosa Claro"
+      },
+      "image": "/images/flowers/dahlia-pastel-pink.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "dahlia-amethyst",
+      "speciesId": "dahlia",
+      "colorName": {
+        "ru": "Ярко-малиновый",
+        "en": "Amethyst",
+        "fr": "Magenta",
+        "es": "Magenta",
+        "de": "Magentarote",
+        "pt": "Fúcsia"
+      },
+      "image": "/images/flowers/dahlia-amethyst.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "dahlia-blush",
+      "speciesId": "dahlia",
+      "colorName": {
+        "ru": "Кремово-персиковый",
+        "en": "Blush",
+        "fr": "Rosé",
+        "es": "De melocotón cremoso",
+        "de": "Pfirsichfarbene",
+        "pt": "Pêssego Creme"
+      },
+      "image": "/images/flowers/dahlia-blush.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "king-protea-white",
+      "speciesId": "king-protea",
+      "colorName": {
+        "ru": "Белая",
+        "en": "White",
+        "fr": "Blanche",
+        "es": "Blanco",
+        "de": "Weiße",
+        "it": "Bianca",
+        "pt": "Branca"
+      },
+      "image": "/images/flowers/king-protea-white.webp",
+      "quality": "white"
+    },
+    {
+      "id": "king-protea-red",
+      "speciesId": "king-protea",
+      "colorName": {
+        "ru": "Красная",
+        "en": "Red",
+        "fr": "Rouge",
+        "es": "Rojo",
+        "de": "Rote",
+        "it": "Rossa",
+        "pt": "Vermelha"
+      },
+      "image": "/images/flowers/king-protea-red.webp",
+      "quality": "white"
+    },
+    {
+      "id": "king-protea-purple",
+      "speciesId": "king-protea",
+      "colorName": {
+        "ru": "Фиолетовая",
+        "en": "Purple",
+        "fr": "Violette",
+        "es": "Morado",
+        "de": "Lila",
+        "it": "Viola",
+        "pt": "Roxa"
+      },
+      "image": "/images/flowers/king-protea-violet.webp",
+      "quality": "white"
+    },
+    {
+      "id": "king-protea-blush",
+      "speciesId": "king-protea",
+      "colorName": {
+        "ru": "Кремово-персиковая",
+        "en": "Blush",
+        "fr": "Rosée",
+        "es": "De melocotón cremoso",
+        "de": "Pfirsichfarbene",
+        "pt": "Pêssego Creme"
+      },
+      "image": "/images/flowers/king-protea-peach-pink.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "king-protea-russet",
+      "speciesId": "king-protea",
+      "colorName": {
+        "ru": "Чайного цвета",
+        "en": "Russet",
+        "fr": "Antique",
+        "es": "De rosa té",
+        "de": "Altrosa",
+        "pt": "Rosa Chá"
+      },
+      "image": "/images/flowers/king-protea-ginger.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "king-protea-sunset",
+      "speciesId": "king-protea",
+      "colorName": {
+        "ru": "Сумеречно-огненная",
+        "en": "Sunset",
+        "fr": "Crépuscule",
+        "es": "De crepúsculo ardiente",
+        "de": "Abendrote",
+        "pt": "Escarlate Ardente"
+      },
+      "image": "/images/flowers/king-protea-sunset.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "lily-white",
+      "speciesId": "lily",
+      "colorName": {
+        "ru": "Белая",
+        "en": "White",
+        "fr": "Blanc",
+        "es": "Blanco",
+        "de": "Weiße",
+        "it": "Bianco",
+        "pt": "Branco"
+      },
+      "image": "/images/flowers/lily-white.webp",
+      "quality": "white"
+    },
+    {
+      "id": "lily-yellow",
+      "speciesId": "lily",
+      "colorName": {
+        "ru": "Жёлтая",
+        "en": "Yellow",
+        "fr": "Jaune",
+        "es": "Amarillo",
+        "de": "Gelbe",
+        "it": "Giallo",
+        "pt": "Amarelo"
+      },
+      "image": "/images/flowers/lily-yellow.webp",
+      "quality": "white"
+    },
+    {
+      "id": "lily-teal",
+      "speciesId": "lily",
+      "colorName": {
+        "ru": "Бирюзовая",
+        "en": "Teal",
+        "fr": "Turquoise",
+        "es": "Turquesa",
+        "de": "Türkise",
+        "it": "Turchese",
+        "pt": "Azul"
+      },
+      "image": "/images/flowers/lily-teal.webp",
+      "quality": "white"
+    },
+    {
+      "id": "lily-golden-yellow",
+      "speciesId": "lily",
+      "colorName": {
+        "ru": "Солнечная",
+        "en": "Golden Yellow",
+        "fr": "Jaune brillant",
+        "es": "Amarillo brillante",
+        "pt": "Amarelo radiante"
+      },
+      "image": "/images/flowers/lily-sunny.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "lily-mauve",
+      "speciesId": "lily",
+      "colorName": {
+        "ru": "Сумеречно-пурпурная",
+        "en": "Mauve",
+        "fr": "Lavande",
+        "es": "Morado crepuscular",
+        "de": "Blasslila",
+        "pt": "Roxo Crepúsculo"
+      },
+      "image": "/images/flowers/lily-twilight-purple.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "lily-black-velvet",
+      "speciesId": "lily",
+      "colorName": {
+        "ru": "Бархатно-чёрная",
+        "en": "Black Velvet",
+        "fr": "Velours noir",
+        "es": "De terciopelo negro",
+        "de": "Schwarzer Samt",
+        "pt": "Preto Veludo"
+      },
+      "image": "/images/flowers/lily-black-velvet.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "agapanthus-white",
+      "speciesId": "agapanthus",
+      "colorName": {
+        "ru": "Белый",
+        "en": "White",
+        "fr": "Blanche",
+        "es": "Blanco",
+        "de": "Weiße",
+        "it": "Bianco",
+        "pt": "Branco"
+      },
+      "image": "/images/flowers/agapanthus-white.webp",
+      "quality": "white"
+    },
+    {
+      "id": "agapanthus-blue",
+      "speciesId": "agapanthus",
+      "colorName": {
+        "ru": "Синий",
+        "en": "Blue",
+        "fr": "Bleue",
+        "es": "Azul",
+        "de": "Blaue",
+        "it": "Blu",
+        "pt": "Azul"
+      },
+      "image": "/images/flowers/agapanthus-blue.webp",
+      "quality": "white"
+    },
+    {
+      "id": "agapanthus-purple",
+      "speciesId": "agapanthus",
+      "colorName": {
+        "ru": "Фиолетовый",
+        "en": "Purple",
+        "fr": "Violette",
+        "es": "Morado",
+        "de": "Lila",
+        "it": "Viola",
+        "pt": "Roxo"
+      },
+      "image": "/images/flowers/agapanthus-violet.webp",
+      "quality": "white"
+    },
+    {
+      "id": "agapanthus-blue-and-white",
+      "speciesId": "agapanthus",
+      "colorName": {
+        "ru": "Сине-белый",
+        "en": "Blue and White",
+        "fr": "Bleue et blanche",
+        "es": "Azul y blanco",
+        "de": "Blau-weiße",
+        "pt": "Branco e Preto"
+      },
+      "image": "/images/flowers/agapanthus-blue-and-white.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "agapanthus-blush",
+      "speciesId": "agapanthus",
+      "colorName": {
+        "ru": "Молочно-персиковый",
+        "en": "Blush",
+        "fr": "Rosée",
+        "es": "De melocotón cremoso",
+        "de": "Pfirsichfarbene",
+        "pt": "Pêssego Creme"
+      },
+      "image": "/images/flowers/agapanthus-pinkish.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "agapanthus-baby-blue",
+      "speciesId": "agapanthus",
+      "colorName": {
+        "ru": "Нежно-синий",
+        "en": "Baby Blue",
+        "fr": "Bleu pastel",
+        "es": "Azul celeste",
+        "de": "Zartblaue",
+        "pt": "Azul Claro"
+      },
+      "image": "/images/flowers/agapanthus-baby-blue.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "agapanthus-black-velvet",
+      "speciesId": "agapanthus",
+      "colorName": {
+        "ru": "Бархатно-чёрный",
+        "en": "Black Velvet",
+        "fr": "Velours noir",
+        "es": "De terciopelo negro",
+        "de": "Schwarzer Samt",
+        "pt": "Preto Veludo"
+      },
+      "image": "/images/flowers/agapanthus-black-velvet.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "daisy-white",
+      "speciesId": "daisy",
+      "colorName": {
+        "ru": "Белая",
+        "en": "White",
+        "fr": "Blanche",
+        "es": "Blanca",
+        "de": "Weißes",
+        "it": "Bianca",
+        "pt": "Branca"
+      },
+      "image": "/images/flowers/daisy-white.webp",
+      "quality": "white"
+    },
+    {
+      "id": "daisy-yellow",
+      "speciesId": "daisy",
+      "colorName": {
+        "ru": "Жёлтая",
+        "en": "Yellow",
+        "fr": "Jaune",
+        "es": "Amarilla",
+        "de": "Gelbes",
+        "it": "Gialla",
+        "pt": "Amarela"
+      },
+      "image": "/images/flowers/daisy-yellow.webp",
+      "quality": "white"
+    },
+    {
+      "id": "daisy-teal",
+      "speciesId": "daisy",
+      "colorName": {
+        "ru": "Бирюзовая",
+        "en": "Teal",
+        "fr": "Turquoise",
+        "es": "Turquesa",
+        "de": "Türkises",
+        "it": "Turchese",
+        "pt": "Azul"
+      },
+      "image": "/images/flowers/daisy-teal.webp",
+      "quality": "white"
+    },
+    {
+      "id": "daisy-champagne",
+      "speciesId": "daisy",
+      "colorName": {
+        "ru": "Цвета шампань",
+        "en": "Champagne",
+        "fr": "Champagne",
+        "es": "Champán",
+        "de": "Cremegelbes",
+        "pt": "Champanhe"
+      },
+      "image": "/images/flowers/daisy-champagne.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "daisy-lime",
+      "speciesId": "daisy",
+      "colorName": {
+        "ru": "Лазурная",
+        "en": "Lime",
+        "fr": "Écume de mer",
+        "es": "De verano verde",
+        "de": "Meerblaues",
+        "pt": "Verão Verdejante"
+      },
+      "image": "/images/flowers/daisy-lime.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "daisy-violet",
+      "speciesId": "daisy",
+      "colorName": {
+        "ru": "Аметистовая",
+        "en": "Violet",
+        "fr": "Violette",
+        "es": "Violeta",
+        "pt": "Violeta"
+      },
+      "image": "/images/flowers/daisy-purple.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "canna-yellow",
+      "speciesId": "canna",
+      "colorName": {
+        "ru": "Жёлтая",
+        "en": "Yellow",
+        "fr": "Jaune",
+        "es": "Amarilla",
+        "de": "Gelbe",
+        "it": "Gialla",
+        "pt": "Amarela"
+      },
+      "image": "/images/flowers/canna-yellow.webp",
+      "quality": "white"
+    },
+    {
+      "id": "canna-orange",
+      "speciesId": "canna",
+      "colorName": {
+        "ru": "Оранжевая",
+        "en": "Orange",
+        "fr": "Orange",
+        "es": "Naranja",
+        "de": "Orange",
+        "it": "Arancione",
+        "pt": "Laranja"
+      },
+      "image": "/images/flowers/canna-orange.webp",
+      "quality": "white"
+    },
+    {
+      "id": "canna-red",
+      "speciesId": "canna",
+      "colorName": {
+        "ru": "Красная",
+        "en": "Red",
+        "fr": "Rouge",
+        "es": "Roja",
+        "de": "Rote",
+        "it": "Rossa",
+        "pt": "Vermelha"
+      },
+      "image": "/images/flowers/canna-red.webp",
+      "quality": "white"
+    },
+    {
+      "id": "canna-blush",
+      "speciesId": "canna",
+      "colorName": {
+        "ru": "Сливочно-персиковая",
+        "en": "Blush",
+        "fr": "Rosé",
+        "es": "De melocotón cremoso",
+        "de": "Pfirsichfarbene",
+        "pt": "Pêssego Creme"
+      },
+      "image": "/images/flowers/canna-pink.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "canna-saffron",
+      "speciesId": "canna",
+      "colorName": {
+        "ru": "Шафрановая",
+        "en": "Saffron",
+        "fr": "Doré",
+        "es": "Dorada ardiente",
+        "de": "Feurig goldene",
+        "pt": "Dourada Ardente"
+      },
+      "image": "/images/flowers/canna-saffron.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "canna-champagne",
+      "speciesId": "canna",
+      "colorName": {
+        "ru": "Шампань",
+        "en": "Champagne",
+        "fr": "Champagne",
+        "es": "Champán",
+        "de": "Cremegelbe",
+        "pt": "Champanhe"
+      },
+      "image": "/images/flowers/canna-champagne.webp",
+      "quality": "gold"
+    },
+    {
+      "id": "canna-jade-gold",
+      "speciesId": "canna",
+      "colorName": {
+        "ru": "Нефритово-золотая",
+        "en": "Jade Gold",
+        "fr": "Jade doré",
+        "es": "De jade dorado",
+        "pt": "Dourada de Jade"
+      },
+      "image": "/images/flowers/canna-jade-gold.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "moss-rose-white",
+      "speciesId": "moss-rose",
+      "colorName": {
+        "ru": "Белый",
+        "en": "White",
+        "fr": "Blanches",
+        "es": "Blanca",
+        "de": "Weißes",
+        "it": "Bianca",
+        "pt": "Branca"
+      },
+      "image": "/images/flowers/moss-rose-white.webp",
+      "quality": "white"
+    },
+    {
+      "id": "moss-rose-yellow",
+      "speciesId": "moss-rose",
+      "colorName": {
+        "ru": "Жёлтый",
+        "en": "Yellow",
+        "fr": "Jaunes",
+        "es": "Amarilla",
+        "de": "Gelbes",
+        "it": "Gialla",
+        "pt": "Amarela"
+      },
+      "image": "/images/flowers/moss-rose-yellow.webp",
+      "quality": "white"
+    },
+    {
+      "id": "moss-rose-purple",
+      "speciesId": "moss-rose",
+      "colorName": {
+        "ru": "Фиолетовый",
+        "en": "Purple",
+        "fr": "Violettes",
+        "es": "Morada",
+        "de": "Lila",
+        "it": "Viola",
+        "pt": "Roxa"
+      },
+      "image": "/images/flowers/moss-rose-purple.webp",
+      "quality": "white"
+    },
+    {
+      "id": "moss-rose-fuchsia",
+      "speciesId": "moss-rose",
+      "colorName": {
+        "ru": "Пунцовый",
+        "en": "Fuchsia",
+        "fr": "Rose",
+        "es": "Carmesí",
+        "de": "Scharlachrotes",
+        "pt": "Magenta"
+      },
+      "image": "/images/flowers/moss-rose-fuchsia.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "moss-rose-tangerine",
+      "speciesId": "moss-rose",
+      "colorName": {
+        "ru": "Ярко-оранжевый",
+        "en": "Tangerine",
+        "fr": "Mandarine",
+        "es": "Naranja ardiente",
+        "de": "Knalloranges",
+        "pt": "Laranja Ardente"
+      },
+      "image": "/images/flowers/moss-rose-tangerine.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "moss-rose-blush",
+      "speciesId": "moss-rose",
+      "colorName": {
+        "ru": "Персиковый",
+        "en": "Blush",
+        "fr": "Rosé",
+        "es": "De melocotón cremoso",
+        "de": "Pfirsichfarbenes",
+        "pt": "Pêssego Creme"
+      },
+      "image": "/images/flowers/moss-rose-blush.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "moss-rose-pink-sunset",
+      "speciesId": "moss-rose",
+      "colorName": {
+        "ru": "Закатно-розовый",
+        "en": "Pink Sunset",
+        "fr": "Crépuscule rose",
+        "es": "Rosa crepuscular",
+        "de": "Lachsrosa",
+        "pt": "Rosa Solar"
+      },
+      "image": "/images/flowers/moss-rose-pink-sunset.webp",
+      "quality": "gold"
+    },
+    {
+      "id": "moss-rose-sunset",
+      "speciesId": "moss-rose",
+      "colorName": {
+        "ru": "Сумеречно-огненный",
+        "en": "Sunset",
+        "fr": "Crépuscule",
+        "es": "De Crepúsculo ardiente",
+        "de": "Abendrotes",
+        "pt": "Crepúsculo Ardente"
+      },
+      "image": "/images/flowers/moss-rose-sunset.webp",
+      "quality": "gold"
+    },
+    {
+      "id": "bellflower-white",
+      "speciesId": "bellflower",
+      "colorName": {
+        "ru": "Белый",
+        "en": "White",
+        "fr": "Blanche",
+        "es": "Blanca",
+        "de": "Weiße",
+        "it": "Bianca",
+        "pt": "Branca"
+      },
+      "image": "/images/flowers/bellflower-white.webp",
+      "quality": "white"
+    },
+    {
+      "id": "bellflower-teal",
+      "speciesId": "bellflower",
+      "colorName": {
+        "ru": "Бирюзовый",
+        "en": "Teal",
+        "fr": "Turquoise",
+        "es": "Turquesa",
+        "de": "Türkise",
+        "it": "Turchese",
+        "pt": "Azul-esverdeada"
+      },
+      "image": "/images/flowers/bellflower-teal.webp",
+      "quality": "white"
+    },
+    {
+      "id": "bellflower-coral",
+      "speciesId": "bellflower",
+      "colorName": {
+        "ru": "Светло-розовый",
+        "en": "Coral",
+        "fr": "Rose pastel",
+        "es": "Rosa claro",
+        "de": "Pastellrosa",
+        "pt": "Rosa Claro"
+      },
+      "image": "/images/flowers/bellflower-coral.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "bellflower-rose-pink",
+      "speciesId": "bellflower",
+      "colorName": {
+        "ru": "Нежно-розовый",
+        "en": "Rose Pink",
+        "fr": "Rosée",
+        "es": "Rosa sonrojado",
+        "de": "Dunkelrosa",
+        "pt": "Rosa Avermelhado"
+      },
+      "image": "/images/flowers/bellflower-light-pink.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "bellflower-yellow",
+      "speciesId": "bellflower",
+      "colorName": {
+        "ru": "Жёлтый",
+        "en": "Yellow",
+        "fr": "Jaune",
+        "es": "Amarilla",
+        "de": "Gelbe",
+        "it": "Gialla",
+        "pt": "Amarela"
+      },
+      "image": "/images/flowers/bellflower-yellow.webp",
+      "quality": "white"
+    },
+    {
+      "id": "bellflower-sky-blue",
+      "speciesId": "bellflower",
+      "colorName": {
+        "ru": "Небесно-голубой",
+        "en": "Sky Blue",
+        "fr": "Bleu ciel",
+        "es": "Azul cielo",
+        "de": "Himmelblaue",
+        "pt": "Azul Celeste"
+      },
+      "image": "/images/flowers/bellflower-sky-blue.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "bellflower-starlace",
+      "speciesId": "bellflower",
+      "colorName": {
+        "ru": "Звёздный",
+        "en": "Starlace",
+        "fr": "Étoilée",
+        "es": "De infinidad estelar",
+        "de": "Sternlicht",
+        "pt": "Estelar"
+      },
+      "image": "/images/flowers/bellflower-starlace.webp",
+      "quality": "gold"
+    },
+    {
+      "id": "violet-violet",
+      "speciesId": "violet",
+      "colorName": {
+        "ru": "Фиалка",
+        "en": "Violet",
+        "fr": "Violette",
+        "es": "Violeta",
+        "de": "Veilchen",
+        "it": "Violetta",
+        "pt": "Violeta"
+      },
+      "image": "/images/flowers/violet-default.webp",
+      "quality": "white"
+    },
+    {
+      "id": "violet-teal",
+      "speciesId": "violet",
+      "colorName": {
+        "ru": "Бирюзовая",
+        "en": "Teal",
+        "fr": "Turquoise",
+        "es": "Turquesa",
+        "de": "Türkises",
+        "it": "Turchese",
+        "pt": "Azul"
+      },
+      "image": "/images/flowers/violet-teal.webp",
+      "quality": "white"
+    },
+    {
+      "id": "violet-pink",
+      "speciesId": "violet",
+      "colorName": {
+        "ru": "Розовая",
+        "en": "Pink",
+        "fr": "Rose",
+        "es": "Rosa",
+        "de": "Rosa",
+        "it": "Rosa",
+        "pt": "Rosa"
+      },
+      "image": "/images/flowers/violet-pink.webp",
+      "quality": "white"
+    },
+    {
+      "id": "violet-fuchsia",
+      "speciesId": "violet",
+      "colorName": {
+        "ru": "Багровая",
+        "en": "Fuchsia",
+        "fr": "Fuchsia",
+        "es": "Carmesí",
+        "de": "Scharlachrotes",
+        "pt": "Magenta"
+      },
+      "image": "/images/flowers/violet-fuchsia.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "violet-primrose",
+      "speciesId": "violet",
+      "colorName": {
+        "ru": "Светло-жёлтая",
+        "en": "Primrose",
+        "fr": "Primevère",
+        "es": "Amarillo pálido",
+        "de": "Zartgelbes",
+        "pt": "Amarelo Manteiga"
+      },
+      "image": "/images/flowers/violet-primrose.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "violet-twilight",
+      "speciesId": "violet",
+      "colorName": {
+        "ru": "Полуночно-пурпурная",
+        "en": "Twilight",
+        "fr": "Crépuscule",
+        "es": "Crepuscular",
+        "de": "Nachtfarbenes",
+        "pt": "Roxo Noturno"
+      },
+      "image": "/images/flowers/violet-twilight.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "violet-black-velvet",
+      "speciesId": "violet",
+      "colorName": {
+        "ru": "Бархатно-чёрная",
+        "en": "Black Velvet",
+        "fr": "Velours noir",
+        "es": "De terciopelo negro",
+        "de": "Schwarzer Samt",
+        "pt": "Veludo Preto"
+      },
+      "image": "/images/flowers/violet-black-velvet.webp",
+      "quality": "gold"
+    },
+    {
+      "id": "violet-nightstar",
+      "speciesId": "violet",
+      "colorName": {
+        "ru": "Звёздная",
+        "en": "Nightstar",
+        "fr": "Stellaire",
+        "es": "De destello estelar",
+        "de": "Sternenglanz",
+        "pt": "Estelar"
+      },
+      "image": "/images/flowers/violet-nightstar.webp",
+      "quality": "gold"
+    },
+    {
+      "id": "winter-adonis-orange",
+      "speciesId": "winter-adonis",
+      "colorName": {
+        "ru": "Оранжевый",
+        "en": "Orange",
+        "fr": "Orange",
+        "es": "Naranja",
+        "de": "Oranges",
+        "pt": "Laranja"
+      },
+      "image": "/images/flowers/winter-adonis-orange.webp",
+      "quality": "white"
+    },
+    {
+      "id": "winter-adonis-white",
+      "speciesId": "winter-adonis",
+      "colorName": {
+        "ru": "Белый",
+        "en": "White",
+        "fr": "Blanc",
+        "es": "Blanco",
+        "de": "Weißes",
+        "pt": "Branca"
+      },
+      "image": "/images/flowers/winter-adonis-white.webp",
+      "quality": "white"
+    },
+    {
+      "id": "winter-adonis-red",
+      "speciesId": "winter-adonis",
+      "colorName": {
+        "ru": "Красный",
+        "en": "Red",
+        "fr": "Rouge",
+        "es": "Rojo",
+        "de": "Rotes",
+        "pt": "Vermelha"
+      },
+      "image": "/images/flowers/winter-adonis-red.webp",
+      "quality": "white"
+    },
+    {
+      "id": "winter-adonis-blush",
+      "speciesId": "winter-adonis",
+      "colorName": {
+        "ru": "Молочно-персиковый",
+        "en": "Blush",
+        "fr": "Rosé",
+        "es": "Melocotón cremoso",
+        "de": "Pfirsichfarbenes",
+        "pt": "Pêssego Creme"
+      },
+      "image": "/images/flowers/winter-adonis-blush.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "winter-adonis-cream",
+      "speciesId": "winter-adonis",
+      "colorName": {
+        "ru": "Кремовый",
+        "en": "Cream",
+        "fr": "Crème",
+        "es": "Amarillo crema",
+        "de": "Cremefarbenes",
+        "pt": "Creme"
+      },
+      "image": "/images/flowers/winter-adonis-cream.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "winter-adonis-sky-blue",
+      "speciesId": "winter-adonis",
+      "colorName": {
+        "ru": "Льдисто-голубой",
+        "en": "Sky Blue",
+        "fr": "Bleu glace",
+        "es": "Azul claro",
+        "de": "Hellblaues",
+        "pt": "Azul Gelado"
+      },
+      "image": "/images/flowers/winter-adonis-sky-blue.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "winter-adonis-frostwhite",
+      "speciesId": "winter-adonis",
+      "colorName": {
+        "ru": "Белоснежный",
+        "en": "Frostwhite",
+        "fr": "Givré",
+        "es": "Gélido",
+        "de": "Frostweißes",
+        "pt": "Branco Gelo"
+      },
+      "image": "/images/flowers/winter-adonis-frostwhite.webp",
+      "quality": "gold"
+    },
+    {
+      "id": "petunia-lavender",
+      "speciesId": "petunia",
+      "colorName": {
+        "ru": "Лавандовая",
+        "en": "Lavender",
+        "fr": "Mauve clair",
+        "es": "Lavanda",
+        "de": "Helllila",
+        "pt": "Lavanda"
+      },
+      "image": "/images/flowers/petunia-lavender.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "petunia-dawn",
+      "speciesId": "petunia",
+      "colorName": {
+        "ru": "Рассветная",
+        "en": "Dawn",
+        "fr": "Belle-de-jour",
+        "es": "Alborada",
+        "de": "Morgenrote",
+        "pt": "Da Alvorada"
+      },
+      "image": "/images/flowers/petunia-dawn.webp",
+      "quality": "blue"
+    },
+    {
+      "id": "petunia-sky-blue",
+      "speciesId": "petunia",
+      "colorName": {
+        "ru": "Небесно-голубая",
+        "en": "Sky Blue",
+        "fr": "Bleu clair",
+        "es": "Azul claro",
+        "de": "Hellblaue",
+        "pt": "Azul Celeste"
+      },
+      "image": "/images/flowers/petunia-sky-blue.webp",
+      "quality": "purple"
+    },
+    {
+      "id": "petunia-white",
+      "speciesId": "petunia",
+      "colorName": {
+        "ru": "Белая",
+        "en": "White",
+        "fr": "Blanc",
+        "es": "Blanca",
+        "de": "Weiße",
+        "pt": "Branca"
+      },
+      "image": "/images/flowers/petunia-white.webp",
+      "quality": "white"
+    },
+    {
+      "id": "petunia-red",
+      "speciesId": "petunia",
+      "colorName": {
+        "ru": "Красная",
+        "en": "Red",
+        "fr": "Rouge",
+        "es": "Roja",
+        "de": "Rote",
+        "pt": "Vermelha"
+      },
+      "image": "/images/flowers/petunia-red.webp",
+      "quality": "white"
+    },
+    {
+      "id": "petunia-purple",
+      "speciesId": "petunia",
+      "colorName": {
+        "ru": "Фиолетовая",
+        "en": "Purple",
+        "fr": "Violet",
+        "es": "Morada",
+        "de": "Lila",
+        "pt": "Roxa"
+      },
+      "image": "/images/flowers/petunia-purple.webp",
+      "quality": "white"
+    }
+  ],
+  "crosses": [
+    {
+      "parentIds": [
+        "sunflower-red",
+        "sunflower-yellow"
+      ],
+      "resultId": "sunflower-tangerine"
+    },
+    {
+      "parentIds": [
+        "sunflower-green",
+        "sunflower-green"
+      ],
+      "resultId": "sunflower-cream"
+    },
+    {
+      "parentIds": [
+        "sunflower-tangerine",
+        "sunflower-cream"
+      ],
+      "resultId": "sunflower-pastel-pink"
+    },
+    {
+      "parentIds": [
+        "mooncycle-rose-blue",
+        "mooncycle-rose-pink"
+      ],
+      "resultId": "mooncycle-rose-mauve"
+    },
+    {
+      "parentIds": [
+        "mooncycle-rose-teal",
+        "mooncycle-rose-teal"
+      ],
+      "resultId": "mooncycle-rose-cream"
+    },
+    {
+      "parentIds": [
+        "mooncycle-rose-mauve",
+        "mooncycle-rose-mauve"
+      ],
+      "resultId": "mooncycle-rose-black-velvet"
+    },
+    {
+      "parentIds": [
+        "amaryllis-red",
+        "amaryllis-white"
+      ],
+      "resultId": "amaryllis-blush"
+    },
+    {
+      "parentIds": [
+        "amaryllis-orange",
+        "amaryllis-orange"
+      ],
+      "resultId": "amaryllis-canary"
+    },
+    {
+      "parentIds": [
+        "dahlia-teal",
+        "dahlia-yellow"
+      ],
+      "resultId": "dahlia-cream"
+    },
+    {
+      "parentIds": [
+        "king-protea-red",
+        "king-protea-white"
+      ],
+      "resultId": "king-protea-blush"
+    },
+    {
+      "parentIds": [
+        "king-protea-red",
+        "king-protea-red"
+      ],
+      "resultId": "king-protea-russet"
+    },
+    {
+      "parentIds": [
+        "lily-white",
+        "lily-yellow"
+      ],
+      "resultId": "lily-golden-yellow"
+    },
+    {
+      "parentIds": [
+        "lily-teal",
+        "lily-teal"
+      ],
+      "resultId": "lily-mauve"
+    },
+    {
+      "parentIds": [],
+      "resultId": "lily-black-velvet"
+    },
+    {
+      "parentIds": [
+        "agapanthus-blue",
+        "agapanthus-white"
+      ],
+      "resultId": "agapanthus-blue-and-white"
+    },
+    {
+      "parentIds": [
+        "agapanthus-purple",
+        "agapanthus-white"
+      ],
+      "resultId": "agapanthus-blush"
+    },
+    {
+      "parentIds": [
+        "daisy-white",
+        "daisy-yellow"
+      ],
+      "resultId": "daisy-champagne"
+    },
+    {
+      "parentIds": [
+        "daisy-teal",
+        "daisy-teal"
+      ],
+      "resultId": "daisy-lime"
+    },
+    {
+      "parentIds": [
+        "daisy-champagne",
+        "daisy-lime"
+      ],
+      "resultId": "daisy-violet"
+    },
+    {
+      "parentIds": [
+        "canna-orange",
+        "canna-red"
+      ],
+      "resultId": "canna-blush"
+    },
+    {
+      "parentIds": [
+        "moss-rose-purple",
+        "moss-rose-white"
+      ],
+      "resultId": "moss-rose-fuchsia"
+    },
+    {
+      "parentIds": [
+        "bellflower-white",
+        "bellflower-white"
+      ],
+      "resultId": "bellflower-coral"
+    },
+    {
+      "parentIds": [
+        "winter-adonis-red",
+        "winter-adonis-white"
+      ],
+      "resultId": "winter-adonis-blush"
+    },
+    {
+      "parentIds": [],
+      "resultId": "amaryllis-lime"
+    },
+    {
+      "parentIds": [],
+      "resultId": "dahlia-pastel-pink"
+    },
+    {
+      "parentIds": [],
+      "resultId": "dahlia-amethyst"
+    },
+    {
+      "parentIds": [],
+      "resultId": "dahlia-blush"
+    },
+    {
+      "parentIds": [],
+      "resultId": "king-protea-sunset"
+    },
+    {
+      "parentIds": [],
+      "resultId": "agapanthus-baby-blue"
+    },
+    {
+      "parentIds": [],
+      "resultId": "agapanthus-black-velvet"
+    },
+    {
+      "parentIds": [],
+      "resultId": "canna-saffron"
+    },
+    {
+      "parentIds": [],
+      "resultId": "canna-champagne"
+    },
+    {
+      "parentIds": [],
+      "resultId": "canna-jade-gold"
+    },
+    {
+      "parentIds": [],
+      "resultId": "moss-rose-tangerine"
+    },
+    {
+      "parentIds": [],
+      "resultId": "moss-rose-blush"
+    },
+    {
+      "parentIds": [],
+      "resultId": "moss-rose-pink-sunset"
+    },
+    {
+      "parentIds": [],
+      "resultId": "moss-rose-sunset"
+    },
+    {
+      "parentIds": [],
+      "resultId": "bellflower-rose-pink"
+    },
+    {
+      "parentIds": [],
+      "resultId": "bellflower-sky-blue"
+    },
+    {
+      "parentIds": [],
+      "resultId": "bellflower-starlace"
+    },
+    {
+      "parentIds": [],
+      "resultId": "violet-fuchsia"
+    },
+    {
+      "parentIds": [],
+      "resultId": "violet-primrose"
+    },
+    {
+      "parentIds": [],
+      "resultId": "violet-twilight"
+    },
+    {
+      "parentIds": [],
+      "resultId": "violet-black-velvet"
+    },
+    {
+      "parentIds": [],
+      "resultId": "violet-nightstar"
+    },
+    {
+      "parentIds": [],
+      "resultId": "winter-adonis-cream"
+    },
+    {
+      "parentIds": [],
+      "resultId": "winter-adonis-sky-blue"
+    },
+    {
+      "parentIds": [],
+      "resultId": "winter-adonis-frostwhite"
+    },
+    {
+      "parentIds": [],
+      "resultId": "petunia-lavender"
+    },
+    {
+      "parentIds": [],
+      "resultId": "petunia-dawn"
+    },
+    {
+      "parentIds": [],
+      "resultId": "petunia-sky-blue"
+    }
+  ]
+}

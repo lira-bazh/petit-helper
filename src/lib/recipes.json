@@ -1,14 +1,5 @@
 {
   "schemaVersion": 1,
-  "source": {
-    "url": "https://docs.google.com/spreadsheets/d/1RZSJ9CwGovfZB26nj_x_OsYsH6eGAysWCnb12LG9Q7A/edit",
-    "title": "Рецепты",
-    "sheet": "Лист1",
-    "sheetId": 0,
-    "range": "A1:G77",
-    "locale": "ru",
-    "retrievedOn": "2026-10-04"
-  },
   "notes": [
     "Структура основана на recipe-site-architecture.md. recipes и ingredients подготовлены для последующего переноса в отдельные коллекции.",
     "Локальные строковые id и ingredientId не являются MongoDB ObjectId: при импорте нужно сопоставить идентификаторы. createdAt и updatedAt следует установить при импорте.",
@@ -18,8 +9,7 @@
     "Требования с вопросительными знаками сохранены как type: unknown с исходным raw и quality: null; их нельзя считать подтверждёнными ингредиентами.",
     "Категория meat-or-fish-or-seafood с anyOf сохраняет выбор одного из трёх типов, а не требование всех трёх одновременно.",
     "Членство конкретных ингредиентов в категориях не задано в таблице: массивы ingredients.categories оставлены пустыми до проверки.",
-    "Бамбук и побег бамбука сохранены отдельно, поскольку в источнике используются разные названия.",
-    "source.rawIngredients сохраняет все четыре исходных столбца, включая пустые ячейки и сомнения автора; source.rawEffect сохраняет исходный эффект."
+    "Бамбук и побег бамбука сохранены отдельно, поскольку в источнике используются разные названия."
   ],
   "categories": [
     {
@@ -281,17 +271,7 @@
           "quantity": 2,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 2,
-        "rawIngredients": [
-          "фрукт",
-          "фрукт",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-003",
@@ -317,17 +297,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 3,
-        "rawIngredients": [
-          "фрукт (фиолетовое качество)",
-          "пшеница",
-          "молоко",
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-004",
@@ -353,17 +323,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 4,
-        "rawIngredients": [
-          "зерновые",
-          "рис",
-          "молоко",
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-005",
@@ -377,17 +337,7 @@
           "quantity": 2,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 5,
-        "rawIngredients": [
-          "фрукт",
-          "фрукт",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-006",
@@ -410,17 +360,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 6,
-        "rawIngredients": [
-          "фрукт (фиолетовое качество)",
-          "побег бамбука",
-          null,
-          null
-        ],
-        "rawEffect": "Мощный удар I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-007",
@@ -440,17 +380,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 7,
-        "rawIngredients": [
-          "морской ёж",
-          "лобстер",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-008",
@@ -479,17 +409,7 @@
           "quantity": 1,
           "quality": "purple"
         }
-      ],
-      "source": {
-        "row": 8,
-        "rawIngredients": [
-          "морская рыба",
-          "овощ",
-          "рис (фиолетовое качество)",
-          null
-        ],
-        "rawEffect": "Быстрое рыхление II"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-009",
@@ -518,17 +438,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 9,
-        "rawIngredients": [
-          "помидор (фиолетовое качество)",
-          "побег бамбука",
-          "картофель",
-          null
-        ],
-        "rawEffect": "Быстрое рыхление I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-010",
@@ -560,17 +470,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 10,
-        "rawIngredients": [
-          "зерновые (фиолетовое качество)",
-          "желтый фрукт",
-          "зеленый фрукт",
-          "красный фрукт"
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-011",
@@ -599,17 +499,7 @@
           "quantity": 2,
           "quality": null
         }
-      ],
-      "source": {
-        "row": 11,
-        "rawIngredients": [
-          "картофель (фиолетовое качество)",
-          "помидор (фиолетовое качество)",
-          "???",
-          "???"
-        ],
-        "rawEffect": "Быстрое рыхление II"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-012",
@@ -623,17 +513,7 @@
           "quantity": 2,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 12,
-        "rawIngredients": [
-          "гриб",
-          "гриб",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-013",
@@ -662,17 +542,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 13,
-        "rawIngredients": [
-          "гриб",
-          "пшеница",
-          "огурец",
-          null
-        ],
-        "rawEffect": "Быстрое рыхление I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-014",
@@ -701,17 +571,7 @@
           "quantity": 1,
           "quality": null
         }
-      ],
-      "source": {
-        "row": 14,
-        "rawIngredients": [
-          "креветка",
-          "фрукты",
-          "сказочный овощ?",
-          null
-        ],
-        "rawEffect": "Бесшумная поступь II"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-015",
@@ -728,17 +588,7 @@
           "quantity": 2,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 15,
-        "rawIngredients": [
-          "овощ",
-          "овощ",
-          null,
-          null
-        ],
-        "rawEffect": "Большой размах I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-016",
@@ -758,17 +608,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 16,
-        "rawIngredients": [
-          "краб",
-          "моллюск",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-017",
@@ -791,17 +631,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 17,
-        "rawIngredients": [
-          "морепродукты (фиолетовое качество)",
-          "рис",
-          null,
-          null
-        ],
-        "rawEffect": "Бесшумная поступь I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-018",
@@ -821,17 +651,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 18,
-        "rawIngredients": [
-          "рыба",
-          "зерновые",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-019",
@@ -848,17 +668,7 @@
           "quantity": 2,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 19,
-        "rawIngredients": [
-          "рис",
-          "рис",
-          null,
-          null
-        ],
-        "rawEffect": "Мощный удар I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-020",
@@ -875,17 +685,7 @@
           "quantity": 2,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 20,
-        "rawIngredients": [
-          "зерновые",
-          "зерновые",
-          null,
-          null
-        ],
-        "rawEffect": "Мощный удар I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-021",
@@ -911,17 +711,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 21,
-        "rawIngredients": [
-          "пшеница",
-          "рис",
-          "молоко",
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-022",
@@ -944,17 +734,7 @@
           "quantity": 1,
           "quality": "purple"
         }
-      ],
-      "source": {
-        "row": 22,
-        "rawIngredients": [
-          "пшеница",
-          "овощ (фиолетовое качество)",
-          "пшеница",
-          null
-        ],
-        "rawEffect": "Большой размах I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-023",
@@ -983,17 +763,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 23,
-        "rawIngredients": [
-          "пресноводная рыба (фиолетовое качество)",
-          "рис",
-          "овощ",
-          null
-        ],
-        "rawEffect": "Рыбацкая сноровка II"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-024",
@@ -1016,17 +786,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 24,
-        "rawIngredients": [
-          "мясо/рыба/морепродукты (фиолетовое качество)",
-          "зерновые",
-          null,
-          null
-        ],
-        "rawEffect": "Быстрое рыхление II"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-025",
@@ -1046,17 +806,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 25,
-        "rawIngredients": [
-          "овощ",
-          "зерновые",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-026",
@@ -1076,17 +826,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 26,
-        "rawIngredients": [
-          "моллюск",
-          "зерновые",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-027",
@@ -1106,17 +846,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 27,
-        "rawIngredients": [
-          "морепродукт",
-          "зерновые",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-028",
@@ -1142,17 +872,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 28,
-        "rawIngredients": [
-          "пшеница",
-          "клубника",
-          "молоко",
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-029",
@@ -1181,17 +901,7 @@
           "quantity": 1,
           "quality": "purple"
         }
-      ],
-      "source": {
-        "row": 29,
-        "rawIngredients": [
-          "рыба",
-          "зерновые",
-          "креветка (фиолетовое качество)",
-          null
-        ],
-        "rawEffect": "Рыбацкая сноровка"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-030",
@@ -1205,17 +915,7 @@
           "quantity": 2,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 30,
-        "rawIngredients": [
-          "морепродукт",
-          "морепродукт",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-031",
@@ -1235,17 +935,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 31,
-        "rawIngredients": [
-          "морская рыба",
-          "креветка",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-032",
@@ -1265,17 +955,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 32,
-        "rawIngredients": [
-          "фрукт",
-          "цветок",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-033",
@@ -1298,17 +978,7 @@
           "quantity": 1,
           "quality": "purple"
         }
-      ],
-      "source": {
-        "row": 33,
-        "rawIngredients": [
-          "фрукт",
-          "пшеница (фиолетовое качество)",
-          null,
-          null
-        ],
-        "rawEffect": "Большой размах I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-034",
@@ -1337,17 +1007,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 34,
-        "rawIngredients": [
-          "баклажан (фиолетовое качество)",
-          "острый перчик",
-          "рис",
-          null
-        ],
-        "rawEffect": "Большой размах I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-035",
@@ -1376,17 +1036,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 35,
-        "rawIngredients": [
-          "пшеница (фиолетовое качество)",
-          "морепродукты",
-          "овощ",
-          null
-        ],
-        "rawEffect": "Быстрое рыхление II"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-036",
@@ -1415,17 +1065,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 36,
-        "rawIngredients": [
-          "помидор",
-          "рыба",
-          "пшеница",
-          null
-        ],
-        "rawEffect": "Рыбацкая сноровка I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-037",
@@ -1454,17 +1094,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 37,
-        "rawIngredients": [
-          "фрукт",
-          "морепродукты (фиолетовое качество)",
-          "мясо",
-          null
-        ],
-        "rawEffect": "Бесшумная поступь I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-038",
@@ -1487,17 +1117,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 38,
-        "rawIngredients": [
-          "зерновые (фиолетовое качество)",
-          "молоко",
-          null,
-          null
-        ],
-        "rawEffect": "Быстрое рыхление I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-039",
@@ -1517,17 +1137,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 39,
-        "rawIngredients": [
-          "зерновые",
-          "яйцо",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-040",
@@ -1553,17 +1163,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 40,
-        "rawIngredients": [
-          "красный фрукт",
-          "зелёный овощ",
-          "желтый фрукт",
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-041",
@@ -1598,17 +1198,7 @@
           "quantity": 1,
           "quality": null
         }
-      ],
-      "source": {
-        "row": 41,
-        "rawIngredients": [
-          "пшеница",
-          "гриб",
-          "овощ",
-          "???"
-        ],
-        "rawEffect": "Мощный удар I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-042",
@@ -1628,17 +1218,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 42,
-        "rawIngredients": [
-          "краб",
-          "пшеница",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-043",
@@ -1658,16 +1238,7 @@
           "quantity": 2,
           "quality": null
         }
-      ],
-      "source": {
-        "row": 43,
-        "rawIngredients": [
-          "бамбук",
-          "???",
-          "???"
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-044",
@@ -1702,17 +1273,7 @@
           "quantity": 1,
           "quality": null
         }
-      ],
-      "source": {
-        "row": 44,
-        "rawIngredients": [
-          "морковь",
-          "помидор",
-          "капуста",
-          "???"
-        ],
-        "rawEffect": "Быстрое рыхление III"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-045",
@@ -1732,17 +1293,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 45,
-        "rawIngredients": [
-          "рис",
-          "овощ",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-046",
@@ -1762,17 +1313,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 46,
-        "rawIngredients": [
-          "пресноводная рыба",
-          "овощ",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-047",
@@ -1795,17 +1336,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 47,
-        "rawIngredients": [
-          "рыба (фиолетовое качество)",
-          "рыба",
-          null,
-          null
-        ],
-        "rawEffect": "Рыбацкая сноровка II"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-048",
@@ -1828,17 +1359,7 @@
           "quantity": 1,
           "quality": "purple"
         }
-      ],
-      "source": {
-        "row": 48,
-        "rawIngredients": [
-          "фрукт",
-          "рыба (фиолетовое качество)",
-          null,
-          null
-        ],
-        "rawEffect": "Рыбацкая сноровка I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-049",
@@ -1858,17 +1379,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 49,
-        "rawIngredients": [
-          "гриб",
-          "рыба",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-050",
@@ -1882,17 +1393,7 @@
           "quantity": 2,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 50,
-        "rawIngredients": [
-          "рыба",
-          "рыба",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-051",
@@ -1912,17 +1413,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 51,
-        "rawIngredients": [
-          "рыба",
-          "ананас",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-052",
@@ -1945,17 +1436,7 @@
           "quantity": 2,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 52,
-        "rawIngredients": [
-          "рыба (фиолетовое качество)",
-          "бамбук",
-          "бамбук",
-          null
-        ],
-        "rawEffect": "Рыбацкая сноровка I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-053",
@@ -1984,17 +1465,7 @@
           "quantity": 1,
           "quality": null
         }
-      ],
-      "source": {
-        "row": 53,
-        "rawIngredients": [
-          "зеленый овощ",
-          "красный овощ",
-          "??? рыба качества выше фиолетовой?",
-          null
-        ],
-        "rawEffect": "Рыбацкая сноровка II"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-054",
@@ -2029,17 +1500,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 54,
-        "rawIngredients": [
-          "лобстер (фиолетовое качество)",
-          "пресноводная рыба",
-          "моллюск",
-          "гриб"
-        ],
-        "rawEffect": "Рыбацкая сноровка II"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-055",
@@ -2074,17 +1535,7 @@
           "quantity": 1,
           "quality": null
         }
-      ],
-      "source": {
-        "row": 55,
-        "rawIngredients": [
-          "рыба (золотое качество)",
-          "рис",
-          "овощ",
-          "???"
-        ],
-        "rawEffect": "Рыбацкая сноровка III"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-056",
@@ -2104,17 +1555,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 56,
-        "rawIngredients": [
-          "пшеница",
-          "овощ",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-057",
@@ -2128,17 +1569,7 @@
           "quantity": 2,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 57,
-        "rawIngredients": [
-          "пшеница",
-          "пшеница",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-058",
@@ -2167,17 +1598,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 58,
-        "rawIngredients": [
-          "кукуруза (фиолетовое качество)",
-          "овощ",
-          "гриб",
-          null
-        ],
-        "rawEffect": "Быстрое рыхление I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-059",
@@ -2206,17 +1627,7 @@
           "quantity": 1,
           "quality": "purple"
         }
-      ],
-      "source": {
-        "row": 59,
-        "rawIngredients": [
-          "рыба",
-          "овощ",
-          "пшеница (фиолетовое качество)",
-          null
-        ],
-        "rawEffect": "Быстрое рыхление II"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-060",
@@ -2245,17 +1656,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 60,
-        "rawIngredients": [
-          "морская рыба (фиолетовое качество)",
-          "креветка",
-          "моллюск",
-          null
-        ],
-        "rawEffect": "Рыбацкая сноровка I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-061",
@@ -2278,17 +1679,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 61,
-        "rawIngredients": [
-          "помидор",
-          "лобстер",
-          null,
-          null
-        ],
-        "rawEffect": "Большой размах I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-062",
@@ -2308,17 +1699,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 62,
-        "rawIngredients": [
-          "помидор",
-          "пресноводная рыба",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-063",
@@ -2353,17 +1734,7 @@
           "quantity": 1,
           "quality": null
         }
-      ],
-      "source": {
-        "row": 63,
-        "rawIngredients": [
-          "зеленый овощ",
-          "красный овощ",
-          "желтый овощ",
-          "???"
-        ],
-        "rawEffect": "Большой размах II"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-064",
@@ -2398,17 +1769,7 @@
           "quantity": 1,
           "quality": null
         }
-      ],
-      "source": {
-        "row": 64,
-        "rawIngredients": [
-          "желтый фрукт",
-          "зеленый фрукт",
-          "красный фрукт",
-          "???"
-        ],
-        "rawEffect": "Большой размах II"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-065",
@@ -2431,17 +1792,7 @@
           "quantity": 1,
           "quality": "purple"
         }
-      ],
-      "source": {
-        "row": 65,
-        "rawIngredients": [
-          "мясо",
-          "морковь (фиолетовое качество)",
-          null,
-          null
-        ],
-        "rawEffect": "Мощный удар I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-066",
@@ -2467,17 +1818,7 @@
           "quantity": 1,
           "quality": null
         }
-      ],
-      "source": {
-        "row": 66,
-        "rawIngredients": [
-          "желтый фрукт",
-          "красный фрукт",
-          "???",
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-067",
@@ -2497,17 +1838,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 67,
-        "rawIngredients": [
-          "фрукт",
-          "овощ",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-068",
@@ -2530,17 +1861,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 68,
-        "rawIngredients": [
-          "фрукт (фиолетовое качество)",
-          "овощ",
-          null,
-          null
-        ],
-        "rawEffect": "Быстрое рыхление I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-069",
@@ -2566,17 +1887,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 69,
-        "rawIngredients": [
-          "рис",
-          "яблоко",
-          "слива",
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-070",
@@ -2602,17 +1913,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 70,
-        "rawIngredients": [
-          "авокадо",
-          "плод кактуса",
-          "манго",
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-071",
@@ -2632,17 +1933,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 71,
-        "rawIngredients": [
-          "фрукт",
-          "рыба",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-072",
@@ -2671,17 +1962,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 72,
-        "rawIngredients": [
-          "дыня (фиолетовое качество) ???",
-          "пшеница",
-          "цветок",
-          null
-        ],
-        "rawEffect": "Большой размах I"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-073",
@@ -2701,17 +1982,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 73,
-        "rawIngredients": [
-          "дыня",
-          "дыня",
-          "цветок",
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-074",
@@ -2740,17 +2011,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 74,
-        "rawIngredients": [
-          "чеснок (фиолетовое качество)",
-          "молоко",
-          "зерновые",
-          null
-        ],
-        "rawEffect": "Быстрое рыхление II"
-      }
+      ]
     },
     {
       "id": "recipe-sheet-075",
@@ -2770,17 +2031,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 75,
-        "rawIngredients": [
-          "гриб",
-          "овощ",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-076",
@@ -2800,17 +2051,7 @@
           "quantity": 1,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 76,
-        "rawIngredients": [
-          "фрукт",
-          "зерновые",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     },
     {
       "id": "recipe-sheet-077",
@@ -2824,17 +2065,7 @@
           "quantity": 2,
           "quality": "normal"
         }
-      ],
-      "source": {
-        "row": 77,
-        "rawIngredients": [
-          "фрукт",
-          "фрукт",
-          null,
-          null
-        ],
-        "rawEffect": null
-      }
+      ]
     }
   ]
 }
