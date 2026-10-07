@@ -9,11 +9,21 @@ import {
 } from "@/app/components/ui/card";
 import { getRequestLocale } from "@/lib/i18n";
 import recipeData from "@/lib/recipes.json";
+import { siteUrl } from "@/lib/site";
 import * as m from "@/paraglide/messages.js";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
   const locale = await getRequestLocale(params);
-  return { title: m.recipes_title({}, { locale }) };
+  return {
+    title: m.recipes_title({}, { locale }),
+    alternates: {
+      canonical: `${siteUrl}/${locale}`,
+      languages: {
+        ru: `${siteUrl}/ru`,
+        en: `${siteUrl}/en`,
+      },
+    },
+  };
 }
 
 export default async function RecipesPage({ params }: PageProps<"/[locale]">) {

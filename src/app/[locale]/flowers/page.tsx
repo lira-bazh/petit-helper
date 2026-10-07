@@ -9,12 +9,22 @@ import { Card, CardContent } from "@/app/components/ui/card";
 import { getRequestLocale } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import flowerData from "@/lib/flowers.json";
+import { siteUrl } from "@/lib/site";
 import * as m from "@/paraglide/messages.js";
 import sunflowerRed from "../../../../public/images/flowers/sunflower-red.webp";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/flowers">): Promise<Metadata> {
   const locale = await getRequestLocale(params);
-  return { title: m.flowers_title({}, { locale }) };
+  return {
+    title: m.flowers_title({}, { locale }),
+    alternates: {
+      canonical: `${siteUrl}/${locale}/flowers`,
+      languages: {
+        ru: `${siteUrl}/ru/flowers`,
+        en: `${siteUrl}/en/flowers`,
+      },
+    },
+  };
 }
 
 export default async function FlowersPage({ params }: PageProps<"/[locale]/flowers">) {
