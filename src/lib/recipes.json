@@ -1942,6 +1942,44 @@
       ]
     },
     {
+      "id": "spicy-lobster-soup",
+      "name": {
+        "ru": "Острый суп с лобстером",
+        "en": "Spicy Lobster Soup",
+        "fr": "Soupe de homard épicée",
+        "es": "Sopa picante de langosta",
+        "de": "Scharfe Hummersuppe",
+        "it": "Zuppa piccante di aragosta",
+        "pt": "Sopa picante de lagosta"
+      },
+      "image": null,
+      "power": null,
+      "effect": {
+        "effectId": "lightfoot",
+        "level": 2
+      },
+      "ingredients": [
+        {
+          "type": "category",
+          "category": "fruit",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "chili-pepper",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
+          "ingredientId": "lobster",
+          "quantity": 1,
+          "quality": "purple"
+        }
+      ]
+    },
+    {
       "id": "rice-cake-noodles-with-veggies-and-mushrooms",
       "name": {
         "ru": "Рамен с клёцками, овощами и грибами",
@@ -1967,6 +2005,12 @@
         },
         {
           "type": "ingredient",
+          "ingredientId": "rice",
+          "quantity": 1,
+          "quality": "normal"
+        },
+        {
+          "type": "ingredient",
           "ingredientId": "mushroom",
           "quantity": 1,
           "quality": "normal"
@@ -1976,12 +2020,6 @@
           "category": "vegetable",
           "quantity": 1,
           "quality": "normal"
-        },
-        {
-          "type": "unknown",
-          "raw": "???",
-          "quantity": 1,
-          "quality": null
         }
       ]
     },

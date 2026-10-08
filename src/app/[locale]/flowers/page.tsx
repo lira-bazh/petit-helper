@@ -41,7 +41,7 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
     const speciesCrosses = crosses.filter((cross) => cross.result.speciesId === species.id);
     const whiteFlowers = flowers.filter((flower) => flower.speciesId === species.id && flower.quality === "white");
     return speciesCrosses.length > 0 ? [{ species, whiteFlowers, crosses: speciesCrosses }] : [];
-  });
+  }).sort((a, b) => b.crosses.length - a.crosses.length);
 
   return (
     <main

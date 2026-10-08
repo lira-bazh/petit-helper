@@ -43,14 +43,16 @@ export default async function RecipesPage({ params }: PageProps<"/[locale]">) {
           content: (
             <Card className="h-full">
               <CardHeader className="flex flex-row items-center gap-3">
-                <Image
-                  src={recipe.image}
-                  alt=""
-                  width={48}
-                  height={48}
-                  sizes="(max-width: 639px) 32px, 48px"
-                  className="h-8 w-8 shrink-0 object-contain sm:h-12 sm:w-12"
-                />
+                {recipe.image && (
+                  <Image
+                    src={recipe.image}
+                    alt=""
+                    width={48}
+                    height={48}
+                    sizes="(max-width: 639px) 32px, 48px"
+                    className="h-8 w-8 shrink-0 object-contain sm:h-12 sm:w-12"
+                  />
+                )}
                 <div className="min-w-0 space-y-1">
                   <CardTitle>
                     <h2>{recipe.name[locale]}</h2>

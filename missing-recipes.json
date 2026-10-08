@@ -1,0 +1,1455 @@
+{
+  "source": {
+    "file": "GenerateAssets/ed.obb",
+    "branch": "live_0.95",
+    "revision": 1217551
+  },
+  "comparison": "English names, ignoring case and punctuation; sharing portions remain separate",
+  "counts": {
+    "game": 170,
+    "database": 77,
+    "dishes": 41,
+    "sharing": 52
+  },
+  "unmatchedDatabaseNames": [],
+  "dishes": [
+    {
+      "name": {
+        "ru": "Сказочное пляжное креветочно-рыбное вок-ассорти",
+        "en": "Dreamy Coast Seafood Feast"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочное пляжное креветочно-рыбное вок-ассорти",
+        "en": "Recipe: Dreamy Coast Seafood Feast"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161331276,
+        "ruStringOffset": 161331776,
+        "dishNameTableOffset": 161470988
+      }
+    },
+    {
+      "name": {
+        "ru": "Паровой омлет с морским ежом",
+        "en": "Urchin Shell Steamed Egg"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: паровой омлет с морским ежом",
+        "en": "Recipe: Urchin Shell Steamed Egg"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161329932,
+        "ruStringOffset": 161330336,
+        "dishNameTableOffset": 161469528
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный овощной пир-гурмэ",
+        "en": "Dreamy Garden's Bounty Feast"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный овощной пир-гурмэ",
+        "en": "Recipe: Dreamy Garden's Bounty Feast"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161324948,
+        "ruStringOffset": 161325396,
+        "dishNameTableOffset": 161465640
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочная тарелка-ассорти морепродуктов и моллюсков",
+        "en": "Dreamy Shellfish & Seafood Platter"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочная тарелка-ассорти морепродуктов и моллюсков",
+        "en": "Recipe: Dreamy Shellfish & Seafood Platter"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161321720,
+        "ruStringOffset": 161322180,
+        "dishNameTableOffset": 161462628
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочная тарелка морской рыбы",
+        "en": "Dreamy Fish Trio"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочная тарелка морской рыбы",
+        "en": "Recipe: Dreamy Fish Trio"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161318636,
+        "ruStringOffset": 161319084,
+        "dishNameTableOffset": 161460208
+      }
+    },
+    {
+      "name": {
+        "ru": "Рисовая булочка кабуто",
+        "en": "Kabuto Rice Bun"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: Рисовая булочка кабуто",
+        "en": "Secret Recipe: Kabuto Rice Bun"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161317080,
+        "ruStringOffset": 161317468,
+        "dishNameTableOffset": 161459148
+      }
+    },
+    {
+      "name": {
+        "ru": "Грибное мясо на гриле",
+        "en": "BBQ Meatshrooms"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: Грибное мясо на гриле",
+        "en": "Secret Recipe: BBQ Meatshrooms"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161316324,
+        "ruStringOffset": 161316736,
+        "dishNameTableOffset": 161458640
+      }
+    },
+    {
+      "name": {
+        "ru": "Тушёный кордицепс",
+        "en": "Caterpillar Fungus Herbal Remedy"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: Тушёный кордицепс",
+        "en": "Secret Recipe: Caterpillar Fungus Herbal Remedy"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161315472,
+        "ruStringOffset": 161315924,
+        "dishNameTableOffset": 161458028
+      }
+    },
+    {
+      "name": {
+        "ru": "Пирог с карамелизованными фруктами",
+        "en": "Glistening Fruit Pie"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: Пирог с карамелизованными фруктами",
+        "en": "Secret Recipe: Glistening Fruit Pie"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161314660,
+        "ruStringOffset": 161315088,
+        "dishNameTableOffset": 161457008
+      }
+    },
+    {
+      "name": {
+        "ru": "Редкое ассорти в горшочке",
+        "en": "Rare Assorted Claypot Stew"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: редкое ассорти в горшочке",
+        "en": "Recipe: Rare Assorted Claypot Stew"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161311308,
+        "ruStringOffset": 161311740,
+        "dishNameTableOffset": 161454540
+      }
+    },
+    {
+      "name": {
+        "ru": "Домашнее ассорти в горшочке",
+        "en": "Homestyle Assorted Claypot Stew"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: домашнее ассорти в горшочке",
+        "en": "Recipe: Homestyle Assorted Claypot Stew"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161309944,
+        "ruStringOffset": 161310404,
+        "dishNameTableOffset": 161453488
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочное рагу-ассорти в горшочке",
+        "en": "Dreamy Claypot Medley"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочное рагу-ассорти в горшочке",
+        "en": "Recipe: Dreamy Claypot Medley"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161309152,
+        "ruStringOffset": 161309568,
+        "dishNameTableOffset": 161452840
+      }
+    },
+    {
+      "name": {
+        "ru": "Фруктовый чай с вафлей",
+        "en": "Waffle Fruit Tea"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: фруктовый чай с вафлей",
+        "en": "Recipe: Waffle Fruit Tea"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161307772,
+        "ruStringOffset": 161308152,
+        "dishNameTableOffset": 161451868
+      }
+    },
+    {
+      "name": {
+        "ru": "Новогодние пельмени",
+        "en": "Spring Revel Dumplings"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: новогодние пельмени",
+        "en": "Recipe: Spring Revel Dumplings"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161307140,
+        "ruStringOffset": 161307484,
+        "dishNameTableOffset": 161450940
+      }
+    },
+    {
+      "name": {
+        "ru": "Новогодние рисовые клёцки",
+        "en": "Spring Revel Tangyuan"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: новогодние рисовые клёцки",
+        "en": "Recipe: Spring Revel Tangyuan"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161306492,
+        "ruStringOffset": 161306836,
+        "dishNameTableOffset": 161450464
+      }
+    },
+    {
+      "name": {
+        "ru": "Праздничный рисовый бисквит",
+        "en": "Baa-rilliant Cake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Праздничный рисовый бисквит",
+        "en": "Recipe: Baa-rilliant Cake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161305800,
+        "ruStringOffset": 161306188,
+        "dishNameTableOffset": 161449940
+      }
+    },
+    {
+      "name": {
+        "ru": "Праздничная уха",
+        "en": "Net Fortune Braised Fish"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Праздничная уха",
+        "en": "Recipe: Net Fortune Braised Fish"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161305144,
+        "ruStringOffset": 161305516,
+        "dishNameTableOffset": 161449448
+      }
+    },
+    {
+      "name": {
+        "ru": "Рагу из трёх овощей",
+        "en": "Di San Xian"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: рагу из трёх овощей",
+        "en": "Secret Recipe: Di San Xian"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161304476,
+        "ruStringOffset": 161304808,
+        "dishNameTableOffset": 161449000
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный золотистый жареный рис",
+        "en": "Dreamy Golden Fried Rice"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный золотистый жареный рис",
+        "en": "Recipe: Dreamy Golden Fried Rice"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161301468,
+        "ruStringOffset": 161301868,
+        "dishNameTableOffset": 161446116
+      }
+    },
+    {
+      "name": {
+        "ru": "Персиковая булочка с апельсином",
+        "en": "Citrus Peach Bun"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: персиковая булочка с апельсином",
+        "en": "Secret Recipe: Citrus Peach Bun"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161300664,
+        "ruStringOffset": 161301088,
+        "dishNameTableOffset": 161445112
+      }
+    },
+    {
+      "name": {
+        "ru": "Пёстрая персиковая булочка",
+        "en": "Pandan Peach Bun"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: пёстрая персиковая булочка",
+        "en": "Secret Recipe: Pandan Peach Bun"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161299884,
+        "ruStringOffset": 161300280,
+        "dishNameTableOffset": 161444552
+      }
+    },
+    {
+      "name": {
+        "ru": "Персиковая булочка с черникой",
+        "en": "Blueberry Peach Bun"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: персиковая булочка с черникой",
+        "en": "Secret Recipe: Blueberry Peach Bun"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161299048,
+        "ruStringOffset": 161299488,
+        "dishNameTableOffset": 161443944
+      }
+    },
+    {
+      "name": {
+        "ru": "Морской йогурт",
+        "en": "Tidal Wave Yogurt"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: морской йогурт",
+        "en": "Secret Recipe: Tidal Wave Yogurt"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161291184,
+        "ruStringOffset": 161291564,
+        "dishNameTableOffset": 161436280
+      }
+    },
+    {
+      "name": {
+        "ru": "Коктейль со сказочной маракуйей",
+        "en": "Dreamy Passionfruit Splash"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: коктейль со сказочной маракуйей",
+        "en": "Recipe: Dreamy Passionfruit Splash"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161290316,
+        "ruStringOffset": 161290784,
+        "dishNameTableOffset": 161435564
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный чесночный чудо-лобстер",
+        "en": "Dreamy Miracle Garlic Lobster"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный чесночный чудо-лобстер",
+        "en": "Recipe: Dreamy Miracle Garlic Lobster"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161281156,
+        "ruStringOffset": 161281632,
+        "dishNameTableOffset": 161423300
+      }
+    },
+    {
+      "name": {
+        "ru": "Облачное печенье",
+        "en": "Cloudlet Cookies"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: Облачное печенье",
+        "en": "Secret Recipe: Cloudlet Cookies"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161272312,
+        "ruStringOffset": 161272664,
+        "dishNameTableOffset": 161416556
+      }
+    },
+    {
+      "name": {
+        "ru": "Фруктовый пончик",
+        "en": "Fruit Fiesta Donut"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: фруктовый пончик",
+        "en": "Secret Recipe: Fruit Fiesta Donut"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161271584,
+        "ruStringOffset": 161271972,
+        "dishNameTableOffset": 161416076
+      }
+    },
+    {
+      "name": {
+        "ru": "Персиковая булочка «Алая кисть»",
+        "en": "Crimson Tassel Peach Bun"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: персиковая булочка «Алая кисть»",
+        "en": "Secret Recipe: Crimson Tassel Peach Bun"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161270748,
+        "ruStringOffset": 161271164,
+        "dishNameTableOffset": 161415456
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный клубничный шорткейк",
+        "en": "Dreamy Strawberry Shortcake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный клубничный шорткейк",
+        "en": "Recipe: Dreamy Strawberry Shortcake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161269908,
+        "ruStringOffset": 161270372,
+        "dishNameTableOffset": 161414784
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный черничный пирог путешественника",
+        "en": "Dreamy Stargazy Blueberry Pie"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный черничный пирог путешественника",
+        "en": "Recipe: Dreamy Stargazy Blueberry Pie"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161269016,
+        "ruStringOffset": 161269480,
+        "dishNameTableOffset": 161414052
+      }
+    },
+    {
+      "name": {
+        "ru": "Муссовый клубничный торт",
+        "en": "Strawberry Mousse Cake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: муссовый клубничный торт",
+        "en": "Recipe: Strawberry Mousse Cake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161267444,
+        "ruStringOffset": 161267864,
+        "dishNameTableOffset": 161412824
+      }
+    },
+    {
+      "name": {
+        "ru": "Торт «Солнечный ананас»",
+        "en": "Sunny Pineapple Cake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: торт «Солнечный ананас»",
+        "en": "Recipe: Sunny Pineapple Cake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161266724,
+        "ruStringOffset": 161267128,
+        "dishNameTableOffset": 161412260
+      }
+    },
+    {
+      "name": {
+        "ru": "Большой пшеничный торт",
+        "en": "Golden Wheat Cake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: классический пшеничный пирог",
+        "en": "Recipe: Golden Wheat Cake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161266000,
+        "ruStringOffset": 161266404,
+        "dishNameTableOffset": 158897896
+      }
+    },
+    {
+      "name": {
+        "ru": "Имбирное печенье",
+        "en": "Gingerbread Cookie"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: имбирное печенье",
+        "en": "Recipe: Gingerbread Cookie"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161265356,
+        "ruStringOffset": 161265728,
+        "dishNameTableOffset": 161411220
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный суп-лапша с помидорами",
+        "en": "Dreamy Tomato Noodle Soup"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный суп-лапша с помидорами",
+        "en": "Recipe: Dreamy Tomato Noodle Soup"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161258728,
+        "ruStringOffset": 161259160,
+        "dishNameTableOffset": 161406024
+      }
+    },
+    {
+      "name": {
+        "ru": "Домашний коктейль",
+        "en": "Homestyle Blend"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: домашний коктейль",
+        "en": "Recipe: Homestyle Blend"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161199620,
+        "ruStringOffset": 161200044,
+        "dishNameTableOffset": 161396668
+      }
+    },
+    {
+      "name": {
+        "ru": "Редкий коктейль",
+        "en": "Rare Blend"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: редкий коктейль",
+        "en": "Recipe: Rare Blend"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161198944,
+        "ruStringOffset": 161199356,
+        "dishNameTableOffset": 161396164
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный коктейль",
+        "en": "Dreamy Blend"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный коктейль",
+        "en": "Recipe: Dreamy Blend"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161198248,
+        "ruStringOffset": 161198660,
+        "dishNameTableOffset": 161395632
+      }
+    },
+    {
+      "name": {
+        "ru": "Домашнее барбекю-ассорти",
+        "en": "Homestyle Mixed Grill"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: домашнее барбекю-ассорти",
+        "en": "Recipe: Homestyle Mixed Grill"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161197484,
+        "ruStringOffset": 161197920,
+        "dishNameTableOffset": 161395032
+      }
+    },
+    {
+      "name": {
+        "ru": "Редкое окономияки-ассорти",
+        "en": "Rare Mixed Grill"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: редкое окономияки-ассорти",
+        "en": "Recipe: Rare Mixed Grill"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161196752,
+        "ruStringOffset": 161197172,
+        "dishNameTableOffset": 161394472
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочное ассорти-гриль",
+        "en": "Dreamy Mixed Grill"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочное ассорти-гриль",
+        "en": "Recipe: Dreamy Mixed Grill"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161195988,
+        "ruStringOffset": 161196424,
+        "dishNameTableOffset": 161393884
+      }
+    }
+  ],
+  "sharing": [
+    {
+      "name": {
+        "ru": "нежный фруктово-цветочный чай [на компанию]",
+        "en": "Blissful Blossom Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: нежный фруктово-цветочный чай [на компанию]",
+        "en": "Blissful Blossom Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161257252,
+        "ruStringOffset": 161257744
+      }
+    },
+    {
+      "name": {
+        "ru": "ароматный дынный чай [Для компании]",
+        "en": "Mellow Melon Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: ароматный дынный чай [Для компании]",
+        "en": "Mellow Melon Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161256392,
+        "ruStringOffset": 161256828
+      }
+    },
+    {
+      "name": {
+        "ru": "ароматный фруктовый чай 【на компанию】",
+        "en": "Fragrant Fruit Fusion Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: ароматный фруктовый чай 【на компанию】",
+        "en": "Fragrant Fruit Fusion Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161255396,
+        "ruStringOffset": 161255928
+      }
+    },
+    {
+      "name": {
+        "ru": "рыбной солянки [Для компании]",
+        "en": "Catch of the Day Soup (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт рыбной солянки [Для компании]",
+        "en": "Catch of the Day Soup Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161254476,
+        "ruStringOffset": 161254964
+      }
+    },
+    {
+      "name": {
+        "ru": "морепродукты на пару [на компанию]",
+        "en": "Steamed Seafood (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: морепродукты на пару [на компанию]",
+        "en": "Steamed Seafood Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161253628,
+        "ruStringOffset": 161254060
+      }
+    },
+    {
+      "name": {
+        "ru": "жареные овощи [на компанию]",
+        "en": "Veggie Stir-Fry (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: жареные овощи [на компанию]",
+        "en": "Veggie Stir-Fry Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161252824,
+        "ruStringOffset": 161253240
+      }
+    },
+    {
+      "name": {
+        "ru": "облачная каша [на компанию]",
+        "en": "Cloud Nine Congee (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: облачная каша [на компанию]",
+        "en": "Cloud Nine Congee Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161251980,
+        "ruStringOffset": 161252412
+      }
+    },
+    {
+      "name": {
+        "ru": "рагу свежего ветра [На компанию]",
+        "en": "Seabreeze Stew (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт рагу свежего ветра [На компанию]",
+        "en": "Seabreeze Stew Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161251100,
+        "ruStringOffset": 161251552
+      }
+    },
+    {
+      "name": {
+        "ru": "уютный суп из лобстера [Для компании]",
+        "en": "Hearty Lobster Bisque (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: уютный суп из лобстера [Для компании]",
+        "en": "Hearty Lobster Bisque Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161250088,
+        "ruStringOffset": 161250644
+      }
+    },
+    {
+      "name": {
+        "ru": "фруктово-овощного салата [на компанию]",
+        "en": "Field & Orchard Salad (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт фруктово-овощного салата [на компанию]",
+        "en": "Field & Orchard Salad Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161249160,
+        "ruStringOffset": 161249640
+      }
+    },
+    {
+      "name": {
+        "ru": "каша по-деревенски «Хэся» [На компанию]",
+        "en": "Hexia Country-Style Congee (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: каша по-деревенски «Хэся» [На компанию]",
+        "en": "Hexia Country-Style Congee Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161248148,
+        "ruStringOffset": 161248676
+      }
+    },
+    {
+      "name": {
+        "ru": "суши темаки [на компанию]",
+        "en": "Temaki Sushi (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт суши темаки [на компанию]",
+        "en": "Temaki Sushi Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161247324,
+        "ruStringOffset": 161247780
+      }
+    },
+    {
+      "name": {
+        "ru": "хрустящего яблочного краба [на компанию]",
+        "en": "Crispy Apple Crab (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт хрустящего яблочного краба [на компанию]",
+        "en": "Crispy Apple Crab Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161246364,
+        "ruStringOffset": 161246852
+      }
+    },
+    {
+      "name": {
+        "ru": "моряцкий суп [На компанию]",
+        "en": "Full Sail Shrimp & Fish Soup (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: моряцкий суп [На компанию]",
+        "en": "Full Sail Shrimp & Fish Soup Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161245344,
+        "ruStringOffset": 161245876
+      }
+    },
+    {
+      "name": {
+        "ru": "салата из медузы и свежих грибов [Большая порция]",
+        "en": "Mushroom & Jellyfish Salad (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт салата из медузы и свежих грибов [Большая порция]",
+        "en": "Mushroom & Jellyfish Salad Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161244316,
+        "ruStringOffset": 161244864
+      }
+    },
+    {
+      "name": {
+        "ru": "каша с моллюсками [Большая порция]",
+        "en": "Shellfish Congee (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: каша с моллюсками [Большая порция]",
+        "en": "Shellfish Congee Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161243464,
+        "ruStringOffset": 161243880
+      }
+    },
+    {
+      "name": {
+        "ru": "тарелка с морским ежом и крабом [на компанию]",
+        "en": "Sea Urchin & Crab Platter (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: тарелка с морским ежом и крабом [на компанию]",
+        "en": "Sea Urchin & Crab Platter Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161242452,
+        "ruStringOffset": 161242976
+      }
+    },
+    {
+      "name": {
+        "ru": "Жареные грибы с моллюсками [Большая порция]",
+        "en": "Mushrooms & Shellfish Stir-Fry (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Жареные грибы с моллюсками [Большая порция]",
+        "en": "Mushrooms & Shellfish Stir-Fry Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161241460,
+        "ruStringOffset": 161241956
+      }
+    },
+    {
+      "name": {
+        "ru": "каша с морепродуктами (на компанию)",
+        "en": "Seafood Congee (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: каша с морепродуктами (на компанию)",
+        "en": "Seafood Congee Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161240588,
+        "ruStringOffset": 161241012
+      }
+    },
+    {
+      "name": {
+        "ru": "Грибная каша [На компанию]",
+        "en": "Mushroom Congee (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Грибная каша [На компанию]",
+        "en": "Mushroom Congee Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161239776,
+        "ruStringOffset": 161240192
+      }
+    },
+    {
+      "name": {
+        "ru": "рис с фруктами [Для компании]",
+        "en": "Fruit Rice Bowl (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рис с фруктами [Для компании]",
+        "en": "Fruit Rice Bowl Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161238920,
+        "ruStringOffset": 161239376
+      }
+    },
+    {
+      "name": {
+        "ru": "риса с рыбой на пару 【Для компании】",
+        "en": "Steamed Fish with Rice (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт риса с рыбой на пару 【Для компании】",
+        "en": "Steamed Fish with Rice Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161238020,
+        "ruStringOffset": 161238476
+      }
+    },
+    {
+      "name": {
+        "ru": "рыба в фруктовом соусе [На компанию]",
+        "en": "Fruity Fish Soup (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рыба в фруктовом соусе [На компанию]",
+        "en": "Fruity Fish Soup Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161237100,
+        "ruStringOffset": 161237584
+      }
+    },
+    {
+      "name": {
+        "ru": "Фруктовые креветки с помидорами [На компанию]",
+        "en": "Tangy Tomato Shrimp (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Фруктовые креветки с помидорами [На компанию]",
+        "en": "Tangy Tomato Shrimp Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161236100,
+        "ruStringOffset": 161236636
+      }
+    },
+    {
+      "name": {
+        "ru": "дынный пирог [Большая порция]",
+        "en": "Sweet Melon Pie (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: дынный пирог [Большая порция]",
+        "en": "Sweet Melon Pie Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161235212,
+        "ruStringOffset": 161235664
+      }
+    },
+    {
+      "name": {
+        "ru": "Рыба с фруктами в горшочке [для компании]",
+        "en": "Fruit-Infused Fish Stew (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Рыба с фруктами в горшочке [для компании]",
+        "en": "Fruit-Infused Fish Stew Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161234232,
+        "ruStringOffset": 161234740
+      }
+    },
+    {
+      "name": {
+        "ru": "большое рыбное ассорти [для компании]",
+        "en": "Fancy Fish Feast (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: большое рыбное ассорти [для компании]",
+        "en": "Fancy Fish Feast Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161233352,
+        "ruStringOffset": 161233812
+      }
+    },
+    {
+      "name": {
+        "ru": "огромного морского набора [на компанию]",
+        "en": "Mighty Seafood Feast (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт огромного морского набора [на компанию]",
+        "en": "Mighty Seafood Feast Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161232344,
+        "ruStringOffset": 161232868
+      }
+    },
+    {
+      "name": {
+        "ru": "рыбный суп с бамбуком [на компанию]",
+        "en": "Bamboo Infused Fish Soup (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рыбный суп с бамбуком [на компанию]",
+        "en": "Bamboo Infused Fish Soup Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161231364,
+        "ruStringOffset": 161231872
+      }
+    },
+    {
+      "name": {
+        "ru": "радужные раки-богомолы с креветками (порция на компанию)",
+        "en": "Prancing Rainbow Shrimp & Fish Tempura (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: радужные раки-богомолы с креветками (порция на компанию)",
+        "en": "Prancing Rainbow Shrimp & Fish Tempura Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161230216,
+        "ruStringOffset": 161230796
+      }
+    },
+    {
+      "name": {
+        "ru": "жареной морской звезды с моллюсками [На компанию]",
+        "en": "Braised Scallops with Starfish (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт жареной морской звезды с моллюсками [На компанию]",
+        "en": "Braised Scallops with Starfish Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161229116,
+        "ruStringOffset": 161229680
+      }
+    },
+    {
+      "name": {
+        "ru": "жареный барбус с грибами [на компанию]",
+        "en": "Battered Phoenix Barb with Mushrooms (Sharing Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: жареный барбус с грибами [на компанию]",
+        "en": "Battered Phoenix Barb with Mushrooms Recipe (Sharing Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161228080,
+        "ruStringOffset": 161228608
+      }
+    },
+    {
+      "name": {
+        "ru": "бамбуково-яблочная гранита [на компанию]",
+        "en": "Bamboo Apple Slushie (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: бамбуково-яблочная гранита [на компанию]",
+        "en": "Bamboo Apple Slushie Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161227100,
+        "ruStringOffset": 161227624
+      }
+    },
+    {
+      "name": {
+        "ru": "рисовой булочки кабуто [для компании]",
+        "en": "Kabuto Rice Bun (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт рисовой булочки кабуто [для компании]",
+        "en": "Kabuto Rice Bun Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161226160,
+        "ruStringOffset": 161226640
+      }
+    },
+    {
+      "name": {
+        "ru": "грибного мяса на гриле [На компанию]",
+        "en": "BBQ Meatshrooms (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт грибного мяса на гриле [На компанию]",
+        "en": "BBQ Meatshrooms Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161225236,
+        "ruStringOffset": 161225736
+      }
+    },
+    {
+      "name": {
+        "ru": "тушёный кордицепс [на компанию]",
+        "en": "Caterpillar Fungus Herbal Remedy (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: тушёный кордицепс [на компанию]",
+        "en": "Caterpillar Fungus Herbal Remedy Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161224232,
+        "ruStringOffset": 161224760
+      }
+    },
+    {
+      "name": {
+        "ru": "пирог с карамелизованными фруктами [для компании]",
+        "en": "Glistening Fruit Pie (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: пирог с карамелизованными фруктами [для компании]",
+        "en": "Glistening Fruit Pie Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161223220,
+        "ruStringOffset": 161223748
+      }
+    },
+    {
+      "name": {
+        "ru": "Трехцветное рагу из зеленых плодов [на компанию]",
+        "en": "Green Harvest Delight (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Трехцветное рагу из зеленых плодов [на компанию]",
+        "en": "Green Harvest Delight Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161222196,
+        "ruStringOffset": 161222708
+      }
+    },
+    {
+      "name": {
+        "ru": "рис с овощами по бабулиному рецепту 【на компанию】",
+        "en": "Gran'mama's Veggie Fried Rice (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рис с овощами по бабулиному рецепту 【на компанию】",
+        "en": "Gran'mama's Veggie Fried Rice Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161221124,
+        "ruStringOffset": 161221680
+      }
+    },
+    {
+      "name": {
+        "ru": "суши моритаке [на компанию]",
+        "en": "Moritake Sushi Platter (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт суши моритаке [на компанию]",
+        "en": "Moritake Sushi Platter Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161220192,
+        "ruStringOffset": 161220672
+      }
+    },
+    {
+      "name": {
+        "ru": "сладкого чая [на компанию]",
+        "en": "Sweet Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт сладкого чая [на компанию]",
+        "en": "Sweet Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161213480,
+        "ruStringOffset": 161213860
+      }
+    },
+    {
+      "name": {
+        "ru": "цветочного чая [Большая порция]",
+        "en": "Floral Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт цветочного чая [Большая порция]",
+        "en": "Floral Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161212712,
+        "ruStringOffset": 161213116
+      }
+    },
+    {
+      "name": {
+        "ru": "ячменного чая [На компанию]",
+        "en": "Barley Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт ячменного чая [На компанию]",
+        "en": "Barley Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161211948,
+        "ruStringOffset": 161212360
+      }
+    },
+    {
+      "name": {
+        "ru": "таинственный чай [на компанию]",
+        "en": "Mysterious Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: таинственный чай [на компанию]",
+        "en": "Mysterious Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161194640,
+        "ruStringOffset": 161195060
+      }
+    },
+    {
+      "name": {
+        "ru": "таинственное блюдо [На компанию]",
+        "en": "Mysterious Dish (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: таинственное блюдо [На компанию]",
+        "en": "Mysterious Dish Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161193800,
+        "ruStringOffset": 161194236
+      }
+    },
+    {
+      "name": {
+        "ru": "гнилой еды [Для компании]",
+        "en": "Rotten Food (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт гнилой еды [Для компании]",
+        "en": "Rotten Food Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161192996,
+        "ruStringOffset": 161193428
+      }
+    },
+    {
+      "name": {
+        "ru": "золотой рыбный суп [для компании]",
+        "en": "Golden Fish Soup (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: золотой рыбный суп [для компании]",
+        "en": "Golden Fish Soup Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161182100,
+        "ruStringOffset": 161182560
+      }
+    },
+    {
+      "name": {
+        "ru": "золотого супа с морепродуктами [Для компании]",
+        "en": "Golden Seafood Soup (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт золотого супа с морепродуктами [Для компании]",
+        "en": "Golden Seafood Soup Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161181120,
+        "ruStringOffset": 161181628
+      }
+    },
+    {
+      "name": {
+        "ru": "борща от шеф-повара [Для компании]",
+        "en": "Chef's Borscht (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт борща от шеф-повара [Для компании]",
+        "en": "Chef's Borscht Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161179344,
+        "ruStringOffset": 161179816
+      }
+    },
+    {
+      "name": {
+        "ru": "тушеный помпано-тиран [большая порция]",
+        "en": "Braised Pomfret (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: тушеный помпано-тиран [большая порция]",
+        "en": "Braised Pomfret Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161178364,
+        "ruStringOffset": 161178896
+      }
+    },
+    {
+      "name": {
+        "ru": "суперсытного котелка с лобстером [на компанию]",
+        "en": "Extra-Hearty Lobster Pot (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт суперсытного котелка с лобстером [на компанию]",
+        "en": "Extra-Hearty Lobster Pot Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161177308,
+        "ruStringOffset": 161177848
+      }
+    },
+    {
+      "name": {
+        "ru": "ипиньго [Большая порция]",
+        "en": "Signature Gourmet Hotpot (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: ипиньго [Большая порция]",
+        "en": "Signature Gourmet Hotpot Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161176468,
+        "ruStringOffset": 161176904
+      }
+    }
+  ]
+}
