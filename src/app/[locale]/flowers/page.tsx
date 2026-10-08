@@ -39,9 +39,14 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
   });
   const groups = flowerData.species.flatMap((species) => {
     const speciesCrosses = crosses.filter((cross) => cross.result.speciesId === species.id);
-    const whiteFlowers = flowers.filter((flower) => flower.speciesId === species.id && flower.quality === "white");
-    return speciesCrosses.length > 0 ? [{ species, whiteFlowers, crosses: speciesCrosses }] : [];
-  }).sort((a, b) => b.crosses.length - a.crosses.length);
+    const speciesFlowers = flowers.filter((flower) => flower.speciesId === species.id);
+    const whiteFlowers = speciesFlowers.filter((flower) => flower.quality === "white");
+    const hybridCount = speciesFlowers.filter((flower) => flower.quality !== "white").length;
+    const knownCrossCount = speciesCrosses.filter((cross) => cross.parents.every(Boolean)).length;
+    return speciesCrosses.length > 0
+      ? [{ species, whiteFlowers, crosses: speciesCrosses, hybridCount, knownCrossCount }]
+      : [];
+  }).sort((a, b) => a.hybridCount - b.hybridCount || b.knownCrossCount - a.knownCrossCount);
 
   return (
     <main
