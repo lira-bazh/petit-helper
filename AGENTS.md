@@ -36,7 +36,7 @@ src/
   paraglide/      # generated localization code; not tracked in Git
 messages/         # source translations: ru.json and en.json
 project.inlang/   # localization settings and tool-managed files
-public/           # static assets and generated shadcn registry files in r/
+public/           # static assets
 scripts/          # development scripts
 ```
 
@@ -47,7 +47,6 @@ scripts/          # development scripts
 - Edit translation text in `messages/{locale}.json` and locale settings in `project.inlang/settings.json`.
 - Do not manually edit `src/paraglide`; regenerate it with `pnpm i18n:compile`.
 - Keep `public`, `scripts`, configuration files, and `.env*` files at the project root.
-- When adding registry components, use source paths under `src/app/components/ui` in `registry.json` and regenerate `public/r` with `pnpm registry:build`.
 
 ## Local development
 

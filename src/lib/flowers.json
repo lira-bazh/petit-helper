@@ -1567,7 +1567,7 @@
     },
     {
       "parentIds": [
-        "king-protea-red",
+        "king-protea-purple",
         "king-protea-white"
       ],
       "resultId": "king-protea-blush"
@@ -1701,7 +1701,7 @@
       "resultId": "canna-jade-gold"
     },
     {
-      "parentIds": [],
+      "parentIds": ["moss-rose-purple", "moss-rose-yellow"],
       "resultId": "moss-rose-tangerine"
     },
     {
@@ -1729,7 +1729,7 @@
       "resultId": "bellflower-starlace"
     },
     {
-      "parentIds": [],
+      "parentIds": ["violet-violet", "violet-pink"],
       "resultId": "violet-fuchsia"
     },
     {

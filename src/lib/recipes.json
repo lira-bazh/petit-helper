@@ -1,80 +1,211 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 3,
   "notes": [
     "Структура основана на recipe-site-architecture.md. recipes и ingredients подготовлены для последующего переноса в отдельные коллекции.",
-    "Локальные строковые id и ingredientId не являются MongoDB ObjectId: при импорте нужно сопоставить идентификаторы. createdAt и updatedAt следует установить при импорте.",
+    "Локальные строковые id, ingredientId и effectId не являются MongoDB ObjectId: при импорте нужно сопоставить идентификаторы. createdAt и updatedAt следует установить при импорте.",
     "Повторяющиеся требования с одинаковым качеством объединены через quantity. Один заполненный столбец ингредиента означает одну единицу.",
     "normal означает отсутствие отдельного требования к качеству в исходной ячейке. gold добавлен для явно указанного золотого качества.",
     "null в power, effect или effect.level означает отсутствие значения в источнике, а не подтверждённое отсутствие силы или эффекта.",
     "Требования с вопросительными знаками сохранены как type: unknown с исходным raw и quality: null; их нельзя считать подтверждёнными ингредиентами.",
     "Категория meat-or-fish-or-seafood с anyOf сохраняет выбор одного из трёх типов, а не требование всех трёх одновременно.",
     "Членство конкретных ингредиентов в категориях не задано в таблице: массивы ingredients.categories оставлены пустыми до проверки.",
-    "Бамбук и побег бамбука сохранены отдельно, поскольку в источнике используются разные названия."
+    "Бамбук и побег бамбука сохранены отдельно, поскольку в источнике используются разные названия.",
+    "Названия рецептов, ингредиентов, категорий и эффектов локализованы в объектах с ключами ru, en, fr, es, de, it, pt, как в flowers.json. Исходные русские названия сохранены; переводы блюд и доступных игровых терминов взяты из ресурсов live_0.95. Общие категории переведены отдельно; уровень эффекта хранится в level, без дублирования в названии.",
+    "ID рецептов сформированы из английских названий в формате kebab-case. Поле image содержит один общий для всех языков путь к WebP-иконке; имя файла совпадает с ID рецепта.",
+    "Общий список effects содержит ID и локализованные названия эффектов. В recipes.effect хранится ссылка effectId и индивидуальный level; null сохранён для рецептов без указанного эффекта."
   ],
   "categories": [
     {
       "id": "fruit",
-      "name": "Фрукт"
+      "name": {
+        "ru": "Фрукт",
+        "en": "Fruit",
+        "fr": "Fruit",
+        "es": "Fruta",
+        "de": "Obst",
+        "it": "Frutto",
+        "pt": "Fruta"
+      }
     },
     {
       "id": "vegetable",
-      "name": "Овощ"
+      "name": {
+        "ru": "Овощ",
+        "en": "Vegetable",
+        "fr": "Légume",
+        "es": "Verdura",
+        "de": "Gemüse",
+        "it": "Verdura",
+        "pt": "Vegetal"
+      }
     },
     {
       "id": "grain",
-      "name": "Зерновые"
+      "name": {
+        "ru": "Зерновые",
+        "en": "Grain",
+        "fr": "Céréale",
+        "es": "Cereales",
+        "de": "Korn",
+        "it": "Grano",
+        "pt": "Grãos"
+      }
     },
     {
       "id": "seafood",
-      "name": "Морепродукт"
+      "name": {
+        "ru": "Морепродукт",
+        "en": "Seafood",
+        "fr": "Fruit de mer",
+        "es": "Marisco",
+        "de": "Meeresfrüchte",
+        "it": "Frutti di mare",
+        "pt": "Frutos do mar"
+      }
     },
     {
       "id": "fish",
-      "name": "Рыба"
+      "name": {
+        "ru": "Рыба",
+        "en": "Fish",
+        "fr": "Poisson",
+        "es": "Pez",
+        "de": "Fisch",
+        "it": "Pesce",
+        "pt": "Peixe"
+      }
     },
     {
       "id": "sea-fish",
-      "name": "Морская рыба"
+      "name": {
+        "ru": "Морская рыба",
+        "en": "Saltwater Fish",
+        "fr": "Poisson d'eau salée",
+        "es": "Pez de agua salada",
+        "de": "Salzwasserfisch",
+        "it": "Pesce d'acqua salata",
+        "pt": "Peixe Marinho"
+      }
     },
     {
       "id": "freshwater-fish",
-      "name": "Пресноводная рыба"
+      "name": {
+        "ru": "Пресноводная рыба",
+        "en": "Freshwater Fish",
+        "fr": "Poisson d'eau douce",
+        "es": "Pez de agua dulce",
+        "de": "Süßwasserfisch",
+        "it": "Pesce d'acqua dolce",
+        "pt": "Peixe de Água Doce"
+      }
     },
     {
       "id": "meat",
-      "name": "Мясо"
+      "name": {
+        "ru": "Мясо",
+        "en": "Meat",
+        "fr": "Viande",
+        "es": "Carne",
+        "de": "Fleisch",
+        "it": "Carne",
+        "pt": "Carne"
+      }
     },
     {
       "id": "flower",
-      "name": "Цветок"
+      "name": {
+        "ru": "Цветок",
+        "en": "Flower",
+        "fr": "Fleur",
+        "es": "Flor",
+        "de": "Blume",
+        "it": "Fiore",
+        "pt": "Flor"
+      }
     },
     {
       "id": "red-fruit",
-      "name": "Красный фрукт"
+      "name": {
+        "ru": "Красный фрукт",
+        "en": "Red Fruit",
+        "fr": "Fruit rouge",
+        "es": "Fruta roja",
+        "de": "Rote Frucht",
+        "it": "Frutto rosso",
+        "pt": "Fruta Vermelha"
+      }
     },
     {
       "id": "yellow-fruit",
-      "name": "Жёлтый фрукт"
+      "name": {
+        "ru": "Жёлтый фрукт",
+        "en": "Yellow Fruit",
+        "fr": "Fruit jaune",
+        "es": "Fruta amarilla",
+        "de": "Gelbe Frucht",
+        "it": "Frutto giallo",
+        "pt": "Fruta Amarela"
+      }
     },
     {
       "id": "green-fruit",
-      "name": "Зелёный фрукт"
+      "name": {
+        "ru": "Зелёный фрукт",
+        "en": "Green Fruit",
+        "fr": "Fruit vert",
+        "es": "Fruta verde",
+        "de": "Grüne Frucht",
+        "it": "Frutto verde",
+        "pt": "Fruta Verde"
+      }
     },
     {
       "id": "red-vegetable",
-      "name": "Красный овощ"
+      "name": {
+        "ru": "Красный овощ",
+        "en": "Red Vegetable",
+        "fr": "Légume rouge",
+        "es": "Verdura roja",
+        "de": "Rotes Gemüse",
+        "it": "Verdura rossa",
+        "pt": "Vegetal Vermelho"
+      }
     },
     {
       "id": "yellow-vegetable",
-      "name": "Жёлтый овощ"
+      "name": {
+        "ru": "Жёлтый овощ",
+        "en": "Yellow Vegetable",
+        "fr": "Légume jaune",
+        "es": "Verdura amarilla",
+        "de": "Gelbes Gemüse",
+        "it": "Verdura gialla",
+        "pt": "Vegetal Amarelo"
+      }
     },
     {
       "id": "green-vegetable",
-      "name": "Зелёный овощ"
+      "name": {
+        "ru": "Зелёный овощ",
+        "en": "Green Vegetable",
+        "fr": "Légume vert",
+        "es": "Verdura verde",
+        "de": "Grünes Gemüse",
+        "it": "Verdura verde",
+        "pt": "Vegetal Verde"
+      }
     },
     {
       "id": "meat-or-fish-or-seafood",
-      "name": "Мясо, рыба или морепродукт",
+      "name": {
+        "ru": "Мясо, рыба или морепродукт",
+        "en": "Meat, fish or seafood",
+        "fr": "Viande, poisson ou fruits de mer",
+        "es": "Carne, pescado o marisco",
+        "de": "Fleisch, Fisch oder Meeresfrüchte",
+        "it": "Carne, pesce o frutti di mare",
+        "pt": "Carne, peixe ou frutos do mar"
+      },
       "anyOf": [
         "meat",
         "fish",
@@ -85,183 +216,486 @@
   "ingredients": [
     {
       "id": "wheat",
-      "name": "Пшеница",
+      "name": {
+        "ru": "Пшеница",
+        "en": "Wheat",
+        "fr": "Blé",
+        "es": "Trigo",
+        "de": "Weizen",
+        "it": "Grano",
+        "pt": "Trigo"
+      },
       "slug": "wheat",
       "categories": []
     },
     {
       "id": "milk",
-      "name": "Молоко",
+      "name": {
+        "ru": "Молоко",
+        "en": "Milk",
+        "fr": "Lait",
+        "es": "Leche",
+        "de": "Milch",
+        "it": "Latte",
+        "pt": "Leite"
+      },
       "slug": "milk",
       "categories": []
     },
     {
       "id": "rice",
-      "name": "Рис",
+      "name": {
+        "ru": "Рис",
+        "en": "Rice",
+        "fr": "Riz",
+        "es": "Arroz",
+        "de": "Reis",
+        "it": "Riso",
+        "pt": "Arroz"
+      },
       "slug": "rice",
       "categories": []
     },
     {
       "id": "bamboo-shoot",
-      "name": "Побег бамбука",
+      "name": {
+        "ru": "Побег бамбука",
+        "en": "Bamboo Shoot",
+        "fr": "Pousse de bambou",
+        "es": "Brote de bambú",
+        "de": "Bambussprosse",
+        "it": "Germoglio di bambù",
+        "pt": "Broto de Bambu"
+      },
       "slug": "bamboo-shoot",
       "categories": []
     },
     {
       "id": "sea-urchin",
-      "name": "Морской ёж",
+      "name": {
+        "ru": "Морской ёж",
+        "en": "Sea Urchin",
+        "fr": "Oursin",
+        "es": "Erizo de mar",
+        "de": "Seeigel",
+        "it": "Riccio di mare",
+        "pt": "Ouriço-do-mar"
+      },
       "slug": "sea-urchin",
       "categories": []
     },
     {
       "id": "lobster",
-      "name": "Лобстер",
+      "name": {
+        "ru": "Лобстер",
+        "en": "Lobster",
+        "fr": "Langouste",
+        "es": "Langosta",
+        "de": "Languste",
+        "it": "Aragosta",
+        "pt": "Lagosta"
+      },
       "slug": "lobster",
       "categories": []
     },
     {
       "id": "tomato",
-      "name": "Помидор",
+      "name": {
+        "ru": "Помидор",
+        "en": "Tomato",
+        "fr": "Tomate",
+        "es": "Tomate",
+        "de": "Tomate",
+        "it": "Pomodoro",
+        "pt": "Tomate"
+      },
       "slug": "tomato",
       "categories": []
     },
     {
       "id": "potato",
-      "name": "Картофель",
+      "name": {
+        "ru": "Картофель",
+        "en": "Potato",
+        "fr": "Pomme de terre",
+        "es": "Patata",
+        "de": "Kartoffel",
+        "it": "Patata",
+        "pt": "Batata"
+      },
       "slug": "potato",
       "categories": []
     },
     {
       "id": "mushroom",
-      "name": "Гриб",
+      "name": {
+        "ru": "Гриб",
+        "en": "Mushroom",
+        "fr": "Champignon",
+        "es": "Champiñón",
+        "de": "Pilz",
+        "it": "Fungo",
+        "pt": "Cogumelo"
+      },
       "slug": "mushroom",
       "categories": []
     },
     {
       "id": "cucumber",
-      "name": "Огурец",
+      "name": {
+        "ru": "Огурец",
+        "en": "Cucumber",
+        "fr": "Concombre",
+        "es": "Pepino",
+        "de": "Gurke",
+        "it": "Cetriolo",
+        "pt": "Pepino"
+      },
       "slug": "cucumber",
       "categories": []
     },
     {
       "id": "shrimp",
-      "name": "Креветка",
+      "name": {
+        "ru": "Креветка",
+        "en": "Shrimp",
+        "fr": "Crevette",
+        "es": "Gamba",
+        "de": "Garnele",
+        "it": "Gamberetto",
+        "pt": "Camarão"
+      },
       "slug": "shrimp",
       "categories": []
     },
     {
       "id": "crab",
-      "name": "Краб",
+      "name": {
+        "ru": "Краб",
+        "en": "Crab",
+        "fr": "Crabe",
+        "es": "Cangrejo",
+        "de": "Krebs",
+        "it": "Granchio",
+        "pt": "Caranguejo"
+      },
       "slug": "crab",
       "categories": []
     },
     {
       "id": "shellfish",
-      "name": "Моллюск",
+      "name": {
+        "ru": "Моллюск",
+        "en": "Shellfish",
+        "fr": "Mollusque",
+        "es": "Molusco",
+        "de": "Schalentiere",
+        "it": "Mollusco",
+        "pt": "Marisco"
+      },
       "slug": "shellfish",
       "categories": []
     },
     {
       "id": "strawberry",
-      "name": "Клубника",
+      "name": {
+        "ru": "Клубника",
+        "en": "Strawberry",
+        "fr": "Fraise",
+        "es": "Fresa",
+        "de": "Erdbeere",
+        "it": "Fragola",
+        "pt": "Morango"
+      },
       "slug": "strawberry",
       "categories": []
     },
     {
       "id": "eggplant",
-      "name": "Баклажан",
+      "name": {
+        "ru": "Баклажан",
+        "en": "Eggplant",
+        "fr": "Aubergine",
+        "es": "Berenjena",
+        "de": "Aubergine",
+        "it": "Melanzana",
+        "pt": "Berinjela"
+      },
       "slug": "eggplant",
       "categories": []
     },
     {
       "id": "chili-pepper",
-      "name": "Острый перчик",
+      "name": {
+        "ru": "Острый перчик",
+        "en": "Pepper",
+        "fr": "Piment",
+        "es": "Pimienta",
+        "de": "Chili",
+        "it": "Peperoncino",
+        "pt": "Pimenta"
+      },
       "slug": "chili-pepper",
       "categories": []
     },
     {
       "id": "egg",
-      "name": "Яйцо",
+      "name": {
+        "ru": "Яйцо",
+        "en": "Egg",
+        "fr": "Œuf",
+        "es": "Huevo",
+        "de": "Ei",
+        "it": "Uovo",
+        "pt": "Ovo"
+      },
       "slug": "egg",
       "categories": []
     },
     {
       "id": "bamboo",
-      "name": "Бамбук",
+      "name": {
+        "ru": "Бамбук",
+        "en": "Bamboo",
+        "fr": "Bambou",
+        "es": "Bambú",
+        "de": "Bambus",
+        "it": "Bambù",
+        "pt": "Bambu"
+      },
       "slug": "bamboo",
       "categories": []
     },
     {
       "id": "carrot",
-      "name": "Морковь",
+      "name": {
+        "ru": "Морковь",
+        "en": "Carrot",
+        "fr": "Carotte",
+        "es": "Zanahoria",
+        "de": "Möhre",
+        "it": "Carota",
+        "pt": "Cenoura"
+      },
       "slug": "carrot",
       "categories": []
     },
     {
       "id": "cabbage",
-      "name": "Капуста",
+      "name": {
+        "ru": "Капуста",
+        "en": "Cabbage",
+        "fr": "Chou cabus",
+        "es": "Repollo",
+        "de": "Kohl",
+        "it": "Cavolo",
+        "pt": "Repolho"
+      },
       "slug": "cabbage",
       "categories": []
     },
     {
       "id": "pineapple",
-      "name": "Ананас",
+      "name": {
+        "ru": "Ананас",
+        "en": "Pineapple",
+        "fr": "Ananas",
+        "es": "Piña",
+        "de": "Ananas",
+        "it": "Ananas",
+        "pt": "Abacaxi"
+      },
       "slug": "pineapple",
       "categories": []
     },
     {
       "id": "corn",
-      "name": "Кукуруза",
+      "name": {
+        "ru": "Кукуруза",
+        "en": "Corn",
+        "fr": "Maïs",
+        "es": "maíz",
+        "de": "Mais",
+        "it": "Mais",
+        "pt": "Milho"
+      },
       "slug": "corn",
       "categories": []
     },
     {
       "id": "apple",
-      "name": "Яблоко",
+      "name": {
+        "ru": "Яблоко",
+        "en": "Apple",
+        "fr": "Pomme",
+        "es": "Manzana",
+        "de": "Apfel",
+        "it": "Mela",
+        "pt": "Maçã"
+      },
       "slug": "apple",
       "categories": []
     },
     {
       "id": "plum",
-      "name": "Слива",
+      "name": {
+        "ru": "Слива",
+        "en": "Plum",
+        "fr": "Prune",
+        "es": "Ciruela",
+        "de": "Pflaume",
+        "it": "Prugna",
+        "pt": "Ameixa"
+      },
       "slug": "plum",
       "categories": []
     },
     {
       "id": "avocado",
-      "name": "Авокадо",
+      "name": {
+        "ru": "Авокадо",
+        "en": "Avocado",
+        "fr": "Avocat",
+        "es": "Aguacate",
+        "de": "Avocado",
+        "it": "Avocado",
+        "pt": "Abacate"
+      },
       "slug": "avocado",
       "categories": []
     },
     {
       "id": "cactus-fruit",
-      "name": "Плод кактуса",
+      "name": {
+        "ru": "Плод кактуса",
+        "en": "Cactus Fruit",
+        "fr": "Fruit de cactus",
+        "es": "Fruto del cactus",
+        "de": "Kaktusfrucht",
+        "it": "Frutto del cactus",
+        "pt": "Fruta do Cacto"
+      },
       "slug": "cactus-fruit",
       "categories": []
     },
     {
       "id": "mango",
-      "name": "Манго",
+      "name": {
+        "ru": "Манго",
+        "en": "Mango",
+        "fr": "Mangue",
+        "es": "Mango",
+        "de": "Mango",
+        "it": "Mango",
+        "pt": "Manga"
+      },
       "slug": "mango",
       "categories": []
     },
     {
       "id": "melon",
-      "name": "Дыня",
+      "name": {
+        "ru": "Дыня",
+        "en": "Melon",
+        "fr": "Melon",
+        "es": "Melón",
+        "de": "Melone",
+        "it": "Melone",
+        "pt": "Melão"
+      },
       "slug": "melon",
       "categories": []
     },
     {
       "id": "garlic",
-      "name": "Чеснок",
+      "name": {
+        "ru": "Чеснок",
+        "en": "Garlic",
+        "fr": "Ail",
+        "es": "Ajo",
+        "de": "Knoblauch",
+        "it": "Aglio",
+        "pt": "Alho"
+      },
       "slug": "garlic",
       "categories": []
     }
   ],
+  "effects": [
+    {
+      "id": "mighty-strike",
+      "name": {
+        "ru": "Мощный удар",
+        "en": "Mighty Strike",
+        "fr": "Frappe puissante",
+        "es": "Golpe potente",
+        "de": "Kräftiger Hieb",
+        "it": "Colpo potente",
+        "pt": "Golpe Poderoso"
+      }
+    },
+    {
+      "id": "quick-tilling",
+      "name": {
+        "ru": "Быстрое рыхление",
+        "en": "Quick Tilling",
+        "fr": "Labourage rapide",
+        "es": "Labrado rápido",
+        "de": "Schnelles Umgraben",
+        "it": "Dissodamento rapido",
+        "pt": "Reviramento Rápido"
+      }
+    },
+    {
+      "id": "lightfoot",
+      "name": {
+        "ru": "Бесшумная поступь",
+        "en": "Lightfoot",
+        "fr": "Discrétion légère",
+        "es": "Sigilo ligero",
+        "de": "Leichtfüßiges Schleichen",
+        "it": "Passo leggero",
+        "pt": "Furtividade Leve"
+      }
+    },
+    {
+      "id": "power-spread",
+      "name": {
+        "ru": "Большой размах",
+        "en": "Power Spread",
+        "fr": "Semaillage puissant",
+        "es": "Riego amplio",
+        "de": "Kräftige Aussaat",
+        "it": "Spargimento potente",
+        "pt": "Semeadura Vigorosa"
+      }
+    },
+    {
+      "id": "anglers-strength",
+      "name": {
+        "ru": "Рыбацкая сноровка",
+        "en": "Angler's Strength",
+        "fr": "Pêche maîtrisée",
+        "es": "Pesca experta",
+        "de": "Gekonntes Angeln",
+        "it": "Forza del pescatore",
+        "pt": "Força de Pesca"
+      }
+    }
+  ],
   "recipes": [
     {
-      "id": "recipe-sheet-002",
-      "name": "Аппетитные фруктовые шашлычки",
+      "id": "sizzling-mixed-fruit-skewers",
+      "name": {
+        "ru": "Аппетитные фруктовые шашлычки",
+        "en": "Sizzling Mixed Fruit Skewers",
+        "fr": "Brochettes de fruits grésillantes",
+        "es": "Brochetas de frutas variadas con salsa ardiente",
+        "de": "Saftige Fruchtspieße",
+        "it": "Spiedini sfrigolanti di frutta mista",
+        "pt": "Espetinho de Frutas Mistas"
+      },
+      "image": "/images/recipes/sizzling-mixed-fruit-skewers.webp",
       "power": 30,
       "effect": null,
       "ingredients": [
@@ -274,8 +708,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-003",
-      "name": "Ароматное фруктово-злаковое молоко",
+      "id": "fruity-wheat-milk",
+      "name": {
+        "ru": "Ароматное фруктово-злаковое молоко",
+        "en": "Fruity Wheat Milk",
+        "fr": "Lait d'avoine aux fruits parfumés",
+        "es": "Leche de avena con fruta aromática",
+        "de": "Fruchtige Hafermilch",
+        "it": "Latte d'avena aromatico alla frutta",
+        "pt": "Leite Vegetal Frutado"
+      },
+      "image": "/images/recipes/fruity-wheat-milk.webp",
       "power": 60,
       "effect": null,
       "ingredients": [
@@ -300,8 +743,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-004",
-      "name": "Ароматный рисовый десерт",
+      "id": "steamed-rice-cake",
+      "name": {
+        "ru": "Ароматный рисовый десерт",
+        "en": "Steamed Rice Cake",
+        "fr": "Gâteau de riz vapeur",
+        "es": "Pastel de arroz al vapor",
+        "de": "Gedämpfter Reiskuchen",
+        "it": "Tortino di riso al vapore",
+        "pt": "Bolo de Arroz e Cereais"
+      },
+      "image": "/images/recipes/steamed-rice-cake.webp",
       "power": 50,
       "effect": null,
       "ingredients": [
@@ -326,8 +778,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-005",
-      "name": "Ароматный фруктовый чай",
+      "id": "aromatic-fruit-tea",
+      "name": {
+        "ru": "Ароматный фруктовый чай",
+        "en": "Aromatic Fruit Tea",
+        "fr": "Thé aux fruits parfumés",
+        "es": "Té de frutas fragante",
+        "de": "Aromatische Fruchtmischung",
+        "it": "Tè aromatico al melone e alla frutta",
+        "pt": "Chá Aromático de Melão e Frutas"
+      },
+      "image": "/images/recipes/aromatic-fruit-tea.webp",
       "power": 30,
       "effect": null,
       "ingredients": [
@@ -340,11 +801,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-006",
-      "name": "Бамбуково-яблочная гранита",
+      "id": "bamboo-apple-slushie",
+      "name": {
+        "ru": "Бамбуково-яблочная гранита",
+        "en": "Bamboo Apple Slushie",
+        "fr": "Granité pomme-bambou",
+        "es": "Granizado de manzana y bambú",
+        "de": "Bambus-Apfel-Slushie",
+        "it": "Granita di mela e bambù",
+        "pt": "Raspadinha de Maçã com Bambu"
+      },
+      "image": "/images/recipes/bamboo-apple-slushie.webp",
       "power": 60,
       "effect": {
-        "name": "Мощный удар",
+        "effectId": "mighty-strike",
         "level": 1
       },
       "ingredients": [
@@ -363,8 +833,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-007",
-      "name": "Биск из морского ежа и лобстера",
+      "id": "sea-urchin-lobster-bisque",
+      "name": {
+        "ru": "Биск из морского ежа и лобстера",
+        "en": "Sea Urchin Lobster Bisque",
+        "fr": "Soupe de homard et d'oursin",
+        "es": "Sopa de erizo de mar y langosta",
+        "de": "Seeigel-Langusten-Suppe",
+        "it": "Zuppa di ricci di mare e aragosta",
+        "pt": "Sopa de ouriço-do-mar com lagosta"
+      },
+      "image": "/images/recipes/sea-urchin-lobster-bisque.webp",
       "power": 40,
       "effect": null,
       "ingredients": [
@@ -383,11 +862,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-008",
-      "name": "Большие суши темаки",
+      "id": "jumbo-fish-temaki",
+      "name": {
+        "ru": "Большие суши темаки",
+        "en": "Jumbo Fish Temaki",
+        "fr": "Grand temaki sushi",
+        "es": "Temaki grande de pescado",
+        "de": "Großes Temaki-Sushi",
+        "it": "Grande temaki di pesce",
+        "pt": "Temaki de Peixe Jumbo"
+      },
+      "image": "/images/recipes/jumbo-fish-temaki.webp",
       "power": 90,
       "effect": {
-        "name": "Быстрое рыхление",
+        "effectId": "quick-tilling",
         "level": 2
       },
       "ingredients": [
@@ -412,11 +900,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-009",
-      "name": "Борщ с томатами и бамбуком",
+      "id": "tomato-and-shoot-borscht",
+      "name": {
+        "ru": "Борщ с томатами и бамбуком",
+        "en": "Tomato & Shoot Borscht",
+        "fr": "Soupe au bambou et à la tomate",
+        "es": "Sopa roja de tomate y brotes de bambú",
+        "de": "Tomaten-Sprossen-Borschtsch",
+        "it": "Borsc di pomodoro e germogli di bambù",
+        "pt": "Sopa de Tomate e Broto de Bambu"
+      },
+      "image": "/images/recipes/tomato-and-shoot-borscht.webp",
       "power": 70,
       "effect": {
-        "name": "Быстрое рыхление",
+        "effectId": "quick-tilling",
         "level": 1
       },
       "ingredients": [
@@ -441,8 +938,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-010",
-      "name": "Боул с разноцветным рисом и фруктами",
+      "id": "rainbow-fruit-rice-bowl",
+      "name": {
+        "ru": "Боул с разноцветным рисом и фруктами",
+        "en": "Rainbow Fruit Rice Bowl",
+        "fr": "Riz coloré aux fruits multiples",
+        "es": "Arroz colorido con frutas",
+        "de": "Bunter Früchtereis",
+        "it": "Ciotola di riso iridescente alla frutta",
+        "pt": "Arroz Colorido com Frutas"
+      },
+      "image": "/images/recipes/rainbow-fruit-rice-bowl.webp",
       "power": 110,
       "effect": null,
       "ingredients": [
@@ -473,11 +979,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-011",
-      "name": "Вегетарианское барбекю-ассорти из сезонных овощей",
+      "id": "seasonal-veggie-bbq-party",
+      "name": {
+        "ru": "Вегетарианское барбекю-ассорти из сезонных овощей",
+        "en": "Seasonal Veggie BBQ Party",
+        "fr": "Fête barbecue aux légumes de saison",
+        "es": "Fiesta de verduras a la brasa de temporada",
+        "de": "Saisonales Gemüse-BBQ",
+        "it": "Festa barbecue di verdure",
+        "pt": "Churrasco de Legumes da Estação"
+      },
+      "image": "/images/recipes/seasonal-veggie-bbq-party.webp",
       "power": 100,
       "effect": {
-        "name": "Быстрое рыхление",
+        "effectId": "quick-tilling",
         "level": 2
       },
       "ingredients": [
@@ -502,8 +1017,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-012",
-      "name": "Грибной суп",
+      "id": "mushroom-soup",
+      "name": {
+        "ru": "Грибной суп",
+        "en": "Mushroom Soup",
+        "fr": "Soupe aux champignons",
+        "es": "Sopa de setas",
+        "de": "Pilzsuppe",
+        "it": "Zuppa di funghi",
+        "pt": "Sopa de Cogumelos"
+      },
+      "image": "/images/recipes/mushroom-soup.webp",
       "power": 30,
       "effect": null,
       "ingredients": [
@@ -516,11 +1040,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-013",
-      "name": "Деревенская овощная пицца",
+      "id": "rustic-veggie-pizza",
+      "name": {
+        "ru": "Деревенская овощная пицца",
+        "en": "Rustic Veggie Pizza",
+        "fr": "Pizza végé rustique",
+        "es": "Pizza de verduras rústica",
+        "de": "Rustikale Gemüsepizza",
+        "it": "Pizza vegetariana ortolana",
+        "pt": "Pizza Rústica de Legumes"
+      },
+      "image": "/images/recipes/rustic-veggie-pizza.webp",
       "power": 60,
       "effect": {
-        "name": "Быстрое рыхление",
+        "effectId": "quick-tilling",
         "level": 1
       },
       "ingredients": [
@@ -545,11 +1078,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-014",
-      "name": "Жареные креветки с фруктами",
+      "id": "grilled-shrimp-and-lobster-fruit-platter",
+      "name": {
+        "ru": "Жареные креветки с фруктами",
+        "en": "Grilled Shrimp & Lobster Fruit Platter",
+        "fr": "Assiette de fruits, de crevettes grillées et d'homard",
+        "es": "Bandeja de gambas asadas con frutas",
+        "de": "Frucht-Garnelen-Platte",
+        "it": "Piatto di frutta con gamberetti alla griglia",
+        "pt": "Camarão Grelhado com Frutas"
+      },
+      "image": "/images/recipes/grilled-shrimp-and-lobster-fruit-platter.webp",
       "power": 120,
       "effect": {
-        "name": "Бесшумная поступь",
+        "effectId": "lightfoot",
         "level": 2
       },
       "ingredients": [
@@ -574,11 +1116,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-015",
-      "name": "Жареные овощи",
+      "id": "veggie-stir-fry",
+      "name": {
+        "ru": "Жареные овощи",
+        "en": "Veggie Stir-Fry",
+        "fr": "Légumes sautés",
+        "es": "Salteado de verduras",
+        "de": "Gemüsepfanne",
+        "it": "Verdure saltate in padella",
+        "pt": "Legumes Salteados"
+      },
+      "image": "/images/recipes/veggie-stir-fry.webp",
       "power": 40,
       "effect": {
-        "name": "Большой размах",
+        "effectId": "power-spread",
         "level": 1
       },
       "ingredients": [
@@ -591,8 +1142,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-016",
-      "name": "Жареный краб с моллюсками",
+      "id": "crab-and-clam-stir-fry",
+      "name": {
+        "ru": "Жареный краб с моллюсками",
+        "en": "Crab & Clam Stir-Fry",
+        "fr": "Crabe et mollusques sautés",
+        "es": "Salteado de cangrejo y almeja",
+        "de": "Gebratene Krabben und Muscheln",
+        "it": "Granchio saltato con molluschi",
+        "pt": "Caranguejo salteado com mariscos"
+      },
+      "image": "/images/recipes/crab-and-clam-stir-fry.webp",
       "power": 45,
       "effect": null,
       "ingredients": [
@@ -611,11 +1171,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-017",
-      "name": "Запечённый рис с морепродуктами",
+      "id": "seafood-clay-pot-rice",
+      "name": {
+        "ru": "Запечённый рис с морепродуктами",
+        "en": "Seafood Clay Pot Rice",
+        "fr": "Riz aux fruits de mer en cocotte",
+        "es": "Arroz gratinado con marisco",
+        "de": "Meeresfrüchte-Reis im Tontopf",
+        "it": "Riso cotto ai frutti di mare",
+        "pt": "Arroz Gratinado com Frutos do Mar"
+      },
+      "image": "/images/recipes/seafood-clay-pot-rice.webp",
       "power": 70,
       "effect": {
-        "name": "Бесшумная поступь",
+        "effectId": "lightfoot",
         "level": 1
       },
       "ingredients": [
@@ -634,8 +1203,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-018",
-      "name": "Запечённый рис с рыбой",
+      "id": "fish-baked-clay-pot-rice",
+      "name": {
+        "ru": "Запечённый рис с рыбой",
+        "en": "Fish Baked Clay Pot Rice",
+        "fr": "Riz au poisson cuit en cocotte",
+        "es": "Arroz gratinado con pescado",
+        "de": "Reis mit Fisch im Tontopf",
+        "it": "Riso con pesce in terracotta",
+        "pt": "Arroz Gratinado com Peixe"
+      },
+      "image": "/images/recipes/fish-baked-clay-pot-rice.webp",
       "power": 45,
       "effect": null,
       "ingredients": [
@@ -654,11 +1232,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-019",
-      "name": "Запечённый рисовый пудинг",
+      "id": "baked-rice-pudding",
+      "name": {
+        "ru": "Запечённый рисовый пудинг",
+        "en": "Baked Rice Pudding",
+        "fr": "Flan de riz",
+        "es": "Pudin de arroz al horno",
+        "de": "Gebackener Milchreis",
+        "it": "Budino di riso al forno",
+        "pt": "Pudim de Arroz"
+      },
+      "image": "/images/recipes/baked-rice-pudding.webp",
       "power": 35,
       "effect": {
-        "name": "Мощный удар",
+        "effectId": "mighty-strike",
         "level": 1
       },
       "ingredients": [
@@ -671,11 +1258,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-020",
-      "name": "Злаковая каша",
+      "id": "grain-porridge",
+      "name": {
+        "ru": "Злаковая каша",
+        "en": "Grain Porridge",
+        "fr": "Bouillie de céréales",
+        "es": "Gachas de cereales",
+        "de": "Getreidebrei",
+        "it": "Porridge di cereali",
+        "pt": "Mingau de Cereais"
+      },
+      "image": "/images/recipes/grain-porridge.webp",
       "power": 40,
       "effect": {
-        "name": "Мощный удар",
+        "effectId": "mighty-strike",
         "level": 1
       },
       "ingredients": [
@@ -688,8 +1284,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-021",
-      "name": "Злаковое молоко Хэся",
+      "id": "hexian-rice-and-wheat-milk",
+      "name": {
+        "ru": "Злаковое молоко Хэся",
+        "en": "Hexian Rice & Wheat Milk",
+        "fr": "Lait de céréales Hexia",
+        "es": "Leche de arroz y trigo de Hexia",
+        "de": "Hexia Reis-Weizen-Milch",
+        "it": "Latte d'avena e riso Hexia",
+        "pt": "Leite de Aveia e Arroz de Hexia"
+      },
+      "image": "/images/recipes/hexian-rice-and-wheat-milk.webp",
       "power": 45,
       "effect": null,
       "ingredients": [
@@ -714,11 +1319,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-022",
-      "name": "Изысканный овощной напиток со злаками",
+      "id": "prime-veggie-wheat-blend",
+      "name": {
+        "ru": "Изысканный овощной напиток со злаками",
+        "en": "Prime Veggie Wheat Blend",
+        "fr": "Boisson au blé et aux légumes rares",
+        "es": "Bebida de trigo con verduras selectas",
+        "de": "Premium-Gemüse-Hafermischung",
+        "it": "Bevanda pregiata ai cereali e verdure",
+        "pt": "Bebida de Cereais e Vegetais Raros"
+      },
+      "image": "/images/recipes/prime-veggie-wheat-blend.webp",
       "power": 70,
       "effect": {
-        "name": "Большой размах",
+        "effectId": "power-spread",
         "level": 1
       },
       "ingredients": [
@@ -737,11 +1351,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-023",
-      "name": "Карамелизированная рыба с рисом",
+      "id": "crystal-glazed-fish-with-rice",
+      "name": {
+        "ru": "Карамелизированная рыба с рисом",
+        "en": "Crystal-Glazed Fish with Rice",
+        "fr": "Poisson vapeur cristallin et riz",
+        "es": "Arroz con pescado cristalino",
+        "de": "Kristallglasierter Fisch mit Reis",
+        "it": "Pesce cristallino con riso",
+        "pt": "Arroz com Peixe ao Molho Glaceado"
+      },
+      "image": "/images/recipes/crystal-glazed-fish-with-rice.webp",
       "power": 90,
       "effect": {
-        "name": "Рыбацкая сноровка",
+        "effectId": "anglers-strength",
         "level": 2
       },
       "ingredients": [
@@ -766,11 +1389,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-024",
-      "name": "Карапулькра",
+      "id": "carapulcra-stew",
+      "name": {
+        "ru": "Карапулькра",
+        "en": "Carapulcra Stew",
+        "fr": "Ragoût carapulcra",
+        "es": "Carapulcra",
+        "de": "Carapulcra-Eintopf",
+        "it": "Stufato carapulcra",
+        "pt": "Ensopado de Carapulcra"
+      },
+      "image": "/images/recipes/carapulcra-stew.webp",
       "power": 90,
       "effect": {
-        "name": "Быстрое рыхление",
+        "effectId": "quick-tilling",
         "level": 2
       },
       "ingredients": [
@@ -789,8 +1421,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-025",
-      "name": "Каша по-деревенски",
+      "id": "country-style-congee",
+      "name": {
+        "ru": "Каша по-деревенски",
+        "en": "Country-Style Congee",
+        "fr": "Bouillie campagnarde",
+        "es": "Gachas de arroz rústicas",
+        "de": "Reisbrei nach Landart",
+        "it": "Porridge rustico",
+        "pt": "Canja Caipira"
+      },
+      "image": "/images/recipes/country-style-congee.webp",
       "power": 40,
       "effect": null,
       "ingredients": [
@@ -809,8 +1450,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-026",
-      "name": "Каша с моллюсками",
+      "id": "shellfish-congee",
+      "name": {
+        "ru": "Каша с моллюсками",
+        "en": "Shellfish Congee",
+        "fr": "Bouillie aux mollusques",
+        "es": "Gachas de arroz con crustáceos",
+        "de": "Reisbrei mit Schalentieren",
+        "it": "Porridge di molluschi",
+        "pt": "Mingau de Mariscos"
+      },
+      "image": "/images/recipes/shellfish-congee.webp",
       "power": 45,
       "effect": null,
       "ingredients": [
@@ -829,8 +1479,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-027",
-      "name": "Каша с морепродуктами",
+      "id": "seafood-congee",
+      "name": {
+        "ru": "Каша с морепродуктами",
+        "en": "Seafood Congee",
+        "fr": "Bouillie aux fruits de mer",
+        "es": "Gachas de arroz con marisco",
+        "de": "Reisbrei mit Meeresfrüchten",
+        "it": "Porridge ai frutti di mare",
+        "pt": "Congee de Frutos do Mar"
+      },
+      "image": "/images/recipes/seafood-congee.webp",
       "power": 45,
       "effect": null,
       "ingredients": [
@@ -849,8 +1508,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-028",
-      "name": "Клубничный шорткейк",
+      "id": "strawberry-shortcake",
+      "name": {
+        "ru": "Клубничный шорткейк",
+        "en": "Strawberry Shortcake",
+        "fr": "Gâteau crémeux à la fraise",
+        "es": "Bizcocho de fresa",
+        "de": "Erdbeer-Sahnekuchen",
+        "it": "Torta al latte e fragole",
+        "pt": "Bolo de Creme e Morangos"
+      },
+      "image": "/images/recipes/strawberry-shortcake.webp",
       "power": 50,
       "effect": null,
       "ingredients": [
@@ -875,11 +1543,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-029",
-      "name": "Креветки в кляре и жареная рыба",
+      "id": "shrimp-and-fish-tempura",
+      "name": {
+        "ru": "Креветки в кляре и жареная рыба",
+        "en": "Shrimp & Fish Tempura",
+        "fr": "Crevettes et poisson frits enrobés",
+        "es": "Pescado frito rebozado con gamba",
+        "de": "Garnelen-Fisch-Tempura",
+        "it": "Gamberi in pastella e pesce fritto",
+        "pt": "Camarão e Peixe Empanado"
+      },
+      "image": "/images/recipes/shrimp-and-fish-tempura.webp",
       "power": 80,
       "effect": {
-        "name": "Рыбацкая сноровка",
+        "effectId": "anglers-strength",
         "level": null
       },
       "ingredients": [
@@ -904,8 +1581,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-030",
-      "name": "Морепродукты на пару",
+      "id": "steamed-seafood",
+      "name": {
+        "ru": "Морепродукты на пару",
+        "en": "Steamed Seafood",
+        "fr": "Fruits de mer vapeur",
+        "es": "Marisco al vapor",
+        "de": "Gedämpfte Meeresfrüchte",
+        "it": "Frutti di mare al vapore",
+        "pt": "Frutos do Mar no Vapor"
+      },
+      "image": "/images/recipes/steamed-seafood.webp",
       "power": 45,
       "effect": null,
       "ingredients": [
@@ -918,8 +1604,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-031",
-      "name": "Моряцкий суп",
+      "id": "full-sail-shrimp-and-fish-soup",
+      "name": {
+        "ru": "Моряцкий суп",
+        "en": "Full Sail Shrimp & Fish Soup",
+        "fr": "Soupe de poisson et de crevettes du marin",
+        "es": "Sopa de pescado y gambas a toda vela",
+        "de": "Krabben-Fisch-Suppe „Volle Fahrt voraus“",
+        "it": "Zuppa di pesce e gamberetti",
+        "pt": "Sopa de peixe e camarão do bonitão"
+      },
+      "image": "/images/recipes/full-sail-shrimp-and-fish-soup.webp",
       "power": 40,
       "effect": null,
       "ingredients": [
@@ -938,8 +1633,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-032",
-      "name": "Нежный фруктово-цветочный чай",
+      "id": "blissful-floral-and-fruit-tea",
+      "name": {
+        "ru": "Нежный фруктово-цветочный чай",
+        "en": "Blissful Floral & Fruit Tea",
+        "fr": "Thé de fleur bienheureuse",
+        "es": "Té de frutas y flores dichoso",
+        "de": "Wunderblütentee",
+        "it": "Tè floreale e fruttato delizioso",
+        "pt": "Chá Floral e Frutado Harmônico"
+      },
+      "image": "/images/recipes/blissful-floral-and-fruit-tea.webp",
       "power": 30,
       "effect": null,
       "ingredients": [
@@ -958,11 +1662,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-033",
-      "name": "Освежающая фруктовая лапша",
+      "id": "chilled-fruit-noodles",
+      "name": {
+        "ru": "Освежающая фруктовая лапша",
+        "en": "Chilled Fruit Noodles",
+        "fr": "Nouilles froides aux fruits",
+        "es": "Fideos fríos con fruta",
+        "de": "Geeiste Fruchtnudeln",
+        "it": "Tagliolini freschi alla frutta",
+        "pt": "Macarrão de Fruta Gelado"
+      },
+      "image": "/images/recipes/chilled-fruit-noodles.webp",
       "power": 60,
       "effect": {
-        "name": "Большой размах",
+        "effectId": "power-spread",
         "level": 1
       },
       "ingredients": [
@@ -981,11 +1694,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-034",
-      "name": "Острый рис с толчёными баклажанами и помидорами",
+      "id": "spicy-smash-atouille-rice",
+      "name": {
+        "ru": "Острый рис с толчёными баклажанами и помидорами",
+        "en": "Spicy Smash-atouille Rice",
+        "fr": "Riz épicé aux aubergines",
+        "es": "Arroz de pisto picante",
+        "de": "Scharfer Auberginen-Reis",
+        "it": "Riso piccante con pesto di melanzane",
+        "pt": "Arroz picante de berinjela"
+      },
+      "image": "/images/recipes/spicy-smash-atouille-rice.webp",
       "power": 70,
       "effect": {
-        "name": "Большой размах",
+        "effectId": "power-spread",
         "level": 1
       },
       "ingredients": [
@@ -1010,11 +1732,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-035",
-      "name": "Пицца \"Морской бриз\"",
+      "id": "sea-breeze-pizza",
+      "name": {
+        "ru": "Пицца \"Морской бриз\"",
+        "en": "Sea Breeze Pizza",
+        "fr": "Pizza brise marine",
+        "es": "Pizza brisa marina",
+        "de": "Meeresbrise-Pizza",
+        "it": "Pizza alla brezza marina",
+        "pt": "Pizza Brisa do Mar"
+      },
+      "image": "/images/recipes/sea-breeze-pizza.webp",
       "power": 110,
       "effect": {
-        "name": "Быстрое рыхление",
+        "effectId": "quick-tilling",
         "level": 2
       },
       "ingredients": [
@@ -1039,11 +1770,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-036",
-      "name": "Пицца с жареной рыбой и помидорами",
+      "id": "fried-fish-and-tomato-pizza",
+      "name": {
+        "ru": "Пицца с жареной рыбой и помидорами",
+        "en": "Fried Fish & Tomato Pizza",
+        "fr": "Pizza à la tomate et au poisson frit",
+        "es": "Pizza de pescado frito y tomate",
+        "de": "Tomate-Backfisch-Pizza",
+        "it": "Pizza al pesce fritto e pomodoro",
+        "pt": "Pizza de Peixe Frito com Tomate"
+      },
+      "image": "/images/recipes/fried-fish-and-tomato-pizza.webp",
       "power": 60,
       "effect": {
-        "name": "Рыбацкая сноровка",
+        "effectId": "anglers-strength",
         "level": 1
       },
       "ingredients": [
@@ -1068,11 +1808,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-037",
-      "name": "Пляжные шашлычки",
+      "id": "seaside-skewers",
+      "name": {
+        "ru": "Пляжные шашлычки",
+        "en": "Seaside Skewers",
+        "fr": "Brochettes côtières",
+        "es": "Brocheta con sabor costero",
+        "de": "Küstenspieße",
+        "it": "Spiedini in stile costiero",
+        "pt": "Espetinhos do Litoral"
+      },
+      "image": "/images/recipes/seaside-skewers.webp",
       "power": 70,
       "effect": {
-        "name": "Бесшумная поступь",
+        "effectId": "lightfoot",
         "level": 1
       },
       "ingredients": [
@@ -1097,11 +1846,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-038",
-      "name": "Пшеничное молоко с облачной пенкой",
+      "id": "cloud-froth-wheat-milk",
+      "name": {
+        "ru": "Пшеничное молоко с облачной пенкой",
+        "en": "Cloud-Froth Wheat Milk",
+        "fr": "Lait de blé mousseux",
+        "es": "Leche de trigo esponjosa",
+        "de": "Wolkenschaum-Hafermilch",
+        "it": "Latte d'avena Schiumanuvola",
+        "pt": "Leite Cremoso de Trigo"
+      },
+      "image": "/images/recipes/cloud-froth-wheat-milk.webp",
       "power": 50,
       "effect": {
-        "name": "Быстрое рыхление",
+        "effectId": "quick-tilling",
         "level": 1
       },
       "ingredients": [
@@ -1120,8 +1878,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-039",
-      "name": "Пшеничный пирог",
+      "id": "wheat-cake",
+      "name": {
+        "ru": "Пшеничный пирог",
+        "en": "Wheat Cake",
+        "fr": "Gâteau au blé",
+        "es": "Pastel de trigo",
+        "de": "Weizenkuchen",
+        "it": "Torta di grano",
+        "pt": "Bolo de Cereais"
+      },
+      "image": "/images/recipes/wheat-cake.webp",
       "power": 35,
       "effect": null,
       "ingredients": [
@@ -1140,8 +1907,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-040",
-      "name": "Разноцветный овощной сок",
+      "id": "vibrant-veggie-juice",
+      "name": {
+        "ru": "Разноцветный овощной сок",
+        "en": "Vibrant Veggie Juice",
+        "fr": "Jus de légumes colorés",
+        "es": "Zumo de verduras multicolor",
+        "de": "Bunter Gemüsesaft",
+        "it": "Succo di verdure multicolore",
+        "pt": "Suco de Vegetais Colorido"
+      },
+      "image": "/images/recipes/vibrant-veggie-juice.webp",
       "power": 50,
       "effect": null,
       "ingredients": [
@@ -1166,11 +1942,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-041",
-      "name": "Рамен с клёцками, овощами и грибами",
+      "id": "rice-cake-noodles-with-veggies-and-mushrooms",
+      "name": {
+        "ru": "Рамен с клёцками, овощами и грибами",
+        "en": "Rice Cake Noodles with Veggies & Mushrooms",
+        "fr": "Nouilles aux gâteaux de riz et aux champignons",
+        "es": "Fideos con pastelillos de arroz, verduras y champiñones",
+        "de": "Reiskuchen-Nudeln mit Gemüse und Pilzen",
+        "it": "Tagliolini con gnocchi di riso, verdure e funghi",
+        "pt": "Macarrão com Legumes, Cogumelos e Bolo de Arroz"
+      },
+      "image": "/images/recipes/rice-cake-noodles-with-veggies-and-mushrooms.webp",
       "power": 80,
       "effect": {
-        "name": "Мощный удар",
+        "effectId": "mighty-strike",
         "level": 1
       },
       "ingredients": [
@@ -1201,8 +1986,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-042",
-      "name": "Рамен с морепродуктами",
+      "id": "seafood-combo-noodle-soup",
+      "name": {
+        "ru": "Рамен с морепродуктами",
+        "en": "Seafood Combo Noodle Soup",
+        "fr": "Soupe de nouilles aux fruits de mer",
+        "es": "Sopa de fideos con marisco",
+        "de": "Meeresfrüchte-Nudelsuppe",
+        "it": "Zuppa di tagliolini misto mare",
+        "pt": "Sopa Combo de Frutos do Mar"
+      },
+      "image": "/images/recipes/seafood-combo-noodle-soup.webp",
       "power": 70,
       "effect": null,
       "ingredients": [
@@ -1221,8 +2015,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-043",
-      "name": "Редкий томлёный суп из краба",
+      "id": "rare-crab-and-spring-bamboo-broth",
+      "name": {
+        "ru": "Редкий томлёный суп из краба",
+        "en": "Rare Crab & Spring Bamboo Broth",
+        "fr": "Bouillon mijoté au crabe et bambou",
+        "es": "Estofado de cangrejo con bambú",
+        "de": "Krabben-Frühlingsbrühe mit Bambussprossen",
+        "it": "Zuppa di granchio pregiato a cottura lenta",
+        "pt": "Caldo de caranguejo e broto de bambu"
+      },
+      "image": "/images/recipes/rare-crab-and-spring-bamboo-broth.webp",
       "power": null,
       "effect": null,
       "ingredients": [
@@ -1241,11 +2044,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-044",
-      "name": "Рис с овощами по бабулиному рецепту",
+      "id": "grannys-veggie-fried-rice",
+      "name": {
+        "ru": "Рис с овощами по бабулиному рецепту",
+        "en": "Granny's Veggie Fried Rice",
+        "fr": "Riz sauté aux légumes de mamie",
+        "es": "Arroz frito con verduras de la abuelita",
+        "de": "Omas gebratener Gemüsereis",
+        "it": "Riso saltato alle verdure della nonna",
+        "pt": "Arroz Frito com Legumes da Vovó"
+      },
+      "image": "/images/recipes/grannys-veggie-fried-rice.webp",
       "power": 160,
       "effect": {
-        "name": "Быстрое рыхление",
+        "effectId": "quick-tilling",
         "level": 3
       },
       "ingredients": [
@@ -1276,8 +2088,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-045",
-      "name": "Рисовый настой с овощами",
+      "id": "veggie-rice-yogurt",
+      "name": {
+        "ru": "Рисовый настой с овощами",
+        "en": "Veggie Rice Yogurt",
+        "fr": "Yaourt aux riz et aux légumes",
+        "es": "Yogur de arroz con verduras",
+        "de": "Reisjoghurt mit Gemüse",
+        "it": "Yogurt di riso alle verdure",
+        "pt": "Iogurte de Arroz com Legumes"
+      },
+      "image": "/images/recipes/veggie-rice-yogurt.webp",
       "power": 35,
       "effect": null,
       "ingredients": [
@@ -1296,8 +2117,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-046",
-      "name": "Рыба на гриле с овощами",
+      "id": "grilled-fish-and-veggies",
+      "name": {
+        "ru": "Рыба на гриле с овощами",
+        "en": "Grilled Fish & Veggies",
+        "fr": "Poisson et légumes grillés",
+        "es": "Pescado asado con verduras",
+        "de": "Gegrillter Fisch mit Gemüse",
+        "it": "Pesce e verdure alla griglia",
+        "pt": "Peixe Grelhado com Legumes"
+      },
+      "image": "/images/recipes/grilled-fish-and-veggies.webp",
       "power": 45,
       "effect": null,
       "ingredients": [
@@ -1316,11 +2146,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-047",
-      "name": "Рыба по-походному",
+      "id": "campfire-grilled-fish",
+      "name": {
+        "ru": "Рыба по-походному",
+        "en": "Campfire-Grilled Fish",
+        "fr": "Poisson grillé au feu de camp",
+        "es": "Pescado a la parrilla de campamento",
+        "de": "Über dem Lagerfeuer gegrillter Fisch",
+        "it": "Pesce grigliato al falò",
+        "pt": "Peixe Assado na Fogueira"
+      },
+      "image": "/images/recipes/campfire-grilled-fish.webp",
       "power": 90,
       "effect": {
-        "name": "Рыбацкая сноровка",
+        "effectId": "anglers-strength",
         "level": 2
       },
       "ingredients": [
@@ -1339,11 +2178,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-048",
-      "name": "Рыба с фруктами в горшочке",
+      "id": "fruit-infused-fish-stew",
+      "name": {
+        "ru": "Рыба с фруктами в горшочке",
+        "en": "Fruit-Infused Fish Stew",
+        "fr": "Ragoût de poisson infusé aux fruits",
+        "es": "Guiso de pescado en lecho frutal",
+        "de": "Fruchtiger Fischeintopf",
+        "it": "Stufato di pesce aromatizzato alla frutta",
+        "pt": "Ensopado de Peixe com Toque Frutado"
+      },
+      "image": "/images/recipes/fruit-infused-fish-stew.webp",
       "power": 70,
       "effect": {
-        "name": "Рыбацкая сноровка",
+        "effectId": "anglers-strength",
         "level": 1
       },
       "ingredients": [
@@ -1362,8 +2210,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-049",
-      "name": "Рыбная похлёбка с грибами",
+      "id": "mushroom-and-fish-broth",
+      "name": {
+        "ru": "Рыбная похлёбка с грибами",
+        "en": "Mushroom & Fish Broth",
+        "fr": "Bouillon de champignons et de poisson",
+        "es": "Caldo de setas y pescado",
+        "de": "Pilz-Fisch-Brühe",
+        "it": "Brodo di funghi e pesce",
+        "pt": "Caldo de Cogumelos e Peixe"
+      },
+      "image": "/images/recipes/mushroom-and-fish-broth.webp",
       "power": 40,
       "effect": null,
       "ingredients": [
@@ -1382,8 +2239,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-050",
-      "name": "Рыбная солянка",
+      "id": "catch-of-the-day-soup",
+      "name": {
+        "ru": "Рыбная солянка",
+        "en": "Catch of the Day Soup",
+        "fr": "Soupe de la pêche du jour",
+        "es": "Sopa de pescado de temporada",
+        "de": "Suppe „Fang des Tages“",
+        "it": "Zuppa del pescato del giorno",
+        "pt": "Sopa do Pescado do Dia"
+      },
+      "image": "/images/recipes/catch-of-the-day-soup.webp",
       "power": 40,
       "effect": null,
       "ingredients": [
@@ -1396,8 +2262,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-051",
-      "name": "Рыбные шашлычки с ананасом",
+      "id": "pineapple-grilled-fish-skewers",
+      "name": {
+        "ru": "Рыбные шашлычки с ананасом",
+        "en": "Pineapple Grilled Fish Skewers",
+        "fr": "Brochettes de poisson et d'ananas",
+        "es": "Brochetas de pescado asado con piña",
+        "de": "Gegrillter Fischspieß mit Ananas",
+        "it": "Spiedini di pesce e ananas alla griglia",
+        "pt": "Espetinhos de Peixe com Abacaxi"
+      },
+      "image": "/images/recipes/pineapple-grilled-fish-skewers.webp",
       "power": 45,
       "effect": null,
       "ingredients": [
@@ -1416,11 +2291,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-052",
-      "name": "Рыбный суп с бамбуком",
+      "id": "bamboo-infused-fish-soup",
+      "name": {
+        "ru": "Рыбный суп с бамбуком",
+        "en": "Bamboo Infused Fish Soup",
+        "fr": "Soupe de poisson infusée au bambou",
+        "es": "Sopa de pescado con bambú",
+        "de": "Bambus-Fischsuppe",
+        "it": "Zuppa di pesce con germogli di bambù",
+        "pt": "Sopa de Peixe com Brotos de Bambu"
+      },
+      "image": "/images/recipes/bamboo-infused-fish-soup.webp",
       "power": 80,
       "effect": {
-        "name": "Рыбацкая сноровка",
+        "effectId": "anglers-strength",
         "level": 1
       },
       "ingredients": [
@@ -1439,11 +2323,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-053",
-      "name": "Сказочное двухцветное большое рыбное ассорти",
+      "id": "dreamy-ruby-and-emerald-fish-feast",
+      "name": {
+        "ru": "Сказочное двухцветное большое рыбное ассорти",
+        "en": "Dreamy Ruby & Emerald Fish Feast",
+        "fr": "Festin de poisson aux deux couleurs onirique",
+        "es": "Festín de pescado bicolor de ensueño",
+        "de": "Traumhaftes Rubin-Smaragd-Fischfestmahl",
+        "it": "Banchetto di pesce gourmet bicolore Coronasogno",
+        "pt": "Peixe Bicolor dos Sonhos"
+      },
+      "image": "/images/recipes/dreamy-ruby-and-emerald-fish-feast.webp",
       "power": 140,
       "effect": {
-        "name": "Рыбацкая сноровка",
+        "effectId": "anglers-strength",
         "level": 2
       },
       "ingredients": [
@@ -1468,11 +2361,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-054",
-      "name": "Сказочное лобстеровое рагу свежего ветра",
+      "id": "dreamy-seabreeze-lobster-stew",
+      "name": {
+        "ru": "Сказочное лобстеровое рагу свежего ветра",
+        "en": "Dreamy Seabreeze Lobster Stew",
+        "fr": "Marmite de homard aux herbes fraîches onirique",
+        "es": "Olla de langosta a la brisa fresca de ensueño",
+        "de": "Langusteneintopf „Traumhafte Meeresbrisen“",
+        "it": "Stufato di aragosta alla brezza marina Coronasogno",
+        "pt": "Panela de Lagosta Brisa dos Sonhos"
+      },
+      "image": "/images/recipes/dreamy-seabreeze-lobster-stew.webp",
       "power": 120,
       "effect": {
-        "name": "Рыбацкая сноровка",
+        "effectId": "anglers-strength",
         "level": 2
       },
       "ingredients": [
@@ -1503,11 +2405,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-055",
-      "name": "Сказочные суши со свежей рыбой",
+      "id": "dreamy-fresh-catch-sushi",
+      "name": {
+        "ru": "Сказочные суши со свежей рыбой",
+        "en": "Dreamy Fresh-Catch Sushi",
+        "fr": "Sushi aux fruits de mer onirique",
+        "es": "Sushi de pescado fresco de ensueño",
+        "de": "Traumhaftes Fisch-Sushi",
+        "it": "Sushi di pesce fresco Coronasogno",
+        "pt": "Sushi de Peixe dos Sonhos"
+      },
+      "image": "/images/recipes/dreamy-fresh-catch-sushi.webp",
       "power": 180,
       "effect": {
-        "name": "Рыбацкая сноровка",
+        "effectId": "anglers-strength",
         "level": 3
       },
       "ingredients": [
@@ -1538,8 +2449,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-056",
-      "name": "Соба с овощами",
+      "id": "veggie-soba",
+      "name": {
+        "ru": "Соба с овощами",
+        "en": "Veggie Soba",
+        "fr": "Soba aux légumes",
+        "es": "Soba con verduras del campo",
+        "de": "Gemüse-Soba",
+        "it": "Soba alle verdure",
+        "pt": "Soba de Vegetais"
+      },
+      "image": "/images/recipes/veggie-soba.webp",
       "power": 40,
       "effect": null,
       "ingredients": [
@@ -1558,8 +2478,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-057",
-      "name": "Солнечная лапша",
+      "id": "spring-noodle-soup",
+      "name": {
+        "ru": "Солнечная лапша",
+        "en": "Spring Noodle Soup",
+        "fr": "Soupe de nouilles printanière",
+        "es": "Sopa caliente con fideos",
+        "de": "Frühlingsnudelsuppe",
+        "it": "Zuppa di tagliolini primavera",
+        "pt": "Sopa de Macarrão da Primavera"
+      },
+      "image": "/images/recipes/spring-noodle-soup.webp",
       "power": 40,
       "effect": null,
       "ingredients": [
@@ -1572,11 +2501,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-058",
-      "name": "Сытное рагу",
+      "id": "braised-hodgepodge",
+      "name": {
+        "ru": "Сытное рагу",
+        "en": "Braised Hodgepodge",
+        "fr": "Ragoût mijoté",
+        "es": "Revuelto estofado",
+        "de": "Geschmortes Allerlei",
+        "it": "Stufato misto",
+        "pt": "Ensopado misturadão"
+      },
+      "image": "/images/recipes/braised-hodgepodge.webp",
       "power": 70,
       "effect": {
-        "name": "Быстрое рыхление",
+        "effectId": "quick-tilling",
         "level": 1
       },
       "ingredients": [
@@ -1601,11 +2539,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-059",
-      "name": "Сытный рамен с рыбой и овощами",
+      "id": "hearty-fish-and-veggie-ramen",
+      "name": {
+        "ru": "Сытный рамен с рыбой и овощами",
+        "en": "Hearty Fish & Veggie Ramen",
+        "fr": "Ramen au poisson et aux légumes",
+        "es": "Ramen de pescado y verduras",
+        "de": "Herzhafte Fisch-Gemüse-Ramen",
+        "it": "Maxi ramen con pesce e verdure",
+        "pt": "Macarrão com Peixe e Legumes"
+      },
+      "image": "/images/recipes/hearty-fish-and-veggie-ramen.webp",
       "power": 90,
       "effect": {
-        "name": "Быстрое рыхление",
+        "effectId": "quick-tilling",
         "level": 2
       },
       "ingredients": [
@@ -1630,11 +2577,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-060",
-      "name": "Тарелка морской рыбы и морепродуктов-гриль",
+      "id": "seared-seafood-platter",
+      "name": {
+        "ru": "Тарелка морской рыбы и морепродуктов-гриль",
+        "en": "Seared Seafood Platter",
+        "fr": "Poisson grillé et crevettes aux coquillages",
+        "es": "Pescado, gambas y mariscos a la parrilla",
+        "de": "Gegrillter Meeresfrüchteplatte",
+        "it": "Pesce, gamberetti e frutti di mare grigliati",
+        "pt": "Porção de Frutos do Mar Grelhados"
+      },
+      "image": "/images/recipes/seared-seafood-platter.webp",
       "power": 80,
       "effect": {
-        "name": "Рыбацкая сноровка",
+        "effectId": "anglers-strength",
         "level": 1
       },
       "ingredients": [
@@ -1659,11 +2615,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-061",
-      "name": "Томатный суп с лобстером",
+      "id": "tomato-lobster-bisque",
+      "name": {
+        "ru": "Томатный суп с лобстером",
+        "en": "Tomato Lobster Bisque",
+        "fr": "Bisque de homard et de tomates",
+        "es": "Sopa de tomate y langosta",
+        "de": "Tomaten-Langusten-Suppe",
+        "it": "Zuppa di aragosta e pomodoro",
+        "pt": "Sopa de tomate com lagosta"
+      },
+      "image": "/images/recipes/tomato-lobster-bisque.webp",
       "power": 40,
       "effect": {
-        "name": "Большой размах",
+        "effectId": "power-spread",
         "level": 1
       },
       "ingredients": [
@@ -1682,8 +2647,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-062",
-      "name": "Томатный суп с рыбой",
+      "id": "tomato-braised-fish",
+      "name": {
+        "ru": "Томатный суп с рыбой",
+        "en": "Tomato Braised Fish",
+        "fr": "Poisson en bouillon de tomate",
+        "es": "Sopa de tomate con pescado",
+        "de": "Fisch in Tomatensoße",
+        "it": "Pesce brasato al pomodoro",
+        "pt": "Peixe ao Molho de Tomate"
+      },
+      "image": "/images/recipes/tomato-braised-fish.webp",
       "power": 45,
       "effect": null,
       "ingredients": [
@@ -1702,11 +2676,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-063",
-      "name": "Трехцветный запечёный рис с овощами",
+      "id": "tricolor-veggie-rice-bake",
+      "name": {
+        "ru": "Трехцветный запечёный рис с овощами",
+        "en": "Tricolor Veggie Rice Bake",
+        "fr": "Gratin de riz aux légumes tricolore",
+        "es": "Arroz gratinado con verduras tricolor",
+        "de": "Dreifarbiger Gemüseauflauf",
+        "it": "Sformato di riso e verdure tricolore",
+        "pt": "Arroz Gratinado com Legumes Tricolor"
+      },
+      "image": "/images/recipes/tricolor-veggie-rice-bake.webp",
       "power": 110,
       "effect": {
-        "name": "Большой размах",
+        "effectId": "power-spread",
         "level": 2
       },
       "ingredients": [
@@ -1737,11 +2720,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-064",
-      "name": "Трехцветный фруктово-рисовый пирог",
+      "id": "fruity-rice-cake-trio",
+      "name": {
+        "ru": "Трехцветный фруктово-рисовый пирог",
+        "en": "Fruity Rice Cake Trio",
+        "fr": "Gâteau de riz aux fruits trois couleurs",
+        "es": "Pastel de arroz y frutas tricolor",
+        "de": "Dreifarbiger Frucht-Reiskuchen",
+        "it": "Torta di riso alla frutta tricolore",
+        "pt": "Bolo Tricolor de Arroz e Frutas"
+      },
+      "image": "/images/recipes/fruity-rice-cake-trio.webp",
       "power": 110,
       "effect": {
-        "name": "Большой размах",
+        "effectId": "power-spread",
         "level": 2
       },
       "ingredients": [
@@ -1772,11 +2764,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-065",
-      "name": "Тушёное мясо с морковью",
+      "id": "carrot-and-meat-stew",
+      "name": {
+        "ru": "Тушёное мясо с морковью",
+        "en": "Carrot & Meat Stew",
+        "fr": "Ragoût de viande aux carottes",
+        "es": "Carne estofada con zanahoria",
+        "de": "Möhren-Fleischeintopf",
+        "it": "Stufato di carne e carote",
+        "pt": "Ensopado de cenoura com carne"
+      },
+      "image": "/images/recipes/carrot-and-meat-stew.webp",
       "power": 50,
       "effect": {
-        "name": "Мощный удар",
+        "effectId": "mighty-strike",
         "level": 1
       },
       "ingredients": [
@@ -1795,8 +2796,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-066",
-      "name": "Фруктово-овощной салат",
+      "id": "field-and-orchard-salad",
+      "name": {
+        "ru": "Фруктово-овощной салат",
+        "en": "Field & Orchard Salad",
+        "fr": "Salade de fruits et légumes",
+        "es": "Ensalada de frutas y verduras",
+        "de": "Obst- und Gemüsesalat",
+        "it": "Insalata Orto e Frutteto",
+        "pt": "Salada Tropical"
+      },
+      "image": "/images/recipes/field-and-orchard-salad.webp",
       "power": 60,
       "effect": null,
       "ingredients": [
@@ -1821,8 +2831,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-067",
-      "name": "Фруктово-овощной сок",
+      "id": "fruit-and-veggie-juice",
+      "name": {
+        "ru": "Фруктово-овощной сок",
+        "en": "Fruit & Veggie Juice",
+        "fr": "Jus de fruits et de légumes",
+        "es": "Zumo de fruta y verdura",
+        "de": "Obst- und Gemüsesaft",
+        "it": "Succo di frutta e verdura",
+        "pt": "Suco de frutas e legumes"
+      },
+      "image": "/images/recipes/fruit-and-veggie-juice.webp",
       "power": 35,
       "effect": null,
       "ingredients": [
@@ -1841,11 +2860,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-068",
-      "name": "Фруктово-овощной суп \"Четыре сезона\"",
+      "id": "four-seasons-soup",
+      "name": {
+        "ru": "Фруктово-овощной суп \"Четыре сезона\"",
+        "en": "Four Seasons Soup",
+        "fr": "Soupe quatre saisons",
+        "es": "Sopa cuatro estaciones con fruta y verdura",
+        "de": "Vier-Jahreszeiten-Suppe",
+        "it": "Zuppa Quattro stagioni",
+        "pt": "Sopa das Quatro Estações"
+      },
+      "image": "/images/recipes/four-seasons-soup.webp",
       "power": 50,
       "effect": {
-        "name": "Быстрое рыхление",
+        "effectId": "quick-tilling",
         "level": 1
       },
       "ingredients": [
@@ -1864,8 +2892,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-069",
-      "name": "Фруктово-рисовый настой Хэся",
+      "id": "hexian-fruity-rice-drink",
+      "name": {
+        "ru": "Фруктово-рисовый настой Хэся",
+        "en": "Hexian Fruity Rice Drink",
+        "fr": "Boisson au riz fruitée de Hexia",
+        "es": "Bebida de arroz frutal de Hexia",
+        "de": "Fruchtiges Hexia-Reisgetränk",
+        "it": "Bevanda di riso fruttata all'Hexia",
+        "pt": "Bebida de Arroz de Hexia"
+      },
+      "image": "/images/recipes/hexian-fruity-rice-drink.webp",
       "power": 50,
       "effect": null,
       "ingredients": [
@@ -1890,8 +2927,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-070",
-      "name": "Фруктовый боул Тефиса",
+      "id": "taffean-fruit-blend",
+      "name": {
+        "ru": "Фруктовый боул Тефиса",
+        "en": "Taffean Fruit Blend",
+        "fr": "Jus de fruits de Taffeh",
+        "es": "Mezcla de frutas de Taffeh",
+        "de": "Taffeh-Obstbecher",
+        "it": "Miscela di frutti di Taffeh",
+        "pt": "Um copo de Taffeh"
+      },
+      "image": "/images/recipes/taffean-fruit-blend.webp",
       "power": 40,
       "effect": null,
       "ingredients": [
@@ -1916,8 +2962,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-071",
-      "name": "Хрустящая жареная рыба с фруктами",
+      "id": "fruit-crusted-baked-fish",
+      "name": {
+        "ru": "Хрустящая жареная рыба с фруктами",
+        "en": "Fruit-Crusted Baked Fish",
+        "fr": "Poisson grillé croustillant aux fruits",
+        "es": "Pescado asado con costra de fruta",
+        "de": "Fruchtig-knuspriger gegrillter Fisch",
+        "it": "Pesce alla griglia con frutta croccante",
+        "pt": "Peixe Assado com Crosta de Frutas"
+      },
+      "image": "/images/recipes/fruit-crusted-baked-fish.webp",
       "power": 45,
       "effect": null,
       "ingredients": [
@@ -1936,11 +2991,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-072",
-      "name": "Цветочно-дынный пирог",
+      "id": "floral-melon-pie",
+      "name": {
+        "ru": "Цветочно-дынный пирог",
+        "en": "Floral Melon Pie",
+        "fr": "Tarte au melon fleuri",
+        "es": "Tarta de melón con aroma floral",
+        "de": "Blumiger Melonenkuchen",
+        "it": "Torta floreale al melone",
+        "pt": "Torta Floral de Melão"
+      },
+      "image": "/images/recipes/floral-melon-pie.webp",
       "power": 70,
       "effect": {
-        "name": "Большой размах",
+        "effectId": "power-spread",
         "level": 1
       },
       "ingredients": [
@@ -1965,8 +3029,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-073",
-      "name": "Цветочный чай с дыней",
+      "id": "floral-melon-tea",
+      "name": {
+        "ru": "Цветочный чай с дыней",
+        "en": "Floral Melon Tea",
+        "fr": "Thé aux fleurs de melon",
+        "es": "Té de melón floral",
+        "de": "Melonenblütentee",
+        "it": "Tè floreale al melone",
+        "pt": "Chá de Flor de Melão"
+      },
+      "image": "/images/recipes/floral-melon-tea.webp",
       "power": 40,
       "effect": null,
       "ingredients": [
@@ -1985,11 +3058,20 @@
       ]
     },
     {
-      "id": "recipe-sheet-074",
-      "name": "Чесночная булочка со взбитым маслом",
+      "id": "cream-cheese-garlic-bun",
+      "name": {
+        "ru": "Чесночная булочка со взбитым маслом",
+        "en": "Cream Cheese Garlic Bun",
+        "fr": "Pain au fromage frais et à l'ail",
+        "es": "Panecillo cremoso de ajo",
+        "de": "Cremiges Knoblauch-Brötchen",
+        "it": "Panino all'aglio con crema di formaggio",
+        "pt": "Pão de recheio cremoso com alho"
+      },
+      "image": "/images/recipes/cream-cheese-garlic-bun.webp",
       "power": 50,
       "effect": {
-        "name": "Быстрое рыхление",
+        "effectId": "quick-tilling",
         "level": 2
       },
       "ingredients": [
@@ -2014,8 +3096,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-075",
-      "name": "Шашлычки из грибов, овощей и фруктов",
+      "id": "mushroom-fruit-and-veggie-skewers",
+      "name": {
+        "ru": "Шашлычки из грибов, овощей и фруктов",
+        "en": "Mushroom, Fruit & Veggie Skewers",
+        "fr": "Brochettes de champignons, de fruits et de légumes",
+        "es": "Brochetas de setas, frutas y verduras",
+        "de": "Pilz-Gemüse-Spieße",
+        "it": "Spiedini di funghi, frutta e verdura saporiti",
+        "pt": "Espetinho de Cogumelos, Frutas e Legumes"
+      },
+      "image": "/images/recipes/mushroom-fruit-and-veggie-skewers.webp",
       "power": 40,
       "effect": null,
       "ingredients": [
@@ -2034,8 +3125,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-076",
-      "name": "Ягодно-рисовое смузи",
+      "id": "berry-rice-delight",
+      "name": {
+        "ru": "Ягодно-рисовое смузи",
+        "en": "Berry Rice Delight",
+        "fr": "Délice de riz aux baies",
+        "es": "Delicia de arroz con fresas",
+        "de": "Entspannendes Beerenreisgetränk",
+        "it": "Delizia di riso alle bacche",
+        "pt": "Licor de Arroz Suave com Frutas Vermelhas"
+      },
+      "image": "/images/recipes/berry-rice-delight.webp",
       "power": 35,
       "effect": null,
       "ingredients": [
@@ -2054,8 +3154,17 @@
       ]
     },
     {
-      "id": "recipe-sheet-077",
-      "name": "Яркий сок",
+      "id": "dazzling-juice",
+      "name": {
+        "ru": "Яркий сок",
+        "en": "Dazzling Juice",
+        "fr": "Jus splendide",
+        "es": "Zumo resplandeciente",
+        "de": "Schillernder Saft",
+        "it": "Succo di frutta vivace",
+        "pt": "Suco Deslumbrante"
+      },
+      "image": "/images/recipes/dazzling-juice.webp",
       "power": 30,
       "effect": null,
       "ingredients": [
