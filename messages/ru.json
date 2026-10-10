@@ -46,5 +46,19 @@
   "flowers_link_copied": "Ссылка скопирована",
   "flowers_link_in_address": "Скопируйте ссылку из адресной строки",
   "flowers_contents": "Оглавление",
-  "flowers_back_to_top": "Наверх"
+  "flowers_back_to_top": "Наверх",
+  "dialog_close": "Закрыть",
+  "flowers_suggest": "Предложить",
+  "flowers_suggestion_title": "Предложить скрещивание",
+  "flowers_suggestion_description": "Выберите два родительских цветка для гибрида «{result}» ({species}).",
+  "flowers_suggestion_parent": "Родительский цветок {number}",
+  "flowers_suggestion_choose": "Выберите цвет",
+  "flowers_suggestion_no_results": "Цветы не найдены.",
+  "flowers_suggestion_comment": "Комментарий (необязательно)",
+  "flowers_suggestion_comment_placeholder": "Как получили гибрид? Можно добавить ссылку на источник.",
+  "flowers_suggestion_unavailable": "Отправка предложений временно недоступна. Попробуйте позже.",
+  "flowers_suggestion_sending": "Отправляем…",
+  "flowers_suggestion_sent": "Предложение отправлено. Спасибо!",
+  "flowers_suggestion_error": "Не удалось отправить предложение. Попробуйте ещё раз позже.",
+  "flowers_suggestion_send": "Отправить"
 }

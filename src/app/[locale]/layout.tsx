@@ -3,6 +3,7 @@ import { getRequestLocale } from "@/lib/i18n";
 import * as m from "@/paraglide/messages.js";
 import SiteHeader from "../components/site-header";
 import ThemeRoot from "../components/theme-root";
+import { Toaster } from "../components/ui/toast";
 import "../globals.css";
 
 export async function generateMetadata({ params }: LayoutProps<"/[locale]">): Promise<Metadata> {
@@ -34,6 +35,7 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[lo
       <body className="min-h-screen bg-background font-sans text-foreground antialiased">
         <SiteHeader locale={locale} />
         {children}
+        <Toaster timeout={10000} />
       </body>
     </ThemeRoot>
   );

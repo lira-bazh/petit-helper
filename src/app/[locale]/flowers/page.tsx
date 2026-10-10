@@ -3,11 +3,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { ArrowUp } from "lucide-react";
 import FlowerSectionLink from "@/app/components/flower-section-link";
+import FlowerCrossSuggestion from "@/app/components/flower-cross-suggestion";
 import { buttonVariants } from "@/app/components/ui/button";
 import { Card, CardContent } from "@/app/components/ui/card";
 import { getRequestLocale } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import flowerData from "@/lib/flowers.json";
+import { getFlowerCrossParents } from "@/lib/flower-crosses";
 import { siteUrl } from "@/lib/site";
 import * as m from "@/paraglide/messages.js";
 import sunflowerRed from "../../../../public/images/flowers/sunflower-red.webp";
@@ -198,6 +200,22 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
                             </Fragment>
                           ))}
                         </div>
+                        {parents.some((parent) => !parent) && (
+                          <div className="mt-4 flex justify-center">
+                            <FlowerCrossSuggestion
+                              locale={locale}
+                              resultId={result.id}
+                              resultName={result.colorName[locale]}
+                              resultImage={result.image}
+                              speciesName={species.name[locale]}
+                              flowers={getFlowerCrossParents(result).map((flower) => ({
+                                id: flower.id,
+                                name: flower.colorName[locale],
+                                image: flower.image,
+                              }))}
+                            />
+                          </div>
+                        )}
                       </CardContent>
                     </Card>
                   </li>

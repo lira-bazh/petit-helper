@@ -46,5 +46,19 @@
   "flowers_link_copied": "Link copied",
   "flowers_link_in_address": "Copy the link from the address bar",
   "flowers_contents": "Contents",
-  "flowers_back_to_top": "Back to top"
+  "flowers_back_to_top": "Back to top",
+  "dialog_close": "Close",
+  "flowers_suggest": "Suggest",
+  "flowers_suggestion_title": "Suggest a cross",
+  "flowers_suggestion_description": "Choose two parent flowers for the “{result}” hybrid ({species}).",
+  "flowers_suggestion_parent": "Parent flower {number}",
+  "flowers_suggestion_choose": "Choose a color",
+  "flowers_suggestion_no_results": "No flowers found.",
+  "flowers_suggestion_comment": "Comment (optional)",
+  "flowers_suggestion_comment_placeholder": "How did you get this hybrid? You can include a source link.",
+  "flowers_suggestion_unavailable": "Suggestions are temporarily unavailable. Please try again later.",
+  "flowers_suggestion_sending": "Sending…",
+  "flowers_suggestion_sent": "Suggestion sent. Thank you!",
+  "flowers_suggestion_error": "Could not send the suggestion. Please try again later.",
+  "flowers_suggestion_send": "Send"
 }
