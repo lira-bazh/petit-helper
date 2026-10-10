@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 import FlowerSectionLink from "@/app/components/flower-section-link";
 import { buttonVariants } from "@/app/components/ui/button";
@@ -86,12 +85,12 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
           <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-7">
             {groups.map(({ species }) => (
               <li key={species.id} className="min-w-0">
-                <Link
+                <a
                   href={`#${species.id}`}
                   className="flex h-full w-full items-center justify-center rounded-lg bg-card px-3 py-2 text-center text-sm font-medium ring-1 ring-foreground/10 transition-colors hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   {species.name[locale]}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -211,7 +210,7 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
         <p className="mx-auto max-w-[49.5rem] text-muted-foreground">{m.flowers_empty({}, { locale })}</p>
       )}
       {groups.length > 0 && (
-        <Link
+        <a
           href="#top"
           aria-label={m.flowers_back_to_top({}, { locale })}
           title={m.flowers_back_to_top({}, { locale })}
@@ -221,7 +220,7 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
           )}
         >
           <ArrowUp aria-hidden="true" />
-        </Link>
+        </a>
       )}
     </main>
   );

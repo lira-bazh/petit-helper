@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { Check, Hash } from "lucide-react";
 import { buttonVariants } from "@/app/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -34,7 +33,7 @@ export default function FlowerSectionLink({
 
   return (
     <>
-      <Link
+      <a
         href={`#${sectionId}`}
         aria-label={label}
         title={statusLabel}
@@ -46,7 +45,7 @@ export default function FlowerSectionLink({
         )}
       >
         {status === "copied" ? <Check aria-hidden="true" /> : <Hash aria-hidden="true" />}
-      </Link>
+      </a>
       <span role="status" className="sr-only">{status === "idle" ? "" : statusLabel}</span>
     </>
   );
