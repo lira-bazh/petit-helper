@@ -131,7 +131,10 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
                           sizes="(max-width: 639px) 32px, 48px"
                           className="h-8 w-8 shrink-0 object-contain sm:h-12 sm:w-12"
                         />
-                        <span className="min-w-0 break-words font-medium">{flower.colorName[locale]}</span>
+                        <span className="min-w-0 break-words">
+                          <span className="block font-medium">{flower.colorName[locale]}</span>
+                          <span className="block text-xs text-muted-foreground">{species.name[locale].toLocaleLowerCase(locale)}</span>
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -186,6 +189,11 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
                                 )}
                                 <span className="w-full break-words font-medium">
                                   {flower ? flower.colorName[locale] : m.recipe_unknown({}, { locale })}
+                                  {flower && (
+                                    <span className="block text-xs font-normal text-muted-foreground">
+                                      {flowerData.species.find((species) => species.id === flower.speciesId)?.name[locale].toLocaleLowerCase(locale)}
+                                    </span>
+                                  )}
                                 </span>
                               </div>
                             </Fragment>
