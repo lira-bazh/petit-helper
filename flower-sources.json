@@ -1,0 +1,5920 @@
+{
+  "source": {
+    "file": "GenerateAssets/ed.obb",
+    "branch": "live_0.95",
+    "revision": 1217551
+  },
+  "scope": "Flower item identities and phase associations; crossbreeding pairs are not confirmed by these records.",
+  "notes": [
+    "Offsets are absolute byte offsets in ed.obb. rootFields identify fields of the root FlatBuffer table.",
+    "rawFields preserve all uint32 field values of the flower phase record; field 2 is preserved without assigning an unverified meaning.",
+    "existingDatabaseParents are copied from flowers.json and linked to source item IDs; they are not newly confirmed crossbreeding recipes.",
+    "not-confirmed means this extraction does not identify a breeding rule. It does not mean the combination is impossible or that ed.obb has no other relevant tables."
+  ],
+  "rootFields": {
+    "item": 318,
+    "flowerPhases": 241,
+    "localization": 1
+  },
+  "counts": {
+    "sourcePhaseRecords": 96,
+    "databaseFlowersMatched": 93,
+    "hybrids": 51,
+    "existingDatabasePairs": 24,
+    "missingDatabasePairs": 27,
+    "newlyConfirmedPairs": 0
+  },
+  "flowers": [
+    {
+      "id": "sunflower-yellow",
+      "speciesId": "sunflower",
+      "name": {
+        "ru": "Жёлтый подсолнух",
+        "en": "Yellow Sunflower"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52003,
+          "name": {
+            "ru": "Куст жёлтого подсолнуха",
+            "en": "Yellow Sunflower Plant"
+          },
+          "source": {
+            "itemTableOffset": 3269936,
+            "localizationTableOffset": 160291832,
+            "nameHash": 1026280536
+          }
+        },
+        "flower": {
+          "id": 52004,
+          "name": {
+            "ru": "Жёлтый подсолнух",
+            "en": "Yellow Sunflower"
+          },
+          "source": {
+            "itemTableOffset": 3269780,
+            "localizationTableOffset": 160291396,
+            "nameHash": 1026280537
+          }
+        },
+        "bud": {
+          "id": 53001,
+          "name": {
+            "ru": "Бутон жёлтого подсолнуха",
+            "en": "Yellow Sunflower Bud"
+          },
+          "source": {
+            "itemTableOffset": 3260368,
+            "localizationTableOffset": 160249148,
+            "nameHash": 1026310325
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890184,
+        "rawFields": [
+          52003,
+          52004,
+          52004,
+          53001
+        ]
+      }
+    },
+    {
+      "id": "sunflower-red",
+      "speciesId": "sunflower",
+      "name": {
+        "ru": "Красный подсолнух",
+        "en": "Red Sunflower"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52000,
+          "name": {
+            "ru": "Куст красных подсолнухов",
+            "en": "Red Sunflower Plant"
+          },
+          "source": {
+            "itemTableOffset": 3270288,
+            "localizationTableOffset": 160293396,
+            "nameHash": 1026280533
+          }
+        },
+        "flower": {
+          "id": 52001,
+          "name": {
+            "ru": "Красный подсолнух",
+            "en": "Red Sunflower"
+          },
+          "source": {
+            "itemTableOffset": 3270132,
+            "localizationTableOffset": 160292968,
+            "nameHash": 1026280534
+          }
+        },
+        "bud": {
+          "id": 53000,
+          "name": {
+            "ru": "Бутон красного подсолнуха",
+            "en": "Red Sunflower Bud"
+          },
+          "source": {
+            "itemTableOffset": 3260452,
+            "localizationTableOffset": 160249732,
+            "nameHash": 1026310324
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890204,
+        "rawFields": [
+          52000,
+          52001,
+          52001,
+          53000
+        ]
+      }
+    },
+    {
+      "id": "sunflower-green",
+      "speciesId": "sunflower",
+      "name": {
+        "ru": "Зелёный подсолнух",
+        "en": "Green Sunflower"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52006,
+          "name": {
+            "ru": "Куст зелёного подсолнуха",
+            "en": "Green Sunflower Plant"
+          },
+          "source": {
+            "itemTableOffset": 3269584,
+            "localizationTableOffset": 160290260,
+            "nameHash": 1026280539
+          }
+        },
+        "flower": {
+          "id": 52007,
+          "name": {
+            "ru": "Зелёный подсолнух",
+            "en": "Green Sunflower"
+          },
+          "source": {
+            "itemTableOffset": 3269428,
+            "localizationTableOffset": 160289824,
+            "nameHash": 1026280540
+          }
+        },
+        "bud": {
+          "id": 53002,
+          "name": {
+            "ru": "Бутон зелёного подсолнуха",
+            "en": "Green Sunflower Bud"
+          },
+          "source": {
+            "itemTableOffset": 3260284,
+            "localizationTableOffset": 160248580,
+            "nameHash": 1026310326
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890164,
+        "rawFields": [
+          52006,
+          52007,
+          52007,
+          53002
+        ]
+      }
+    },
+    {
+      "id": "sunflower-tangerine",
+      "speciesId": "sunflower",
+      "name": {
+        "ru": "Огненно-оранжевый подсолнух",
+        "en": "Tangerine Sunflower"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56022,
+          "name": {
+            "ru": "Куст огненно-оранжевого подсолнуха",
+            "en": "Tangerine Sunflower Plant"
+          },
+          "source": {
+            "itemTableOffset": 3251776,
+            "localizationTableOffset": 160191700,
+            "nameHash": 1026399761
+          }
+        },
+        "flower": {
+          "id": 56222,
+          "name": {
+            "ru": "Огненно-оранжевый подсолнух",
+            "en": "Tangerine Sunflower"
+          },
+          "source": {
+            "itemTableOffset": 3244608,
+            "localizationTableOffset": 160161680,
+            "nameHash": 1026401683
+          }
+        },
+        "bud": {
+          "id": 56422,
+          "name": {
+            "ru": "Бутон ярко-оранжевого подсолнуха",
+            "en": "Tangerine Sunflower Bud"
+          },
+          "source": {
+            "itemTableOffset": 3237120,
+            "localizationTableOffset": 160131628,
+            "nameHash": 1026403605
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889224,
+        "rawFields": [
+          56022,
+          56222,
+          56222,
+          56422
+        ]
+      }
+    },
+    {
+      "id": "sunflower-cream",
+      "speciesId": "sunflower",
+      "name": {
+        "ru": "Кремово-жёлтый подсолнух",
+        "en": "Cream Sunflower"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56023,
+          "name": {
+            "ru": "Куст кремово-жёлтого подсолнуха",
+            "en": "Cream Sunflower Plant"
+          },
+          "source": {
+            "itemTableOffset": 3251672,
+            "localizationTableOffset": 160191048,
+            "nameHash": 1026399762
+          }
+        },
+        "flower": {
+          "id": 56223,
+          "name": {
+            "ru": "Кремово-жёлтый подсолнух",
+            "en": "Cream Sunflower"
+          },
+          "source": {
+            "itemTableOffset": 3244440,
+            "localizationTableOffset": 160161156,
+            "nameHash": 1026401684
+          }
+        },
+        "bud": {
+          "id": 56423,
+          "name": {
+            "ru": "Бутон кремово-жёлтого подсолнуха",
+            "en": "Cream Sunflower Bud"
+          },
+          "source": {
+            "itemTableOffset": 3237016,
+            "localizationTableOffset": 160130956,
+            "nameHash": 1026403606
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889204,
+        "rawFields": [
+          56023,
+          56223,
+          56223,
+          56423
+        ]
+      }
+    },
+    {
+      "id": "sunflower-pastel-pink",
+      "speciesId": "sunflower",
+      "name": {
+        "ru": "Бледно-розовый подсолнух",
+        "en": "Pastel Pink Sunflower"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56024,
+          "name": {
+            "ru": "Куст светло-розового подсолнуха",
+            "en": "Pastel Pink Sunflower Plant"
+          },
+          "source": {
+            "itemTableOffset": 3251560,
+            "localizationTableOffset": 160190400,
+            "nameHash": 1026399763
+          }
+        },
+        "flower": {
+          "id": 56224,
+          "name": {
+            "ru": "Бледно-розовый подсолнух",
+            "en": "Pastel Pink Sunflower"
+          },
+          "source": {
+            "itemTableOffset": 3244248,
+            "localizationTableOffset": 160160624,
+            "nameHash": 1026401685
+          }
+        },
+        "bud": {
+          "id": 56424,
+          "name": {
+            "ru": "Бутон бледно-розового подсолнуха",
+            "en": "Pastel Pink Sunflower Bud"
+          },
+          "source": {
+            "itemTableOffset": 3236904,
+            "localizationTableOffset": 160130276,
+            "nameHash": 1026403607
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889184,
+        "rawFields": [
+          56024,
+          56224,
+          56224,
+          56424
+        ]
+      }
+    },
+    {
+      "id": "mooncycle-rose-blue",
+      "speciesId": "mooncycle-rose",
+      "name": {
+        "ru": "Синяя чайная роза",
+        "en": "Blue Mooncycle Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50204,
+          "name": {
+            "ru": "Куст синей чайной розы",
+            "en": "Blue Mooncycle Rose Bush"
+          },
+          "source": {
+            "itemTableOffset": 3282648,
+            "localizationTableOffset": 160373884,
+            "nameHash": 1026222877
+          }
+        },
+        "flower": {
+          "id": 50205,
+          "name": {
+            "ru": "Синяя чайная роза",
+            "en": "Blue Mooncycle Rose"
+          },
+          "source": {
+            "itemTableOffset": 3282492,
+            "localizationTableOffset": 160373432,
+            "nameHash": 1026222878
+          }
+        },
+        "bud": {
+          "id": 50291,
+          "name": {
+            "ru": "Бутон синей чайной розы",
+            "en": "Blue Mooncycle Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3277284,
+            "localizationTableOffset": 160336016,
+            "nameHash": 1026223153
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890404,
+        "rawFields": [
+          50204,
+          50205,
+          50205,
+          50291
+        ]
+      }
+    },
+    {
+      "id": "mooncycle-rose-pink",
+      "speciesId": "mooncycle-rose",
+      "name": {
+        "ru": "Розовая чайная роза",
+        "en": "Pink Mooncycle Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50200,
+          "name": {
+            "ru": "Куст розовой чайной розы",
+            "en": "Pink Mooncycle Rose Plant"
+          },
+          "source": {
+            "itemTableOffset": 3283128,
+            "localizationTableOffset": 160375860,
+            "nameHash": 1026222873
+          }
+        },
+        "flower": {
+          "id": 50201,
+          "name": {
+            "ru": "Розовая чайная роза",
+            "en": "Pink Mooncycle Rose"
+          },
+          "source": {
+            "itemTableOffset": 3282972,
+            "localizationTableOffset": 160375400,
+            "nameHash": 1026222874
+          }
+        },
+        "bud": {
+          "id": 50289,
+          "name": {
+            "ru": "Бутон розовой чайной розы",
+            "en": "Pink Mooncycle Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3277452,
+            "localizationTableOffset": 160337160,
+            "nameHash": 1026223130
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890444,
+        "rawFields": [
+          50200,
+          50201,
+          50201,
+          50289
+        ]
+      }
+    },
+    {
+      "id": "mooncycle-rose-teal",
+      "speciesId": "mooncycle-rose",
+      "name": {
+        "ru": "Бирюзовая чайная роза",
+        "en": "Teal Mooncycle Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50307,
+          "name": {
+            "ru": "Куст бирюзовой чайной розы",
+            "en": "Teal Mooncycle Rose Plant"
+          },
+          "source": {
+            "itemTableOffset": 3275800,
+            "localizationTableOffset": 160328492,
+            "nameHash": 1026223841
+          }
+        },
+        "flower": {
+          "id": 50308,
+          "name": {
+            "ru": "Бирюзовая чайная роза",
+            "en": "Teal Mooncycle Rose"
+          },
+          "source": {
+            "itemTableOffset": 3275644,
+            "localizationTableOffset": 160328000,
+            "nameHash": 1026223842
+          }
+        },
+        "bud": {
+          "id": 50311,
+          "name": {
+            "ru": "Бутон бирюзовой чайной розы",
+            "en": "Teal Mooncycle Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3275392,
+            "localizationTableOffset": 160326264,
+            "nameHash": 1026223866
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890224,
+        "rawFields": [
+          50307,
+          50308,
+          50308,
+          50311
+        ]
+      }
+    },
+    {
+      "id": "mooncycle-rose-mauve",
+      "speciesId": "mooncycle-rose",
+      "name": {
+        "ru": "Сумеречно-пурпурная чайная роза",
+        "en": "Mauve Mooncycle Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56006,
+          "name": {
+            "ru": "Куст сумеречно-пурпурной чайной розы",
+            "en": "Mauve Mooncycle Rose Plant"
+          },
+          "source": {
+            "itemTableOffset": 3253556,
+            "localizationTableOffset": 160201932,
+            "nameHash": 1026399703
+          }
+        },
+        "flower": {
+          "id": 56206,
+          "name": {
+            "ru": "Сумеречно-пурпурная чайная роза",
+            "en": "Mauve Mooncycle Rose"
+          },
+          "source": {
+            "itemTableOffset": 3247492,
+            "localizationTableOffset": 160169976,
+            "nameHash": 1026401625
+          }
+        },
+        "bud": {
+          "id": 56406,
+          "name": {
+            "ru": "Бутон сумеречно-пурпурной чайной розы",
+            "en": "Mauve Mooncycle Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3238900,
+            "localizationTableOffset": 160142240,
+            "nameHash": 1026403547
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889544,
+        "rawFields": [
+          56006,
+          56206,
+          56206,
+          56406
+        ]
+      }
+    },
+    {
+      "id": "mooncycle-rose-cream",
+      "speciesId": "mooncycle-rose",
+      "name": {
+        "ru": "Кремово-жёлтая чайная роза",
+        "en": "Cream Mooncycle Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56007,
+          "name": {
+            "ru": "Куст кремово-жёлтой чайной розы",
+            "en": "Cream Mooncycle Rose Plant"
+          },
+          "source": {
+            "itemTableOffset": 3253452,
+            "localizationTableOffset": 160201272,
+            "nameHash": 1026399704
+          }
+        },
+        "flower": {
+          "id": 56207,
+          "name": {
+            "ru": "Кремово-жёлтая чайная роза",
+            "en": "Cream Mooncycle Rose"
+          },
+          "source": {
+            "itemTableOffset": 3247324,
+            "localizationTableOffset": 160169432,
+            "nameHash": 1026401626
+          }
+        },
+        "bud": {
+          "id": 56407,
+          "name": {
+            "ru": "Бутон кремово-жёлтой чайной розы",
+            "en": "Cream Mooncycle Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3238796,
+            "localizationTableOffset": 160141552,
+            "nameHash": 1026403548
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889524,
+        "rawFields": [
+          56007,
+          56207,
+          56207,
+          56407
+        ]
+      }
+    },
+    {
+      "id": "mooncycle-rose-black-velvet",
+      "speciesId": "mooncycle-rose",
+      "name": {
+        "ru": "Бархатно-чёрная чайная роза",
+        "en": "Black Velvet Mooncycle Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56008,
+          "name": {
+            "ru": "Куст бархатно-чёрной чайной розы",
+            "en": "Black Velvet Mooncycle Rose Plant"
+          },
+          "source": {
+            "itemTableOffset": 3253340,
+            "localizationTableOffset": 160200592,
+            "nameHash": 1026399705
+          }
+        },
+        "flower": {
+          "id": 56208,
+          "name": {
+            "ru": "Бархатно-чёрная чайная роза",
+            "en": "Black Velvet Mooncycle Rose"
+          },
+          "source": {
+            "itemTableOffset": 3247132,
+            "localizationTableOffset": 160168868,
+            "nameHash": 1026401627
+          }
+        },
+        "bud": {
+          "id": 56408,
+          "name": {
+            "ru": "Бутон бархатно-чёрной чайной розы",
+            "en": "Black Velvet Mooncycle Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3238684,
+            "localizationTableOffset": 160140856,
+            "nameHash": 1026403549
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889504,
+        "rawFields": [
+          56008,
+          56208,
+          56208,
+          56408
+        ]
+      }
+    },
+    {
+      "id": "amaryllis-red",
+      "speciesId": "amaryllis",
+      "name": {
+        "ru": "Красный амариллис",
+        "en": "Red Amaryllis"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52021,
+          "name": {
+            "ru": "Куст красного амариллиса",
+            "en": "Red Amaryllis Plant"
+          },
+          "source": {
+            "itemTableOffset": 3267824,
+            "localizationTableOffset": 160282164,
+            "nameHash": 1026280596
+          }
+        },
+        "flower": {
+          "id": 52022,
+          "name": {
+            "ru": "Красный амариллис",
+            "en": "Red Amaryllis"
+          },
+          "source": {
+            "itemTableOffset": 3267668,
+            "localizationTableOffset": 160281720,
+            "nameHash": 1026280597
+          }
+        },
+        "bud": {
+          "id": 53007,
+          "name": {
+            "ru": "Бутон красного амариллиса",
+            "en": "Red Amaryllis Bud"
+          },
+          "source": {
+            "itemTableOffset": 3259864,
+            "localizationTableOffset": 160245584,
+            "nameHash": 1026310331
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890064,
+        "rawFields": [
+          52021,
+          52022,
+          52022,
+          53007
+        ]
+      }
+    },
+    {
+      "id": "amaryllis-orange",
+      "speciesId": "amaryllis",
+      "name": {
+        "ru": "Оранжевый амариллис",
+        "en": "Orange Amaryllis"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52018,
+          "name": {
+            "ru": "Куст оранжевого амариллиса",
+            "en": "Orange Amaryllis Plant"
+          },
+          "source": {
+            "itemTableOffset": 3268176,
+            "localizationTableOffset": 160283772,
+            "nameHash": 1026280572
+          }
+        },
+        "flower": {
+          "id": 52019,
+          "name": {
+            "ru": "Оранжевый амариллис",
+            "en": "Orange Amaryllis"
+          },
+          "source": {
+            "itemTableOffset": 3268020,
+            "localizationTableOffset": 160283316,
+            "nameHash": 1026280573
+          }
+        },
+        "bud": {
+          "id": 53006,
+          "name": {
+            "ru": "Бутон оранжевого амариллиса",
+            "en": "Orange Amaryllis Bud"
+          },
+          "source": {
+            "itemTableOffset": 3259948,
+            "localizationTableOffset": 160246168,
+            "nameHash": 1026310330
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890084,
+        "rawFields": [
+          52018,
+          52019,
+          52019,
+          53006
+        ]
+      }
+    },
+    {
+      "id": "amaryllis-white",
+      "speciesId": "amaryllis",
+      "name": {
+        "ru": "Белый амариллис",
+        "en": "White Amaryllis"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52024,
+          "name": {
+            "ru": "Куст белого амариллиса",
+            "en": "White Amaryllis Plant"
+          },
+          "source": {
+            "itemTableOffset": 3267472,
+            "localizationTableOffset": 160280568,
+            "nameHash": 1026280599
+          }
+        },
+        "flower": {
+          "id": 52025,
+          "name": {
+            "ru": "Белый амариллис",
+            "en": "White Amaryllis"
+          },
+          "source": {
+            "itemTableOffset": 3267316,
+            "localizationTableOffset": 160280128,
+            "nameHash": 1026280600
+          }
+        },
+        "bud": {
+          "id": 53008,
+          "name": {
+            "ru": "Бутон белого амариллиса",
+            "en": "White Amaryllis Bud"
+          },
+          "source": {
+            "itemTableOffset": 3259780,
+            "localizationTableOffset": 160245000,
+            "nameHash": 1026310332
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890044,
+        "rawFields": [
+          52024,
+          52025,
+          52025,
+          53008
+        ]
+      }
+    },
+    {
+      "id": "amaryllis-blush",
+      "speciesId": "amaryllis",
+      "name": {
+        "ru": "Молочно-персиковый амариллис",
+        "en": "Blush Amaryllis"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56029,
+          "name": {
+            "ru": "Куст кремово-персикового амариллиса",
+            "en": "Blush Amaryllis Plant"
+          },
+          "source": {
+            "itemTableOffset": 3251032,
+            "localizationTableOffset": 160187104,
+            "nameHash": 1026399768
+          }
+        },
+        "flower": {
+          "id": 56229,
+          "name": {
+            "ru": "Молочно-персиковый амариллис",
+            "en": "Blush Amaryllis"
+          },
+          "source": {
+            "itemTableOffset": 3243384,
+            "localizationTableOffset": 160157860,
+            "nameHash": 1026401690
+          }
+        },
+        "bud": {
+          "id": 56429,
+          "name": {
+            "ru": "Бутон кремово-персикового амариллиса",
+            "en": "Blush Amaryllis Bud"
+          },
+          "source": {
+            "itemTableOffset": 3236376,
+            "localizationTableOffset": 160126800,
+            "nameHash": 1026403612
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889084,
+        "rawFields": [
+          56029,
+          56229,
+          56229,
+          56429
+        ]
+      }
+    },
+    {
+      "id": "amaryllis-canary",
+      "speciesId": "amaryllis",
+      "name": {
+        "ru": "Канареечно-желтый амариллис",
+        "en": "Canary Amaryllis"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56028,
+          "name": {
+            "ru": "Куст желтого амариллиса",
+            "en": "Canary Amaryllis Plant"
+          },
+          "source": {
+            "itemTableOffset": 3251136,
+            "localizationTableOffset": 160187756,
+            "nameHash": 1026399767
+          }
+        },
+        "flower": {
+          "id": 56228,
+          "name": {
+            "ru": "Канареечно-желтый амариллис",
+            "en": "Canary Amaryllis"
+          },
+          "source": {
+            "itemTableOffset": 3243552,
+            "localizationTableOffset": 160158396,
+            "nameHash": 1026401689
+          }
+        },
+        "bud": {
+          "id": 56428,
+          "name": {
+            "ru": "Бутон жёлтого амариллиса",
+            "en": "Canary Amaryllis Bud"
+          },
+          "source": {
+            "itemTableOffset": 3236480,
+            "localizationTableOffset": 160127484,
+            "nameHash": 1026403611
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889104,
+        "rawFields": [
+          56028,
+          56228,
+          56228,
+          56428
+        ]
+      }
+    },
+    {
+      "id": "amaryllis-lime",
+      "speciesId": "amaryllis",
+      "name": {
+        "ru": "Лазурный амариллис",
+        "en": "Lime Amaryllis"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56030,
+          "name": {
+            "ru": "Куст лазурного амариллиса",
+            "en": "Lime Amaryllis Plant"
+          },
+          "source": {
+            "itemTableOffset": 3250920,
+            "localizationTableOffset": 160186464,
+            "nameHash": 1026399790
+          }
+        },
+        "flower": {
+          "id": 56230,
+          "name": {
+            "ru": "Лазурный амариллис",
+            "en": "Lime Amaryllis"
+          },
+          "source": {
+            "itemTableOffset": 3243192,
+            "localizationTableOffset": 160157340,
+            "nameHash": 1026401712
+          }
+        },
+        "bud": {
+          "id": 56430,
+          "name": {
+            "ru": "Бутон лазурного амариллиса",
+            "en": "Lime Amaryllis Bud"
+          },
+          "source": {
+            "itemTableOffset": 3236264,
+            "localizationTableOffset": 160126132,
+            "nameHash": 1026403634
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889064,
+        "rawFields": [
+          56030,
+          56230,
+          56230,
+          56430
+        ]
+      }
+    },
+    {
+      "id": "dahlia-yellow",
+      "speciesId": "dahlia",
+      "name": {
+        "ru": "Жёлтый георгин",
+        "en": "Yellow Dwarf Dahlia"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50206,
+          "name": {
+            "ru": "Куст жёлтых георгинов",
+            "en": "Yellow Dwarf Dahlia Plant"
+          },
+          "source": {
+            "itemTableOffset": 3282384,
+            "localizationTableOffset": 160372860,
+            "nameHash": 1026222879
+          }
+        },
+        "flower": {
+          "id": 50207,
+          "name": {
+            "ru": "Жёлтый георгин",
+            "en": "Yellow Dwarf Dahlia"
+          },
+          "source": {
+            "itemTableOffset": 3282180,
+            "localizationTableOffset": 160372396,
+            "nameHash": 1026222880
+          }
+        },
+        "bud": {
+          "id": 50296,
+          "name": {
+            "ru": "Бутон жёлтого георгина",
+            "en": "Yellow Dwarf Dahlia Bud"
+          },
+          "source": {
+            "itemTableOffset": 3276964,
+            "localizationTableOffset": 160334284,
+            "nameHash": 1026223158
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890384,
+        "rawFields": [
+          50206,
+          50207,
+          50207,
+          50296
+        ]
+      }
+    },
+    {
+      "id": "dahlia-orange",
+      "speciesId": "dahlia",
+      "name": {
+        "ru": "Оранжевый георгин",
+        "en": "Orange Dwarf Dahlia"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50208,
+          "name": {
+            "ru": "Куст оранжевых георгинов",
+            "en": "Orange Dwarf Dahlia Plant"
+          },
+          "source": {
+            "itemTableOffset": 3282028,
+            "localizationTableOffset": 160371796,
+            "nameHash": 1026222881
+          }
+        },
+        "flower": {
+          "id": 50209,
+          "name": {
+            "ru": "Оранжевый георгин",
+            "en": "Orange Dwarf Dahlia"
+          },
+          "source": {
+            "itemTableOffset": 3281848,
+            "localizationTableOffset": 160371324,
+            "nameHash": 1026222882
+          }
+        },
+        "bud": {
+          "id": 50297,
+          "name": {
+            "ru": "Бутон оранжевого георгина",
+            "en": "Orange Dwarf Dahlia Bud"
+          },
+          "source": {
+            "itemTableOffset": 3276856,
+            "localizationTableOffset": 160333680,
+            "nameHash": 1026223159
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890364,
+        "rawFields": [
+          50208,
+          50209,
+          50209,
+          50297
+        ]
+      }
+    },
+    {
+      "id": "dahlia-teal",
+      "speciesId": "dahlia",
+      "name": {
+        "ru": "Бирюзовый георгин",
+        "en": "Teal Dwarf Dahlia"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52054,
+          "name": {
+            "ru": "Куст бирюзового георгина",
+            "en": "Teal Dwarf Dahlia Plant"
+          },
+          "source": {
+            "itemTableOffset": 3263736,
+            "localizationTableOffset": 160264640,
+            "nameHash": 1026280692
+          }
+        },
+        "flower": {
+          "id": 52055,
+          "name": {
+            "ru": "Бирюзовый георгин",
+            "en": "Teal Dwarf Dahlia"
+          },
+          "source": {
+            "itemTableOffset": 3263576,
+            "localizationTableOffset": 160264148,
+            "nameHash": 1026280693
+          }
+        },
+        "bud": {
+          "id": 53018,
+          "name": {
+            "ru": "Бутон бирюзового георгина",
+            "en": "Teal Dwarf Dahlia Bud"
+          },
+          "source": {
+            "itemTableOffset": 3258912,
+            "localizationTableOffset": 160239064,
+            "nameHash": 1026310363
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889844,
+        "rawFields": [
+          52054,
+          52055,
+          52055,
+          53018
+        ]
+      }
+    },
+    {
+      "id": "dahlia-cream",
+      "speciesId": "dahlia",
+      "name": {
+        "ru": "Кремово-жёлтый георгин",
+        "en": "Cream Dwarf Dahlia"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56010,
+          "name": {
+            "ru": "Куст кремово-жёлтых георгинов",
+            "en": "Cream Dwarf Dahlia Plant"
+          },
+          "source": {
+            "itemTableOffset": 3253124,
+            "localizationTableOffset": 160199244,
+            "nameHash": 1026399728
+          }
+        },
+        "flower": {
+          "id": 56210,
+          "name": {
+            "ru": "Кремово-жёлтый георгин",
+            "en": "Cream Dwarf Dahlia"
+          },
+          "source": {
+            "itemTableOffset": 3246788,
+            "localizationTableOffset": 160167768,
+            "nameHash": 1026401650
+          }
+        },
+        "bud": {
+          "id": 56410,
+          "name": {
+            "ru": "Бутон кремово-жёлтого георгина",
+            "en": "Cream Dwarf Dahlia Bud"
+          },
+          "source": {
+            "itemTableOffset": 3238468,
+            "localizationTableOffset": 160139452,
+            "nameHash": 1026403572
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889464,
+        "rawFields": [
+          56010,
+          56210,
+          56210,
+          56410
+        ]
+      }
+    },
+    {
+      "id": "dahlia-pastel-pink",
+      "speciesId": "dahlia",
+      "name": {
+        "ru": "Светло-розовый георгин",
+        "en": "Pastel Pink Dwarf Dahlia"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56009,
+          "name": {
+            "ru": "Куст светло-розовых георгинов",
+            "en": "Pastel Pink Dwarf Dahlia Plant"
+          },
+          "source": {
+            "itemTableOffset": 3253232,
+            "localizationTableOffset": 160199912,
+            "nameHash": 1026399706
+          }
+        },
+        "flower": {
+          "id": 56209,
+          "name": {
+            "ru": "Светло-розовый георгин",
+            "en": "Pastel Pink Dwarf Dahlia"
+          },
+          "source": {
+            "itemTableOffset": 3246960,
+            "localizationTableOffset": 160168316,
+            "nameHash": 1026401628
+          }
+        },
+        "bud": {
+          "id": 56409,
+          "name": {
+            "ru": "Бутон светло-розового георгина",
+            "en": "Pastel Pink Dwarf Dahlia Bud"
+          },
+          "source": {
+            "itemTableOffset": 3238576,
+            "localizationTableOffset": 160140152,
+            "nameHash": 1026403550
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889484,
+        "rawFields": [
+          56009,
+          56209,
+          56209,
+          56409
+        ]
+      }
+    },
+    {
+      "id": "dahlia-amethyst",
+      "speciesId": "dahlia",
+      "name": {
+        "ru": "Ярко-малиновый георгин",
+        "en": "Amethyst Dwarf Dahlia"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56011,
+          "name": {
+            "ru": "Куст ярко-малиновых георгинов",
+            "en": "Amethyst Dwarf Dahlia Plant"
+          },
+          "source": {
+            "itemTableOffset": 3253008,
+            "localizationTableOffset": 160198608,
+            "nameHash": 1026399729
+          }
+        },
+        "flower": {
+          "id": 56211,
+          "name": {
+            "ru": "Ярко-малиновый георгин",
+            "en": "Amethyst Dwarf Dahlia"
+          },
+          "source": {
+            "itemTableOffset": 3246592,
+            "localizationTableOffset": 160167240,
+            "nameHash": 1026401651
+          }
+        },
+        "bud": {
+          "id": 56411,
+          "name": {
+            "ru": "Бутон ярко-малинового георгина",
+            "en": "Amethyst Dwarf Dahlia Bud"
+          },
+          "source": {
+            "itemTableOffset": 3238352,
+            "localizationTableOffset": 160138776,
+            "nameHash": 1026403573
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889444,
+        "rawFields": [
+          56011,
+          56211,
+          56211,
+          56411
+        ]
+      }
+    },
+    {
+      "id": "dahlia-blush",
+      "speciesId": "dahlia",
+      "name": {
+        "ru": "Кремово-персиковый георгин",
+        "en": "Blush Dwarf Dahlia"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56012,
+          "name": {
+            "ru": "Куст кремово-персиковых георгинов",
+            "en": "Blush Dwarf Dahlia Plant"
+          },
+          "source": {
+            "itemTableOffset": 3252892,
+            "localizationTableOffset": 160197944,
+            "nameHash": 1026399730
+          }
+        },
+        "flower": {
+          "id": 56212,
+          "name": {
+            "ru": "Кремово-персиковый георгин",
+            "en": "Blush Dwarf Dahlia"
+          },
+          "source": {
+            "itemTableOffset": 3246396,
+            "localizationTableOffset": 160166688,
+            "nameHash": 1026401652
+          }
+        },
+        "bud": {
+          "id": 56412,
+          "name": {
+            "ru": "Бутон кремо-персикового георгина",
+            "en": "Blush Dwarf Dahlia Bud"
+          },
+          "source": {
+            "itemTableOffset": 3238236,
+            "localizationTableOffset": 160138080,
+            "nameHash": 1026403574
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889424,
+        "rawFields": [
+          56012,
+          56212,
+          56212,
+          56412
+        ]
+      }
+    },
+    {
+      "id": "king-protea-white",
+      "speciesId": "king-protea",
+      "name": {
+        "ru": "Белая протея",
+        "en": "White King Protea"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52012,
+          "name": {
+            "ru": "Куст белой протеи",
+            "en": "White King Protea Plant"
+          },
+          "source": {
+            "itemTableOffset": 3268880,
+            "localizationTableOffset": 160287028,
+            "nameHash": 1026280566
+          }
+        },
+        "flower": {
+          "id": 52013,
+          "name": {
+            "ru": "Белая протея",
+            "en": "White King Protea"
+          },
+          "source": {
+            "itemTableOffset": 3268724,
+            "localizationTableOffset": 160286568,
+            "nameHash": 1026280567
+          }
+        },
+        "bud": {
+          "id": 53004,
+          "name": {
+            "ru": "Бутон белой протеи",
+            "en": "White King Protea Bud"
+          },
+          "source": {
+            "itemTableOffset": 3260116,
+            "localizationTableOffset": 160247368,
+            "nameHash": 1026310328
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890124,
+        "rawFields": [
+          52012,
+          52013,
+          52013,
+          53004
+        ]
+      }
+    },
+    {
+      "id": "king-protea-red",
+      "speciesId": "king-protea",
+      "name": {
+        "ru": "Красная протея",
+        "en": "Red King Protea"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52015,
+          "name": {
+            "ru": "Куст красной протеи",
+            "en": "Red King Protea Plant"
+          },
+          "source": {
+            "itemTableOffset": 3268528,
+            "localizationTableOffset": 160285396,
+            "nameHash": 1026280569
+          }
+        },
+        "flower": {
+          "id": 52016,
+          "name": {
+            "ru": "Красная протея",
+            "en": "Red King Protea"
+          },
+          "source": {
+            "itemTableOffset": 3268372,
+            "localizationTableOffset": 160284948,
+            "nameHash": 1026280570
+          }
+        },
+        "bud": {
+          "id": 53005,
+          "name": {
+            "ru": "Бутон красной протеи",
+            "en": "Red King Protea Bud"
+          },
+          "source": {
+            "itemTableOffset": 3260032,
+            "localizationTableOffset": 160246772,
+            "nameHash": 1026310329
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890104,
+        "rawFields": [
+          52015,
+          52016,
+          52016,
+          53005
+        ]
+      }
+    },
+    {
+      "id": "king-protea-purple",
+      "speciesId": "king-protea",
+      "name": {
+        "ru": "Фиолетовая протея",
+        "en": "Purple King Protea"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52009,
+          "name": {
+            "ru": "Куст фиолетовой протеи",
+            "en": "Purple King Protea Plant"
+          },
+          "source": {
+            "itemTableOffset": 3269232,
+            "localizationTableOffset": 160288664,
+            "nameHash": 1026280542
+          }
+        },
+        "flower": {
+          "id": 52010,
+          "name": {
+            "ru": "Фиолетовая протея",
+            "en": "Purple King Protea"
+          },
+          "source": {
+            "itemTableOffset": 3269076,
+            "localizationTableOffset": 160288200,
+            "nameHash": 1026280564
+          }
+        },
+        "bud": {
+          "id": 53003,
+          "name": {
+            "ru": "Бутон фиолетовой протеи",
+            "en": "Purple King Protea Bud"
+          },
+          "source": {
+            "itemTableOffset": 3260200,
+            "localizationTableOffset": 160247972,
+            "nameHash": 1026310327
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890144,
+        "rawFields": [
+          52009,
+          52010,
+          52010,
+          53003
+        ]
+      }
+    },
+    {
+      "id": "king-protea-blush",
+      "speciesId": "king-protea",
+      "name": {
+        "ru": "Кремово-персиковая протея",
+        "en": "Blush King Protea"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56025,
+          "name": {
+            "ru": "Куст персиковой протеи",
+            "en": "Blush King Protea Plant"
+          },
+          "source": {
+            "itemTableOffset": 3251456,
+            "localizationTableOffset": 160189752,
+            "nameHash": 1026399764
+          }
+        },
+        "flower": {
+          "id": 56225,
+          "name": {
+            "ru": "Кремово-персиковая протея",
+            "en": "Blush King Protea"
+          },
+          "source": {
+            "itemTableOffset": 3244080,
+            "localizationTableOffset": 160160064,
+            "nameHash": 1026401686
+          }
+        },
+        "bud": {
+          "id": 56425,
+          "name": {
+            "ru": "Бутон кремово-персиковой протеи",
+            "en": "Blush King Protea Bud"
+          },
+          "source": {
+            "itemTableOffset": 3236800,
+            "localizationTableOffset": 160129572,
+            "nameHash": 1026403608
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889164,
+        "rawFields": [
+          56025,
+          56225,
+          56225,
+          56425
+        ]
+      }
+    },
+    {
+      "id": "king-protea-russet",
+      "speciesId": "king-protea",
+      "name": {
+        "ru": "Протея чайного цвета",
+        "en": "Russet King Protea"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56026,
+          "name": {
+            "ru": "Куст протеи чайного цвета",
+            "en": "Russet King Protea Plant"
+          },
+          "source": {
+            "itemTableOffset": 3251352,
+            "localizationTableOffset": 160189108,
+            "nameHash": 1026399765
+          }
+        },
+        "flower": {
+          "id": 56226,
+          "name": {
+            "ru": "Протея чайного цвета",
+            "en": "Russet King Protea"
+          },
+          "source": {
+            "itemTableOffset": 3243912,
+            "localizationTableOffset": 160159540,
+            "nameHash": 1026401687
+          }
+        },
+        "bud": {
+          "id": 56426,
+          "name": {
+            "ru": "Бутон чайно-розовой протеи",
+            "en": "Russet King Protea Bud"
+          },
+          "source": {
+            "itemTableOffset": 3236696,
+            "localizationTableOffset": 160128892,
+            "nameHash": 1026403609
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889144,
+        "rawFields": [
+          56026,
+          56226,
+          56226,
+          56426
+        ]
+      }
+    },
+    {
+      "id": "king-protea-sunset",
+      "speciesId": "king-protea",
+      "name": {
+        "ru": "Сумеречно-огненная протея",
+        "en": "Sunset King Protea"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56027,
+          "name": {
+            "ru": "Куст сумеречно-пылающей протеи",
+            "en": "Sunset King Protea Plant"
+          },
+          "source": {
+            "itemTableOffset": 3251240,
+            "localizationTableOffset": 160188412,
+            "nameHash": 1026399766
+          }
+        },
+        "flower": {
+          "id": 56227,
+          "name": {
+            "ru": "Сумеречно-огненная протея",
+            "en": "Sunset King Protea"
+          },
+          "source": {
+            "itemTableOffset": 3243720,
+            "localizationTableOffset": 160158956,
+            "nameHash": 1026401688
+          }
+        },
+        "bud": {
+          "id": 56427,
+          "name": {
+            "ru": "Бутон сумеречно-огненной протеи",
+            "en": "Sunset King Protea Bud"
+          },
+          "source": {
+            "itemTableOffset": 3236584,
+            "localizationTableOffset": 160128164,
+            "nameHash": 1026403610
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889124,
+        "rawFields": [
+          56027,
+          56227,
+          56227,
+          56427
+        ]
+      }
+    },
+    {
+      "id": "lily-white",
+      "speciesId": "lily",
+      "name": {
+        "ru": "Белая лилия",
+        "en": "White Lily"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50194,
+          "name": {
+            "ru": "Куст белой лилии",
+            "en": "White Lily Plant"
+          },
+          "source": {
+            "itemTableOffset": 3283920,
+            "localizationTableOffset": 160378568,
+            "nameHash": 1026222195
+          }
+        },
+        "flower": {
+          "id": 50195,
+          "name": {
+            "ru": "Белая лилия",
+            "en": "White Lily"
+          },
+          "source": {
+            "itemTableOffset": 3283764,
+            "localizationTableOffset": 160378208,
+            "nameHash": 1026222196
+          }
+        },
+        "bud": {
+          "id": 50286,
+          "name": {
+            "ru": "Бутон белой лилии",
+            "en": "White Lily Bud"
+          },
+          "source": {
+            "itemTableOffset": 3277704,
+            "localizationTableOffset": 160338808,
+            "nameHash": 1026223127
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890504,
+        "rawFields": [
+          50194,
+          50195,
+          50195,
+          50286
+        ]
+      }
+    },
+    {
+      "id": "lily-yellow",
+      "speciesId": "lily",
+      "name": {
+        "ru": "Жёлтая лилия",
+        "en": "Yellow Lily"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50196,
+          "name": {
+            "ru": "Куст жёлтой лилии",
+            "en": "Yellow Lily Plant"
+          },
+          "source": {
+            "itemTableOffset": 3283632,
+            "localizationTableOffset": 160377736,
+            "nameHash": 1026222197
+          }
+        },
+        "flower": {
+          "id": 50197,
+          "name": {
+            "ru": "Жёлтая лилия",
+            "en": "Yellow Lily"
+          },
+          "source": {
+            "itemTableOffset": 3283476,
+            "localizationTableOffset": 160377360,
+            "nameHash": 1026222198
+          }
+        },
+        "bud": {
+          "id": 50287,
+          "name": {
+            "ru": "Бутон жёлтой лилии",
+            "en": "Yellow Lily Bud"
+          },
+          "source": {
+            "itemTableOffset": 3277620,
+            "localizationTableOffset": 160338300,
+            "nameHash": 1026223128
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890484,
+        "rawFields": [
+          50196,
+          50197,
+          50197,
+          50287
+        ]
+      }
+    },
+    {
+      "id": "lily-teal",
+      "speciesId": "lily",
+      "name": {
+        "ru": "Бирюзовая лилия",
+        "en": "Teal Lily"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50303,
+          "name": {
+            "ru": "Куст бирюзовых лилий",
+            "en": "Teal Lily Plant"
+          },
+          "source": {
+            "itemTableOffset": 3276288,
+            "localizationTableOffset": 160330480,
+            "nameHash": 1026223837
+          }
+        },
+        "flower": {
+          "id": 50304,
+          "name": {
+            "ru": "Бирюзовая лилия",
+            "en": "Teal Lily"
+          },
+          "source": {
+            "itemTableOffset": 3276132,
+            "localizationTableOffset": 160330080,
+            "nameHash": 1026223838
+          }
+        },
+        "bud": {
+          "id": 50309,
+          "name": {
+            "ru": "Бутон бирюзовой лилии",
+            "en": "Teal Lily Bud"
+          },
+          "source": {
+            "itemTableOffset": 3275560,
+            "localizationTableOffset": 160327468,
+            "nameHash": 1026223843
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890264,
+        "rawFields": [
+          50303,
+          50304,
+          50304,
+          50309
+        ]
+      }
+    },
+    {
+      "id": "lily-golden-yellow",
+      "speciesId": "lily",
+      "name": {
+        "ru": "Солнечная лилия",
+        "en": "Golden Yellow Lily"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56000,
+          "name": {
+            "ru": "Куст солнечной лилии",
+            "en": "Golden Yellow Lily Plant"
+          },
+          "source": {
+            "itemTableOffset": 3254228,
+            "localizationTableOffset": 160205544,
+            "nameHash": 1026399697
+          }
+        },
+        "flower": {
+          "id": 56200,
+          "name": {
+            "ru": "Солнечная лилия",
+            "en": "Golden Yellow Lily"
+          },
+          "source": {
+            "itemTableOffset": 3248548,
+            "localizationTableOffset": 160172864,
+            "nameHash": 1026401619
+          }
+        },
+        "bud": {
+          "id": 56400,
+          "name": {
+            "ru": "Бутон солнечной лилии",
+            "en": "Golden Yellow Lily Bud"
+          },
+          "source": {
+            "itemTableOffset": 3239540,
+            "localizationTableOffset": 160146020,
+            "nameHash": 1026403541
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889664,
+        "rawFields": [
+          56000,
+          56200,
+          56200,
+          56400
+        ]
+      }
+    },
+    {
+      "id": "lily-mauve",
+      "speciesId": "lily",
+      "name": {
+        "ru": "Сумеречно-пурпурная лилия",
+        "en": "Mauve Lily"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56001,
+          "name": {
+            "ru": "Куст сумеречно-пурпурной лилии",
+            "en": "Mauve Lily Plant"
+          },
+          "source": {
+            "itemTableOffset": 3254092,
+            "localizationTableOffset": 160204972,
+            "nameHash": 1026399698
+          }
+        },
+        "flower": {
+          "id": 56201,
+          "name": {
+            "ru": "Сумеречно-пурпурная лилия",
+            "en": "Mauve Lily"
+          },
+          "source": {
+            "itemTableOffset": 3248380,
+            "localizationTableOffset": 160172412,
+            "nameHash": 1026401620
+          }
+        },
+        "bud": {
+          "id": 56401,
+          "name": {
+            "ru": "Бутон сумеречно-пурпурной лилии",
+            "en": "Mauve Lily Bud"
+          },
+          "source": {
+            "itemTableOffset": 3239436,
+            "localizationTableOffset": 160145412,
+            "nameHash": 1026403542
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889644,
+        "rawFields": [
+          56001,
+          56201,
+          56201,
+          56401
+        ]
+      }
+    },
+    {
+      "id": "lily-black-velvet",
+      "speciesId": "lily",
+      "name": {
+        "ru": "Бархатно-чёрная лилия",
+        "en": "Black Velvet Lily"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56002,
+          "name": {
+            "ru": "Куст бархатно-чёрной лилии",
+            "en": "Black Velvet Lily Plant"
+          },
+          "source": {
+            "itemTableOffset": 3253980,
+            "localizationTableOffset": 160204388,
+            "nameHash": 1026399699
+          }
+        },
+        "flower": {
+          "id": 56202,
+          "name": {
+            "ru": "Бархатно-чёрная лилия",
+            "en": "Black Velvet Lily"
+          },
+          "source": {
+            "itemTableOffset": 3248188,
+            "localizationTableOffset": 160171952,
+            "nameHash": 1026401621
+          }
+        },
+        "bud": {
+          "id": 56402,
+          "name": {
+            "ru": "Бутон бархатно-чёрной лилии",
+            "en": "Black Velvet Lily Bud"
+          },
+          "source": {
+            "itemTableOffset": 3239324,
+            "localizationTableOffset": 160144800,
+            "nameHash": 1026403543
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889624,
+        "rawFields": [
+          56002,
+          56202,
+          56202,
+          56402
+        ]
+      }
+    },
+    {
+      "id": "agapanthus-white",
+      "speciesId": "agapanthus",
+      "name": {
+        "ru": "Белый агапантус",
+        "en": "White Agapanthus"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52051,
+          "name": {
+            "ru": "Куст белого агапантуса",
+            "en": "White Agapanthus Plant"
+          },
+          "source": {
+            "itemTableOffset": 3264116,
+            "localizationTableOffset": 160266276,
+            "nameHash": 1026280689
+          }
+        },
+        "flower": {
+          "id": 52052,
+          "name": {
+            "ru": "Белый агапантус",
+            "en": "White Agapanthus"
+          },
+          "source": {
+            "itemTableOffset": 3263956,
+            "localizationTableOffset": 160265836,
+            "nameHash": 1026280690
+          }
+        },
+        "bud": {
+          "id": 53017,
+          "name": {
+            "ru": "Бутон белого агапантуса",
+            "en": "White Agapanthus Bud"
+          },
+          "source": {
+            "itemTableOffset": 3259000,
+            "localizationTableOffset": 160239704,
+            "nameHash": 1026310362
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889864,
+        "rawFields": [
+          52051,
+          52052,
+          52052,
+          53017
+        ]
+      }
+    },
+    {
+      "id": "agapanthus-blue",
+      "speciesId": "agapanthus",
+      "name": {
+        "ru": "Синий агапантус",
+        "en": "Blue Agapanthus"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52045,
+          "name": {
+            "ru": "Куст синего агапантуса",
+            "en": "Blue Agapanthus Plant"
+          },
+          "source": {
+            "itemTableOffset": 3264876,
+            "localizationTableOffset": 160269432,
+            "nameHash": 1026280662
+          }
+        },
+        "flower": {
+          "id": 52046,
+          "name": {
+            "ru": "Синий агапантус",
+            "en": "Blue Agapanthus"
+          },
+          "source": {
+            "itemTableOffset": 3264716,
+            "localizationTableOffset": 160269008,
+            "nameHash": 1026280663
+          }
+        },
+        "bud": {
+          "id": 53015,
+          "name": {
+            "ru": "Бутон синего агапантуса",
+            "en": "Blue Agapanthus Bud"
+          },
+          "source": {
+            "itemTableOffset": 3259176,
+            "localizationTableOffset": 160240884,
+            "nameHash": 1026310360
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889904,
+        "rawFields": [
+          52045,
+          52046,
+          52046,
+          53015
+        ]
+      }
+    },
+    {
+      "id": "agapanthus-purple",
+      "speciesId": "agapanthus",
+      "name": {
+        "ru": "Фиолетовый агапантус",
+        "en": "Purple Agapanthus"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52048,
+          "name": {
+            "ru": "Куст фиолетового агапантуса",
+            "en": "Purple Agapanthus Plant"
+          },
+          "source": {
+            "itemTableOffset": 3264496,
+            "localizationTableOffset": 160267880,
+            "nameHash": 1026280665
+          }
+        },
+        "flower": {
+          "id": 52049,
+          "name": {
+            "ru": "Фиолетовый агапантус",
+            "en": "Purple Agapanthus"
+          },
+          "source": {
+            "itemTableOffset": 3264336,
+            "localizationTableOffset": 160267432,
+            "nameHash": 1026280666
+          }
+        },
+        "bud": {
+          "id": 53016,
+          "name": {
+            "ru": "Бутон фиолетового агапантуса",
+            "en": "Purple Agapanthus Bud"
+          },
+          "source": {
+            "itemTableOffset": 3259088,
+            "localizationTableOffset": 160240288,
+            "nameHash": 1026310361
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889884,
+        "rawFields": [
+          52048,
+          52049,
+          52049,
+          53016
+        ]
+      }
+    },
+    {
+      "id": "agapanthus-blue-and-white",
+      "speciesId": "agapanthus",
+      "name": {
+        "ru": "Сине-белый агапантус",
+        "en": "Blue and White Agapanthus"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56031,
+          "name": {
+            "ru": "Куст сине-белого агапантуса",
+            "en": "Blue and White Agapanthus Plant"
+          },
+          "source": {
+            "itemTableOffset": 3250812,
+            "localizationTableOffset": 160185796,
+            "nameHash": 1026399791
+          }
+        },
+        "flower": {
+          "id": 56231,
+          "name": {
+            "ru": "Сине-белый агапантус",
+            "en": "Blue and White Agapanthus"
+          },
+          "source": {
+            "itemTableOffset": 3243020,
+            "localizationTableOffset": 160156788,
+            "nameHash": 1026401713
+          }
+        },
+        "bud": {
+          "id": 56431,
+          "name": {
+            "ru": "Бутон сине-белого агапантуса",
+            "en": "Blue and White Agapanthus Bud"
+          },
+          "source": {
+            "itemTableOffset": 3236156,
+            "localizationTableOffset": 160125424,
+            "nameHash": 1026403635
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889044,
+        "rawFields": [
+          56031,
+          56231,
+          56231,
+          56431
+        ]
+      }
+    },
+    {
+      "id": "agapanthus-blush",
+      "speciesId": "agapanthus",
+      "name": {
+        "ru": "Молочно-персиковый агапантус",
+        "en": "Blush Agapanthus"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56032,
+          "name": {
+            "ru": "Куст кремово-персикового агапантуса",
+            "en": "Blush Agapanthus Plant"
+          },
+          "source": {
+            "itemTableOffset": 3250704,
+            "localizationTableOffset": 160185140,
+            "nameHash": 1026399792
+          }
+        },
+        "flower": {
+          "id": 56232,
+          "name": {
+            "ru": "Молочно-персиковый агапантус",
+            "en": "Blush Agapanthus"
+          },
+          "source": {
+            "itemTableOffset": 3242848,
+            "localizationTableOffset": 160156252,
+            "nameHash": 1026401714
+          }
+        },
+        "bud": {
+          "id": 56432,
+          "name": {
+            "ru": "Бутон кремово-персикового агапантуса",
+            "en": "Blush Agapanthus Bud"
+          },
+          "source": {
+            "itemTableOffset": 3236048,
+            "localizationTableOffset": 160124740,
+            "nameHash": 1026403636
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889024,
+        "rawFields": [
+          56032,
+          56232,
+          56232,
+          56432
+        ]
+      }
+    },
+    {
+      "id": "agapanthus-baby-blue",
+      "speciesId": "agapanthus",
+      "name": {
+        "ru": "Нежно-синий агапантус",
+        "en": "Baby Blue Agapanthus"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56033,
+          "name": {
+            "ru": "Куст нежно-синего агапантуса",
+            "en": "Baby Blue Agapanthus Plant"
+          },
+          "source": {
+            "itemTableOffset": 3250588,
+            "localizationTableOffset": 160184484,
+            "nameHash": 1026399793
+          }
+        },
+        "flower": {
+          "id": 56233,
+          "name": {
+            "ru": "Нежно-синий агапантус",
+            "en": "Baby Blue Agapanthus"
+          },
+          "source": {
+            "itemTableOffset": 3242652,
+            "localizationTableOffset": 160155720,
+            "nameHash": 1026401715
+          }
+        },
+        "bud": {
+          "id": 56433,
+          "name": {
+            "ru": "Бутон нежно-синего агапантуса",
+            "en": "Baby Blue Agapanthus Bud"
+          },
+          "source": {
+            "itemTableOffset": 3235932,
+            "localizationTableOffset": 160124060,
+            "nameHash": 1026403637
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889004,
+        "rawFields": [
+          56033,
+          56233,
+          56233,
+          56433
+        ]
+      }
+    },
+    {
+      "id": "agapanthus-black-velvet",
+      "speciesId": "agapanthus",
+      "name": {
+        "ru": "Бархатно-чёрный агапантус",
+        "en": "Black Velvet Agapanthus"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56034,
+          "name": {
+            "ru": "Куст бархатно-чёрного агапантуса",
+            "en": "Black Velvet Agapanthus Plant"
+          },
+          "source": {
+            "itemTableOffset": 3250472,
+            "localizationTableOffset": 160183816,
+            "nameHash": 1026399794
+          }
+        },
+        "flower": {
+          "id": 56234,
+          "name": {
+            "ru": "Бархатно-чёрный агапантус",
+            "en": "Black Velvet Agapanthus"
+          },
+          "source": {
+            "itemTableOffset": 3242456,
+            "localizationTableOffset": 160155172,
+            "nameHash": 1026401716
+          }
+        },
+        "bud": {
+          "id": 56434,
+          "name": {
+            "ru": "Бутон бархатно-чёрного агапантуса",
+            "en": "Black Velvet Agapanthus Bud"
+          },
+          "source": {
+            "itemTableOffset": 3235816,
+            "localizationTableOffset": 160123360,
+            "nameHash": 1026403638
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888984,
+        "rawFields": [
+          56034,
+          56234,
+          56234,
+          56434
+        ]
+      }
+    },
+    {
+      "id": "daisy-white",
+      "speciesId": "daisy",
+      "name": {
+        "ru": "Белая маргаритка",
+        "en": "White Daisy"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50198,
+          "name": {
+            "ru": "Куст белых маргариток",
+            "en": "White Daisy Plant"
+          },
+          "source": {
+            "itemTableOffset": 3283392,
+            "localizationTableOffset": 160376844,
+            "nameHash": 1026222199
+          }
+        },
+        "flower": {
+          "id": 50199,
+          "name": {
+            "ru": "Белая маргаритка",
+            "en": "White Daisy"
+          },
+          "source": {
+            "itemTableOffset": 3283212,
+            "localizationTableOffset": 160376440,
+            "nameHash": 1026222200
+          }
+        },
+        "bud": {
+          "id": 50288,
+          "name": {
+            "ru": "Бутон белой маргаритки",
+            "en": "White Daisy Bud"
+          },
+          "source": {
+            "itemTableOffset": 3277536,
+            "localizationTableOffset": 160337760,
+            "nameHash": 1026223129
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890464,
+        "rawFields": [
+          50198,
+          50199,
+          50199,
+          50288
+        ]
+      }
+    },
+    {
+      "id": "daisy-yellow",
+      "speciesId": "daisy",
+      "name": {
+        "ru": "Жёлтая маргаритка",
+        "en": "Yellow Daisy"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50202,
+          "name": {
+            "ru": "Куст жёлтых маргариток",
+            "en": "Yellow Daisy Plant"
+          },
+          "source": {
+            "itemTableOffset": 3282888,
+            "localizationTableOffset": 160374868,
+            "nameHash": 1026222875
+          }
+        },
+        "flower": {
+          "id": 50203,
+          "name": {
+            "ru": "Жёлтая маргаритка",
+            "en": "Yellow Daisy"
+          },
+          "source": {
+            "itemTableOffset": 3282732,
+            "localizationTableOffset": 160374448,
+            "nameHash": 1026222876
+          }
+        },
+        "bud": {
+          "id": 50290,
+          "name": {
+            "ru": "Бутон жёлтой маргаритки",
+            "en": "Yellow Daisy Bud"
+          },
+          "source": {
+            "itemTableOffset": 3277368,
+            "localizationTableOffset": 160336608,
+            "nameHash": 1026223152
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890424,
+        "rawFields": [
+          50202,
+          50203,
+          50203,
+          50290
+        ]
+      }
+    },
+    {
+      "id": "daisy-teal",
+      "speciesId": "daisy",
+      "name": {
+        "ru": "Бирюзовая маргаритка",
+        "en": "Teal Daisy"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50305,
+          "name": {
+            "ru": "Куст бирюзовых маргариток",
+            "en": "Teal Daisy Plant"
+          },
+          "source": {
+            "itemTableOffset": 3276044,
+            "localizationTableOffset": 160329544,
+            "nameHash": 1026223839
+          }
+        },
+        "flower": {
+          "id": 50306,
+          "name": {
+            "ru": "Бирюзовая маргаритка",
+            "en": "Teal Daisy"
+          },
+          "source": {
+            "itemTableOffset": 3275888,
+            "localizationTableOffset": 160329104,
+            "nameHash": 1026223840
+          }
+        },
+        "bud": {
+          "id": 50310,
+          "name": {
+            "ru": "Бутон бирюзовой маргаритки",
+            "en": "Teal Daisy Bud"
+          },
+          "source": {
+            "itemTableOffset": 3275476,
+            "localizationTableOffset": 160326896,
+            "nameHash": 1026223865
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890244,
+        "rawFields": [
+          50305,
+          50306,
+          50306,
+          50310
+        ]
+      }
+    },
+    {
+      "id": "daisy-champagne",
+      "speciesId": "daisy",
+      "name": {
+        "ru": "Маргаритка цвета шампань",
+        "en": "Champagne Daisy"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56003,
+          "name": {
+            "ru": "Куст маргариток цвета шампанского",
+            "en": "Champagne Daisy Plant"
+          },
+          "source": {
+            "itemTableOffset": 3253876,
+            "localizationTableOffset": 160203784,
+            "nameHash": 1026399700
+          }
+        },
+        "flower": {
+          "id": 56203,
+          "name": {
+            "ru": "Маргаритка цвета шампань",
+            "en": "Champagne Daisy"
+          },
+          "source": {
+            "itemTableOffset": 3248020,
+            "localizationTableOffset": 160171484,
+            "nameHash": 1026401622
+          }
+        },
+        "bud": {
+          "id": 56403,
+          "name": {
+            "ru": "Бутон маргаритки цвета шампань",
+            "en": "Champagne Daisy Bud"
+          },
+          "source": {
+            "itemTableOffset": 3239220,
+            "localizationTableOffset": 160144180,
+            "nameHash": 1026403544
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889604,
+        "rawFields": [
+          56003,
+          56203,
+          56203,
+          56403
+        ]
+      }
+    },
+    {
+      "id": "daisy-lime",
+      "speciesId": "daisy",
+      "name": {
+        "ru": "Лазурная маргаритка",
+        "en": "Lime Daisy"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56004,
+          "name": {
+            "ru": "Куст лазурных маргариток",
+            "en": "Lime Daisy Plant"
+          },
+          "source": {
+            "itemTableOffset": 3253772,
+            "localizationTableOffset": 160203156,
+            "nameHash": 1026399701
+          }
+        },
+        "flower": {
+          "id": 56204,
+          "name": {
+            "ru": "Лазурная маргаритка",
+            "en": "Lime Daisy"
+          },
+          "source": {
+            "itemTableOffset": 3247852,
+            "localizationTableOffset": 160170968,
+            "nameHash": 1026401623
+          }
+        },
+        "bud": {
+          "id": 56404,
+          "name": {
+            "ru": "Бутон лазурной маргаритки",
+            "en": "Lime Daisy Bud"
+          },
+          "source": {
+            "itemTableOffset": 3239116,
+            "localizationTableOffset": 160143528,
+            "nameHash": 1026403545
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889584,
+        "rawFields": [
+          56004,
+          56204,
+          56204,
+          56404
+        ]
+      }
+    },
+    {
+      "id": "daisy-violet",
+      "speciesId": "daisy",
+      "name": {
+        "ru": "Аметистовая маргаритка",
+        "en": "Violet Daisy"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56005,
+          "name": {
+            "ru": "Куст аметистовых маргариток",
+            "en": "Violet Daisy Plant"
+          },
+          "source": {
+            "itemTableOffset": 3253660,
+            "localizationTableOffset": 160202600,
+            "nameHash": 1026399702
+          }
+        },
+        "flower": {
+          "id": 56205,
+          "name": {
+            "ru": "Аметистовая маргаритка",
+            "en": "Violet Daisy"
+          },
+          "source": {
+            "itemTableOffset": 3247660,
+            "localizationTableOffset": 160170528,
+            "nameHash": 1026401624
+          }
+        },
+        "bud": {
+          "id": 56405,
+          "name": {
+            "ru": "Бутон аметистовой маргаритки",
+            "en": "Violet Daisy Bud"
+          },
+          "source": {
+            "itemTableOffset": 3239004,
+            "localizationTableOffset": 160142932,
+            "nameHash": 1026403546
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889564,
+        "rawFields": [
+          56005,
+          56205,
+          56205,
+          56405
+        ]
+      }
+    },
+    {
+      "id": "canna-yellow",
+      "speciesId": "canna",
+      "name": {
+        "ru": "Жёлтая канна",
+        "en": "Yellow Canna"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52030,
+          "name": {
+            "ru": "Куст жёлтой канны",
+            "en": "Yellow Canna Plant"
+          },
+          "source": {
+            "itemTableOffset": 3266768,
+            "localizationTableOffset": 160277556,
+            "nameHash": 1026280626
+          }
+        },
+        "flower": {
+          "id": 52031,
+          "name": {
+            "ru": "Жёлтая канна",
+            "en": "Yellow Canna"
+          },
+          "source": {
+            "itemTableOffset": 3266612,
+            "localizationTableOffset": 160277156,
+            "nameHash": 1026280627
+          }
+        },
+        "bud": {
+          "id": 53010,
+          "name": {
+            "ru": "Бутон жёлтой канны",
+            "en": "Yellow Canna Bud"
+          },
+          "source": {
+            "itemTableOffset": 3259612,
+            "localizationTableOffset": 160243892,
+            "nameHash": 1026310355
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890004,
+        "rawFields": [
+          52030,
+          52031,
+          52031,
+          53010
+        ]
+      }
+    },
+    {
+      "id": "canna-orange",
+      "speciesId": "canna",
+      "name": {
+        "ru": "Оранжевая канна",
+        "en": "Orange Canna"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52027,
+          "name": {
+            "ru": "Куст оранжевой канны",
+            "en": "Orange Canna Plant"
+          },
+          "source": {
+            "itemTableOffset": 3267120,
+            "localizationTableOffset": 160279020,
+            "nameHash": 1026280602
+          }
+        },
+        "flower": {
+          "id": 52028,
+          "name": {
+            "ru": "Оранжевая канна",
+            "en": "Orange Canna"
+          },
+          "source": {
+            "itemTableOffset": 3266964,
+            "localizationTableOffset": 160278612,
+            "nameHash": 1026280603
+          }
+        },
+        "bud": {
+          "id": 53009,
+          "name": {
+            "ru": "Бутон оранжевой канны",
+            "en": "Orange Canna Bud"
+          },
+          "source": {
+            "itemTableOffset": 3259696,
+            "localizationTableOffset": 160244444,
+            "nameHash": 1026310333
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890024,
+        "rawFields": [
+          52027,
+          52028,
+          52028,
+          53009
+        ]
+      }
+    },
+    {
+      "id": "canna-red",
+      "speciesId": "canna",
+      "name": {
+        "ru": "Красная канна",
+        "en": "Red Canna"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52033,
+          "name": {
+            "ru": "Куст красной канны",
+            "en": "Red Canna Plant"
+          },
+          "source": {
+            "itemTableOffset": 3266416,
+            "localizationTableOffset": 160276124,
+            "nameHash": 1026280629
+          }
+        },
+        "flower": {
+          "id": 52034,
+          "name": {
+            "ru": "Красная канна",
+            "en": "Red Canna"
+          },
+          "source": {
+            "itemTableOffset": 3266260,
+            "localizationTableOffset": 160275728,
+            "nameHash": 1026280630
+          }
+        },
+        "bud": {
+          "id": 53011,
+          "name": {
+            "ru": "Бутон красной канны",
+            "en": "Red Canna Bud"
+          },
+          "source": {
+            "itemTableOffset": 3259528,
+            "localizationTableOffset": 160243356,
+            "nameHash": 1026310356
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889984,
+        "rawFields": [
+          52033,
+          52034,
+          52034,
+          53011
+        ]
+      }
+    },
+    {
+      "id": "canna-blush",
+      "speciesId": "canna",
+      "name": {
+        "ru": "Сливочно-персиковая канна",
+        "en": "Blush Canna"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56036,
+          "name": {
+            "ru": "Куст кремово-персиковой канны",
+            "en": "Blush Canna Plant"
+          },
+          "source": {
+            "itemTableOffset": 3250256,
+            "localizationTableOffset": 160182624,
+            "nameHash": 1026399796
+          }
+        },
+        "flower": {
+          "id": 56236,
+          "name": {
+            "ru": "Сливочно-персиковая канна",
+            "en": "Blush Canna"
+          },
+          "source": {
+            "itemTableOffset": 3242112,
+            "localizationTableOffset": 160154216,
+            "nameHash": 1026401718
+          }
+        },
+        "bud": {
+          "id": 56436,
+          "name": {
+            "ru": "Бутон кремово-персиковой канны",
+            "en": "Blush Canna Bud"
+          },
+          "source": {
+            "itemTableOffset": 3235600,
+            "localizationTableOffset": 160122104,
+            "nameHash": 1026403640
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888944,
+        "rawFields": [
+          56036,
+          56236,
+          56236,
+          56436
+        ]
+      }
+    },
+    {
+      "id": "canna-saffron",
+      "speciesId": "canna",
+      "name": {
+        "ru": "Шафрановая канна",
+        "en": "Saffron Canna"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56035,
+          "name": {
+            "ru": "Куст шафрановой канны",
+            "en": "Saffron Canna Plant"
+          },
+          "source": {
+            "itemTableOffset": 3250364,
+            "localizationTableOffset": 160183212,
+            "nameHash": 1026399795
+          }
+        },
+        "flower": {
+          "id": 56235,
+          "name": {
+            "ru": "Шафрановая канна",
+            "en": "Saffron Canna"
+          },
+          "source": {
+            "itemTableOffset": 3242284,
+            "localizationTableOffset": 160154692,
+            "nameHash": 1026401717
+          }
+        },
+        "bud": {
+          "id": 56435,
+          "name": {
+            "ru": "Бутон шафрановой канны",
+            "en": "Saffron Canna Bud"
+          },
+          "source": {
+            "itemTableOffset": 3235708,
+            "localizationTableOffset": 160122728,
+            "nameHash": 1026403639
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888964,
+        "rawFields": [
+          56035,
+          56235,
+          56235,
+          56435
+        ]
+      }
+    },
+    {
+      "id": "canna-champagne",
+      "speciesId": "canna",
+      "name": {
+        "ru": "Канна цвета шампань",
+        "en": "Champagne Canna"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56038,
+          "name": {
+            "ru": "Куст канны цвета шампань",
+            "en": "Champagne Canna Plant"
+          },
+          "source": {
+            "itemTableOffset": 3250024,
+            "localizationTableOffset": 160181448,
+            "nameHash": 1026399798
+          }
+        },
+        "flower": {
+          "id": 56238,
+          "name": {
+            "ru": "Канна цвета шампань",
+            "en": "Champagne Canna"
+          },
+          "source": {
+            "itemTableOffset": 3241736,
+            "localizationTableOffset": 160153288,
+            "nameHash": 1026401720
+          }
+        },
+        "bud": {
+          "id": 56438,
+          "name": {
+            "ru": "Бутон канны шампань",
+            "en": "Champagne Canna Bud"
+          },
+          "source": {
+            "itemTableOffset": 3235368,
+            "localizationTableOffset": 160120864,
+            "nameHash": 1026403642
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888904,
+        "rawFields": [
+          56038,
+          56238,
+          56238,
+          56438
+        ]
+      }
+    },
+    {
+      "id": "canna-jade-gold",
+      "speciesId": "canna",
+      "name": {
+        "ru": "Нефритово-золотая канна",
+        "en": "Jade Gold Canna"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56037,
+          "name": {
+            "ru": "Куст нефритово-золотой канны",
+            "en": "Jade Gold Canna Plant"
+          },
+          "source": {
+            "itemTableOffset": 3250140,
+            "localizationTableOffset": 160182028,
+            "nameHash": 1026399797
+          }
+        },
+        "flower": {
+          "id": 56237,
+          "name": {
+            "ru": "Нефритово-золотая канна",
+            "en": "Jade Gold Canna"
+          },
+          "source": {
+            "itemTableOffset": 3241916,
+            "localizationTableOffset": 160153744,
+            "nameHash": 1026401719
+          }
+        },
+        "bud": {
+          "id": 56437,
+          "name": {
+            "ru": "Бутон нефритово-золотой канны",
+            "en": "Jade Gold Canna Bud"
+          },
+          "source": {
+            "itemTableOffset": 3235484,
+            "localizationTableOffset": 160121464,
+            "nameHash": 1026403641
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888924,
+        "rawFields": [
+          56037,
+          56237,
+          56237,
+          56437
+        ]
+      }
+    },
+    {
+      "id": "moss-rose-white",
+      "speciesId": "moss-rose",
+      "name": {
+        "ru": "Белый портулак",
+        "en": "White Moss Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52036,
+          "name": {
+            "ru": "Куст белого портулака",
+            "en": "White Moss Rose Plant"
+          },
+          "source": {
+            "itemTableOffset": 3266060,
+            "localizationTableOffset": 160274596,
+            "nameHash": 1026280632
+          }
+        },
+        "flower": {
+          "id": 52037,
+          "name": {
+            "ru": "Белый портулак",
+            "en": "White Moss Rose"
+          },
+          "source": {
+            "itemTableOffset": 3265900,
+            "localizationTableOffset": 160274116,
+            "nameHash": 1026280633
+          }
+        },
+        "bud": {
+          "id": 53012,
+          "name": {
+            "ru": "Бутон белого портулака",
+            "en": "White Moss Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3259440,
+            "localizationTableOffset": 160242724,
+            "nameHash": 1026310357
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889964,
+        "rawFields": [
+          52036,
+          52037,
+          52037,
+          53012
+        ]
+      }
+    },
+    {
+      "id": "moss-rose-yellow",
+      "speciesId": "moss-rose",
+      "name": {
+        "ru": "Жёлтый портулак",
+        "en": "Yellow Moss Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52042,
+          "name": {
+            "ru": "Куст жёлтого портулака",
+            "en": "Yellow Moss Rose Plant"
+          },
+          "source": {
+            "itemTableOffset": 3265256,
+            "localizationTableOffset": 160271124,
+            "nameHash": 1026280659
+          }
+        },
+        "flower": {
+          "id": 52043,
+          "name": {
+            "ru": "Жёлтый портулак",
+            "en": "Yellow Moss Rose"
+          },
+          "source": {
+            "itemTableOffset": 3265096,
+            "localizationTableOffset": 160270624,
+            "nameHash": 1026280660
+          }
+        },
+        "bud": {
+          "id": 53014,
+          "name": {
+            "ru": "Бутон жёлтого портулака",
+            "en": "Yellow Moss Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3259264,
+            "localizationTableOffset": 160241452,
+            "nameHash": 1026310359
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889924,
+        "rawFields": [
+          52042,
+          52043,
+          52043,
+          53014
+        ]
+      }
+    },
+    {
+      "id": "moss-rose-purple",
+      "speciesId": "moss-rose",
+      "name": {
+        "ru": "Фиолетовый портулак",
+        "en": "Purple Moss Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52039,
+          "name": {
+            "ru": "Куст фиолетового портулака",
+            "en": "Purple Moss Rose Plant"
+          },
+          "source": {
+            "itemTableOffset": 3265636,
+            "localizationTableOffset": 160272872,
+            "nameHash": 1026280635
+          }
+        },
+        "flower": {
+          "id": 52040,
+          "name": {
+            "ru": "Фиолетовый портулак",
+            "en": "Purple Moss Rose"
+          },
+          "source": {
+            "itemTableOffset": 3265476,
+            "localizationTableOffset": 160272384,
+            "nameHash": 1026280657
+          }
+        },
+        "bud": {
+          "id": 53013,
+          "name": {
+            "ru": "Бутон фиолетового портулака",
+            "en": "Purple Moss Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3259352,
+            "localizationTableOffset": 160242092,
+            "nameHash": 1026310358
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889944,
+        "rawFields": [
+          52039,
+          52040,
+          52040,
+          53013
+        ]
+      }
+    },
+    {
+      "id": "moss-rose-fuchsia",
+      "speciesId": "moss-rose",
+      "name": {
+        "ru": "Пунцовый портулак",
+        "en": "Fuchsia Moss Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56039,
+          "name": {
+            "ru": "Куст ярко-красного портулака",
+            "en": "Fuchsia Moss Rose Plant"
+          },
+          "source": {
+            "itemTableOffset": 3249916,
+            "localizationTableOffset": 160180788,
+            "nameHash": 1026399799
+          }
+        },
+        "flower": {
+          "id": 56239,
+          "name": {
+            "ru": "Пунцовый портулак",
+            "en": "Fuchsia Moss Rose"
+          },
+          "source": {
+            "itemTableOffset": 3241564,
+            "localizationTableOffset": 160152748,
+            "nameHash": 1026401721
+          }
+        },
+        "bud": {
+          "id": 56439,
+          "name": {
+            "ru": "Бутон пунцового портулака",
+            "en": "Fuchsia Moss Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3235260,
+            "localizationTableOffset": 160120188,
+            "nameHash": 1026403643
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888884,
+        "rawFields": [
+          56039,
+          56239,
+          56239,
+          56439
+        ]
+      }
+    },
+    {
+      "id": "moss-rose-tangerine",
+      "speciesId": "moss-rose",
+      "name": {
+        "ru": "Ярко-оранжевый портулак",
+        "en": "Tangerine Moss Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56040,
+          "name": {
+            "ru": "Куст ярко-оранжевого портулака",
+            "en": "Fiery Orange Moss Rose Plant"
+          },
+          "source": {
+            "itemTableOffset": 3249808,
+            "localizationTableOffset": 160180096,
+            "nameHash": 1026399821
+          }
+        },
+        "flower": {
+          "id": 56240,
+          "name": {
+            "ru": "Ярко-оранжевый портулак",
+            "en": "Tangerine Moss Rose"
+          },
+          "source": {
+            "itemTableOffset": 3241392,
+            "localizationTableOffset": 160152168,
+            "nameHash": 1026401743
+          }
+        },
+        "bud": {
+          "id": 56440,
+          "name": {
+            "ru": "Бутон огненно-оранжевого портулака",
+            "en": "Fiery Orange Moss Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3235152,
+            "localizationTableOffset": 160119460,
+            "nameHash": 1026403665
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888864,
+        "rawFields": [
+          56040,
+          56240,
+          56240,
+          56440
+        ]
+      }
+    },
+    {
+      "id": "moss-rose-blush",
+      "speciesId": "moss-rose",
+      "name": {
+        "ru": "Персиковый портулак",
+        "en": "Blush Moss Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56041,
+          "name": {
+            "ru": "Куст кремово-персикового портулака",
+            "en": "Blush Moss Rose Plant"
+          },
+          "source": {
+            "itemTableOffset": 3249692,
+            "localizationTableOffset": 160179392,
+            "nameHash": 1026399822
+          }
+        },
+        "flower": {
+          "id": 56241,
+          "name": {
+            "ru": "Персиковый портулак",
+            "en": "Blush Moss Rose"
+          },
+          "source": {
+            "itemTableOffset": 3241196,
+            "localizationTableOffset": 160151596,
+            "nameHash": 1026401744
+          }
+        },
+        "bud": {
+          "id": 56441,
+          "name": {
+            "ru": "Бутон кремово-персикового портулака",
+            "en": "Blush Moss Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3235036,
+            "localizationTableOffset": 160118744,
+            "nameHash": 1026403666
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888844,
+        "rawFields": [
+          56041,
+          56241,
+          56241,
+          56441
+        ]
+      }
+    },
+    {
+      "id": "moss-rose-pink-sunset",
+      "speciesId": "moss-rose",
+      "name": {
+        "ru": "Закатно-розовый портулак",
+        "en": "Pink Sunset Moss Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56042,
+          "name": {
+            "ru": "Куст закатно-розового портулака",
+            "en": "Pink Sunset Moss Rose Plant"
+          },
+          "source": {
+            "itemTableOffset": 3249576,
+            "localizationTableOffset": 160178664,
+            "nameHash": 1026399823
+          }
+        },
+        "flower": {
+          "id": 56242,
+          "name": {
+            "ru": "Закатно-розовый портулак",
+            "en": "Pink Sunset Moss Rose"
+          },
+          "source": {
+            "itemTableOffset": 3241016,
+            "localizationTableOffset": 160150972,
+            "nameHash": 1026401745
+          }
+        },
+        "bud": {
+          "id": 56442,
+          "name": {
+            "ru": "Бутон закатно-розового портулака",
+            "en": "Pink Sunset Moss Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3234920,
+            "localizationTableOffset": 160117984,
+            "nameHash": 1026403667
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888824,
+        "rawFields": [
+          56042,
+          56242,
+          56242,
+          56442
+        ]
+      }
+    },
+    {
+      "id": "moss-rose-sunset",
+      "speciesId": "moss-rose",
+      "name": {
+        "ru": "Сумеречно-огненный портулак",
+        "en": "Sunset Moss Rose"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56043,
+          "name": {
+            "ru": "Куст сумеречно-огненного портулака",
+            "en": "Sunset Moss Rose Plant"
+          },
+          "source": {
+            "itemTableOffset": 3249460,
+            "localizationTableOffset": 160177904,
+            "nameHash": 1026399824
+          }
+        },
+        "flower": {
+          "id": 56243,
+          "name": {
+            "ru": "Сумеречно-огненный портулак",
+            "en": "Sunset Moss Rose"
+          },
+          "source": {
+            "itemTableOffset": 3240836,
+            "localizationTableOffset": 160150336,
+            "nameHash": 1026401746
+          }
+        },
+        "bud": {
+          "id": 56443,
+          "name": {
+            "ru": "Бутон сумеречно-огненного портулака",
+            "en": "Sunset Moss Rose Bud"
+          },
+          "source": {
+            "itemTableOffset": 3234804,
+            "localizationTableOffset": 160117208,
+            "nameHash": 1026403668
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888804,
+        "rawFields": [
+          56043,
+          56243,
+          56243,
+          56443
+        ]
+      }
+    },
+    {
+      "id": "bellflower-white",
+      "speciesId": "bellflower",
+      "name": {
+        "ru": "Белый колокольчик",
+        "en": "White Bellflower"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50214,
+          "name": {
+            "ru": "Куст белых колокольчиков",
+            "en": "White Bellflower Plant"
+          },
+          "source": {
+            "itemTableOffset": 3281164,
+            "localizationTableOffset": 160369208,
+            "nameHash": 1026222908
+          }
+        },
+        "flower": {
+          "id": 50215,
+          "name": {
+            "ru": "Белый колокольчик",
+            "en": "White Bellflower"
+          },
+          "source": {
+            "itemTableOffset": 3280984,
+            "localizationTableOffset": 160368776,
+            "nameHash": 1026222909
+          }
+        },
+        "bud": {
+          "id": 50300,
+          "name": {
+            "ru": "Бутон белого колокольчика",
+            "en": "White Bellflower Bud"
+          },
+          "source": {
+            "itemTableOffset": 3276532,
+            "localizationTableOffset": 160332160,
+            "nameHash": 1026223834
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890304,
+        "rawFields": [
+          50214,
+          50215,
+          50215,
+          50300
+        ]
+      }
+    },
+    {
+      "id": "bellflower-teal",
+      "speciesId": "bellflower",
+      "name": {
+        "ru": "Бирюзовый колокольчик",
+        "en": "Teal Bellflower"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50216,
+          "name": {
+            "ru": "Куст бирюзовых колокольчиков",
+            "en": "Teal Bellflower Plant"
+          },
+          "source": {
+            "itemTableOffset": 3280876,
+            "localizationTableOffset": 160368168,
+            "nameHash": 1026222910
+          }
+        },
+        "flower": {
+          "id": 50217,
+          "name": {
+            "ru": "Бирюзовый колокольчик",
+            "en": "Teal Bellflower"
+          },
+          "source": {
+            "itemTableOffset": 3280696,
+            "localizationTableOffset": 160367688,
+            "nameHash": 1026222911
+          }
+        },
+        "bud": {
+          "id": 50301,
+          "name": {
+            "ru": "Бутон бирюзового колокольчика",
+            "en": "Teal Bellflower Bud"
+          },
+          "source": {
+            "itemTableOffset": 3276424,
+            "localizationTableOffset": 160331540,
+            "nameHash": 1026223835
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890284,
+        "rawFields": [
+          50216,
+          50217,
+          50217,
+          50301
+        ]
+      }
+    },
+    {
+      "id": "bellflower-coral",
+      "speciesId": "bellflower",
+      "name": {
+        "ru": "Светло-розовый колокольчик",
+        "en": "Coral Bellflower"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56013,
+          "name": {
+            "ru": "Куст светло-розовых колокольчиков",
+            "en": "Coral Bellflower Plant"
+          },
+          "source": {
+            "itemTableOffset": 3252784,
+            "localizationTableOffset": 160197288,
+            "nameHash": 1026399731
+          }
+        },
+        "flower": {
+          "id": 56213,
+          "name": {
+            "ru": "Светло-розовый колокольчик",
+            "en": "Coral Bellflower"
+          },
+          "source": {
+            "itemTableOffset": 3246224,
+            "localizationTableOffset": 160166152,
+            "nameHash": 1026401653
+          }
+        },
+        "bud": {
+          "id": 56413,
+          "name": {
+            "ru": "Бутон светло-розового колокольчика",
+            "en": "Coral Bellflower Bud"
+          },
+          "source": {
+            "itemTableOffset": 3238128,
+            "localizationTableOffset": 160137408,
+            "nameHash": 1026403575
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889404,
+        "rawFields": [
+          56013,
+          56213,
+          56213,
+          56413
+        ]
+      }
+    },
+    {
+      "id": "bellflower-rose-pink",
+      "speciesId": "bellflower",
+      "name": {
+        "ru": "Нежно-розовый колокольчик",
+        "en": "Rose Pink Bellflower"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56015,
+          "name": {
+            "ru": "Куст нежно-розовых колокольчиков",
+            "en": "Rose Pink Bellflower Plant"
+          },
+          "source": {
+            "itemTableOffset": 3252560,
+            "localizationTableOffset": 160196000,
+            "nameHash": 1026399733
+          }
+        },
+        "flower": {
+          "id": 56215,
+          "name": {
+            "ru": "Нежно-розовый колокольчик",
+            "en": "Rose Pink Bellflower"
+          },
+          "source": {
+            "itemTableOffset": 3245856,
+            "localizationTableOffset": 160165108,
+            "nameHash": 1026401655
+          }
+        },
+        "bud": {
+          "id": 56415,
+          "name": {
+            "ru": "Бутон нежно-розового колокольчика",
+            "en": "Rose Pink Bellflower Bud"
+          },
+          "source": {
+            "itemTableOffset": 3237904,
+            "localizationTableOffset": 160136096,
+            "nameHash": 1026403577
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889364,
+        "rawFields": [
+          56015,
+          56215,
+          56215,
+          56415
+        ]
+      }
+    },
+    {
+      "id": "bellflower-yellow",
+      "speciesId": "bellflower",
+      "name": {
+        "ru": "Жёлтый колокольчик",
+        "en": "Yellow Bellflower"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52060,
+          "name": {
+            "ru": "Куст жёлтых колокольчиков",
+            "en": "Yellow Bellflower Plant"
+          },
+          "source": {
+            "itemTableOffset": 3262976,
+            "localizationTableOffset": 160261408,
+            "nameHash": 1026280719
+          }
+        },
+        "flower": {
+          "id": 52061,
+          "name": {
+            "ru": "Жёлтый колокольчик",
+            "en": "Yellow Bellflower"
+          },
+          "source": {
+            "itemTableOffset": 3262816,
+            "localizationTableOffset": 160260952,
+            "nameHash": 1026280720
+          }
+        },
+        "bud": {
+          "id": 53020,
+          "name": {
+            "ru": "Бутон жёлтого колокольчика",
+            "en": "Yellow Bellflower Bud"
+          },
+          "source": {
+            "itemTableOffset": 3258736,
+            "localizationTableOffset": 160237900,
+            "nameHash": 1026310386
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889804,
+        "rawFields": [
+          52060,
+          52061,
+          52061,
+          53020
+        ]
+      }
+    },
+    {
+      "id": "bellflower-sky-blue",
+      "speciesId": "bellflower",
+      "name": {
+        "ru": "Небесно-голубой колокольчик",
+        "en": "Sky Blue Bellflower"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56014,
+          "name": {
+            "ru": "Куст небесно-голубых колокольчиков",
+            "en": "Sky Blue Bellflower Plant"
+          },
+          "source": {
+            "itemTableOffset": 3252676,
+            "localizationTableOffset": 160196652,
+            "nameHash": 1026399732
+          }
+        },
+        "flower": {
+          "id": 56214,
+          "name": {
+            "ru": "Небесно-голубой колокольчик",
+            "en": "Sky Blue Bellflower"
+          },
+          "source": {
+            "itemTableOffset": 3246052,
+            "localizationTableOffset": 160165632,
+            "nameHash": 1026401654
+          }
+        },
+        "bud": {
+          "id": 56414,
+          "name": {
+            "ru": "Бутон небесно-голубого колокольчика",
+            "en": "Sky Blue Bellflower Bud"
+          },
+          "source": {
+            "itemTableOffset": 3238020,
+            "localizationTableOffset": 160136756,
+            "nameHash": 1026403576
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889384,
+        "rawFields": [
+          56014,
+          56214,
+          56214,
+          56414
+        ]
+      }
+    },
+    {
+      "id": "bellflower-starlace",
+      "speciesId": "bellflower",
+      "name": {
+        "ru": "Звёздный колокольчик",
+        "en": "Starlace Bellflower"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56016,
+          "name": {
+            "ru": "Куст звездных колокольчиков",
+            "en": "Starlace Bellflower Plant"
+          },
+          "source": {
+            "itemTableOffset": 3252444,
+            "localizationTableOffset": 160195376,
+            "nameHash": 1026399734
+          }
+        },
+        "flower": {
+          "id": 56216,
+          "name": {
+            "ru": "Звёздный колокольчик",
+            "en": "Starlace Bellflower"
+          },
+          "source": {
+            "itemTableOffset": 3245676,
+            "localizationTableOffset": 160164604,
+            "nameHash": 1026401656
+          }
+        },
+        "bud": {
+          "id": 56416,
+          "name": {
+            "ru": "Бутон звёздного колокольчика",
+            "en": "Starlace Bellflower Bud"
+          },
+          "source": {
+            "itemTableOffset": 3237788,
+            "localizationTableOffset": 160135452,
+            "nameHash": 1026403578
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889344,
+        "rawFields": [
+          56016,
+          56216,
+          56216,
+          56416
+        ]
+      }
+    },
+    {
+      "id": "violet-violet",
+      "speciesId": "violet",
+      "name": {
+        "ru": "Фиалка",
+        "en": "Violet"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50210,
+          "name": {
+            "ru": "Куст фиалок",
+            "en": "Violet Plant"
+          },
+          "source": {
+            "itemTableOffset": 3281740,
+            "localizationTableOffset": 160370936,
+            "nameHash": 1026222904
+          }
+        },
+        "flower": {
+          "id": 50211,
+          "name": {
+            "ru": "Фиалка",
+            "en": "Violet"
+          },
+          "source": {
+            "itemTableOffset": 3281560,
+            "localizationTableOffset": 160370656,
+            "nameHash": 1026222905
+          }
+        },
+        "bud": {
+          "id": 50298,
+          "name": {
+            "ru": "Бутон фиалки",
+            "en": "Violet Bud"
+          },
+          "source": {
+            "itemTableOffset": 3276748,
+            "localizationTableOffset": 160333260,
+            "nameHash": 1026223160
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890344,
+        "rawFields": [
+          50210,
+          50211,
+          50211,
+          50298
+        ]
+      }
+    },
+    {
+      "id": "violet-teal",
+      "speciesId": "violet",
+      "name": {
+        "ru": "Бирюзовая фиалка",
+        "en": "Teal Violet"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52057,
+          "name": {
+            "ru": "Куст бирюзовой фиалки",
+            "en": "Teal Violet Plant"
+          },
+          "source": {
+            "itemTableOffset": 3263356,
+            "localizationTableOffset": 160262964,
+            "nameHash": 1026280695
+          }
+        },
+        "flower": {
+          "id": 52058,
+          "name": {
+            "ru": "Бирюзовая фиалка",
+            "en": "Teal Violet"
+          },
+          "source": {
+            "itemTableOffset": 3263196,
+            "localizationTableOffset": 160262548,
+            "nameHash": 1026280696
+          }
+        },
+        "bud": {
+          "id": 53019,
+          "name": {
+            "ru": "Бутон бирюзовой фиалки",
+            "en": "Teal Violet Bud"
+          },
+          "source": {
+            "itemTableOffset": 3258824,
+            "localizationTableOffset": 160238492,
+            "nameHash": 1026310364
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889824,
+        "rawFields": [
+          52057,
+          52058,
+          52058,
+          53019
+        ]
+      }
+    },
+    {
+      "id": "violet-pink",
+      "speciesId": "violet",
+      "name": {
+        "ru": "Розовая фиалка",
+        "en": "Pink Violet"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 50212,
+          "name": {
+            "ru": "Куст розовых фиалок",
+            "en": "Pink Violet Plant"
+          },
+          "source": {
+            "itemTableOffset": 3281452,
+            "localizationTableOffset": 160370152,
+            "nameHash": 1026222906
+          }
+        },
+        "flower": {
+          "id": 50213,
+          "name": {
+            "ru": "Розовая фиалка",
+            "en": "Pink Violet"
+          },
+          "source": {
+            "itemTableOffset": 3281272,
+            "localizationTableOffset": 160369764,
+            "nameHash": 1026222907
+          }
+        },
+        "bud": {
+          "id": 50299,
+          "name": {
+            "ru": "Бутон розовой фиалки",
+            "en": "Pink Violet Bud"
+          },
+          "source": {
+            "itemTableOffset": 3276640,
+            "localizationTableOffset": 160332728,
+            "nameHash": 1026223161
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3890324,
+        "rawFields": [
+          50212,
+          50213,
+          50213,
+          50299
+        ]
+      }
+    },
+    {
+      "id": "violet-fuchsia",
+      "speciesId": "violet",
+      "name": {
+        "ru": "Багровая фиалка",
+        "en": "Fuchsia Violet"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56017,
+          "name": {
+            "ru": "Куст багровых фиалок",
+            "en": "Fuchsia Violet Plant"
+          },
+          "source": {
+            "itemTableOffset": 3252336,
+            "localizationTableOffset": 160194824,
+            "nameHash": 1026399735
+          }
+        },
+        "flower": {
+          "id": 56217,
+          "name": {
+            "ru": "Багровая фиалка",
+            "en": "Fuchsia Violet"
+          },
+          "source": {
+            "itemTableOffset": 3245504,
+            "localizationTableOffset": 160164172,
+            "nameHash": 1026401657
+          }
+        },
+        "bud": {
+          "id": 56417,
+          "name": {
+            "ru": "Бутон пунцовой фиалки",
+            "en": "Fuchsia Violet Bud"
+          },
+          "source": {
+            "itemTableOffset": 3237680,
+            "localizationTableOffset": 160134868,
+            "nameHash": 1026403579
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889324,
+        "rawFields": [
+          56017,
+          56217,
+          56217,
+          56417
+        ]
+      }
+    },
+    {
+      "id": "violet-primrose",
+      "speciesId": "violet",
+      "name": {
+        "ru": "Светло-жёлтая фиалка",
+        "en": "Primrose Violet"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56018,
+          "name": {
+            "ru": "Куст светло-жёлтых фиалок",
+            "en": "Primrose Violet Plant"
+          },
+          "source": {
+            "itemTableOffset": 3252228,
+            "localizationTableOffset": 160194208,
+            "nameHash": 1026399736
+          }
+        },
+        "flower": {
+          "id": 56218,
+          "name": {
+            "ru": "Светло-жёлтая фиалка",
+            "en": "Primrose Violet"
+          },
+          "source": {
+            "itemTableOffset": 3245332,
+            "localizationTableOffset": 160163688,
+            "nameHash": 1026401658
+          }
+        },
+        "bud": {
+          "id": 56418,
+          "name": {
+            "ru": "Бутон светло-жёлтой фиалки",
+            "en": "Primrose Violet Bud"
+          },
+          "source": {
+            "itemTableOffset": 3237572,
+            "localizationTableOffset": 160134220,
+            "nameHash": 1026403580
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889304,
+        "rawFields": [
+          56018,
+          56218,
+          56218,
+          56418
+        ]
+      }
+    },
+    {
+      "id": "violet-twilight",
+      "speciesId": "violet",
+      "name": {
+        "ru": "Полуночно-пурпурная фиалка",
+        "en": "Twilight Violet"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56019,
+          "name": {
+            "ru": "Куст полуночно-пурпурных фиалок",
+            "en": "Twilight Violet Plant"
+          },
+          "source": {
+            "itemTableOffset": 3252112,
+            "localizationTableOffset": 160193572,
+            "nameHash": 1026399737
+          }
+        },
+        "flower": {
+          "id": 56219,
+          "name": {
+            "ru": "Полуночно-пурпурная фиалка",
+            "en": "Twilight Violet"
+          },
+          "source": {
+            "itemTableOffset": 3245136,
+            "localizationTableOffset": 160163180,
+            "nameHash": 1026401659
+          }
+        },
+        "bud": {
+          "id": 56419,
+          "name": {
+            "ru": "Бутон полуночно-пурпурной фиалки",
+            "en": "Twilight Violet Bud"
+          },
+          "source": {
+            "itemTableOffset": 3237456,
+            "localizationTableOffset": 160133564,
+            "nameHash": 1026403581
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889284,
+        "rawFields": [
+          56019,
+          56219,
+          56219,
+          56419
+        ]
+      }
+    },
+    {
+      "id": "violet-black-velvet",
+      "speciesId": "violet",
+      "name": {
+        "ru": "Бархатно-чёрная фиалка",
+        "en": "Black Velvet Violet"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56020,
+          "name": {
+            "ru": "Куст бархатно-чёрных фиалок",
+            "en": "Black Velvet Violet Plant"
+          },
+          "source": {
+            "itemTableOffset": 3251996,
+            "localizationTableOffset": 160192952,
+            "nameHash": 1026399759
+          }
+        },
+        "flower": {
+          "id": 56220,
+          "name": {
+            "ru": "Бархатно-чёрная фиалка",
+            "en": "Black Velvet Violet"
+          },
+          "source": {
+            "itemTableOffset": 3244956,
+            "localizationTableOffset": 160162676,
+            "nameHash": 1026401681
+          }
+        },
+        "bud": {
+          "id": 56420,
+          "name": {
+            "ru": "Бутон бархатно-чёрной фиалки",
+            "en": "Black Velvet Violet Bud"
+          },
+          "source": {
+            "itemTableOffset": 3237340,
+            "localizationTableOffset": 160132924,
+            "nameHash": 1026403603
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889264,
+        "rawFields": [
+          56020,
+          56220,
+          56220,
+          56420
+        ]
+      }
+    },
+    {
+      "id": "violet-nightstar",
+      "speciesId": "violet",
+      "name": {
+        "ru": "Звёздная фиалка",
+        "en": "Nightstar Violet"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56021,
+          "name": {
+            "ru": "Куст звездных фиалок",
+            "en": "Nightstar Violet Plant"
+          },
+          "source": {
+            "itemTableOffset": 3251880,
+            "localizationTableOffset": 160192356,
+            "nameHash": 1026399760
+          }
+        },
+        "flower": {
+          "id": 56221,
+          "name": {
+            "ru": "Звёздная фиалка",
+            "en": "Nightstar Violet"
+          },
+          "source": {
+            "itemTableOffset": 3244776,
+            "localizationTableOffset": 160162196,
+            "nameHash": 1026401682
+          }
+        },
+        "bud": {
+          "id": 56421,
+          "name": {
+            "ru": "Бутон звездной фиалки",
+            "en": "Nightstar Violet Bud"
+          },
+          "source": {
+            "itemTableOffset": 3237224,
+            "localizationTableOffset": 160132300,
+            "nameHash": 1026403604
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889244,
+        "rawFields": [
+          56021,
+          56221,
+          56221,
+          56421
+        ]
+      }
+    },
+    {
+      "id": "winter-adonis-orange",
+      "speciesId": "winter-adonis",
+      "name": {
+        "ru": "Оранжевый горицвет",
+        "en": "Orange Winter Adonis"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52063,
+          "name": {
+            "ru": "Куст оранжевого горицвета",
+            "en": "Orange Winter Adonis Plant"
+          },
+          "source": {
+            "itemTableOffset": 3262596,
+            "localizationTableOffset": 160259716,
+            "nameHash": 1026280722
+          }
+        },
+        "flower": {
+          "id": 52064,
+          "name": {
+            "ru": "Оранжевый горицвет",
+            "en": "Orange Winter Adonis"
+          },
+          "source": {
+            "itemTableOffset": 3262436,
+            "localizationTableOffset": 160259208,
+            "nameHash": 1026280723
+          }
+        },
+        "bud": {
+          "id": 53058,
+          "name": {
+            "ru": "Бутон оранжевого горицвета",
+            "en": "Orange Winter Adonis Bud"
+          },
+          "source": {
+            "itemTableOffset": 3255512,
+            "localizationTableOffset": 160215692,
+            "nameHash": 1026310487
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889784,
+        "rawFields": [
+          52063,
+          52064,
+          52064,
+          53058
+        ]
+      }
+    },
+    {
+      "id": "winter-adonis-white",
+      "speciesId": "winter-adonis",
+      "name": {
+        "ru": "Белый горицвет",
+        "en": "White Winter Adonis"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52069,
+          "name": {
+            "ru": "Куст белого горицвета",
+            "en": "White Winter Adonis Plant"
+          },
+          "source": {
+            "itemTableOffset": 3261836,
+            "localizationTableOffset": 160256224,
+            "nameHash": 1026280728
+          }
+        },
+        "flower": {
+          "id": 52070,
+          "name": {
+            "ru": "Белый горицвет",
+            "en": "White Winter Adonis"
+          },
+          "source": {
+            "itemTableOffset": 3261676,
+            "localizationTableOffset": 160255744,
+            "nameHash": 1026280750
+          }
+        },
+        "bud": {
+          "id": 53060,
+          "name": {
+            "ru": "Бутон белого горицвета",
+            "en": "White Winter Adonis Bud"
+          },
+          "source": {
+            "itemTableOffset": 3255336,
+            "localizationTableOffset": 160214452,
+            "nameHash": 1026310510
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889744,
+        "rawFields": [
+          52069,
+          52070,
+          52070,
+          53060
+        ]
+      }
+    },
+    {
+      "id": "winter-adonis-red",
+      "speciesId": "winter-adonis",
+      "name": {
+        "ru": "Красный горицвет",
+        "en": "Red Winter Adonis"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52066,
+          "name": {
+            "ru": "Куст красного горицвета",
+            "en": "Red Winter Adonis Plant"
+          },
+          "source": {
+            "itemTableOffset": 3262216,
+            "localizationTableOffset": 160257948,
+            "nameHash": 1026280725
+          }
+        },
+        "flower": {
+          "id": 52067,
+          "name": {
+            "ru": "Красный горицвет",
+            "en": "Red Winter Adonis"
+          },
+          "source": {
+            "itemTableOffset": 3262056,
+            "localizationTableOffset": 160257464,
+            "nameHash": 1026280726
+          }
+        },
+        "bud": {
+          "id": 53059,
+          "name": {
+            "ru": "Бутон красного горицвета",
+            "en": "Red Winter Adonis Bud"
+          },
+          "source": {
+            "itemTableOffset": 3255424,
+            "localizationTableOffset": 160215072,
+            "nameHash": 1026310488
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889764,
+        "rawFields": [
+          52066,
+          52067,
+          52067,
+          53059
+        ]
+      }
+    },
+    {
+      "id": "winter-adonis-blush",
+      "speciesId": "winter-adonis",
+      "name": {
+        "ru": "Молочно-персиковый горицвет",
+        "en": "Blush Winter Adonis"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56045,
+          "name": {
+            "ru": "Куст молочно-персикового горицвета",
+            "en": "Blush Winter Adonis Plant"
+          },
+          "source": {
+            "itemTableOffset": 3249244,
+            "localizationTableOffset": 160176512,
+            "nameHash": 1026399826
+          }
+        },
+        "flower": {
+          "id": 56245,
+          "name": {
+            "ru": "Молочно-персиковый горицвет",
+            "en": "Blush Winter Adonis"
+          },
+          "source": {
+            "itemTableOffset": 3240492,
+            "localizationTableOffset": 160149208,
+            "nameHash": 1026401748
+          }
+        },
+        "bud": {
+          "id": 56445,
+          "name": {
+            "ru": "Бутон молочно-персикового горицвета",
+            "en": "Blush Winter Adonis Bud"
+          },
+          "source": {
+            "itemTableOffset": 3234588,
+            "localizationTableOffset": 160115788,
+            "nameHash": 1026403670
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888764,
+        "rawFields": [
+          56045,
+          56245,
+          56245,
+          56445
+        ]
+      }
+    },
+    {
+      "id": "winter-adonis-cream",
+      "speciesId": "winter-adonis",
+      "name": {
+        "ru": "Кремовый горицвет",
+        "en": "Cream Winter Adonis"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56044,
+          "name": {
+            "ru": "Куст кремово-желтого горицвета",
+            "en": "Cream Winter Adonis Plant"
+          },
+          "source": {
+            "itemTableOffset": 3249352,
+            "localizationTableOffset": 160177220,
+            "nameHash": 1026399825
+          }
+        },
+        "flower": {
+          "id": 56244,
+          "name": {
+            "ru": "Кремовый горицвет",
+            "en": "Cream Winter Adonis"
+          },
+          "source": {
+            "itemTableOffset": 3240664,
+            "localizationTableOffset": 160149788,
+            "nameHash": 1026401747
+          }
+        },
+        "bud": {
+          "id": 56444,
+          "name": {
+            "ru": "Бутон кремово-жёлтого горицвета",
+            "en": "Cream Winter Adonis Bud"
+          },
+          "source": {
+            "itemTableOffset": 3234696,
+            "localizationTableOffset": 160116512,
+            "nameHash": 1026403669
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888784,
+        "rawFields": [
+          56044,
+          56244,
+          56244,
+          56444
+        ]
+      }
+    },
+    {
+      "id": "winter-adonis-sky-blue",
+      "speciesId": "winter-adonis",
+      "name": {
+        "ru": "Льдисто-голубой горицвет",
+        "en": "Sky Blue Winter Adonis"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56046,
+          "name": {
+            "ru": "Куст льдисто-голубого горицвета",
+            "en": "Sky Blue Winter Adonis Plant"
+          },
+          "source": {
+            "itemTableOffset": 3249136,
+            "localizationTableOffset": 160175828,
+            "nameHash": 1026399827
+          }
+        },
+        "flower": {
+          "id": 56246,
+          "name": {
+            "ru": "Льдисто-голубой горицвет",
+            "en": "Sky Blue Winter Adonis"
+          },
+          "source": {
+            "itemTableOffset": 3240304,
+            "localizationTableOffset": 160148644,
+            "nameHash": 1026401749
+          }
+        },
+        "bud": {
+          "id": 56446,
+          "name": {
+            "ru": "Бутон льдисто-голубого горицвета",
+            "en": "Sky Blue Winter Adonis Bud"
+          },
+          "source": {
+            "itemTableOffset": 3234480,
+            "localizationTableOffset": 160115080,
+            "nameHash": 1026403671
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888744,
+        "rawFields": [
+          56046,
+          56246,
+          56246,
+          56446
+        ]
+      }
+    },
+    {
+      "id": "winter-adonis-frostwhite",
+      "speciesId": "winter-adonis",
+      "name": {
+        "ru": "Белоснежный горицвет",
+        "en": "Frostwhite Winter Adonis"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56047,
+          "name": {
+            "ru": "Куст белоснежного горицвета",
+            "en": "Frostwhite Winter Adonis Plant"
+          },
+          "source": {
+            "itemTableOffset": 3249020,
+            "localizationTableOffset": 160175148,
+            "nameHash": 1026399828
+          }
+        },
+        "flower": {
+          "id": 56247,
+          "name": {
+            "ru": "Белоснежный горицвет",
+            "en": "Frostwhite Winter Adonis"
+          },
+          "source": {
+            "itemTableOffset": 3240124,
+            "localizationTableOffset": 160148088,
+            "nameHash": 1026401750
+          }
+        },
+        "bud": {
+          "id": 56447,
+          "name": {
+            "ru": "Бутон белоснежного горицвета",
+            "en": "Frostwhite Winter Adonis Bud"
+          },
+          "source": {
+            "itemTableOffset": 3234364,
+            "localizationTableOffset": 160114392,
+            "nameHash": 1026403672
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888724,
+        "rawFields": [
+          56047,
+          56247,
+          56247,
+          56447
+        ]
+      }
+    },
+    {
+      "id": "petunia-lavender",
+      "speciesId": "petunia",
+      "name": {
+        "ru": "Лавандовая петуния",
+        "en": "Lavender Petunia"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56048,
+          "name": {
+            "ru": "Куст лавандовой петунии",
+            "en": "Lavender Petunia Plant"
+          },
+          "source": {
+            "itemTableOffset": 3248932,
+            "localizationTableOffset": 160174556,
+            "nameHash": 1026399829
+          }
+        },
+        "flower": {
+          "id": 56248,
+          "name": {
+            "ru": "Лавандовая петуния",
+            "en": "Lavender Petunia"
+          },
+          "source": {
+            "itemTableOffset": 3239972,
+            "localizationTableOffset": 160147616,
+            "nameHash": 1026401751
+          }
+        },
+        "bud": {
+          "id": 56448,
+          "name": {
+            "ru": "Бутон лавандовой петунии",
+            "en": "Lavender Petunia Bud"
+          },
+          "source": {
+            "itemTableOffset": 3234276,
+            "localizationTableOffset": 160113772,
+            "nameHash": 1026403673
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888704,
+        "rawFields": [
+          56048,
+          56248,
+          56248,
+          56448
+        ]
+      }
+    },
+    {
+      "id": "petunia-dawn",
+      "speciesId": "petunia",
+      "name": {
+        "ru": "Рассветная петуния",
+        "en": "Dawn Petunia"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56049,
+          "name": {
+            "ru": "Куст рассветной петунии",
+            "en": "Dawn Petunia Plant"
+          },
+          "source": {
+            "itemTableOffset": 3248812,
+            "localizationTableOffset": 160173964,
+            "nameHash": 1026399830
+          }
+        },
+        "flower": {
+          "id": 56249,
+          "name": {
+            "ru": "Рассветная петуния",
+            "en": "Dawn Petunia"
+          },
+          "source": {
+            "itemTableOffset": 3239820,
+            "localizationTableOffset": 160147140,
+            "nameHash": 1026401752
+          }
+        },
+        "bud": {
+          "id": 56449,
+          "name": {
+            "ru": "Бутон рассветной петунии",
+            "en": "Dawn Petunia Bud"
+          },
+          "source": {
+            "itemTableOffset": 3234188,
+            "localizationTableOffset": 160113160,
+            "nameHash": 1026403674
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888684,
+        "rawFields": [
+          56049,
+          56249,
+          56249,
+          56449
+        ]
+      }
+    },
+    {
+      "id": "petunia-sky-blue",
+      "speciesId": "petunia",
+      "name": {
+        "ru": "Небесно-голубая петуния",
+        "en": "Sky Blue Petunia"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 56050,
+          "name": {
+            "ru": "Куст небесно-голубой петунии",
+            "en": "Sky Blue Petunia Plant"
+          },
+          "source": {
+            "itemTableOffset": 3248716,
+            "localizationTableOffset": 160173352,
+            "nameHash": 1026399852
+          }
+        },
+        "flower": {
+          "id": 56250,
+          "name": {
+            "ru": "Небесно-голубая петуния",
+            "en": "Sky Blue Petunia"
+          },
+          "source": {
+            "itemTableOffset": 3239644,
+            "localizationTableOffset": 160146648,
+            "nameHash": 1026401774
+          }
+        },
+        "bud": {
+          "id": 56450,
+          "name": {
+            "ru": "Бутон небесно-голубой петунии",
+            "en": "Sky Blue Petunia Bud"
+          },
+          "source": {
+            "itemTableOffset": 3234092,
+            "localizationTableOffset": 160112516,
+            "nameHash": 1026403696
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3888664,
+        "rawFields": [
+          56050,
+          56250,
+          56250,
+          56450
+        ]
+      }
+    },
+    {
+      "id": "petunia-white",
+      "speciesId": "petunia",
+      "name": {
+        "ru": "Белая петуния",
+        "en": "White Petunia"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52072,
+          "name": {
+            "ru": "Куст белой петунии",
+            "en": "White Petunia Plant"
+          },
+          "source": {
+            "itemTableOffset": 3261476,
+            "localizationTableOffset": 160254580,
+            "nameHash": 1026280752
+          }
+        },
+        "flower": {
+          "id": 52073,
+          "name": {
+            "ru": "Белая петуния",
+            "en": "White Petunia"
+          },
+          "source": {
+            "itemTableOffset": 3261336,
+            "localizationTableOffset": 160254160,
+            "nameHash": 1026280753
+          }
+        },
+        "bud": {
+          "id": 53064,
+          "name": {
+            "ru": "Бутон белой петунии",
+            "en": "White Petunia Bud"
+          },
+          "source": {
+            "itemTableOffset": 3254984,
+            "localizationTableOffset": 160211972,
+            "nameHash": 1026310514
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889724,
+        "rawFields": [
+          52072,
+          52073,
+          52073,
+          53064
+        ]
+      }
+    },
+    {
+      "id": "petunia-red",
+      "speciesId": "petunia",
+      "name": {
+        "ru": "Красная петуния",
+        "en": "Red Petunia"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52075,
+          "name": {
+            "ru": "Куст красной петунии",
+            "en": "Red Petunia Plant"
+          },
+          "source": {
+            "itemTableOffset": 3261108,
+            "localizationTableOffset": 160253068,
+            "nameHash": 1026280755
+          }
+        },
+        "flower": {
+          "id": 52076,
+          "name": {
+            "ru": "Красная петуния",
+            "en": "Red Petunia"
+          },
+          "source": {
+            "itemTableOffset": 3260968,
+            "localizationTableOffset": 160252652,
+            "nameHash": 1026280756
+          }
+        },
+        "bud": {
+          "id": 53065,
+          "name": {
+            "ru": "Бутон красной петунии",
+            "en": "Red Petunia Bud"
+          },
+          "source": {
+            "itemTableOffset": 3254896,
+            "localizationTableOffset": 160211412,
+            "nameHash": 1026310515
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889704,
+        "rawFields": [
+          52075,
+          52076,
+          52076,
+          53065
+        ]
+      }
+    },
+    {
+      "id": "petunia-purple",
+      "speciesId": "petunia",
+      "name": {
+        "ru": "Фиолетовая петуния",
+        "en": "Purple Petunia"
+      },
+      "gameItems": {
+        "plant": {
+          "id": 52078,
+          "name": {
+            "ru": "Куст фиолетовой петунии",
+            "en": "Purple Petunia Plant"
+          },
+          "source": {
+            "itemTableOffset": 3260788,
+            "localizationTableOffset": 160251552,
+            "nameHash": 1026280758
+          }
+        },
+        "flower": {
+          "id": 52079,
+          "name": {
+            "ru": "Фиолетовая петуния",
+            "en": "Purple Petunia"
+          },
+          "source": {
+            "itemTableOffset": 3260648,
+            "localizationTableOffset": 160251132,
+            "nameHash": 1026280759
+          }
+        },
+        "bud": {
+          "id": 53066,
+          "name": {
+            "ru": "Бутон фиолетовой петунии",
+            "en": "Purple Petunia Bud"
+          },
+          "source": {
+            "itemTableOffset": 3254808,
+            "localizationTableOffset": 160210840,
+            "nameHash": 1026310516
+          }
+        }
+      },
+      "source": {
+        "flowerTableOffset": 3889684,
+        "rawFields": [
+          52078,
+          52079,
+          52079,
+          53066
+        ]
+      }
+    }
+  ],
+  "hybrids": [
+    {
+      "resultId": "sunflower-tangerine",
+      "gameResultItemId": 56222,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "sunflower-red",
+          "plantItemId": 52000,
+          "flowerItemId": 52001
+        },
+        {
+          "id": "sunflower-yellow",
+          "plantItemId": 52003,
+          "flowerItemId": 52004
+        }
+      ]
+    },
+    {
+      "resultId": "sunflower-cream",
+      "gameResultItemId": 56223,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "sunflower-green",
+          "plantItemId": 52006,
+          "flowerItemId": 52007
+        },
+        {
+          "id": "sunflower-green",
+          "plantItemId": 52006,
+          "flowerItemId": 52007
+        }
+      ]
+    },
+    {
+      "resultId": "sunflower-pastel-pink",
+      "gameResultItemId": 56224,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "sunflower-tangerine",
+          "plantItemId": 56022,
+          "flowerItemId": 56222
+        },
+        {
+          "id": "sunflower-cream",
+          "plantItemId": 56023,
+          "flowerItemId": 56223
+        }
+      ]
+    },
+    {
+      "resultId": "mooncycle-rose-mauve",
+      "gameResultItemId": 56206,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "mooncycle-rose-blue",
+          "plantItemId": 50204,
+          "flowerItemId": 50205
+        },
+        {
+          "id": "mooncycle-rose-pink",
+          "plantItemId": 50200,
+          "flowerItemId": 50201
+        }
+      ]
+    },
+    {
+      "resultId": "mooncycle-rose-cream",
+      "gameResultItemId": 56207,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "mooncycle-rose-teal",
+          "plantItemId": 50307,
+          "flowerItemId": 50308
+        },
+        {
+          "id": "mooncycle-rose-teal",
+          "plantItemId": 50307,
+          "flowerItemId": 50308
+        }
+      ]
+    },
+    {
+      "resultId": "mooncycle-rose-black-velvet",
+      "gameResultItemId": 56208,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "mooncycle-rose-mauve",
+          "plantItemId": 56006,
+          "flowerItemId": 56206
+        },
+        {
+          "id": "mooncycle-rose-mauve",
+          "plantItemId": 56006,
+          "flowerItemId": 56206
+        }
+      ]
+    },
+    {
+      "resultId": "amaryllis-blush",
+      "gameResultItemId": 56229,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "amaryllis-red",
+          "plantItemId": 52021,
+          "flowerItemId": 52022
+        },
+        {
+          "id": "amaryllis-white",
+          "plantItemId": 52024,
+          "flowerItemId": 52025
+        }
+      ]
+    },
+    {
+      "resultId": "amaryllis-canary",
+      "gameResultItemId": 56228,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "amaryllis-orange",
+          "plantItemId": 52018,
+          "flowerItemId": 52019
+        },
+        {
+          "id": "amaryllis-orange",
+          "plantItemId": 52018,
+          "flowerItemId": 52019
+        }
+      ]
+    },
+    {
+      "resultId": "dahlia-cream",
+      "gameResultItemId": 56210,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "dahlia-teal",
+          "plantItemId": 52054,
+          "flowerItemId": 52055
+        },
+        {
+          "id": "dahlia-yellow",
+          "plantItemId": 50206,
+          "flowerItemId": 50207
+        }
+      ]
+    },
+    {
+      "resultId": "king-protea-blush",
+      "gameResultItemId": 56225,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "king-protea-purple",
+          "plantItemId": 52009,
+          "flowerItemId": 52010
+        },
+        {
+          "id": "king-protea-white",
+          "plantItemId": 52012,
+          "flowerItemId": 52013
+        }
+      ]
+    },
+    {
+      "resultId": "king-protea-russet",
+      "gameResultItemId": 56226,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "king-protea-red",
+          "plantItemId": 52015,
+          "flowerItemId": 52016
+        },
+        {
+          "id": "king-protea-red",
+          "plantItemId": 52015,
+          "flowerItemId": 52016
+        }
+      ]
+    },
+    {
+      "resultId": "lily-golden-yellow",
+      "gameResultItemId": 56200,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "lily-white",
+          "plantItemId": 50194,
+          "flowerItemId": 50195
+        },
+        {
+          "id": "lily-yellow",
+          "plantItemId": 50196,
+          "flowerItemId": 50197
+        }
+      ]
+    },
+    {
+      "resultId": "lily-mauve",
+      "gameResultItemId": 56201,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "lily-teal",
+          "plantItemId": 50303,
+          "flowerItemId": 50304
+        },
+        {
+          "id": "lily-teal",
+          "plantItemId": 50303,
+          "flowerItemId": 50304
+        }
+      ]
+    },
+    {
+      "resultId": "lily-black-velvet",
+      "gameResultItemId": 56202,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "agapanthus-blue-and-white",
+      "gameResultItemId": 56231,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "agapanthus-blue",
+          "plantItemId": 52045,
+          "flowerItemId": 52046
+        },
+        {
+          "id": "agapanthus-white",
+          "plantItemId": 52051,
+          "flowerItemId": 52052
+        }
+      ]
+    },
+    {
+      "resultId": "agapanthus-blush",
+      "gameResultItemId": 56232,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "agapanthus-purple",
+          "plantItemId": 52048,
+          "flowerItemId": 52049
+        },
+        {
+          "id": "agapanthus-white",
+          "plantItemId": 52051,
+          "flowerItemId": 52052
+        }
+      ]
+    },
+    {
+      "resultId": "daisy-champagne",
+      "gameResultItemId": 56203,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "daisy-white",
+          "plantItemId": 50198,
+          "flowerItemId": 50199
+        },
+        {
+          "id": "daisy-yellow",
+          "plantItemId": 50202,
+          "flowerItemId": 50203
+        }
+      ]
+    },
+    {
+      "resultId": "daisy-lime",
+      "gameResultItemId": 56204,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "daisy-teal",
+          "plantItemId": 50305,
+          "flowerItemId": 50306
+        },
+        {
+          "id": "daisy-teal",
+          "plantItemId": 50305,
+          "flowerItemId": 50306
+        }
+      ]
+    },
+    {
+      "resultId": "daisy-violet",
+      "gameResultItemId": 56205,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "daisy-champagne",
+          "plantItemId": 56003,
+          "flowerItemId": 56203
+        },
+        {
+          "id": "daisy-lime",
+          "plantItemId": 56004,
+          "flowerItemId": 56204
+        }
+      ]
+    },
+    {
+      "resultId": "canna-blush",
+      "gameResultItemId": 56236,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "canna-orange",
+          "plantItemId": 52027,
+          "flowerItemId": 52028
+        },
+        {
+          "id": "canna-red",
+          "plantItemId": 52033,
+          "flowerItemId": 52034
+        }
+      ]
+    },
+    {
+      "resultId": "moss-rose-fuchsia",
+      "gameResultItemId": 56239,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "moss-rose-purple",
+          "plantItemId": 52039,
+          "flowerItemId": 52040
+        },
+        {
+          "id": "moss-rose-white",
+          "plantItemId": 52036,
+          "flowerItemId": 52037
+        }
+      ]
+    },
+    {
+      "resultId": "bellflower-coral",
+      "gameResultItemId": 56213,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "bellflower-white",
+          "plantItemId": 50214,
+          "flowerItemId": 50215
+        },
+        {
+          "id": "bellflower-white",
+          "plantItemId": 50214,
+          "flowerItemId": 50215
+        }
+      ]
+    },
+    {
+      "resultId": "winter-adonis-blush",
+      "gameResultItemId": 56245,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "winter-adonis-red",
+          "plantItemId": 52066,
+          "flowerItemId": 52067
+        },
+        {
+          "id": "winter-adonis-white",
+          "plantItemId": 52069,
+          "flowerItemId": 52070
+        }
+      ]
+    },
+    {
+      "resultId": "amaryllis-lime",
+      "gameResultItemId": 56230,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "dahlia-pastel-pink",
+      "gameResultItemId": 56209,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "dahlia-amethyst",
+      "gameResultItemId": 56211,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "dahlia-blush",
+      "gameResultItemId": 56212,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "king-protea-sunset",
+      "gameResultItemId": 56227,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "agapanthus-baby-blue",
+      "gameResultItemId": 56233,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "agapanthus-black-velvet",
+      "gameResultItemId": 56234,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "canna-saffron",
+      "gameResultItemId": 56235,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "canna-champagne",
+      "gameResultItemId": 56238,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "canna-jade-gold",
+      "gameResultItemId": 56237,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "moss-rose-tangerine",
+      "gameResultItemId": 56240,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "moss-rose-purple",
+          "plantItemId": 52039,
+          "flowerItemId": 52040
+        },
+        {
+          "id": "moss-rose-yellow",
+          "plantItemId": 52042,
+          "flowerItemId": 52043
+        }
+      ]
+    },
+    {
+      "resultId": "moss-rose-blush",
+      "gameResultItemId": 56241,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "moss-rose-pink-sunset",
+      "gameResultItemId": 56242,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "moss-rose-sunset",
+      "gameResultItemId": 56243,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "bellflower-rose-pink",
+      "gameResultItemId": 56215,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "bellflower-sky-blue",
+      "gameResultItemId": 56214,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "bellflower-starlace",
+      "gameResultItemId": 56216,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "violet-fuchsia",
+      "gameResultItemId": 56217,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": [
+        {
+          "id": "violet-violet",
+          "plantItemId": 50210,
+          "flowerItemId": 50211
+        },
+        {
+          "id": "violet-pink",
+          "plantItemId": 50212,
+          "flowerItemId": 50213
+        }
+      ]
+    },
+    {
+      "resultId": "violet-primrose",
+      "gameResultItemId": 56218,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "violet-twilight",
+      "gameResultItemId": 56219,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "violet-black-velvet",
+      "gameResultItemId": 56220,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "violet-nightstar",
+      "gameResultItemId": 56221,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "winter-adonis-cream",
+      "gameResultItemId": 56244,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "winter-adonis-sky-blue",
+      "gameResultItemId": 56246,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "winter-adonis-frostwhite",
+      "gameResultItemId": 56247,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "petunia-lavender",
+      "gameResultItemId": 56248,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "petunia-dawn",
+      "gameResultItemId": 56249,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    },
+    {
+      "resultId": "petunia-sky-blue",
+      "gameResultItemId": 56250,
+      "breeding": {
+        "status": "not-confirmed",
+        "sourceTableOffset": null,
+        "parentItemIds": null
+      },
+      "existingDatabaseParents": []
+    }
+  ]
+}

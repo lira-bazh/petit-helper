@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/flowers"
   const locale = await getRequestLocale(params);
   return {
     title: m.flowers_title({}, { locale }),
+    description: m.flowers_meta_description({}, { locale }),
     alternates: {
       canonical: `${siteUrl}/${locale}/flowers`,
       languages: {
@@ -30,6 +31,22 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/flowers"
 export default async function FlowersPage({ params }: PageProps<"/[locale]/flowers">) {
   const locale = await getRequestLocale(params);
   const flowers = flowerData.flowers;
+  const sectionHeadings: Record<string, string> = {
+    "sunflower": m.flowers_hybrids_sunflower({}, { locale }),
+    "mooncycle-rose": m.flowers_hybrids_mooncycle_rose({}, { locale }),
+    "amaryllis": m.flowers_hybrids_amaryllis({}, { locale }),
+    "dahlia": m.flowers_hybrids_dahlia({}, { locale }),
+    "king-protea": m.flowers_hybrids_king_protea({}, { locale }),
+    "lily": m.flowers_hybrids_lily({}, { locale }),
+    "agapanthus": m.flowers_hybrids_agapanthus({}, { locale }),
+    "daisy": m.flowers_hybrids_daisy({}, { locale }),
+    "canna": m.flowers_hybrids_canna({}, { locale }),
+    "moss-rose": m.flowers_hybrids_moss_rose({}, { locale }),
+    "bellflower": m.flowers_hybrids_bellflower({}, { locale }),
+    "violet": m.flowers_hybrids_violet({}, { locale }),
+    "winter-adonis": m.flowers_hybrids_winter_adonis({}, { locale }),
+    "petunia": m.flowers_hybrids_petunia({}, { locale }),
+  };
   const crosses = flowerData.crosses.flatMap((cross) => {
     const result = flowers.find((flower) => flower.id === cross.resultId);
     const parents = cross.parentIds.map((id) => flowers.find((flower) => flower.id === id));
@@ -43,8 +60,16 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
     const whiteFlowers = speciesFlowers.filter((flower) => flower.quality === "white");
     const hybridCount = speciesFlowers.filter((flower) => flower.quality !== "white").length;
     const knownCrossCount = speciesCrosses.filter((cross) => cross.parents.every(Boolean)).length;
+    const summary = speciesCrosses.flatMap(({ parents: [parent1, parent2], result }) => {
+      if (!parent1 || !parent2) return [];
+      return [m.flowers_cross_summary({
+        result: result.colorName[locale],
+        parent1: parent1.colorName[locale],
+        parent2: parent2.colorName[locale],
+      }, { locale })];
+    }).join(" ");
     return speciesCrosses.length > 0
-      ? [{ species, whiteFlowers, crosses: speciesCrosses, hybridCount, knownCrossCount }]
+      ? [{ species, whiteFlowers, crosses: speciesCrosses, hybridCount, knownCrossCount, summary }]
       : [];
   }).sort((a, b) => a.hybridCount - b.hybridCount || b.knownCrossCount - a.knownCrossCount);
 
@@ -53,11 +78,11 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
       className="mx-auto max-w-[1448px] px-6 py-8 lg:px-14"
       aria-label={m.nav_flowers({}, { locale })}
     >
+      <h1 className="mx-auto mb-3 max-w-[49.5rem] text-center text-2xl font-semibold sm:text-3xl">
+        {m.flowers_heading({}, { locale })}
+      </h1>
       {groups.length > 0 && (
-        <nav aria-labelledby="flowers-contents" className="mx-auto mb-8 max-w-[49.5rem]">
-          <h2 id="flowers-contents" className="mb-3 text-center text-sm font-medium text-muted-foreground">
-            {m.flowers_contents({}, { locale })}
-          </h2>
+        <nav aria-label={m.flowers_contents({}, { locale })} className="mx-auto mb-8 max-w-[49.5rem]">
           <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-7">
             {groups.map(({ species }) => (
               <li key={species.id} className="min-w-0">
@@ -72,11 +97,11 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
           </ul>
         </nav>
       )}
-      {groups.length > 0 ? groups.map(({ species, whiteFlowers, crosses }) => (
+      {groups.length > 0 ? groups.map(({ species, whiteFlowers, crosses, summary }) => (
         <section key={species.id} id={species.id} aria-labelledby={`${species.id}-title`} className="mx-auto mb-8 max-w-[49.5rem] scroll-mt-6">
           <h2 id={`${species.id}-title`} className="mb-2 text-center text-xl font-semibold">
             <span className="relative inline-block max-w-[calc(100%_-_5rem)]">
-              {species.name[locale]}
+              {sectionHeadings[species.id]}
               <FlowerSectionLink
                 sectionId={species.id}
                 label={m.flowers_copy_link({ name: species.name[locale] }, { locale })}
@@ -85,6 +110,9 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
               />
             </span>
           </h2>
+          <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
+            {summary || m.flowers_cross_summary_unknown({}, { locale })}
+          </p>
           <div className="grid items-start gap-6 md:grid-cols-[12rem_minmax(0,36rem)]">
             <aside aria-labelledby={`${species.id}-base-colors`}>
               <h3 id={`${species.id}-base-colors`} className="mb-3 text-sm font-medium text-muted-foreground">

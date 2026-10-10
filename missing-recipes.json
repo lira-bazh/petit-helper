@@ -27,6 +27,44 @@
         "tableOffset": 161331276,
         "ruStringOffset": 161331776,
         "dishNameTableOffset": 161470988
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110038,
+        "tableOffset": 5341296,
+        "baseRecipeId": 2110038,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + креветки"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          }
+        ]
       }
     },
     {
@@ -43,6 +81,37 @@
         "tableOffset": 161329932,
         "ruStringOffset": 161330336,
         "dishNameTableOffset": 161469528
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110040,
+        "tableOffset": 5340852,
+        "baseRecipeId": 2110040,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_海胆",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морской ёж"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "краб"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蛋",
+            "itemId": null,
+            "quantity": 1,
+            "label": "яйцо"
+          }
+        ]
       }
     },
     {
@@ -59,6 +128,37 @@
         "tableOffset": 161324948,
         "ruStringOffset": 161325396,
         "dishNameTableOffset": 161465640
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110047,
+        "tableOffset": 5339116,
+        "baseRecipeId": 2110047,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_金色&食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          }
+        ]
       }
     },
     {
@@ -75,6 +175,44 @@
         "tableOffset": 161321720,
         "ruStringOffset": 161322180,
         "dishNameTableOffset": 161462628
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110051,
+        "tableOffset": 5337924,
+        "baseRecipeId": 2110051,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "лобстер"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "краб"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + моллюски"
+          }
+        ]
       }
     },
     {
@@ -91,6 +229,37 @@
         "tableOffset": 161318636,
         "ruStringOffset": 161319084,
         "dishNameTableOffset": 161460208
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110055,
+        "tableOffset": 5336868,
+        "baseRecipeId": 2110055,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_海鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + морская рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          }
+        ]
       }
     },
     {
@@ -107,6 +276,30 @@
         "tableOffset": 161317080,
         "ruStringOffset": 161317468,
         "dishNameTableOffset": 161459148
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110057,
+        "tableOffset": 5336276,
+        "baseRecipeId": 2110057,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рис"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
       }
     },
     {
@@ -123,6 +316,30 @@
         "tableOffset": 161316324,
         "ruStringOffset": 161316736,
         "dishNameTableOffset": 161458640
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110058,
+        "tableOffset": 5335912,
+        "baseRecipeId": 2110058,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морепродукты"
+          }
+        ]
       }
     },
     {
@@ -139,6 +356,37 @@
         "tableOffset": 161315472,
         "ruStringOffset": 161315924,
         "dishNameTableOffset": 161458028
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110059,
+        "tableOffset": 5335656,
+        "baseRecipeId": 2110059,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": null,
+            "itemId": 30268,
+            "quantity": 1,
+            "label": "Побег бамбука"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + овощи"
+          }
+        ]
       }
     },
     {
@@ -155,6 +403,37 @@
         "tableOffset": 161314660,
         "ruStringOffset": 161315088,
         "dishNameTableOffset": 161457008
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110060,
+        "tableOffset": 5335280,
+        "baseRecipeId": 2110060,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          }
+        ]
       }
     },
     {
@@ -171,6 +450,30 @@
         "tableOffset": 161311308,
         "ruStringOffset": 161311740,
         "dishNameTableOffset": 161454540
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110064,
+        "tableOffset": 5333900,
+        "baseRecipeId": 2110064,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_素菜|食材_紫色&食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + растительный ингредиент или фиолетовое качество + животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
       }
     },
     {
@@ -187,6 +490,30 @@
         "tableOffset": 161309944,
         "ruStringOffset": 161310404,
         "dishNameTableOffset": 161453488
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110066,
+        "tableOffset": 5333304,
+        "baseRecipeId": 2110066,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
       }
     },
     {
@@ -203,6 +530,30 @@
         "tableOffset": 161309152,
         "ruStringOffset": 161309568,
         "dishNameTableOffset": 161452840
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110067,
+        "tableOffset": 5332920,
+        "baseRecipeId": 2110067,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_素菜|食材_金色&食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + растительный ингредиент или золотое качество + животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
       }
     },
     {
@@ -219,6 +570,37 @@
         "tableOffset": 161307772,
         "ruStringOffset": 161308152,
         "dishNameTableOffset": 161451868
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110069,
+        "tableOffset": 5332464,
+        "baseRecipeId": 2110069,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
       }
     },
     {
@@ -235,6 +617,30 @@
         "tableOffset": 161307140,
         "ruStringOffset": 161307484,
         "dishNameTableOffset": 161450940
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110070,
+        "tableOffset": 5332168,
+        "baseRecipeId": 2110070,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          }
+        ]
       }
     },
     {
@@ -251,6 +657,30 @@
         "tableOffset": 161306492,
         "ruStringOffset": 161306836,
         "dishNameTableOffset": 161450464
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110071,
+        "tableOffset": 5331868,
+        "baseRecipeId": 2110071,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          }
+        ]
       }
     },
     {
@@ -267,6 +697,30 @@
         "tableOffset": 161305800,
         "ruStringOffset": 161306188,
         "dishNameTableOffset": 161449940
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110072,
+        "tableOffset": 5331684,
+        "baseRecipeId": 2110072,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          }
+        ]
       }
     },
     {
@@ -283,6 +737,30 @@
         "tableOffset": 161305144,
         "ruStringOffset": 161305516,
         "dishNameTableOffset": 161449448
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110073,
+        "tableOffset": 5331504,
+        "baseRecipeId": 2110073,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          }
+        ]
       }
     },
     {
@@ -299,6 +777,37 @@
         "tableOffset": 161304476,
         "ruStringOffset": 161304808,
         "dishNameTableOffset": 161449000
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110075,
+        "tableOffset": 5331228,
+        "baseRecipeId": 2110075,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_土豆",
+            "itemId": null,
+            "quantity": 1,
+            "label": "картофель"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_茄子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + баклажан"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_辣椒",
+            "itemId": null,
+            "quantity": 1,
+            "label": "перец"
+          }
+        ]
       }
     },
     {
@@ -315,6 +824,44 @@
         "tableOffset": 161301468,
         "ruStringOffset": 161301868,
         "dishNameTableOffset": 161446116
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110084,
+        "tableOffset": 5330136,
+        "baseRecipeId": 2110084,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_肉",
+            "itemId": null,
+            "quantity": 1,
+            "label": "мясо"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蛋",
+            "itemId": null,
+            "quantity": 1,
+            "label": "яйцо"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + рис"
+          }
+        ]
       }
     },
     {
@@ -331,6 +878,30 @@
         "tableOffset": 161300664,
         "ruStringOffset": 161301088,
         "dishNameTableOffset": 161445112
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110097,
+        "tableOffset": 5329884,
+        "baseRecipeId": 2110097,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_黄色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "жёлтые фрукты"
+          }
+        ]
       }
     },
     {
@@ -347,6 +918,30 @@
         "tableOffset": 161299884,
         "ruStringOffset": 161300280,
         "dishNameTableOffset": 161444552
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110098,
+        "tableOffset": 5329632,
+        "baseRecipeId": 2110098,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные фрукты"
+          }
+        ]
       }
     },
     {
@@ -363,6 +958,30 @@
         "tableOffset": 161299048,
         "ruStringOffset": 161299488,
         "dishNameTableOffset": 161443944
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110099,
+        "tableOffset": 5329380,
+        "baseRecipeId": 2110099,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蓝色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "синие фрукты"
+          }
+        ]
       }
     },
     {
@@ -379,6 +998,30 @@
         "tableOffset": 161291184,
         "ruStringOffset": 161291564,
         "dishNameTableOffset": 161436280
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110110,
+        "tableOffset": 5326376,
+        "baseRecipeId": 2110110,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          }
+        ]
       }
     },
     {
@@ -395,6 +1038,44 @@
         "tableOffset": 161290316,
         "ruStringOffset": 161290784,
         "dishNameTableOffset": 161435564
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110116,
+        "tableOffset": 5325956,
+        "baseRecipeId": 2110116,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蓝莓",
+            "itemId": null,
+            "quantity": 1,
+            "label": "черника"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_芒果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "манго"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_苹果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "яблоко"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_百香果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + маракуйя"
+          }
+        ]
       }
     },
     {
@@ -411,6 +1092,44 @@
         "tableOffset": 161281156,
         "ruStringOffset": 161281632,
         "dishNameTableOffset": 161423300
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110310,
+        "tableOffset": 5322928,
+        "baseRecipeId": 2110310,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + лобстер"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_大蒜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "чеснок"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          }
+        ]
       }
     },
     {
@@ -427,6 +1146,30 @@
         "tableOffset": 161272312,
         "ruStringOffset": 161272664,
         "dishNameTableOffset": 161416556
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110322,
+        "tableOffset": 5319904,
+        "baseRecipeId": 2110322,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          }
+        ]
       }
     },
     {
@@ -443,6 +1186,30 @@
         "tableOffset": 161271584,
         "ruStringOffset": 161271972,
         "dishNameTableOffset": 161416076
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110323,
+        "tableOffset": 5319592,
+        "baseRecipeId": 2110323,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + фрукты"
+          }
+        ]
       }
     },
     {
@@ -459,6 +1226,30 @@
         "tableOffset": 161270748,
         "ruStringOffset": 161271164,
         "dishNameTableOffset": 161415456
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110326,
+        "tableOffset": 5319344,
+        "baseRecipeId": 2110326,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_红色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные фрукты"
+          }
+        ]
       }
     },
     {
@@ -475,6 +1266,44 @@
         "tableOffset": 161269908,
         "ruStringOffset": 161270372,
         "dishNameTableOffset": 161414784
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110328,
+        "tableOffset": 5319068,
+        "baseRecipeId": 2110328,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_草莓",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + клубника"
+          }
+        ]
       }
     },
     {
@@ -491,6 +1320,44 @@
         "tableOffset": 161269016,
         "ruStringOffset": 161269480,
         "dishNameTableOffset": 161414052
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110334,
+        "tableOffset": 5318672,
+        "baseRecipeId": 2110334,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_蓝莓",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + черника"
+          }
+        ]
       }
     },
     {
@@ -507,6 +1374,44 @@
         "tableOffset": 161267444,
         "ruStringOffset": 161267864,
         "dishNameTableOffset": 161412824
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110337,
+        "tableOffset": 5318088,
+        "baseRecipeId": 2110337,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_草莓",
+            "itemId": null,
+            "quantity": 1,
+            "label": "клубника"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
       }
     },
     {
@@ -523,6 +1428,44 @@
         "tableOffset": 161266724,
         "ruStringOffset": 161267128,
         "dishNameTableOffset": 161412260
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110338,
+        "tableOffset": 5317752,
+        "baseRecipeId": 2110338,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_菠萝",
+            "itemId": null,
+            "quantity": 1,
+            "label": "ананас"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
       }
     },
     {
@@ -539,6 +1482,44 @@
         "tableOffset": 161266000,
         "ruStringOffset": 161266404,
         "dishNameTableOffset": 158897896
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110339,
+        "tableOffset": 5317532,
+        "baseRecipeId": 2110339,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
       }
     },
     {
@@ -555,6 +1536,37 @@
         "tableOffset": 161265356,
         "ruStringOffset": 161265728,
         "dishNameTableOffset": 161411220
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110340,
+        "tableOffset": 5317344,
+        "baseRecipeId": 2110340,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蛋",
+            "itemId": null,
+            "quantity": 1,
+            "label": "яйцо"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          }
+        ]
       }
     },
     {
@@ -571,6 +1583,44 @@
         "tableOffset": 161258728,
         "ruStringOffset": 161259160,
         "dishNameTableOffset": 161406024
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110508,
+        "tableOffset": 5315068,
+        "baseRecipeId": 2110508,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_大蒜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "чеснок"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + помидор"
+          }
+        ]
       }
     },
     {
@@ -587,6 +1637,30 @@
         "tableOffset": 161199620,
         "ruStringOffset": 161200044,
         "dishNameTableOffset": 161396668
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2140010,
+        "tableOffset": 5314280,
+        "baseRecipeId": 2140010,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
       }
     },
     {
@@ -603,6 +1677,30 @@
         "tableOffset": 161198944,
         "ruStringOffset": 161199356,
         "dishNameTableOffset": 161396164
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2140011,
+        "tableOffset": 5314004,
+        "baseRecipeId": 2140011,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_素菜|食材_紫色&食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + растительный ингредиент или фиолетовое качество + животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
       }
     },
     {
@@ -619,6 +1717,30 @@
         "tableOffset": 161198248,
         "ruStringOffset": 161198660,
         "dishNameTableOffset": 161395632
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2140012,
+        "tableOffset": 5313728,
+        "baseRecipeId": 2140012,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_素菜|食材_金色&食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + растительный ингредиент или золотое качество + животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
       }
     },
     {
@@ -635,6 +1757,30 @@
         "tableOffset": 161197484,
         "ruStringOffset": 161197920,
         "dishNameTableOffset": 161395032
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2140013,
+        "tableOffset": 5313528,
+        "baseRecipeId": 2140013,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
       }
     },
     {
@@ -651,6 +1797,30 @@
         "tableOffset": 161196752,
         "ruStringOffset": 161197172,
         "dishNameTableOffset": 161394472
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2140014,
+        "tableOffset": 5313252,
+        "baseRecipeId": 2140014,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_素菜|食材_紫色&食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + растительный ингредиент или фиолетовое качество + животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
       }
     },
     {
@@ -667,6 +1837,30 @@
         "tableOffset": 161195988,
         "ruStringOffset": 161196424,
         "dishNameTableOffset": 161393884
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2140015,
+        "tableOffset": 5312976,
+        "baseRecipeId": 2140015,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_素菜|食材_金色&食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + растительный ингредиент или золотое качество + животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
       }
     }
   ],
@@ -684,6 +1878,30 @@
       "source": {
         "tableOffset": 161257252,
         "ruStringOffset": 161257744
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111024,
+        "tableOffset": 5345180,
+        "baseRecipeId": 2110024,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果|食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты или цветы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          }
+        ]
       }
     },
     {
@@ -699,6 +1917,37 @@
       "source": {
         "tableOffset": 161256392,
         "ruStringOffset": 161256828
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111025,
+        "tableOffset": 5344852,
+        "baseRecipeId": 2110025,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_甜瓜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "дыня"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_甜瓜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "дыня"
+          }
+        ]
       }
     },
     {
@@ -714,6 +1963,30 @@
       "source": {
         "tableOffset": 161255396,
         "ruStringOffset": 161255928
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111026,
+        "tableOffset": 5344552,
+        "baseRecipeId": 2110026,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
       }
     },
     {
@@ -729,6 +2002,30 @@
       "source": {
         "tableOffset": 161254476,
         "ruStringOffset": 161254964
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111027,
+        "tableOffset": 5344260,
+        "baseRecipeId": 2110027,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          }
+        ]
       }
     },
     {
@@ -744,6 +2041,30 @@
       "source": {
         "tableOffset": 161253628,
         "ruStringOffset": 161254060
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111028,
+        "tableOffset": 5343964,
+        "baseRecipeId": 2110028,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морепродукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морепродукты"
+          }
+        ]
       }
     },
     {
@@ -759,6 +2080,30 @@
       "source": {
         "tableOffset": 161252824,
         "ruStringOffset": 161253240
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111029,
+        "tableOffset": 5343732,
+        "baseRecipeId": 2110029,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
       }
     },
     {
@@ -774,6 +2119,30 @@
       "source": {
         "tableOffset": 161251980,
         "ruStringOffset": 161252412
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111030,
+        "tableOffset": 5343384,
+        "baseRecipeId": 2110030,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
       }
     },
     {
@@ -789,6 +2158,44 @@
       "source": {
         "tableOffset": 161251100,
         "ruStringOffset": 161251552
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111031,
+        "tableOffset": 5343088,
+        "baseRecipeId": 2110031,
+        "ingredientCount": null,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + лобстер"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_淡水鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пресноводная рыба"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          }
+        ]
       }
     },
     {
@@ -804,6 +2211,30 @@
       "source": {
         "tableOffset": 161250088,
         "ruStringOffset": 161250644
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111032,
+        "tableOffset": 5342740,
+        "baseRecipeId": 2110032,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "лобстер"
+          }
+        ]
       }
     },
     {
@@ -819,6 +2250,37 @@
       "source": {
         "tableOffset": 161249160,
         "ruStringOffset": 161249640
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111033,
+        "tableOffset": 5342512,
+        "baseRecipeId": 2110033,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_黄色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "жёлтые фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные фрукты"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_红色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные фрукты"
+          }
+        ]
       }
     },
     {
@@ -834,6 +2296,30 @@
       "source": {
         "tableOffset": 161248148,
         "ruStringOffset": 161248676
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111034,
+        "tableOffset": 5342328,
+        "baseRecipeId": 2110034,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
       }
     },
     {
@@ -849,6 +2335,37 @@
       "source": {
         "tableOffset": 161247324,
         "ruStringOffset": 161247780
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111035,
+        "tableOffset": 5342060,
+        "baseRecipeId": 2110035,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морская рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рис"
+          }
+        ]
       }
     },
     {
@@ -864,6 +2381,30 @@
       "source": {
         "tableOffset": 161246364,
         "ruStringOffset": 161246852
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111036,
+        "tableOffset": 5341764,
+        "baseRecipeId": 2110036,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "краб"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          }
+        ]
       }
     },
     {
@@ -879,6 +2420,30 @@
       "source": {
         "tableOffset": 161245344,
         "ruStringOffset": 161245876
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111037,
+        "tableOffset": 5341584,
+        "baseRecipeId": 2110037,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морская рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "креветки"
+          }
+        ]
       }
     },
     {
@@ -894,6 +2459,44 @@
       "source": {
         "tableOffset": 161244316,
         "ruStringOffset": 161244864
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111038,
+        "tableOffset": 5341296,
+        "baseRecipeId": 2110038,
+        "ingredientCount": null,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + креветки"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          }
+        ]
       }
     },
     {
@@ -909,6 +2512,30 @@
       "source": {
         "tableOffset": 161243464,
         "ruStringOffset": 161243880
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111039,
+        "tableOffset": 5341112,
+        "baseRecipeId": 2110039,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
       }
     },
     {
@@ -924,6 +2551,37 @@
       "source": {
         "tableOffset": 161242452,
         "ruStringOffset": 161242976
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111040,
+        "tableOffset": 5340852,
+        "baseRecipeId": 2110040,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_海胆",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морской ёж"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "краб"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蛋",
+            "itemId": null,
+            "quantity": 1,
+            "label": "яйцо"
+          }
+        ]
       }
     },
     {
@@ -939,6 +2597,30 @@
       "source": {
         "tableOffset": 161241460,
         "ruStringOffset": 161241956
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111041,
+        "tableOffset": 5340672,
+        "baseRecipeId": 2110041,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          }
+        ]
       }
     },
     {
@@ -954,6 +2636,30 @@
       "source": {
         "tableOffset": 161240588,
         "ruStringOffset": 161241012
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111042,
+        "tableOffset": 5340488,
+        "baseRecipeId": 2110042,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морепродукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
       }
     },
     {
@@ -969,6 +2675,37 @@
       "source": {
         "tableOffset": 161239776,
         "ruStringOffset": 161240192
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111043,
+        "tableOffset": 5340220,
+        "baseRecipeId": 2110043,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_玉米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + кукуруза"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
       }
     },
     {
@@ -984,6 +2721,44 @@
       "source": {
         "tableOffset": 161238920,
         "ruStringOffset": 161239376
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111044,
+        "tableOffset": 5339960,
+        "baseRecipeId": 2110044,
+        "ingredientCount": null,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_黄色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "жёлтые фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные фрукты"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_红色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные фрукты"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_紫色&食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + зерновые"
+          }
+        ]
       }
     },
     {
@@ -999,6 +2774,37 @@
       "source": {
         "tableOffset": 161238020,
         "ruStringOffset": 161238476
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111045,
+        "tableOffset": 5339572,
+        "baseRecipeId": 2110045,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_淡水鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пресноводная рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
       }
     },
     {
@@ -1014,6 +2820,30 @@
       "source": {
         "tableOffset": 161237100,
         "ruStringOffset": 161237584
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111046,
+        "tableOffset": 5339388,
+        "baseRecipeId": 2110046,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_淡水鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пресноводная рыба"
+          }
+        ]
       }
     },
     {
@@ -1029,6 +2859,37 @@
       "source": {
         "tableOffset": 161236100,
         "ruStringOffset": 161236636
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111047,
+        "tableOffset": 5339116,
+        "baseRecipeId": 2110047,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_金色&食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          }
+        ]
       }
     },
     {
@@ -1044,6 +2905,37 @@
       "source": {
         "tableOffset": 161235212,
         "ruStringOffset": 161235664
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111048,
+        "tableOffset": 5338848,
+        "baseRecipeId": 2110048,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_甜瓜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + дыня"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          }
+        ]
       }
     },
     {
@@ -1059,6 +2951,30 @@
       "source": {
         "tableOffset": 161234232,
         "ruStringOffset": 161234740
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111049,
+        "tableOffset": 5338612,
+        "baseRecipeId": 2110049,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рыба"
+          }
+        ]
       }
     },
     {
@@ -1074,6 +2990,37 @@
       "source": {
         "tableOffset": 161233352,
         "ruStringOffset": 161233812
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111050,
+        "tableOffset": 5338216,
+        "baseRecipeId": 2110050,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_淡水鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + пресноводная рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_红色蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные овощи"
+          }
+        ]
       }
     },
     {
@@ -1089,6 +3036,44 @@
       "source": {
         "tableOffset": 161232344,
         "ruStringOffset": 161232868
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111051,
+        "tableOffset": 5337924,
+        "baseRecipeId": 2110051,
+        "ingredientCount": null,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "лобстер"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "краб"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + моллюски"
+          }
+        ]
       }
     },
     {
@@ -1104,6 +3089,37 @@
       "source": {
         "tableOffset": 161231364,
         "ruStringOffset": 161231872
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111052,
+        "tableOffset": 5337660,
+        "baseRecipeId": 2110052,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рыба"
+          }
+        ]
       }
     },
     {
@@ -1119,6 +3135,37 @@
       "source": {
         "tableOffset": 161230216,
         "ruStringOffset": 161230796
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111053,
+        "tableOffset": 5337400,
+        "baseRecipeId": 2110053,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + креветки"
+          }
+        ]
       }
     },
     {
@@ -1134,6 +3181,37 @@
       "source": {
         "tableOffset": 161229116,
         "ruStringOffset": 161229680
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111054,
+        "tableOffset": 5337136,
+        "baseRecipeId": 2110054,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + краб"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          }
+        ]
       }
     },
     {
@@ -1149,6 +3227,37 @@
       "source": {
         "tableOffset": 161228080,
         "ruStringOffset": 161228608
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111055,
+        "tableOffset": 5336868,
+        "baseRecipeId": 2110055,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_海鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + морская рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          }
+        ]
       }
     },
     {
@@ -1164,6 +3273,30 @@
       "source": {
         "tableOffset": 161227100,
         "ruStringOffset": 161227624
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111056,
+        "tableOffset": 5336640,
+        "baseRecipeId": 2110056,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": null,
+            "itemId": 30268,
+            "quantity": 1,
+            "label": "Побег бамбука"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + фрукты"
+          }
+        ]
       }
     },
     {
@@ -1179,6 +3312,30 @@
       "source": {
         "tableOffset": 161226160,
         "ruStringOffset": 161226640
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111057,
+        "tableOffset": 5336276,
+        "baseRecipeId": 2110057,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рис"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
       }
     },
     {
@@ -1194,6 +3351,30 @@
       "source": {
         "tableOffset": 161225236,
         "ruStringOffset": 161225736
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111058,
+        "tableOffset": 5335912,
+        "baseRecipeId": 2110058,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морепродукты"
+          }
+        ]
       }
     },
     {
@@ -1209,6 +3390,37 @@
       "source": {
         "tableOffset": 161224232,
         "ruStringOffset": 161224760
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111059,
+        "tableOffset": 5335656,
+        "baseRecipeId": 2110059,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": null,
+            "itemId": 30268,
+            "quantity": 1,
+            "label": "Побег бамбука"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + овощи"
+          }
+        ]
       }
     },
     {
@@ -1224,6 +3436,37 @@
       "source": {
         "tableOffset": 161223220,
         "ruStringOffset": 161223748
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111060,
+        "tableOffset": 5335280,
+        "baseRecipeId": 2110060,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          }
+        ]
       }
     },
     {
@@ -1239,6 +3482,37 @@
       "source": {
         "tableOffset": 161222196,
         "ruStringOffset": 161222708
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111061,
+        "tableOffset": 5334896,
+        "baseRecipeId": 2110061,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + помидор"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_土豆",
+            "itemId": null,
+            "quantity": 1,
+            "label": "картофель"
+          }
+        ]
       }
     },
     {
@@ -1254,6 +3528,44 @@
       "source": {
         "tableOffset": 161221124,
         "ruStringOffset": 161221680
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111062,
+        "tableOffset": 5334600,
+        "baseRecipeId": 2110062,
+        "ingredientCount": null,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_胡萝卜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морковь"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_卷心菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "капуста"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + зерновые"
+          }
+        ]
       }
     },
     {
@@ -1269,6 +3581,44 @@
       "source": {
         "tableOffset": 161220192,
         "ruStringOffset": 161220672
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111063,
+        "tableOffset": 5334292,
+        "baseRecipeId": 2110063,
+        "ingredientCount": null,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
       }
     },
     {
@@ -1284,6 +3634,13 @@
       "source": {
         "tableOffset": 161213480,
         "ruStringOffset": 161213860
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2121000,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
       }
     },
     {
@@ -1299,6 +3656,13 @@
       "source": {
         "tableOffset": 161212712,
         "ruStringOffset": 161213116
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2121001,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
       }
     },
     {
@@ -1314,6 +3678,13 @@
       "source": {
         "tableOffset": 161211948,
         "ruStringOffset": 161212360
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2121002,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
       }
     },
     {
@@ -1329,6 +3700,13 @@
       "source": {
         "tableOffset": 161194640,
         "ruStringOffset": 161195060
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2141000,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
       }
     },
     {
@@ -1344,6 +3722,13 @@
       "source": {
         "tableOffset": 161193800,
         "ruStringOffset": 161194236
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2141001,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
       }
     },
     {
@@ -1359,6 +3744,13 @@
       "source": {
         "tableOffset": 161192996,
         "ruStringOffset": 161193428
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2141002,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
       }
     },
     {
@@ -1374,6 +3766,13 @@
       "source": {
         "tableOffset": 161182100,
         "ruStringOffset": 161182560
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2151000,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
       }
     },
     {
@@ -1389,6 +3788,13 @@
       "source": {
         "tableOffset": 161181120,
         "ruStringOffset": 161181628
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2151001,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
       }
     },
     {
@@ -1404,6 +3810,13 @@
       "source": {
         "tableOffset": 161179344,
         "ruStringOffset": 161179816
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2151003,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
       }
     },
     {
@@ -1419,6 +3832,13 @@
       "source": {
         "tableOffset": 161178364,
         "ruStringOffset": 161178896
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2151004,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
       }
     },
     {
@@ -1434,6 +3854,13 @@
       "source": {
         "tableOffset": 161177308,
         "ruStringOffset": 161177848
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2151005,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
       }
     },
     {
@@ -1449,6 +3876,13 @@
       "source": {
         "tableOffset": 161176468,
         "ruStringOffset": 161176904
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2151006,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
       }
     }
   ]

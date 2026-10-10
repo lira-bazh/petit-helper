@@ -1,0 +1,7293 @@
+{
+  "source": {
+    "file": "GenerateAssets/ed.obb",
+    "branch": "live_0.95",
+    "revision": 1217551
+  },
+  "scope": "All named recipe items found in the source localization, including recipes already present in the application database.",
+  "notes": [
+    "Ingredient slots preserve item IDs, original tag conditions, quantities and source table offsets. '&' requires both tags; '|' allows alternatives.",
+    "Sharing portions contain only the linked cooking record's ingredient requirements. Their separate ingredient count or consumption multiplier is not confirmed; ingredientCount remains null.",
+    "not-found means a linked ingredient list was not found, not that the recipe requires zero ingredients."
+  ],
+  "comparison": "English names, ignoring case and punctuation; sharing portions remain separate",
+  "counts": {
+    "game": 170,
+    "database": 77,
+    "dishes": 118,
+    "sharing": 52,
+    "confirmedDishes": 118,
+    "sharingWithBaseIngredients": 40,
+    "sharingIngredientsNotFound": 12
+  },
+  "unmatchedDatabaseNames": [],
+  "dishes": [
+    {
+      "name": {
+        "ru": "Нежный фруктово-цветочный чай",
+        "en": "Blissful Floral & Fruit Tea"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: нежный фруктово-цветочный чай",
+        "en": "Recipe: Blissful Floral & Fruit Tea"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161340920,
+        "ruStringOffset": 161341304,
+        "dishNameTableOffset": 161478888
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110024,
+        "tableOffset": 5345180,
+        "baseRecipeId": 2110024,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果|食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты или цветы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Цветочный чай с дыней",
+        "en": "Floral Melon Tea"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: цветочный чай с дыней",
+        "en": "Recipe: Floral Melon Tea"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161340292,
+        "ruStringOffset": 161340640,
+        "dishNameTableOffset": 161478424
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110025,
+        "tableOffset": 5344852,
+        "baseRecipeId": 2110025,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_甜瓜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "дыня"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_甜瓜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "дыня"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Ароматный фруктовый чай",
+        "en": "Aromatic Fruit Tea"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: ароматный фруктовый чай",
+        "en": "Recipe: Aromatic Fruit Tea"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161339568,
+        "ruStringOffset": 161339976,
+        "dishNameTableOffset": 161477856
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110026,
+        "tableOffset": 5344552,
+        "baseRecipeId": 2110026,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рыбная солянка",
+        "en": "Catch of the Day Soup"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рыбная солянка",
+        "en": "Recipe: Catch of the Day Soup"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161338920,
+        "ruStringOffset": 161339284,
+        "dishNameTableOffset": 161477364
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110027,
+        "tableOffset": 5344260,
+        "baseRecipeId": 2110027,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Морепродукты на пару",
+        "en": "Steamed Seafood"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: морепродукты на пару",
+        "en": "Recipe: Steamed Seafood"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161338336,
+        "ruStringOffset": 161338652,
+        "dishNameTableOffset": 161476940
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110028,
+        "tableOffset": 5343964,
+        "baseRecipeId": 2110028,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морепродукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морепродукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Жареные овощи",
+        "en": "Veggie Stir-Fry"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: жареные овощи",
+        "en": "Recipe: Veggie Stir-Fry"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161337804,
+        "ruStringOffset": 161338096,
+        "dishNameTableOffset": 161476556
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110029,
+        "tableOffset": 5343732,
+        "baseRecipeId": 2110029,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Злаковая каша",
+        "en": "Grain Porridge"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: зерновая каша",
+        "en": "Recipe: Grain Porridge"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161337260,
+        "ruStringOffset": 161337564,
+        "dishNameTableOffset": 161475660
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110030,
+        "tableOffset": 5343384,
+        "baseRecipeId": 2110030,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочное лобстеровое рагу свежего ветра",
+        "en": "Dreamy Seabreeze Lobster Stew"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочное лобстеровое рагу свежего ветра",
+        "en": "Recipe: Dreamy Seabreeze Lobster Stew"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161336320,
+        "ruStringOffset": 161336820,
+        "dishNameTableOffset": 161474900
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110031,
+        "tableOffset": 5343088,
+        "baseRecipeId": 2110031,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + лобстер"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_淡水鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пресноводная рыба"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Томатный суп с лобстером",
+        "en": "Tomato Lobster Bisque"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: томатный суп с лобстером",
+        "en": "Recipe: Tomato Lobster Bisque"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161335584,
+        "ruStringOffset": 161336004,
+        "dishNameTableOffset": 161474316
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110032,
+        "tableOffset": 5342740,
+        "baseRecipeId": 2110032,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "лобстер"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Фруктово-овощной салат",
+        "en": "Field & Orchard Salad"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: фруктово-овощной салат",
+        "en": "Recipe: Field & Orchard Salad"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161334924,
+        "ruStringOffset": 161335284,
+        "dishNameTableOffset": 161473820
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110033,
+        "tableOffset": 5342512,
+        "baseRecipeId": 2110033,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_黄色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "жёлтые фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные фрукты"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_红色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Каша по-деревенски",
+        "en": "Country-Style Congee"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: каша по-деревенски",
+        "en": "Recipe: Country-Style Congee"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161334320,
+        "ruStringOffset": 161334652,
+        "dishNameTableOffset": 161473372
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110034,
+        "tableOffset": 5342328,
+        "baseRecipeId": 2110034,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Большие суши темаки",
+        "en": "Jumbo Fish Temaki"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: большие суши темаки",
+        "en": "Recipe: Jumbo Fish Temaki"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161333672,
+        "ruStringOffset": 161334040,
+        "dishNameTableOffset": 161472896
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110035,
+        "tableOffset": 5342060,
+        "baseRecipeId": 2110035,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морская рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рис"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Жареный краб с моллюсками",
+        "en": "Crab & Clam Stir-Fry"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: жареный краб с моллюсками",
+        "en": "Recipe: Crab & Clam Stir-Fry"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161332996,
+        "ruStringOffset": 161333348,
+        "dishNameTableOffset": 161472396
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110036,
+        "tableOffset": 5341764,
+        "baseRecipeId": 2110036,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "краб"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Моряцкий суп",
+        "en": "Full Sail Shrimp & Fish Soup"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: моряцкий суп",
+        "en": "Recipe: Full Sail Shrimp & Fish Soup"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161332232,
+        "ruStringOffset": 161332644,
+        "dishNameTableOffset": 161471780
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110037,
+        "tableOffset": 5341584,
+        "baseRecipeId": 2110037,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морская рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "креветки"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочное пляжное креветочно-рыбное вок-ассорти",
+        "en": "Dreamy Coast Seafood Feast"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочное пляжное креветочно-рыбное вок-ассорти",
+        "en": "Recipe: Dreamy Coast Seafood Feast"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161331276,
+        "ruStringOffset": 161331776,
+        "dishNameTableOffset": 161470988
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110038,
+        "tableOffset": 5341296,
+        "baseRecipeId": 2110038,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + креветки"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Каша с моллюсками",
+        "en": "Shellfish Congee"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: каша с моллюсками",
+        "en": "Recipe: Shellfish Congee"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161330696,
+        "ruStringOffset": 161331000,
+        "dishNameTableOffset": 161470564
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110039,
+        "tableOffset": 5341112,
+        "baseRecipeId": 2110039,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Паровой омлет с морским ежом",
+        "en": "Urchin Shell Steamed Egg"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: паровой омлет с морским ежом",
+        "en": "Recipe: Urchin Shell Steamed Egg"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161329932,
+        "ruStringOffset": 161330336,
+        "dishNameTableOffset": 161469528
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110040,
+        "tableOffset": 5340852,
+        "baseRecipeId": 2110040,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_海胆",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морской ёж"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "краб"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蛋",
+            "itemId": null,
+            "quantity": 1,
+            "label": "яйцо"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рыбная похлёбка с грибами",
+        "en": "Mushroom & Fish Broth"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рыбная похлёбка с грибами",
+        "en": "Recipe: Mushroom & Fish Broth"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161329248,
+        "ruStringOffset": 161329604,
+        "dishNameTableOffset": 161469000
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110041,
+        "tableOffset": 5340672,
+        "baseRecipeId": 2110041,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Каша с морепродуктами",
+        "en": "Seafood Congee"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: каша с морепродуктами",
+        "en": "Recipe: Seafood Congee"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161328648,
+        "ruStringOffset": 161328960,
+        "dishNameTableOffset": 161468556
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110042,
+        "tableOffset": 5340488,
+        "baseRecipeId": 2110042,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морепродукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сытное рагу",
+        "en": "Braised Hodgepodge"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сытное рагу",
+        "en": "Recipe: Braised Hodgepodge"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161328024,
+        "ruStringOffset": 161328388,
+        "dishNameTableOffset": 161468088
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110043,
+        "tableOffset": 5340220,
+        "baseRecipeId": 2110043,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_玉米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + кукуруза"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Боул с разноцветным рисом и фруктами",
+        "en": "Rainbow Fruit Rice Bowl"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: боул с разноцветным рисом и фруктами",
+        "en": "Recipe: Rainbow Fruit Rice Bowl"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161327240,
+        "ruStringOffset": 161327676,
+        "dishNameTableOffset": 161467468
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110044,
+        "tableOffset": 5339960,
+        "baseRecipeId": 2110044,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_黄色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "жёлтые фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные фрукты"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_红色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные фрукты"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_紫色&食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Карамелизованная рыба с рисом",
+        "en": "Crystal-Glazed Fish with Rice"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: карамелизованная рыба с рисом",
+        "en": "Recipe: Crystal-Glazed Fish with Rice"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161326456,
+        "ruStringOffset": 161326880,
+        "dishNameTableOffset": 161466844
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110045,
+        "tableOffset": 5339572,
+        "baseRecipeId": 2110045,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_淡水鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пресноводная рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Томатный суп с рыбой",
+        "en": "Tomato Braised Fish"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: томатный суп с рыбой",
+        "en": "Recipe: Tomato Braised Fish"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161325784,
+        "ruStringOffset": 161326152,
+        "dishNameTableOffset": 161466328
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110046,
+        "tableOffset": 5339388,
+        "baseRecipeId": 2110046,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_淡水鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пресноводная рыба"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный овощной пир-гурмэ",
+        "en": "Dreamy Garden's Bounty Feast"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный овощной пир-гурмэ",
+        "en": "Recipe: Dreamy Garden's Bounty Feast"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161324948,
+        "ruStringOffset": 161325396,
+        "dishNameTableOffset": 161465640
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110047,
+        "tableOffset": 5339116,
+        "baseRecipeId": 2110047,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_金色&食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Цветочно-дынный пирог",
+        "en": "Floral Melon Pie"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: цветочно-дынный пирог",
+        "en": "Recipe: Floral Melon Pie"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161324252,
+        "ruStringOffset": 161324652,
+        "dishNameTableOffset": 161465112
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110048,
+        "tableOffset": 5338848,
+        "baseRecipeId": 2110048,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_甜瓜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + дыня"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рыба с фруктами в горшочке",
+        "en": "Fruit-Infused Fish Stew"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рыба с фруктами в горшочке",
+        "en": "Recipe: Fruit-Infused Fish Stew"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161323528,
+        "ruStringOffset": 161323924,
+        "dishNameTableOffset": 161464544
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110049,
+        "tableOffset": 5338612,
+        "baseRecipeId": 2110049,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рыба"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочное двухцветное большое рыбное ассорти",
+        "en": "Dreamy Ruby & Emerald Fish Feast"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочное двухцветное большое рыбное ассорти",
+        "en": "Recipe: Dreamy Ruby & Emerald Fish Feast"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161322612,
+        "ruStringOffset": 161323108,
+        "dishNameTableOffset": 161463364
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110050,
+        "tableOffset": 5338216,
+        "baseRecipeId": 2110050,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_淡水鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + пресноводная рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_红色蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочная тарелка-ассорти морепродуктов и моллюсков",
+        "en": "Dreamy Shellfish & Seafood Platter"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочная тарелка-ассорти морепродуктов и моллюсков",
+        "en": "Recipe: Dreamy Shellfish & Seafood Platter"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161321720,
+        "ruStringOffset": 161322180,
+        "dishNameTableOffset": 161462628
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110051,
+        "tableOffset": 5337924,
+        "baseRecipeId": 2110051,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "лобстер"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "краб"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + моллюски"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рыбный суп с бамбуком",
+        "en": "Bamboo Infused Fish Soup"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рыбный суп с бамбуком",
+        "en": "Recipe: Bamboo Infused Fish Soup"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161321004,
+        "ruStringOffset": 161321400,
+        "dishNameTableOffset": 161462084
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110052,
+        "tableOffset": 5337660,
+        "baseRecipeId": 2110052,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рыба"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Креветки в кляре и жареная рыба",
+        "en": "Shrimp & Fish Tempura"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: креветки в кляре и жареная рыба",
+        "en": "Recipe: Shrimp & Fish Tempura"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161320256,
+        "ruStringOffset": 161320664,
+        "dishNameTableOffset": 161461496
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110053,
+        "tableOffset": 5337400,
+        "baseRecipeId": 2110053,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + креветки"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Редкий томлёный суп из краба",
+        "en": "Rare Crab & Spring Bamboo Broth"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: редкий томлёный суп из краба",
+        "en": "Recipe: Rare Crab & Spring Bamboo Broth"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161319456,
+        "ruStringOffset": 161319880,
+        "dishNameTableOffset": 161460872
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110054,
+        "tableOffset": 5337136,
+        "baseRecipeId": 2110054,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + краб"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочная тарелка морской рыбы",
+        "en": "Dreamy Fish Trio"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочная тарелка морской рыбы",
+        "en": "Recipe: Dreamy Fish Trio"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161318636,
+        "ruStringOffset": 161319084,
+        "dishNameTableOffset": 161460208
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110055,
+        "tableOffset": 5336868,
+        "baseRecipeId": 2110055,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_海鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + морская рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Бамбуково-яблочная гранита",
+        "en": "Bamboo Apple Slushie"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: Бамбуково-яблочная гранита",
+        "en": "Secret Recipe: Bamboo Apple Slushie"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161317828,
+        "ruStringOffset": 161318268,
+        "dishNameTableOffset": 161459648
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110056,
+        "tableOffset": 5336640,
+        "baseRecipeId": 2110056,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": null,
+            "itemId": 30268,
+            "quantity": 1,
+            "label": "Побег бамбука"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рисовая булочка кабуто",
+        "en": "Kabuto Rice Bun"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: Рисовая булочка кабуто",
+        "en": "Secret Recipe: Kabuto Rice Bun"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161317080,
+        "ruStringOffset": 161317468,
+        "dishNameTableOffset": 161459148
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110057,
+        "tableOffset": 5336276,
+        "baseRecipeId": 2110057,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рис"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Грибное мясо на гриле",
+        "en": "BBQ Meatshrooms"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: Грибное мясо на гриле",
+        "en": "Secret Recipe: BBQ Meatshrooms"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161316324,
+        "ruStringOffset": 161316736,
+        "dishNameTableOffset": 161458640
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110058,
+        "tableOffset": 5335912,
+        "baseRecipeId": 2110058,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морепродукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Тушёный кордицепс",
+        "en": "Caterpillar Fungus Herbal Remedy"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: Тушёный кордицепс",
+        "en": "Secret Recipe: Caterpillar Fungus Herbal Remedy"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161315472,
+        "ruStringOffset": 161315924,
+        "dishNameTableOffset": 161458028
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110059,
+        "tableOffset": 5335656,
+        "baseRecipeId": 2110059,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": null,
+            "itemId": 30268,
+            "quantity": 1,
+            "label": "Побег бамбука"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Пирог с карамелизованными фруктами",
+        "en": "Glistening Fruit Pie"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: Пирог с карамелизованными фруктами",
+        "en": "Secret Recipe: Glistening Fruit Pie"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161314660,
+        "ruStringOffset": 161315088,
+        "dishNameTableOffset": 161457008
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110060,
+        "tableOffset": 5335280,
+        "baseRecipeId": 2110060,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Борщ с томатами и бамбуком",
+        "en": "Tomato & Shoot Borscht"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: борщ с томатами и бамбуком",
+        "en": "Secret Recipe: Tomato & Shoot Borscht"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161313816,
+        "ruStringOffset": 161314264,
+        "dishNameTableOffset": 161456388
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110061,
+        "tableOffset": 5334896,
+        "baseRecipeId": 2110061,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + помидор"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_土豆",
+            "itemId": null,
+            "quantity": 1,
+            "label": "картофель"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рис с овощами по бабулиному рецепту",
+        "en": "Granny's Veggie Fried Rice"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: Рис с овощами по бабулиному рецепту",
+        "en": "Secret Recipe: Granny's Veggie Fried Rice"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161312928,
+        "ruStringOffset": 161313400,
+        "dishNameTableOffset": 161455756
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110062,
+        "tableOffset": 5334600,
+        "baseRecipeId": 2110062,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_胡萝卜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морковь"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_卷心菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "капуста"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочные суши со свежей рыбой",
+        "en": "Dreamy Fresh-Catch Sushi"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: сказочные суши со свежей рыбой",
+        "en": "Secret Recipe: Dreamy Fresh-Catch Sushi"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161312128,
+        "ruStringOffset": 161312528,
+        "dishNameTableOffset": 161455188
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110063,
+        "tableOffset": 5334292,
+        "baseRecipeId": 2110063,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Редкое ассорти в горшочке",
+        "en": "Rare Assorted Claypot Stew"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: редкое ассорти в горшочке",
+        "en": "Recipe: Rare Assorted Claypot Stew"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161311308,
+        "ruStringOffset": 161311740,
+        "dishNameTableOffset": 161454540
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110064,
+        "tableOffset": 5333900,
+        "baseRecipeId": 2110064,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_素菜|食材_紫色&食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + растительный ингредиент или фиолетовое качество + животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Грибной суп",
+        "en": "Mushroom Soup"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: грибной суп",
+        "en": "Recipe: Mushroom Soup"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161310776,
+        "ruStringOffset": 161311072,
+        "dishNameTableOffset": 161454152
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110065,
+        "tableOffset": 5333620,
+        "baseRecipeId": 2110065,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Домашнее ассорти в горшочке",
+        "en": "Homestyle Assorted Claypot Stew"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: домашнее ассорти в горшочке",
+        "en": "Recipe: Homestyle Assorted Claypot Stew"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161309944,
+        "ruStringOffset": 161310404,
+        "dishNameTableOffset": 161453488
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110066,
+        "tableOffset": 5333304,
+        "baseRecipeId": 2110066,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочное рагу-ассорти в горшочке",
+        "en": "Dreamy Claypot Medley"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочное рагу-ассорти в горшочке",
+        "en": "Recipe: Dreamy Claypot Medley"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161309152,
+        "ruStringOffset": 161309568,
+        "dishNameTableOffset": 161452840
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110067,
+        "tableOffset": 5332920,
+        "baseRecipeId": 2110067,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_素菜|食材_金色&食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + растительный ингредиент или золотое качество + животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Карапулькра",
+        "en": "Carapulcra Stew"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: карапулькра",
+        "en": "Secret Recipe: Carapulcra Stew"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161308440,
+        "ruStringOffset": 161308840,
+        "dishNameTableOffset": 161452372
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110068,
+        "tableOffset": 5332672,
+        "baseRecipeId": 2110068,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Фруктовый чай с вафлей",
+        "en": "Waffle Fruit Tea"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: фруктовый чай с вафлей",
+        "en": "Recipe: Waffle Fruit Tea"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161307772,
+        "ruStringOffset": 161308152,
+        "dishNameTableOffset": 161451868
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110069,
+        "tableOffset": 5332464,
+        "baseRecipeId": 2110069,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Новогодние пельмени",
+        "en": "Spring Revel Dumplings"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: новогодние пельмени",
+        "en": "Recipe: Spring Revel Dumplings"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161307140,
+        "ruStringOffset": 161307484,
+        "dishNameTableOffset": 161450940
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110070,
+        "tableOffset": 5332168,
+        "baseRecipeId": 2110070,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Новогодние рисовые клёцки",
+        "en": "Spring Revel Tangyuan"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: новогодние рисовые клёцки",
+        "en": "Recipe: Spring Revel Tangyuan"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161306492,
+        "ruStringOffset": 161306836,
+        "dishNameTableOffset": 161450464
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110071,
+        "tableOffset": 5331868,
+        "baseRecipeId": 2110071,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Праздничный рисовый бисквит",
+        "en": "Baa-rilliant Cake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Праздничный рисовый бисквит",
+        "en": "Recipe: Baa-rilliant Cake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161305800,
+        "ruStringOffset": 161306188,
+        "dishNameTableOffset": 161449940
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110072,
+        "tableOffset": 5331684,
+        "baseRecipeId": 2110072,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Праздничная уха",
+        "en": "Net Fortune Braised Fish"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Праздничная уха",
+        "en": "Recipe: Net Fortune Braised Fish"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161305144,
+        "ruStringOffset": 161305516,
+        "dishNameTableOffset": 161449448
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110073,
+        "tableOffset": 5331504,
+        "baseRecipeId": 2110073,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рагу из трёх овощей",
+        "en": "Di San Xian"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: рагу из трёх овощей",
+        "en": "Secret Recipe: Di San Xian"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161304476,
+        "ruStringOffset": 161304808,
+        "dishNameTableOffset": 161449000
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110075,
+        "tableOffset": 5331228,
+        "baseRecipeId": 2110075,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_土豆",
+            "itemId": null,
+            "quantity": 1,
+            "label": "картофель"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_茄子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + баклажан"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_辣椒",
+            "itemId": null,
+            "quantity": 1,
+            "label": "перец"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Биск из морского ежа и лобстера",
+        "en": "Sea Urchin Lobster Bisque"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: биск из морского ежа и лобстера",
+        "en": "Recipe: Sea Urchin Lobster Bisque"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161303704,
+        "ruStringOffset": 161304132,
+        "dishNameTableOffset": 161448380
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110076,
+        "tableOffset": 5330932,
+        "baseRecipeId": 2110076,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海胆",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морской ёж"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "лобстер"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Тушёное мясо с морковью",
+        "en": "Carrot & Meat Stew"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: тушёное мясо с морковью",
+        "en": "Recipe: Carrot & Meat Stew"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161303008,
+        "ruStringOffset": 161303388,
+        "dishNameTableOffset": 161447844
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110077,
+        "tableOffset": 5330692,
+        "baseRecipeId": 2110077,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_胡萝卜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морковь"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_肉",
+            "itemId": null,
+            "quantity": 1,
+            "label": "мясо"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Острый рис с толчеными баклажанами и помидорами",
+        "en": "Spicy Smash-atouille Rice"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: острый рис с толчёными баклажанами и помидорами",
+        "en": "Recipe: Spicy Smash-atouille Rice"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161302228,
+        "ruStringOffset": 161302652,
+        "dishNameTableOffset": 161447220
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110078,
+        "tableOffset": 5330424,
+        "baseRecipeId": 2110078,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_茄子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + баклажан"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_辣椒",
+            "itemId": null,
+            "quantity": 1,
+            "label": "перец"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный золотистый жареный рис",
+        "en": "Dreamy Golden Fried Rice"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный золотистый жареный рис",
+        "en": "Recipe: Dreamy Golden Fried Rice"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161301468,
+        "ruStringOffset": 161301868,
+        "dishNameTableOffset": 161446116
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110084,
+        "tableOffset": 5330136,
+        "baseRecipeId": 2110084,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_肉",
+            "itemId": null,
+            "quantity": 1,
+            "label": "мясо"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蛋",
+            "itemId": null,
+            "quantity": 1,
+            "label": "яйцо"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + рис"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Персиковая булочка с апельсином",
+        "en": "Citrus Peach Bun"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: персиковая булочка с апельсином",
+        "en": "Secret Recipe: Citrus Peach Bun"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161300664,
+        "ruStringOffset": 161301088,
+        "dishNameTableOffset": 161445112
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110097,
+        "tableOffset": 5329884,
+        "baseRecipeId": 2110097,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_黄色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "жёлтые фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Пёстрая персиковая булочка",
+        "en": "Pandan Peach Bun"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: пёстрая персиковая булочка",
+        "en": "Secret Recipe: Pandan Peach Bun"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161299884,
+        "ruStringOffset": 161300280,
+        "dishNameTableOffset": 161444552
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110098,
+        "tableOffset": 5329632,
+        "baseRecipeId": 2110098,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Персиковая булочка с черникой",
+        "en": "Blueberry Peach Bun"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: персиковая булочка с черникой",
+        "en": "Secret Recipe: Blueberry Peach Bun"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161299048,
+        "ruStringOffset": 161299488,
+        "dishNameTableOffset": 161443944
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110099,
+        "tableOffset": 5329380,
+        "baseRecipeId": 2110099,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蓝色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "синие фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Яркий сок",
+        "en": "Dazzling Juice"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: яркий сок",
+        "en": "Recipe: Dazzling Juice"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161298444,
+        "ruStringOffset": 161298808,
+        "dishNameTableOffset": 161442284
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110100,
+        "tableOffset": 5329200,
+        "baseRecipeId": 2110100,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Ароматное фруктово-злаковое молоко",
+        "en": "Fruity Wheat Milk"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: ароматное фруктово-злаковое молоко",
+        "en": "Recipe: Fruity Wheat Milk"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161297692,
+        "ruStringOffset": 161298108,
+        "dishNameTableOffset": 161441676
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110101,
+        "tableOffset": 5328872,
+        "baseRecipeId": 2110101,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Ягодно-рисовое смузи",
+        "en": "Berry Rice Delight"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: ягодно-рисовое смузи",
+        "en": "Recipe: Berry Rice Delight"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161296960,
+        "ruStringOffset": 161297360,
+        "dishNameTableOffset": 161441112
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110102,
+        "tableOffset": 5328576,
+        "baseRecipeId": 2110102,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Фруктово-овощной сок",
+        "en": "Fruit & Veggie Juice"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: фруктово-овощной сок",
+        "en": "Recipe: Fruit & Veggie Juice"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161296304,
+        "ruStringOffset": 161296664,
+        "dishNameTableOffset": 161440624
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110103,
+        "tableOffset": 5328396,
+        "baseRecipeId": 2110103,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Пшеничное молоко с облачной пенкой",
+        "en": "Cloud-Froth Wheat Milk"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: пшеничное молоко с облачной пенкой",
+        "en": "Recipe: Cloud-Froth Wheat Milk"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161295592,
+        "ruStringOffset": 161295988,
+        "dishNameTableOffset": 161440072
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110104,
+        "tableOffset": 5328164,
+        "baseRecipeId": 2110104,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + зерновые"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Злаковое молоко Хэся",
+        "en": "Hexian Rice & Wheat Milk"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: злаковое молоко Хэся",
+        "en": "Recipe: Hexian Rice & Wheat Milk"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161294848,
+        "ruStringOffset": 161295280,
+        "dishNameTableOffset": 161439492
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110105,
+        "tableOffset": 5327844,
+        "baseRecipeId": 2110105,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Изысканный овощной напиток со злаками",
+        "en": "Prime Veggie Wheat Blend"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: изысканный овощной напиток со злаками",
+        "en": "Recipe: Prime Veggie Wheat Blend"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161294016,
+        "ruStringOffset": 161294476,
+        "dishNameTableOffset": 161438836
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110106,
+        "tableOffset": 5327464,
+        "baseRecipeId": 2110106,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Фруктово-рисовый настой Хэся",
+        "en": "Hexian Fruity Rice Drink"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: фруктово-рисовый настой Хэся",
+        "en": "Recipe: Hexian Fruity Rice Drink"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161293260,
+        "ruStringOffset": 161293680,
+        "dishNameTableOffset": 161438244
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110107,
+        "tableOffset": 5327136,
+        "baseRecipeId": 2110107,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_苹果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "яблоко"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_李子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "слива"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рисовый настой с овощами",
+        "en": "Veggie Rice Yogurt"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рисовый настой с овощами",
+        "en": "Recipe: Veggie Rice Yogurt"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161292568,
+        "ruStringOffset": 161292948,
+        "dishNameTableOffset": 161437724
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110108,
+        "tableOffset": 5326840,
+        "baseRecipeId": 2110108,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Разноцветный овощной сок",
+        "en": "Vibrant Veggie Juice"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: разноцветный овощной сок",
+        "en": "Recipe: Vibrant Veggie Juice"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161291868,
+        "ruStringOffset": 161292264,
+        "dishNameTableOffset": 161437180
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110109,
+        "tableOffset": 5326620,
+        "baseRecipeId": 2110109,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_红色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_黄色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "жёлтые фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Морской йогурт",
+        "en": "Tidal Wave Yogurt"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: морской йогурт",
+        "en": "Secret Recipe: Tidal Wave Yogurt"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161291184,
+        "ruStringOffset": 161291564,
+        "dishNameTableOffset": 161436280
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110110,
+        "tableOffset": 5326376,
+        "baseRecipeId": 2110110,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Коктейль со сказочной маракуйей",
+        "en": "Dreamy Passionfruit Splash"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: коктейль со сказочной маракуйей",
+        "en": "Recipe: Dreamy Passionfruit Splash"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161290316,
+        "ruStringOffset": 161290784,
+        "dishNameTableOffset": 161435564
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110116,
+        "tableOffset": 5325956,
+        "baseRecipeId": 2110116,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蓝莓",
+            "itemId": null,
+            "quantity": 1,
+            "label": "черника"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_芒果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "манго"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_苹果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "яблоко"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_百香果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + маракуйя"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Фруктовый боул Тафиса",
+        "en": "Taffean Fruit Blend"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: фруктовый боул Тафиса",
+        "en": "Recipe: Taffean Fruit Blend"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161289652,
+        "ruStringOffset": 161290024,
+        "dishNameTableOffset": 161435052
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110119,
+        "tableOffset": 5325692,
+        "baseRecipeId": 2110119,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": null,
+            "itemId": 30267,
+            "quantity": 1,
+            "label": "Плод кактуса"
+          },
+          {
+            "slot": 2,
+            "condition": null,
+            "itemId": 30265,
+            "quantity": 1,
+            "label": "Авокадо"
+          },
+          {
+            "slot": 3,
+            "condition": null,
+            "itemId": 30266,
+            "quantity": 1,
+            "label": "Манго"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Хрустящая жареная рыба с фруктами",
+        "en": "Fruit-Crusted Baked Fish"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: хрустящая жареная рыба с фруктами",
+        "en": "Recipe: Fruit-Crusted Baked Fish"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161288836,
+        "ruStringOffset": 161289284,
+        "dishNameTableOffset": 161429320
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110300,
+        "tableOffset": 5325396,
+        "baseRecipeId": 2110300,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_海鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морская рыба"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Тарелка морской рыбы и морепродуктов-гриль",
+        "en": "Seared Seafood Platter"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: тарелка морской рыбы и морепродуктов-гриль",
+        "en": "Recipe: Seared Seafood Platter"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161288012,
+        "ruStringOffset": 161288440,
+        "dishNameTableOffset": 161428676
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110301,
+        "tableOffset": 5325136,
+        "baseRecipeId": 2110301,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_海鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морская рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "креветки"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рыбные шашлычки с ананасом",
+        "en": "Pineapple Grilled Fish Skewers"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рыбные шашлычки с ананасом",
+        "en": "Recipe: Pineapple Grilled Fish Skewers"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161287188,
+        "ruStringOffset": 161287656,
+        "dishNameTableOffset": 161428008
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110302,
+        "tableOffset": 5324960,
+        "baseRecipeId": 2110302,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_菠萝",
+            "itemId": null,
+            "quantity": 1,
+            "label": "ананас"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Пицца с жареной рыбой и помидорами",
+        "en": "Fried Fish & Tomato Pizza"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: пицца с жареной рыбой и помидорами",
+        "en": "Recipe: Fried Fish & Tomato Pizza"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161286364,
+        "ruStringOffset": 161286824,
+        "dishNameTableOffset": 161427336
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110303,
+        "tableOffset": 5324708,
+        "baseRecipeId": 2110303,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Запечённый рис с рыбой",
+        "en": "Fish Baked Clay Pot Rice"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: запечённый рис с рыбой",
+        "en": "Recipe: Fish Baked Clay Pot Rice"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161285660,
+        "ruStringOffset": 161286052,
+        "dishNameTableOffset": 161426800
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110304,
+        "tableOffset": 5324416,
+        "baseRecipeId": 2110304,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рыба на гриле с овощами",
+        "en": "Grilled Fish & Veggies"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рыба на гриле с овощами",
+        "en": "Recipe: Grilled Fish & Veggies"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161284968,
+        "ruStringOffset": 161285348,
+        "dishNameTableOffset": 161426272
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110305,
+        "tableOffset": 5324236,
+        "baseRecipeId": 2110305,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_淡水鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пресноводная рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Жареные креветки с фруктами",
+        "en": "Grilled Shrimp & Lobster Fruit Platter"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: жареные креветки с фруктами",
+        "en": "Recipe: Grilled Shrimp & Lobster Fruit Platter"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161284116,
+        "ruStringOffset": 161284576,
+        "dishNameTableOffset": 161425596
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110306,
+        "tableOffset": 5323980,
+        "baseRecipeId": 2110306,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "креветки"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + креветки"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Пляжные шашлычки",
+        "en": "Seaside Skewers"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: пляжные шашлычки",
+        "en": "Recipe: Seaside Skewers"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161283428,
+        "ruStringOffset": 161283832,
+        "dishNameTableOffset": 161425076
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110307,
+        "tableOffset": 5323720,
+        "baseRecipeId": 2110307,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морепродукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_肉",
+            "itemId": null,
+            "quantity": 1,
+            "label": "мясо"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Пицца «Морской бриз»",
+        "en": "Sea Breeze Pizza"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: пицца «Морской бриз»",
+        "en": "Recipe: Sea Breeze Pizza"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161282752,
+        "ruStringOffset": 161283152,
+        "dishNameTableOffset": 161424564
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110308,
+        "tableOffset": 5323456,
+        "baseRecipeId": 2110308,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морепродукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пшеница"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Запечённый рис с морепродуктами",
+        "en": "Seafood Clay Pot Rice"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: запечённый рис с морепродуктами",
+        "en": "Recipe: Seafood Clay Pot Rice"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161282016,
+        "ruStringOffset": 161282404,
+        "dishNameTableOffset": 161423992
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110309,
+        "tableOffset": 5323220,
+        "baseRecipeId": 2110309,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морепродукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный чесночный чудо-лобстер",
+        "en": "Dreamy Miracle Garlic Lobster"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный чесночный чудо-лобстер",
+        "en": "Recipe: Dreamy Miracle Garlic Lobster"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161281156,
+        "ruStringOffset": 161281632,
+        "dishNameTableOffset": 161423300
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110310,
+        "tableOffset": 5322928,
+        "baseRecipeId": 2110310,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + лобстер"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_大蒜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "чеснок"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Аппетитные фруктовые шашлычки",
+        "en": "Sizzling Mixed Fruit Skewers"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: аппетитные фруктовые шашлычки",
+        "en": "Recipe: Sizzling Mixed Fruit Skewers"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161280340,
+        "ruStringOffset": 161280792,
+        "dishNameTableOffset": 161422648
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110311,
+        "tableOffset": 5322636,
+        "baseRecipeId": 2110311,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Клубничный шорткейк",
+        "en": "Strawberry Shortcake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: клубничный шорткейк",
+        "en": "Recipe: Strawberry Shortcake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161279648,
+        "ruStringOffset": 161280044,
+        "dishNameTableOffset": 161422116
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110312,
+        "tableOffset": 5322432,
+        "baseRecipeId": 2110312,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_草莓",
+            "itemId": null,
+            "quantity": 1,
+            "label": "клубника"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Трёхцветный фруктово-рисовый пирог",
+        "en": "Fruity Rice Cake Trio"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: трёхцветный фруктово-рисовый пирог",
+        "en": "Recipe: Fruity Rice Cake Trio"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161278860,
+        "ruStringOffset": 161279272,
+        "dishNameTableOffset": 161421484
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110313,
+        "tableOffset": 5322128,
+        "baseRecipeId": 2110313,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рис"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные фрукты"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_红色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные фрукты"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_黄色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "жёлтые фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Шашлычки из грибов, овощей и фруктов",
+        "en": "Mushroom, Fruit & Veggie Skewers"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: шашлычки из грибов, овощей и фруктов",
+        "en": "Recipe: Mushroom, Fruit & Veggie Skewers"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161277992,
+        "ruStringOffset": 161278456,
+        "dishNameTableOffset": 161420780
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110314,
+        "tableOffset": 5321948,
+        "baseRecipeId": 2110314,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Пшеничный пирог",
+        "en": "Wheat Cake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: пшеничный пирог",
+        "en": "Recipe: Wheat Cake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161277420,
+        "ruStringOffset": 161277756,
+        "dishNameTableOffset": 161420388
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110315,
+        "tableOffset": 5321772,
+        "baseRecipeId": 2110315,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蛋",
+            "itemId": null,
+            "quantity": 1,
+            "label": "яйцо"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Ароматный рисовый десерт",
+        "en": "Steamed Rice Cake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: ароматный рисовый десерт",
+        "en": "Recipe: Steamed Rice Cake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161276780,
+        "ruStringOffset": 161277136,
+        "dishNameTableOffset": 161419892
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110316,
+        "tableOffset": 5321568,
+        "baseRecipeId": 2110316,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Деревенская овощная пицца",
+        "en": "Rustic Veggie Pizza"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: деревенская овощная пицца",
+        "en": "Recipe: Rustic Veggie Pizza"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161276048,
+        "ruStringOffset": 161276464,
+        "dishNameTableOffset": 161419328
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110317,
+        "tableOffset": 5321312,
+        "baseRecipeId": 2110317,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_黄瓜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "огурец"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Запечённый рисовый пудинг",
+        "en": "Baked Rice Pudding"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: запечённый рисовый пудинг",
+        "en": "Recipe: Baked Rice Pudding"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161275424,
+        "ruStringOffset": 161275772,
+        "dishNameTableOffset": 161418868
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110318,
+        "tableOffset": 5321084,
+        "baseRecipeId": 2110318,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Трёхцветный запечённый рис с овощами",
+        "en": "Tricolor Veggie Rice Bake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: трёхцветный запечённый рис с овощами",
+        "en": "Recipe: Tricolor Veggie Rice Bake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161274636,
+        "ruStringOffset": 161275044,
+        "dishNameTableOffset": 161418252
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110319,
+        "tableOffset": 5320664,
+        "baseRecipeId": 2110319,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + зерновые"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_红色蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные овощи"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_黄色蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "жёлтые овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Вегетарианское барбекю-ассорти из сезонных овощей",
+        "en": "Seasonal Veggie BBQ Party"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: вегетарианское барбекю-ассорти из сезонных овощей",
+        "en": "Recipe: Seasonal Veggie BBQ Party"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161273772,
+        "ruStringOffset": 161274228,
+        "dishNameTableOffset": 161417556
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110320,
+        "tableOffset": 5320332,
+        "baseRecipeId": 2110320,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_土豆",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + картофель"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + помидор"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_胡萝卜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морковь"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_紫色&食材_黄瓜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + огурец"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рыба по-походному",
+        "en": "Campfire-Grilled Fish"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: Рыба по-походному",
+        "en": "Secret Recipe: Campfire-Grilled Fish"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161272976,
+        "ruStringOffset": 161273388,
+        "dishNameTableOffset": 161416988
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110321,
+        "tableOffset": 5320096,
+        "baseRecipeId": 2110321,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Облачное печенье",
+        "en": "Cloudlet Cookies"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: Облачное печенье",
+        "en": "Secret Recipe: Cloudlet Cookies"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161272312,
+        "ruStringOffset": 161272664,
+        "dishNameTableOffset": 161416556
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110322,
+        "tableOffset": 5319904,
+        "baseRecipeId": 2110322,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Фруктовый пончик",
+        "en": "Fruit Fiesta Donut"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: фруктовый пончик",
+        "en": "Secret Recipe: Fruit Fiesta Donut"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161271584,
+        "ruStringOffset": 161271972,
+        "dishNameTableOffset": 161416076
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110323,
+        "tableOffset": 5319592,
+        "baseRecipeId": 2110323,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Персиковая булочка «Алая кисть»",
+        "en": "Crimson Tassel Peach Bun"
+      },
+      "recipeItemName": {
+        "ru": "Особый рецепт: персиковая булочка «Алая кисть»",
+        "en": "Secret Recipe: Crimson Tassel Peach Bun"
+      },
+      "kind": "secret",
+      "source": {
+        "tableOffset": 161270748,
+        "ruStringOffset": 161271164,
+        "dishNameTableOffset": 161415456
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110326,
+        "tableOffset": 5319344,
+        "baseRecipeId": 2110326,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_红色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный клубничный шорткейк",
+        "en": "Dreamy Strawberry Shortcake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный клубничный шорткейк",
+        "en": "Recipe: Dreamy Strawberry Shortcake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161269908,
+        "ruStringOffset": 161270372,
+        "dishNameTableOffset": 161414784
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110328,
+        "tableOffset": 5319068,
+        "baseRecipeId": 2110328,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_草莓",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + клубника"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный черничный пирог путешественника",
+        "en": "Dreamy Stargazy Blueberry Pie"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный черничный пирог путешественника",
+        "en": "Recipe: Dreamy Stargazy Blueberry Pie"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161269016,
+        "ruStringOffset": 161269480,
+        "dishNameTableOffset": 161414052
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110334,
+        "tableOffset": 5318672,
+        "baseRecipeId": 2110334,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_蓝莓",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + черника"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Чесночная булочка со взбитым маслом",
+        "en": "Cream Cheese Garlic Bun"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: чесночная булочка со взбитым маслом",
+        "en": "Recipe: Cream Cheese Garlic Bun"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161268204,
+        "ruStringOffset": 161268652,
+        "dishNameTableOffset": 161413396
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110336,
+        "tableOffset": 5318424,
+        "baseRecipeId": 2110336,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_大蒜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + чеснок"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Муссовый клубничный торт",
+        "en": "Strawberry Mousse Cake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: муссовый клубничный торт",
+        "en": "Recipe: Strawberry Mousse Cake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161267444,
+        "ruStringOffset": 161267864,
+        "dishNameTableOffset": 161412824
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110337,
+        "tableOffset": 5318088,
+        "baseRecipeId": 2110337,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_草莓",
+            "itemId": null,
+            "quantity": 1,
+            "label": "клубника"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Торт «Солнечный ананас»",
+        "en": "Sunny Pineapple Cake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: торт «Солнечный ананас»",
+        "en": "Recipe: Sunny Pineapple Cake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161266724,
+        "ruStringOffset": 161267128,
+        "dishNameTableOffset": 161412260
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110338,
+        "tableOffset": 5317752,
+        "baseRecipeId": 2110338,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_菠萝",
+            "itemId": null,
+            "quantity": 1,
+            "label": "ананас"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Большой пшеничный торт",
+        "en": "Golden Wheat Cake"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: классический пшеничный пирог",
+        "en": "Recipe: Golden Wheat Cake"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161266000,
+        "ruStringOffset": 161266404,
+        "dishNameTableOffset": 158897896
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110339,
+        "tableOffset": 5317532,
+        "baseRecipeId": 2110339,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Имбирное печенье",
+        "en": "Gingerbread Cookie"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: имбирное печенье",
+        "en": "Recipe: Gingerbread Cookie"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161265356,
+        "ruStringOffset": 161265728,
+        "dishNameTableOffset": 161411220
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110340,
+        "tableOffset": 5317344,
+        "baseRecipeId": 2110340,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蛋",
+            "itemId": null,
+            "quantity": 1,
+            "label": "яйцо"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сытный рамен с рыбой и овощами",
+        "en": "Hearty Fish & Veggie Ramen"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сытный рамен с рыбой и овощами",
+        "en": "Recipe: Hearty Fish & Veggie Ramen"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161264600,
+        "ruStringOffset": 161265008,
+        "dishNameTableOffset": 161410616
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110500,
+        "tableOffset": 5316968,
+        "baseRecipeId": 2110500,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пшеница"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рамен с морепродуктами",
+        "en": "Seafood Combo Noodle Soup"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рамен с морепродуктами",
+        "en": "Recipe: Seafood Combo Noodle Soup"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161263844,
+        "ruStringOffset": 161264272,
+        "dishNameTableOffset": 161410012
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110501,
+        "tableOffset": 5316732,
+        "baseRecipeId": 2110501,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морепродукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Острый суп с лобстером",
+        "en": "Spicy Lobster Soup"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: острый суп с лобстером",
+        "en": "Recipe: Spicy Lobster Soup"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161263112,
+        "ruStringOffset": 161263532,
+        "dishNameTableOffset": 161409440
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110502,
+        "tableOffset": 5316468,
+        "baseRecipeId": 2110502,
+        "ingredientCount": 3,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_辣椒",
+            "itemId": null,
+            "quantity": 1,
+            "label": "перец"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + лобстер"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Освежающая фруктовая лапша",
+        "en": "Chilled Fruit Noodles"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: освежающая фруктовая лапша",
+        "en": "Recipe: Chilled Fruit Noodles"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161262416,
+        "ruStringOffset": 161262800,
+        "dishNameTableOffset": 161408896
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110503,
+        "tableOffset": 5316232,
+        "baseRecipeId": 2110503,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пшеница"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Фруктово-овощной суп «Четыре сезона»",
+        "en": "Four Seasons Soup"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: фруктово-овощной суп «Четыре сезона»",
+        "en": "Recipe: Four Seasons Soup"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161261712,
+        "ruStringOffset": 161262072,
+        "dishNameTableOffset": 161408360
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110504,
+        "tableOffset": 5315996,
+        "baseRecipeId": 2110504,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Солнечная лапша",
+        "en": "Spring Noodle Soup"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: солнечная лапша",
+        "en": "Recipe: Spring Noodle Soup"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161261016,
+        "ruStringOffset": 161261420,
+        "dishNameTableOffset": 161407824
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110505,
+        "tableOffset": 5315816,
+        "baseRecipeId": 2110505,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рамен с клёцками, овощами и грибами",
+        "en": "Rice Cake Noodles with Veggies & Mushrooms"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рамен с клёцками, овощами и грибами",
+        "en": "Recipe: Rice Cake Noodles with Veggies & Mushrooms"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161260096,
+        "ruStringOffset": 161260572,
+        "dishNameTableOffset": 161407084
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110506,
+        "tableOffset": 5315536,
+        "baseRecipeId": 2110506,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Соба с овощами",
+        "en": "Veggie Soba"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: соба с овощами",
+        "en": "Recipe: Veggie Soba"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161259540,
+        "ruStringOffset": 161259844,
+        "dishNameTableOffset": 161406684
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110507,
+        "tableOffset": 5315356,
+        "baseRecipeId": 2110507,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный суп-лапша с помидорами",
+        "en": "Dreamy Tomato Noodle Soup"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный суп-лапша с помидорами",
+        "en": "Recipe: Dreamy Tomato Noodle Soup"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161258728,
+        "ruStringOffset": 161259160,
+        "dishNameTableOffset": 161406024
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2110508,
+        "tableOffset": 5315068,
+        "baseRecipeId": 2110508,
+        "ingredientCount": 4,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_大蒜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "чеснок"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_奶",
+            "itemId": null,
+            "quantity": 1,
+            "label": "молоко"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + помидор"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Домашний коктейль",
+        "en": "Homestyle Blend"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: домашний коктейль",
+        "en": "Recipe: Homestyle Blend"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161199620,
+        "ruStringOffset": 161200044,
+        "dishNameTableOffset": 161396668
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2140010,
+        "tableOffset": 5314280,
+        "baseRecipeId": 2140010,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Редкий коктейль",
+        "en": "Rare Blend"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: редкий коктейль",
+        "en": "Recipe: Rare Blend"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161198944,
+        "ruStringOffset": 161199356,
+        "dishNameTableOffset": 161396164
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2140011,
+        "tableOffset": 5314004,
+        "baseRecipeId": 2140011,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_素菜|食材_紫色&食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + растительный ингредиент или фиолетовое качество + животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочный коктейль",
+        "en": "Dreamy Blend"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочный коктейль",
+        "en": "Recipe: Dreamy Blend"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161198248,
+        "ruStringOffset": 161198660,
+        "dishNameTableOffset": 161395632
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2140012,
+        "tableOffset": 5313728,
+        "baseRecipeId": 2140012,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_素菜|食材_金色&食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + растительный ингредиент или золотое качество + животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Домашнее барбекю-ассорти",
+        "en": "Homestyle Mixed Grill"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: домашнее барбекю-ассорти",
+        "en": "Recipe: Homestyle Mixed Grill"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161197484,
+        "ruStringOffset": 161197920,
+        "dishNameTableOffset": 161395032
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2140013,
+        "tableOffset": 5313528,
+        "baseRecipeId": 2140013,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Редкое окономияки-ассорти",
+        "en": "Rare Mixed Grill"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: редкое окономияки-ассорти",
+        "en": "Recipe: Rare Mixed Grill"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161196752,
+        "ruStringOffset": 161197172,
+        "dishNameTableOffset": 161394472
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2140014,
+        "tableOffset": 5313252,
+        "baseRecipeId": 2140014,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_素菜|食材_紫色&食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + растительный ингредиент или фиолетовое качество + животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Сказочное ассорти-гриль",
+        "en": "Dreamy Mixed Grill"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: сказочное ассорти-гриль",
+        "en": "Recipe: Dreamy Mixed Grill"
+      },
+      "kind": "standard",
+      "source": {
+        "tableOffset": 161195988,
+        "ruStringOffset": 161196424,
+        "dishNameTableOffset": 161393884
+      },
+      "cooking": {
+        "status": "confirmed",
+        "recipeItemId": 2140015,
+        "tableOffset": 5312976,
+        "baseRecipeId": 2140015,
+        "ingredientCount": 2,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_素菜|食材_金色&食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + растительный ингредиент или золотое качество + животный ингредиент"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_素菜|食材_荤菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "растительный ингредиент или животный ингредиент"
+          }
+        ]
+      }
+    }
+  ],
+  "sharing": [
+    {
+      "name": {
+        "ru": "нежный фруктово-цветочный чай [на компанию]",
+        "en": "Blissful Blossom Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: нежный фруктово-цветочный чай [на компанию]",
+        "en": "Blissful Blossom Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161257252,
+        "ruStringOffset": 161257744
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111024,
+        "tableOffset": 5345180,
+        "baseRecipeId": 2110024,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果|食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты или цветы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "ароматный дынный чай [Для компании]",
+        "en": "Mellow Melon Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: ароматный дынный чай [Для компании]",
+        "en": "Mellow Melon Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161256392,
+        "ruStringOffset": 161256828
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111025,
+        "tableOffset": 5344852,
+        "baseRecipeId": 2110025,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_甜瓜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "дыня"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_甜瓜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "дыня"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "ароматный фруктовый чай 【на компанию】",
+        "en": "Fragrant Fruit Fusion Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: ароматный фруктовый чай 【на компанию】",
+        "en": "Fragrant Fruit Fusion Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161255396,
+        "ruStringOffset": 161255928
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111026,
+        "tableOffset": 5344552,
+        "baseRecipeId": 2110026,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "рыбной солянки [Для компании]",
+        "en": "Catch of the Day Soup (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт рыбной солянки [Для компании]",
+        "en": "Catch of the Day Soup Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161254476,
+        "ruStringOffset": 161254964
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111027,
+        "tableOffset": 5344260,
+        "baseRecipeId": 2110027,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "морепродукты на пару [на компанию]",
+        "en": "Steamed Seafood (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: морепродукты на пару [на компанию]",
+        "en": "Steamed Seafood Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161253628,
+        "ruStringOffset": 161254060
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111028,
+        "tableOffset": 5343964,
+        "baseRecipeId": 2110028,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морепродукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морепродукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "жареные овощи [на компанию]",
+        "en": "Veggie Stir-Fry (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: жареные овощи [на компанию]",
+        "en": "Veggie Stir-Fry Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161252824,
+        "ruStringOffset": 161253240
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111029,
+        "tableOffset": 5343732,
+        "baseRecipeId": 2110029,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "облачная каша [на компанию]",
+        "en": "Cloud Nine Congee (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: облачная каша [на компанию]",
+        "en": "Cloud Nine Congee Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161251980,
+        "ruStringOffset": 161252412
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111030,
+        "tableOffset": 5343384,
+        "baseRecipeId": 2110030,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "рагу свежего ветра [На компанию]",
+        "en": "Seabreeze Stew (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт рагу свежего ветра [На компанию]",
+        "en": "Seabreeze Stew Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161251100,
+        "ruStringOffset": 161251552
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111031,
+        "tableOffset": 5343088,
+        "baseRecipeId": 2110031,
+        "ingredientCount": null,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + лобстер"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_淡水鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пресноводная рыба"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "уютный суп из лобстера [Для компании]",
+        "en": "Hearty Lobster Bisque (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: уютный суп из лобстера [Для компании]",
+        "en": "Hearty Lobster Bisque Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161250088,
+        "ruStringOffset": 161250644
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111032,
+        "tableOffset": 5342740,
+        "baseRecipeId": 2110032,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "лобстер"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "фруктово-овощного салата [на компанию]",
+        "en": "Field & Orchard Salad (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт фруктово-овощного салата [на компанию]",
+        "en": "Field & Orchard Salad Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161249160,
+        "ruStringOffset": 161249640
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111033,
+        "tableOffset": 5342512,
+        "baseRecipeId": 2110033,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_黄色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "жёлтые фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные фрукты"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_红色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "каша по-деревенски «Хэся» [На компанию]",
+        "en": "Hexia Country-Style Congee (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: каша по-деревенски «Хэся» [На компанию]",
+        "en": "Hexia Country-Style Congee Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161248148,
+        "ruStringOffset": 161248676
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111034,
+        "tableOffset": 5342328,
+        "baseRecipeId": 2110034,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "суши темаки [на компанию]",
+        "en": "Temaki Sushi (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт суши темаки [на компанию]",
+        "en": "Temaki Sushi Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161247324,
+        "ruStringOffset": 161247780
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111035,
+        "tableOffset": 5342060,
+        "baseRecipeId": 2110035,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морская рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рис"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "хрустящего яблочного краба [на компанию]",
+        "en": "Crispy Apple Crab (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт хрустящего яблочного краба [на компанию]",
+        "en": "Crispy Apple Crab Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161246364,
+        "ruStringOffset": 161246852
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111036,
+        "tableOffset": 5341764,
+        "baseRecipeId": 2110036,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "краб"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "моряцкий суп [На компанию]",
+        "en": "Full Sail Shrimp & Fish Soup (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: моряцкий суп [На компанию]",
+        "en": "Full Sail Shrimp & Fish Soup Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161245344,
+        "ruStringOffset": 161245876
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111037,
+        "tableOffset": 5341584,
+        "baseRecipeId": 2110037,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морская рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "креветки"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "салата из медузы и свежих грибов [Большая порция]",
+        "en": "Mushroom & Jellyfish Salad (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт салата из медузы и свежих грибов [Большая порция]",
+        "en": "Mushroom & Jellyfish Salad Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161244316,
+        "ruStringOffset": 161244864
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111038,
+        "tableOffset": 5341296,
+        "baseRecipeId": 2110038,
+        "ingredientCount": null,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + креветки"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "каша с моллюсками [Большая порция]",
+        "en": "Shellfish Congee (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: каша с моллюсками [Большая порция]",
+        "en": "Shellfish Congee Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161243464,
+        "ruStringOffset": 161243880
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111039,
+        "tableOffset": 5341112,
+        "baseRecipeId": 2110039,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "моллюски"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "тарелка с морским ежом и крабом [на компанию]",
+        "en": "Sea Urchin & Crab Platter (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: тарелка с морским ежом и крабом [на компанию]",
+        "en": "Sea Urchin & Crab Platter Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161242452,
+        "ruStringOffset": 161242976
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111040,
+        "tableOffset": 5340852,
+        "baseRecipeId": 2110040,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_海胆",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морской ёж"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "краб"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蛋",
+            "itemId": null,
+            "quantity": 1,
+            "label": "яйцо"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Жареные грибы с моллюсками [Большая порция]",
+        "en": "Mushrooms & Shellfish Stir-Fry (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Жареные грибы с моллюсками [Большая порция]",
+        "en": "Mushrooms & Shellfish Stir-Fry Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161241460,
+        "ruStringOffset": 161241956
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111041,
+        "tableOffset": 5340672,
+        "baseRecipeId": 2110041,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "каша с морепродуктами (на компанию)",
+        "en": "Seafood Congee (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: каша с морепродуктами (на компанию)",
+        "en": "Seafood Congee Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161240588,
+        "ruStringOffset": 161241012
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111042,
+        "tableOffset": 5340488,
+        "baseRecipeId": 2110042,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морепродукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Грибная каша [На компанию]",
+        "en": "Mushroom Congee (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Грибная каша [На компанию]",
+        "en": "Mushroom Congee Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161239776,
+        "ruStringOffset": 161240192
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111043,
+        "tableOffset": 5340220,
+        "baseRecipeId": 2110043,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_玉米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + кукуруза"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "рис с фруктами [Для компании]",
+        "en": "Fruit Rice Bowl (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рис с фруктами [Для компании]",
+        "en": "Fruit Rice Bowl Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161238920,
+        "ruStringOffset": 161239376
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111044,
+        "tableOffset": 5339960,
+        "baseRecipeId": 2110044,
+        "ingredientCount": null,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_黄色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "жёлтые фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные фрукты"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_红色水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные фрукты"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_紫色&食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "риса с рыбой на пару 【Для компании】",
+        "en": "Steamed Fish with Rice (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт риса с рыбой на пару 【Для компании】",
+        "en": "Steamed Fish with Rice Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161238020,
+        "ruStringOffset": 161238476
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111045,
+        "tableOffset": 5339572,
+        "baseRecipeId": 2110045,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_淡水鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + пресноводная рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "рыба в фруктовом соусе [На компанию]",
+        "en": "Fruity Fish Soup (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рыба в фруктовом соусе [На компанию]",
+        "en": "Fruity Fish Soup Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161237100,
+        "ruStringOffset": 161237584
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111046,
+        "tableOffset": 5339388,
+        "baseRecipeId": 2110046,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_淡水鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пресноводная рыба"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Фруктовые креветки с помидорами [На компанию]",
+        "en": "Tangy Tomato Shrimp (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Фруктовые креветки с помидорами [На компанию]",
+        "en": "Tangy Tomato Shrimp Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161236100,
+        "ruStringOffset": 161236636
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111047,
+        "tableOffset": 5339116,
+        "baseRecipeId": 2110047,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_金色&食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "дынный пирог [Большая порция]",
+        "en": "Sweet Melon Pie (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: дынный пирог [Большая порция]",
+        "en": "Sweet Melon Pie Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161235212,
+        "ruStringOffset": 161235664
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111048,
+        "tableOffset": 5338848,
+        "baseRecipeId": 2110048,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_甜瓜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + дыня"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Рыба с фруктами в горшочке [для компании]",
+        "en": "Fruit-Infused Fish Stew (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Рыба с фруктами в горшочке [для компании]",
+        "en": "Fruit-Infused Fish Stew Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161234232,
+        "ruStringOffset": 161234740
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111049,
+        "tableOffset": 5338612,
+        "baseRecipeId": 2110049,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рыба"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "большое рыбное ассорти [для компании]",
+        "en": "Fancy Fish Feast (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: большое рыбное ассорти [для компании]",
+        "en": "Fancy Fish Feast Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161233352,
+        "ruStringOffset": 161233812
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111050,
+        "tableOffset": 5338216,
+        "baseRecipeId": 2110050,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_淡水鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + пресноводная рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_绿色蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зелёные овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_红色蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "красные овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "огромного морского набора [на компанию]",
+        "en": "Mighty Seafood Feast (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт огромного морского набора [на компанию]",
+        "en": "Mighty Seafood Feast Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161232344,
+        "ruStringOffset": 161232868
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111051,
+        "tableOffset": 5337924,
+        "baseRecipeId": 2110051,
+        "ingredientCount": null,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_龙虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "лобстер"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "краб"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_贝类",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + моллюски"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "рыбный суп с бамбуком [на компанию]",
+        "en": "Bamboo Infused Fish Soup (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рыбный суп с бамбуком [на компанию]",
+        "en": "Bamboo Infused Fish Soup Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161231364,
+        "ruStringOffset": 161231872
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111052,
+        "tableOffset": 5337660,
+        "baseRecipeId": 2110052,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рыба"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "радужные раки-богомолы с креветками (порция на компанию)",
+        "en": "Prancing Rainbow Shrimp & Fish Tempura (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: радужные раки-богомолы с креветками (порция на компанию)",
+        "en": "Prancing Rainbow Shrimp & Fish Tempura Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161230216,
+        "ruStringOffset": 161230796
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111053,
+        "tableOffset": 5337400,
+        "baseRecipeId": 2110053,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "зерновые"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_虾",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + креветки"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "жареной морской звезды с моллюсками [На компанию]",
+        "en": "Braised Scallops with Starfish (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт жареной морской звезды с моллюсками [На компанию]",
+        "en": "Braised Scallops with Starfish Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161229116,
+        "ruStringOffset": 161229680
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111054,
+        "tableOffset": 5337136,
+        "baseRecipeId": 2110054,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_蟹",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + краб"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "жареный барбус с грибами [на компанию]",
+        "en": "Battered Phoenix Barb with Mushrooms (Sharing Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: жареный барбус с грибами [на компанию]",
+        "en": "Battered Phoenix Barb with Mushrooms Recipe (Sharing Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161228080,
+        "ruStringOffset": 161228608
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111055,
+        "tableOffset": 5336868,
+        "baseRecipeId": 2110055,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_海鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + морская рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "бамбуково-яблочная гранита [на компанию]",
+        "en": "Bamboo Apple Slushie (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: бамбуково-яблочная гранита [на компанию]",
+        "en": "Bamboo Apple Slushie Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161227100,
+        "ruStringOffset": 161227624
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111056,
+        "tableOffset": 5336640,
+        "baseRecipeId": 2110056,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": null,
+            "itemId": 30268,
+            "quantity": 1,
+            "label": "Побег бамбука"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "рисовой булочки кабуто [для компании]",
+        "en": "Kabuto Rice Bun (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт рисовой булочки кабуто [для компании]",
+        "en": "Kabuto Rice Bun Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161226160,
+        "ruStringOffset": 161226640
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111057,
+        "tableOffset": 5336276,
+        "baseRecipeId": 2110057,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + рис"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "грибного мяса на гриле [На компанию]",
+        "en": "BBQ Meatshrooms (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт грибного мяса на гриле [На компанию]",
+        "en": "BBQ Meatshrooms Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161225236,
+        "ruStringOffset": 161225736
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111058,
+        "tableOffset": 5335912,
+        "baseRecipeId": 2110058,
+        "ingredientCount": null,
+        "baseIngredientCount": 2,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_紫色&食材_海鲜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + морепродукты"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "тушёный кордицепс [на компанию]",
+        "en": "Caterpillar Fungus Herbal Remedy (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: тушёный кордицепс [на компанию]",
+        "en": "Caterpillar Fungus Herbal Remedy Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161224232,
+        "ruStringOffset": 161224760
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111059,
+        "tableOffset": 5335656,
+        "baseRecipeId": 2110059,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_蘑菇",
+            "itemId": null,
+            "quantity": 1,
+            "label": "грибы"
+          },
+          {
+            "slot": 2,
+            "condition": null,
+            "itemId": 30268,
+            "quantity": 1,
+            "label": "Побег бамбука"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_紫色&食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "пирог с карамелизованными фруктами [для компании]",
+        "en": "Glistening Fruit Pie (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: пирог с карамелизованными фруктами [для компании]",
+        "en": "Glistening Fruit Pie Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161223220,
+        "ruStringOffset": 161223748
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111060,
+        "tableOffset": 5335280,
+        "baseRecipeId": 2110060,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_水果",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фрукты"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_鲜花",
+            "itemId": null,
+            "quantity": 1,
+            "label": "цветы"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_小麦",
+            "itemId": null,
+            "quantity": 1,
+            "label": "пшеница"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "Трехцветное рагу из зеленых плодов [на компанию]",
+        "en": "Green Harvest Delight (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: Трехцветное рагу из зеленых плодов [на компанию]",
+        "en": "Green Harvest Delight Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161222196,
+        "ruStringOffset": 161222708
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111061,
+        "tableOffset": 5334896,
+        "baseRecipeId": 2110061,
+        "ingredientCount": null,
+        "baseIngredientCount": 3,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_紫色&食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "фиолетовое качество + помидор"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_竹子",
+            "itemId": null,
+            "quantity": 1,
+            "label": "бамбук"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_土豆",
+            "itemId": null,
+            "quantity": 1,
+            "label": "картофель"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "рис с овощами по бабулиному рецепту 【на компанию】",
+        "en": "Gran'mama's Veggie Fried Rice (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: рис с овощами по бабулиному рецепту 【на компанию】",
+        "en": "Gran'mama's Veggie Fried Rice Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161221124,
+        "ruStringOffset": 161221680
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111062,
+        "tableOffset": 5334600,
+        "baseRecipeId": 2110062,
+        "ingredientCount": null,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_胡萝卜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "морковь"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_番茄",
+            "itemId": null,
+            "quantity": 1,
+            "label": "помидор"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_卷心菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "капуста"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_金色&食材_谷物",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + зерновые"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "суши моритаке [на компанию]",
+        "en": "Moritake Sushi Platter (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт суши моритаке [на компанию]",
+        "en": "Moritake Sushi Platter Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161220192,
+        "ruStringOffset": 161220672
+      },
+      "cooking": {
+        "status": "base-recipe-only",
+        "recipeItemId": 2111063,
+        "tableOffset": 5334292,
+        "baseRecipeId": 2110063,
+        "ingredientCount": null,
+        "baseIngredientCount": 4,
+        "slots": [
+          {
+            "slot": 1,
+            "condition": "食材_金色&食材_鱼",
+            "itemId": null,
+            "quantity": 1,
+            "label": "золотое качество + рыба"
+          },
+          {
+            "slot": 2,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 3,
+            "condition": "食材_稻米",
+            "itemId": null,
+            "quantity": 1,
+            "label": "рис"
+          },
+          {
+            "slot": 4,
+            "condition": "食材_蔬菜",
+            "itemId": null,
+            "quantity": 1,
+            "label": "овощи"
+          }
+        ]
+      }
+    },
+    {
+      "name": {
+        "ru": "сладкого чая [на компанию]",
+        "en": "Sweet Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт сладкого чая [на компанию]",
+        "en": "Sweet Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161213480,
+        "ruStringOffset": 161213860
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2121000,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
+      }
+    },
+    {
+      "name": {
+        "ru": "цветочного чая [Большая порция]",
+        "en": "Floral Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт цветочного чая [Большая порция]",
+        "en": "Floral Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161212712,
+        "ruStringOffset": 161213116
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2121001,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
+      }
+    },
+    {
+      "name": {
+        "ru": "ячменного чая [На компанию]",
+        "en": "Barley Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт ячменного чая [На компанию]",
+        "en": "Barley Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161211948,
+        "ruStringOffset": 161212360
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2121002,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
+      }
+    },
+    {
+      "name": {
+        "ru": "таинственный чай [на компанию]",
+        "en": "Mysterious Tea (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: таинственный чай [на компанию]",
+        "en": "Mysterious Tea Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161194640,
+        "ruStringOffset": 161195060
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2141000,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
+      }
+    },
+    {
+      "name": {
+        "ru": "таинственное блюдо [На компанию]",
+        "en": "Mysterious Dish (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: таинственное блюдо [На компанию]",
+        "en": "Mysterious Dish Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161193800,
+        "ruStringOffset": 161194236
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2141001,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
+      }
+    },
+    {
+      "name": {
+        "ru": "гнилой еды [Для компании]",
+        "en": "Rotten Food (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт гнилой еды [Для компании]",
+        "en": "Rotten Food Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161192996,
+        "ruStringOffset": 161193428
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2141002,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
+      }
+    },
+    {
+      "name": {
+        "ru": "золотой рыбный суп [для компании]",
+        "en": "Golden Fish Soup (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: золотой рыбный суп [для компании]",
+        "en": "Golden Fish Soup Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161182100,
+        "ruStringOffset": 161182560
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2151000,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
+      }
+    },
+    {
+      "name": {
+        "ru": "золотого супа с морепродуктами [Для компании]",
+        "en": "Golden Seafood Soup (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт золотого супа с морепродуктами [Для компании]",
+        "en": "Golden Seafood Soup Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161181120,
+        "ruStringOffset": 161181628
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2151001,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
+      }
+    },
+    {
+      "name": {
+        "ru": "борща от шеф-повара [Для компании]",
+        "en": "Chef's Borscht (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт борща от шеф-повара [Для компании]",
+        "en": "Chef's Borscht Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161179344,
+        "ruStringOffset": 161179816
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2151003,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
+      }
+    },
+    {
+      "name": {
+        "ru": "тушеный помпано-тиран [большая порция]",
+        "en": "Braised Pomfret (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: тушеный помпано-тиран [большая порция]",
+        "en": "Braised Pomfret Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161178364,
+        "ruStringOffset": 161178896
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2151004,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
+      }
+    },
+    {
+      "name": {
+        "ru": "суперсытного котелка с лобстером [на компанию]",
+        "en": "Extra-Hearty Lobster Pot (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт суперсытного котелка с лобстером [на компанию]",
+        "en": "Extra-Hearty Lobster Pot Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161177308,
+        "ruStringOffset": 161177848
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2151005,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
+      }
+    },
+    {
+      "name": {
+        "ru": "ипиньго [Большая порция]",
+        "en": "Signature Gourmet Hotpot (Share Size)"
+      },
+      "recipeItemName": {
+        "ru": "Рецепт: ипиньго [Большая порция]",
+        "en": "Signature Gourmet Hotpot Recipe (Share Size)"
+      },
+      "kind": "share",
+      "source": {
+        "tableOffset": 161176468,
+        "ruStringOffset": 161176904
+      },
+      "cooking": {
+        "status": "not-found",
+        "recipeItemId": 2151006,
+        "ingredientCount": null,
+        "baseIngredientCount": null,
+        "slots": []
+      }
+    }
+  ]
+}
