@@ -56,7 +56,9 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
     return [{ parents: [parent1, parent2], result }];
   });
   const groups = flowerData.species.flatMap((species) => {
-    const speciesCrosses = crosses.filter((cross) => cross.result.speciesId === species.id);
+    const speciesCrosses = crosses
+      .filter((cross) => cross.result.speciesId === species.id)
+      .sort((a, b) => Number(b.parents.every(Boolean)) - Number(a.parents.every(Boolean)));
     const speciesFlowers = flowers.filter((flower) => flower.speciesId === species.id);
     const whiteFlowers = speciesFlowers.filter((flower) => flower.quality === "white");
     const hybridCount = speciesFlowers.filter((flower) => flower.quality !== "white").length;
