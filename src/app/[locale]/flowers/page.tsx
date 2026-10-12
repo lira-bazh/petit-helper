@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/flowers"
 export default async function FlowersPage({ params }: PageProps<"/[locale]/flowers">) {
   const locale = await getRequestLocale(params);
   const flowers = flowerData.flowers;
+  const qualityOrder = ["white", "blue", "purple", "gold"];
   const sectionHeadings: Record<string, string> = {
     "sunflower": m.flowers_hybrids_sunflower({}, { locale }),
     "mooncycle-rose": m.flowers_hybrids_mooncycle_rose({}, { locale }),
@@ -58,7 +59,10 @@ export default async function FlowersPage({ params }: PageProps<"/[locale]/flowe
   const groups = flowerData.species.flatMap((species) => {
     const speciesCrosses = crosses
       .filter((cross) => cross.result.speciesId === species.id)
-      .sort((a, b) => Number(b.parents.every(Boolean)) - Number(a.parents.every(Boolean)));
+      .sort((a, b) => (
+        qualityOrder.indexOf(a.result.quality) - qualityOrder.indexOf(b.result.quality)
+        || Number(b.parents.every(Boolean)) - Number(a.parents.every(Boolean))
+      ));
     const speciesFlowers = flowers.filter((flower) => flower.speciesId === species.id);
     const whiteFlowers = speciesFlowers.filter((flower) => flower.quality === "white");
     const hybridCount = speciesFlowers.filter((flower) => flower.quality !== "white").length;
