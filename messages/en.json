@@ -10,6 +10,7 @@
   "recipe_power": "Power",
   "recipe_effect": "Effect",
   "recipe_ingredients": "Ingredients",
+  "recipes_ingredient_count": "Ingredients: {count}",
   "recipe_unknown": "Unknown",
   "recipes_empty": "No recipes yet.",
   "recipes_search": "Search by recipe name",

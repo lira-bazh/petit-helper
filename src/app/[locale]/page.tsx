@@ -40,6 +40,7 @@ export default async function RecipesPage({ params }: PageProps<"/[locale]">) {
         recipes={recipeData.recipes.map((recipe) => ({
           id: recipe.id,
           name: recipe.name[locale],
+          ingredientCount: recipe.ingredients.reduce((count, ingredient) => count + ingredient.quantity, 0),
           content: (
             <Card className="h-full">
               <CardHeader className="flex flex-row items-center gap-3">

@@ -10,6 +10,7 @@
   "recipe_power": "Сила",
   "recipe_effect": "Эффект",
   "recipe_ingredients": "Ингредиенты",
+  "recipes_ingredient_count": "Ингредиентов: {count}",
   "recipe_unknown": "Неизвестно",
   "recipes_empty": "Рецептов пока нет.",
   "recipes_search": "Поиск по названию рецепта",

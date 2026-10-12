@@ -1594,7 +1594,10 @@
       "resultId": "lily-mauve"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "lily-mauve",
+        "lily-mauve"
+      ],
       "resultId": "lily-black-velvet"
     },
     {
@@ -1661,15 +1664,24 @@
       "resultId": "winter-adonis-blush"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "amaryllis-canary",
+        "amaryllis-canary"
+      ],
       "resultId": "amaryllis-lime"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "dahlia-yellow",
+        "dahlia-orange"
+      ],
       "resultId": "dahlia-pastel-pink"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "dahlia-pastel-pink",
+        "dahlia-pastel-pink"
+      ],
       "resultId": "dahlia-amethyst"
     },
     {
@@ -1677,19 +1689,31 @@
       "resultId": "dahlia-blush"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "king-protea-russet",
+        "king-protea-russet"
+      ],
       "resultId": "king-protea-sunset"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "agapanthus-white",
+        "agapanthus-blue-and-white"
+      ],
       "resultId": "agapanthus-baby-blue"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "agapanthus-purple",
+        "agapanthus-blush"
+      ],
       "resultId": "agapanthus-black-velvet"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "canna-yellow",
+        "canna-yellow"
+      ],
       "resultId": "canna-saffron"
     },
     {
@@ -1705,7 +1729,10 @@
       "resultId": "moss-rose-tangerine"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "moss-rose-white",
+        "moss-rose-fuchsia"
+      ],
       "resultId": "moss-rose-blush"
     },
     {
@@ -1717,15 +1744,24 @@
       "resultId": "moss-rose-sunset"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "bellflower-yellow",
+        "bellflower-coral"
+      ],
       "resultId": "bellflower-rose-pink"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "bellflower-yellow",
+        "bellflower-teal"
+      ],
       "resultId": "bellflower-sky-blue"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "bellflower-sky-blue",
+        "bellflower-rose-pink"
+      ],
       "resultId": "bellflower-starlace"
     },
     {
@@ -1733,11 +1769,17 @@
       "resultId": "violet-fuchsia"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "violet-pink",
+        "violet-teal"
+      ],
       "resultId": "violet-primrose"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "violet-violet",
+        "violet-fuchsia"
+      ],
       "resultId": "violet-twilight"
     },
     {
@@ -1745,15 +1787,24 @@
       "resultId": "violet-black-velvet"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "violet-primrose",
+        "violet-twilight"
+      ],
       "resultId": "violet-nightstar"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "winter-adonis-white",
+        "winter-adonis-orange"
+      ],
       "resultId": "winter-adonis-cream"
     },
     {
-      "parentIds": [],
+      "parentIds": [
+        "winter-adonis-white",
+        "winter-adonis-cream"
+      ],
       "resultId": "winter-adonis-sky-blue"
     },
     {
