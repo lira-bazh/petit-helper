@@ -6,17 +6,17 @@
     "Повторяющиеся требования с одинаковым качеством объединены через quantity. Один заполненный столбец ингредиента означает одну единицу.",
     "normal означает отсутствие отдельного требования к качеству в исходной ячейке. gold добавлен для явно указанного золотого качества.",
     "null в power или effect.level означает отсутствие подтверждённого значения. Эффекты всех блюд проверены по игровым записям cooking; effect: null означает отсутствие усиления в этой версии клиента.",
-    "Состав обычных и особых блюд уточнён по подтверждённым cooking.slots из игровых ресурсов; прежние непроверенные требования заменены.",
+    "Состав обычных и особых блюд уточнён по подтверждённым слотам ингредиентов из игровых ресурсов; прежние непроверенные требования заменены.",
     "Категория meat-or-fish-or-seafood с anyOf сохраняет выбор одного из трёх типов, а не требование всех трёх одновременно.",
     "Членство конкретных ингредиентов в категориях не задано в таблице: массивы ingredients.categories оставлены пустыми до проверки.",
     "Бамбук и побег бамбука сохранены отдельно, поскольку в источнике используются разные названия.",
     "Названия рецептов, ингредиентов, категорий и эффектов локализованы в объектах с ключами ru, en, fr, es, de, it, pt, как в flowers.json. Исходные русские названия сохранены; переводы блюд и доступных игровых терминов взяты из ресурсов live_0.95. Общие категории переведены отдельно; уровень эффекта хранится в level, без дублирования в названии.",
     "ID рецептов сформированы из английских названий в формате kebab-case. Поле image содержит один общий для всех языков путь к WebP-иконке; имя файла совпадает с ID рецепта.",
     "Общий список effects содержит ID и локализованные названия эффектов. В recipes.effect хранится ссылка effectId и индивидуальный level; null сохранён для рецептов без указанного эффекта.",
-    "База дополнена по all-recipes.json и missing-recipes.json: GenerateAssets/ed.obb, live_0.95, revision 1217551. kind различает standard и secret; cooking сохраняет исходные условия, ID предметов, количества и смещения таблиц.",
+    "База дополнена по all-recipes.json и missing-recipes.json: GenerateAssets/ed.obb, live_0.95, revision 1217551. kind различает standard и secret; состав хранится в recipes.ingredients.",
     "Порции на компанию (share) исключены из базы. Названия оставшихся блюд проверены на дубликаты по ru и en без учёта регистра, пробелов и пунктуации; ё и е считаются одинаковыми.",
     "У новых рецептов и справочных записей доступны только исходные ru и en; существующие переводы сохранены. image: null означает отсутствие проверенной иконки. Сила и эффекты блюд дополнены по игровым таблицам.",
-    "Категории plant-ingredient и animal-ingredient сохраняют общие игровые теги без предположений об их составе. Категории с anyOf означают выбор одного варианта. Исходные выражения с & и | сохранены в cooking.slots.condition.",
+    "Категории plant-ingredient и animal-ingredient сохраняют общие игровые теги без предположений об их составе. Категории с anyOf означают выбор одного варианта.",
     "Иконки блюд извлечены из оригинальных Texture2D игровых ресурсов live_0.95, revision 1217551, по путям таблицы предметов и сохранены в WebP без потерь, с прозрачностью.",
     "Неизвестная сила (power) для 43 блюд дополнена из GenerateAssets/ed.obb, live_0.95, revision 1217551: поле 4 записи cooking (корневая таблица 122) указывает ID готового блюда в таблице предметов (корневая таблица 325), поле 8 которой содержит силу. При проверке 74 из 75 ранее заполненных значений совпали; прежние значения сохранены, включая fruity-rice-cake-trio (в базе 110, в клиенте 100).",
     "Эффекты проверены для всех 118 блюд по GenerateAssets/ed.obb, live_0.95, revision 1217551: поле 6 cooking (корневая таблица 122) содержит ID усиления, сопоставленный с корневой таблицей 70 и её локализованным названием с уровнем I–III. Добавлены пропущенные эффекты; у shrimp-and-fish-tempura указан уровень I, у dreamy-ruby-and-emerald-fish-feast исправлен уровень II на III. Для остальных блюд без ID усиления effect оставлен null.",
@@ -775,31 +775,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110311,
-        "tableOffset": 5322636,
-        "baseRecipeId": 2110311,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "fruity-wheat-milk",
@@ -835,38 +811,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110101,
-        "tableOffset": 5328872,
-        "baseRecipeId": 2110101,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "steamed-rice-cake",
@@ -902,38 +847,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110316,
-        "tableOffset": 5321568,
-        "baseRecipeId": 2110316,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "aromatic-fruit-tea",
@@ -957,31 +871,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110026,
-        "tableOffset": 5344552,
-        "baseRecipeId": 2110026,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "bamboo-apple-slushie",
@@ -1014,31 +904,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110056,
-        "tableOffset": 5336640,
-        "baseRecipeId": 2110056,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": null,
-            "itemId": 30268,
-            "quantity": 1,
-            "label": "Побег бамбука"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_紫色&食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + фрукты"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "sea-urchin-lobster-bisque",
@@ -1068,31 +934,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110076,
-        "tableOffset": 5330932,
-        "baseRecipeId": 2110076,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_海胆",
-            "itemId": null,
-            "quantity": 1,
-            "label": "морской ёж"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_龙虾",
-            "itemId": null,
-            "quantity": 1,
-            "label": "лобстер"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "jumbo-fish-temaki",
@@ -1131,38 +973,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110035,
-        "tableOffset": 5342060,
-        "baseRecipeId": 2110035,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_海鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "морская рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_紫色&食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + рис"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "tomato-and-shoot-borscht",
@@ -1201,38 +1012,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110061,
-        "tableOffset": 5334896,
-        "baseRecipeId": 2110061,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_番茄",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + помидор"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_竹子",
-            "itemId": null,
-            "quantity": 1,
-            "label": "бамбук"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_土豆",
-            "itemId": null,
-            "quantity": 1,
-            "label": "картофель"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "rainbow-fruit-rice-bowl",
@@ -1274,45 +1054,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110044,
-        "tableOffset": 5339960,
-        "baseRecipeId": 2110044,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_黄色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "жёлтые фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_绿色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зелёные фрукты"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_红色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "красные фрукты"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_紫色&食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + зерновые"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "seasonal-veggie-bbq-party",
@@ -1357,45 +1099,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110320,
-        "tableOffset": 5320332,
-        "baseRecipeId": 2110320,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_土豆",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + картофель"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_紫色&食材_番茄",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + помидор"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_紫色&食材_胡萝卜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + морковь"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_紫色&食材_黄瓜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + огурец"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "mushroom-soup",
@@ -1419,31 +1123,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110065,
-        "tableOffset": 5333620,
-        "baseRecipeId": 2110065,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_蘑菇",
-            "itemId": null,
-            "quantity": 1,
-            "label": "грибы"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蘑菇",
-            "itemId": null,
-            "quantity": 1,
-            "label": "грибы"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "rustic-veggie-pizza",
@@ -1482,38 +1162,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110317,
-        "tableOffset": 5321312,
-        "baseRecipeId": 2110317,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_蘑菇",
-            "itemId": null,
-            "quantity": 1,
-            "label": "грибы"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_黄瓜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "огурец"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "grilled-shrimp-and-lobster-fruit-platter",
@@ -1552,38 +1201,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110306,
-        "tableOffset": 5323980,
-        "baseRecipeId": 2110306,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_虾",
-            "itemId": null,
-            "quantity": 1,
-            "label": "креветки"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_紫色&食材_虾",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + креветки"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "veggie-stir-fry",
@@ -1610,31 +1228,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110029,
-        "tableOffset": 5343732,
-        "baseRecipeId": 2110029,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "crab-and-clam-stir-fry",
@@ -1664,31 +1258,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110036,
-        "tableOffset": 5341764,
-        "baseRecipeId": 2110036,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_蟹",
-            "itemId": null,
-            "quantity": 1,
-            "label": "краб"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_贝类",
-            "itemId": null,
-            "quantity": 1,
-            "label": "моллюски"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "seafood-clay-pot-rice",
@@ -1721,31 +1291,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110309,
-        "tableOffset": 5323220,
-        "baseRecipeId": 2110309,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_海鲜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + морепродукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "fish-baked-clay-pot-rice",
@@ -1775,31 +1321,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110304,
-        "tableOffset": 5324416,
-        "baseRecipeId": 2110304,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "baked-rice-pudding",
@@ -1826,31 +1348,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110318,
-        "tableOffset": 5321084,
-        "baseRecipeId": 2110318,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "grain-porridge",
@@ -1877,31 +1375,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110030,
-        "tableOffset": 5343384,
-        "baseRecipeId": 2110030,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "hexian-rice-and-wheat-milk",
@@ -1937,38 +1411,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110105,
-        "tableOffset": 5327844,
-        "baseRecipeId": 2110105,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "prime-veggie-wheat-blend",
@@ -2001,38 +1444,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110106,
-        "tableOffset": 5327464,
-        "baseRecipeId": 2110106,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_紫色&食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + овощи"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "crystal-glazed-fish-with-rice",
@@ -2071,38 +1483,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110045,
-        "tableOffset": 5339572,
-        "baseRecipeId": 2110045,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_淡水鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + пресноводная рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "carapulcra-stew",
@@ -2135,31 +1516,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110068,
-        "tableOffset": 5332672,
-        "baseRecipeId": 2110068,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + животный ингредиент"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "country-style-congee",
@@ -2189,31 +1546,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110034,
-        "tableOffset": 5342328,
-        "baseRecipeId": 2110034,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "shellfish-congee",
@@ -2243,31 +1576,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110039,
-        "tableOffset": 5341112,
-        "baseRecipeId": 2110039,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_贝类",
-            "itemId": null,
-            "quantity": 1,
-            "label": "моллюски"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "seafood-congee",
@@ -2297,31 +1606,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110042,
-        "tableOffset": 5340488,
-        "baseRecipeId": 2110042,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_海鲜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "морепродукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "strawberry-shortcake",
@@ -2357,38 +1642,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110312,
-        "tableOffset": 5322432,
-        "baseRecipeId": 2110312,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_草莓",
-            "itemId": null,
-            "quantity": 1,
-            "label": "клубника"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "shrimp-and-fish-tempura",
@@ -2427,38 +1681,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110053,
-        "tableOffset": 5337400,
-        "baseRecipeId": 2110053,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_紫色&食材_虾",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + креветки"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "steamed-seafood",
@@ -2482,31 +1705,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110028,
-        "tableOffset": 5343964,
-        "baseRecipeId": 2110028,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_海鲜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "морепродукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_海鲜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "морепродукты"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "full-sail-shrimp-and-fish-soup",
@@ -2536,31 +1735,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110037,
-        "tableOffset": 5341584,
-        "baseRecipeId": 2110037,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_海鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "морская рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_虾",
-            "itemId": null,
-            "quantity": 1,
-            "label": "креветки"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "blissful-floral-and-fruit-tea",
@@ -2590,31 +1765,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110024,
-        "tableOffset": 5345180,
-        "baseRecipeId": 2110024,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_水果|食材_鲜花",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты или цветы"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_鲜花",
-            "itemId": null,
-            "quantity": 1,
-            "label": "цветы"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "chilled-fruit-noodles",
@@ -2647,31 +1798,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110503,
-        "tableOffset": 5316232,
-        "baseRecipeId": 2110503,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_紫色&食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + пшеница"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "spicy-smash-atouille-rice",
@@ -2710,38 +1837,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110078,
-        "tableOffset": 5330424,
-        "baseRecipeId": 2110078,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_茄子",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + баклажан"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_辣椒",
-            "itemId": null,
-            "quantity": 1,
-            "label": "перец"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "sea-breeze-pizza",
@@ -2780,38 +1876,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110308,
-        "tableOffset": 5323456,
-        "baseRecipeId": 2110308,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_海鲜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "морепродукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_紫色&食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + пшеница"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "fried-fish-and-tomato-pizza",
@@ -2850,38 +1915,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110303,
-        "tableOffset": 5324708,
-        "baseRecipeId": 2110303,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_番茄",
-            "itemId": null,
-            "quantity": 1,
-            "label": "помидор"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рыба"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "seaside-skewers",
@@ -2920,38 +1954,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110307,
-        "tableOffset": 5323720,
-        "baseRecipeId": 2110307,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_海鲜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + морепродукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_肉",
-            "itemId": null,
-            "quantity": 1,
-            "label": "мясо"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "cloud-froth-wheat-milk",
@@ -2984,31 +1987,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110104,
-        "tableOffset": 5328164,
-        "baseRecipeId": 2110104,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + зерновые"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "wheat-cake",
@@ -3038,31 +2017,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110315,
-        "tableOffset": 5321772,
-        "baseRecipeId": 2110315,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蛋",
-            "itemId": null,
-            "quantity": 1,
-            "label": "яйцо"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "vibrant-veggie-juice",
@@ -3098,38 +2053,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110109,
-        "tableOffset": 5326620,
-        "baseRecipeId": 2110109,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_红色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "красные фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_绿色蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зелёные овощи"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_黄色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "жёлтые фрукты"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "spicy-lobster-soup",
@@ -3168,38 +2092,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110502,
-        "tableOffset": 5316468,
-        "baseRecipeId": 2110502,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_辣椒",
-            "itemId": null,
-            "quantity": 1,
-            "label": "перец"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_紫色&食材_龙虾",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + лобстер"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "rice-cake-noodles-with-veggies-and-mushrooms",
@@ -3244,45 +2137,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110506,
-        "tableOffset": 5315536,
-        "baseRecipeId": 2110506,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_蘑菇",
-            "itemId": null,
-            "quantity": 1,
-            "label": "грибы"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "seafood-combo-noodle-soup",
@@ -3315,31 +2170,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110501,
-        "tableOffset": 5316732,
-        "baseRecipeId": 2110501,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_海鲜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + морепродукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "rare-crab-and-spring-bamboo-broth",
@@ -3372,38 +2203,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110054,
-        "tableOffset": 5337136,
-        "baseRecipeId": 2110054,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_蟹",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + краб"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_竹子",
-            "itemId": null,
-            "quantity": 1,
-            "label": "бамбук"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_竹子",
-            "itemId": null,
-            "quantity": 1,
-            "label": "бамбук"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "grannys-veggie-fried-rice",
@@ -3448,45 +2248,7 @@
           "quality": "gold"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110062,
-        "tableOffset": 5334600,
-        "baseRecipeId": 2110062,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_胡萝卜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "морковь"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_番茄",
-            "itemId": null,
-            "quantity": 1,
-            "label": "помидор"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_卷心菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "капуста"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_金色&食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + зерновые"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "veggie-rice-yogurt",
@@ -3516,31 +2278,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110108,
-        "tableOffset": 5326840,
-        "baseRecipeId": 2110108,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "grilled-fish-and-veggies",
@@ -3570,31 +2308,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110305,
-        "tableOffset": 5324236,
-        "baseRecipeId": 2110305,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_淡水鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пресноводная рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "campfire-grilled-fish",
@@ -3627,31 +2341,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110321,
-        "tableOffset": 5320096,
-        "baseRecipeId": 2110321,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рыба"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "fruit-infused-fish-stew",
@@ -3684,31 +2374,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110049,
-        "tableOffset": 5338612,
-        "baseRecipeId": 2110049,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_紫色&食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + рыба"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "mushroom-and-fish-broth",
@@ -3738,31 +2404,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110041,
-        "tableOffset": 5340672,
-        "baseRecipeId": 2110041,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_蘑菇",
-            "itemId": null,
-            "quantity": 1,
-            "label": "грибы"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рыба"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "catch-of-the-day-soup",
@@ -3786,31 +2428,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110027,
-        "tableOffset": 5344260,
-        "baseRecipeId": 2110027,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рыба"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "pineapple-grilled-fish-skewers",
@@ -3840,31 +2458,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110302,
-        "tableOffset": 5324960,
-        "baseRecipeId": 2110302,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_菠萝",
-            "itemId": null,
-            "quantity": 1,
-            "label": "ананас"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "bamboo-infused-fish-soup",
@@ -3903,38 +2497,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110052,
-        "tableOffset": 5337660,
-        "baseRecipeId": 2110052,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_竹子",
-            "itemId": null,
-            "quantity": 1,
-            "label": "бамбук"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_紫色&食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + рыба"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dreamy-ruby-and-emerald-fish-feast",
@@ -3973,38 +2536,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110050,
-        "tableOffset": 5338216,
-        "baseRecipeId": 2110050,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_金色&食材_淡水鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + пресноводная рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_绿色蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зелёные овощи"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_红色蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "красные овощи"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dreamy-seabreeze-lobster-stew",
@@ -4049,45 +2581,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110031,
-        "tableOffset": 5343088,
-        "baseRecipeId": 2110031,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_龙虾",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + лобстер"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_淡水鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пресноводная рыба"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_贝类",
-            "itemId": null,
-            "quantity": 1,
-            "label": "моллюски"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_蘑菇",
-            "itemId": null,
-            "quantity": 1,
-            "label": "грибы"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dreamy-fresh-catch-sushi",
@@ -4126,45 +2620,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110063,
-        "tableOffset": 5334292,
-        "baseRecipeId": 2110063,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_金色&食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "veggie-soba",
@@ -4194,31 +2650,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110507,
-        "tableOffset": 5315356,
-        "baseRecipeId": 2110507,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "spring-noodle-soup",
@@ -4242,31 +2674,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110505,
-        "tableOffset": 5315816,
-        "baseRecipeId": 2110505,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "braised-hodgepodge",
@@ -4305,38 +2713,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110043,
-        "tableOffset": 5340220,
-        "baseRecipeId": 2110043,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_蘑菇",
-            "itemId": null,
-            "quantity": 1,
-            "label": "грибы"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_紫色&食材_玉米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + кукуруза"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "hearty-fish-and-veggie-ramen",
@@ -4375,38 +2752,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110500,
-        "tableOffset": 5316968,
-        "baseRecipeId": 2110500,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_紫色&食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + пшеница"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "seared-seafood-platter",
@@ -4445,38 +2791,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110301,
-        "tableOffset": 5325136,
-        "baseRecipeId": 2110301,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_海鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + морская рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_虾",
-            "itemId": null,
-            "quantity": 1,
-            "label": "креветки"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_贝类",
-            "itemId": null,
-            "quantity": 1,
-            "label": "моллюски"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "tomato-lobster-bisque",
@@ -4509,31 +2824,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110032,
-        "tableOffset": 5342740,
-        "baseRecipeId": 2110032,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_番茄",
-            "itemId": null,
-            "quantity": 1,
-            "label": "помидор"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_龙虾",
-            "itemId": null,
-            "quantity": 1,
-            "label": "лобстер"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "tomato-braised-fish",
@@ -4563,31 +2854,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110046,
-        "tableOffset": 5339388,
-        "baseRecipeId": 2110046,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_番茄",
-            "itemId": null,
-            "quantity": 1,
-            "label": "помидор"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_淡水鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пресноводная рыба"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "tricolor-veggie-rice-bake",
@@ -4632,45 +2899,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110319,
-        "tableOffset": 5320664,
-        "baseRecipeId": 2110319,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + зерновые"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_绿色蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зелёные овощи"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_红色蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "красные овощи"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_黄色蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "жёлтые овощи"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "fruity-rice-cake-trio",
@@ -4715,45 +2944,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110313,
-        "tableOffset": 5322128,
-        "baseRecipeId": 2110313,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + рис"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_绿色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зелёные фрукты"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_红色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "красные фрукты"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_黄色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "жёлтые фрукты"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "carrot-and-meat-stew",
@@ -4786,31 +2977,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110077,
-        "tableOffset": 5330692,
-        "baseRecipeId": 2110077,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_胡萝卜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + морковь"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_肉",
-            "itemId": null,
-            "quantity": 1,
-            "label": "мясо"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "field-and-orchard-salad",
@@ -4846,38 +3013,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110033,
-        "tableOffset": 5342512,
-        "baseRecipeId": 2110033,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_黄色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "жёлтые фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_绿色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зелёные фрукты"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_红色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "красные фрукты"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "fruit-and-veggie-juice",
@@ -4907,31 +3043,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110103,
-        "tableOffset": 5328396,
-        "baseRecipeId": 2110103,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "four-seasons-soup",
@@ -4964,31 +3076,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110504,
-        "tableOffset": 5315996,
-        "baseRecipeId": 2110504,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "hexian-fruity-rice-drink",
@@ -5024,38 +3112,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110107,
-        "tableOffset": 5327136,
-        "baseRecipeId": 2110107,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_苹果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "яблоко"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_李子",
-            "itemId": null,
-            "quantity": 1,
-            "label": "слива"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "taffean-fruit-blend",
@@ -5091,38 +3148,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110119,
-        "tableOffset": 5325692,
-        "baseRecipeId": 2110119,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": null,
-            "itemId": 30267,
-            "quantity": 1,
-            "label": "Плод кактуса"
-          },
-          {
-            "slot": 2,
-            "condition": null,
-            "itemId": 30265,
-            "quantity": 1,
-            "label": "Авокадо"
-          },
-          {
-            "slot": 3,
-            "condition": null,
-            "itemId": 30266,
-            "quantity": 1,
-            "label": "Манго"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "fruit-crusted-baked-fish",
@@ -5152,31 +3178,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110300,
-        "tableOffset": 5325396,
-        "baseRecipeId": 2110300,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_海鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "морская рыба"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "floral-melon-pie",
@@ -5215,38 +3217,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110048,
-        "tableOffset": 5338848,
-        "baseRecipeId": 2110048,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_甜瓜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + дыня"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_鲜花",
-            "itemId": null,
-            "quantity": 1,
-            "label": "цветы"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "floral-melon-tea",
@@ -5276,38 +3247,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110025,
-        "tableOffset": 5344852,
-        "baseRecipeId": 2110025,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_甜瓜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "дыня"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_鲜花",
-            "itemId": null,
-            "quantity": 1,
-            "label": "цветы"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_甜瓜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "дыня"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "cream-cheese-garlic-bun",
@@ -5346,38 +3286,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110336,
-        "tableOffset": 5318424,
-        "baseRecipeId": 2110336,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_大蒜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + чеснок"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "mushroom-fruit-and-veggie-skewers",
@@ -5407,31 +3316,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110314,
-        "tableOffset": 5321948,
-        "baseRecipeId": 2110314,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_蘑菇",
-            "itemId": null,
-            "quantity": 1,
-            "label": "грибы"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "berry-rice-delight",
@@ -5461,31 +3346,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110102,
-        "tableOffset": 5328576,
-        "baseRecipeId": 2110102,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dazzling-juice",
@@ -5509,31 +3370,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110100,
-        "tableOffset": 5329200,
-        "baseRecipeId": 2110100,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dreamy-coast-seafood-feast",
@@ -5573,45 +3410,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110038,
-        "tableOffset": 5341296,
-        "baseRecipeId": 2110038,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_金色&食材_虾",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + креветки"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рыба"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_蘑菇",
-            "itemId": null,
-            "quantity": 1,
-            "label": "грибы"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "urchin-shell-steamed-egg",
@@ -5645,38 +3444,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110040,
-        "tableOffset": 5340852,
-        "baseRecipeId": 2110040,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_海胆",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + морской ёж"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蟹",
-            "itemId": null,
-            "quantity": 1,
-            "label": "краб"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_蛋",
-            "itemId": null,
-            "quantity": 1,
-            "label": "яйцо"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dreamy-gardens-bounty-feast",
@@ -5710,38 +3478,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110047,
-        "tableOffset": 5339116,
-        "baseRecipeId": 2110047,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_竹子",
-            "itemId": null,
-            "quantity": 1,
-            "label": "бамбук"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_金色&食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + овощи"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_鲜花",
-            "itemId": null,
-            "quantity": 1,
-            "label": "цветы"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dreamy-shellfish-seafood-platter",
@@ -5781,45 +3518,7 @@
           "quality": "gold"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110051,
-        "tableOffset": 5337924,
-        "baseRecipeId": 2110051,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_龙虾",
-            "itemId": null,
-            "quantity": 1,
-            "label": "лобстер"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蘑菇",
-            "itemId": null,
-            "quantity": 1,
-            "label": "грибы"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_蟹",
-            "itemId": null,
-            "quantity": 1,
-            "label": "краб"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_金色&食材_贝类",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + моллюски"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dreamy-fish-trio",
@@ -5853,38 +3552,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110055,
-        "tableOffset": 5336868,
-        "baseRecipeId": 2110055,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_金色&食材_海鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + морская рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蘑菇",
-            "itemId": null,
-            "quantity": 1,
-            "label": "грибы"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_番茄",
-            "itemId": null,
-            "quantity": 1,
-            "label": "помидор"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "kabuto-rice-bun",
@@ -5912,31 +3580,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110057,
-        "tableOffset": 5336276,
-        "baseRecipeId": 2110057,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + рис"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "bbq-meatshrooms",
@@ -5964,31 +3608,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110058,
-        "tableOffset": 5335912,
-        "baseRecipeId": 2110058,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_蘑菇",
-            "itemId": null,
-            "quantity": 1,
-            "label": "грибы"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_紫色&食材_海鲜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + морепродукты"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "caterpillar-fungus-herbal-remedy",
@@ -6022,38 +3642,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110059,
-        "tableOffset": 5335656,
-        "baseRecipeId": 2110059,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_蘑菇",
-            "itemId": null,
-            "quantity": 1,
-            "label": "грибы"
-          },
-          {
-            "slot": 2,
-            "condition": null,
-            "itemId": 30268,
-            "quantity": 1,
-            "label": "Побег бамбука"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_紫色&食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + овощи"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "glistening-fruit-pie",
@@ -6087,38 +3676,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110060,
-        "tableOffset": 5335280,
-        "baseRecipeId": 2110060,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_鲜花",
-            "itemId": null,
-            "quantity": 1,
-            "label": "цветы"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "rare-assorted-claypot-stew",
@@ -6146,31 +3704,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110064,
-        "tableOffset": 5333900,
-        "baseRecipeId": 2110064,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_素菜|食材_紫色&食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + растительный ингредиент или фиолетовое качество + животный ингредиент"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_素菜|食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "растительный ингредиент или животный ингредиент"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "homestyle-assorted-claypot-stew",
@@ -6189,31 +3723,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110066,
-        "tableOffset": 5333304,
-        "baseRecipeId": 2110066,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_素菜|食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "растительный ингредиент или животный ингредиент"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_素菜|食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "растительный ингредиент или животный ингредиент"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dreamy-claypot-medley",
@@ -6241,31 +3751,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110067,
-        "tableOffset": 5332920,
-        "baseRecipeId": 2110067,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_金色&食材_素菜|食材_金色&食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + растительный ингредиент или золотое качество + животный ингредиент"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_素菜|食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "растительный ингредиент или животный ингредиент"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "waffle-fruit-tea",
@@ -6296,38 +3782,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110069,
-        "tableOffset": 5332464,
-        "baseRecipeId": 2110069,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "spring-revel-dumplings",
@@ -6352,31 +3807,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110070,
-        "tableOffset": 5332168,
-        "baseRecipeId": 2110070,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_谷物",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зерновые"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рыба"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "spring-revel-tangyuan",
@@ -6395,31 +3826,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110071,
-        "tableOffset": 5331868,
-        "baseRecipeId": 2110071,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "baa-rilliant-cake",
@@ -6444,31 +3851,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110072,
-        "tableOffset": 5331684,
-        "baseRecipeId": 2110072,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "net-fortune-braised-fish",
@@ -6493,31 +3876,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110073,
-        "tableOffset": 5331504,
-        "baseRecipeId": 2110073,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рис"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "di-san-xian",
@@ -6551,38 +3910,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110075,
-        "tableOffset": 5331228,
-        "baseRecipeId": 2110075,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_土豆",
-            "itemId": null,
-            "quantity": 1,
-            "label": "картофель"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_紫色&食材_茄子",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + баклажан"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_辣椒",
-            "itemId": null,
-            "quantity": 1,
-            "label": "перец"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "dreamy-golden-fried-rice",
@@ -6622,45 +3950,7 @@
           "quality": "gold"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110084,
-        "tableOffset": 5330136,
-        "baseRecipeId": 2110084,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_肉",
-            "itemId": null,
-            "quantity": 1,
-            "label": "мясо"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蛋",
-            "itemId": null,
-            "quantity": 1,
-            "label": "яйцо"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_金色&食材_稻米",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + рис"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "citrus-peach-bun",
@@ -6688,31 +3978,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110097,
-        "tableOffset": 5329884,
-        "baseRecipeId": 2110097,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + пшеница"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_黄色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "жёлтые фрукты"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "pandan-peach-bun",
@@ -6740,31 +4006,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110098,
-        "tableOffset": 5329632,
-        "baseRecipeId": 2110098,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + пшеница"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_绿色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "зелёные фрукты"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "blueberry-peach-bun",
@@ -6792,31 +4034,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110099,
-        "tableOffset": 5329380,
-        "baseRecipeId": 2110099,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + пшеница"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蓝色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "синие фрукты"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "tidal-wave-yogurt",
@@ -6844,31 +4062,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110110,
-        "tableOffset": 5326376,
-        "baseRecipeId": 2110110,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + фрукты"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_贝类",
-            "itemId": null,
-            "quantity": 1,
-            "label": "моллюски"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "dreamy-passionfruit-splash",
@@ -6908,45 +4102,7 @@
           "quality": "gold"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110116,
-        "tableOffset": 5325956,
-        "baseRecipeId": 2110116,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_蓝莓",
-            "itemId": null,
-            "quantity": 1,
-            "label": "черника"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_芒果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "манго"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_苹果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "яблоко"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_金色&食材_百香果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + маракуйя"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dreamy-miracle-garlic-lobster",
@@ -6986,45 +4142,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110310,
-        "tableOffset": 5322928,
-        "baseRecipeId": 2110310,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_金色&食材_龙虾",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + лобстер"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_蔬菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "овощи"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_大蒜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "чеснок"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_贝类",
-            "itemId": null,
-            "quantity": 1,
-            "label": "моллюски"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "cloudlet-cookies",
@@ -7049,31 +4167,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110322,
-        "tableOffset": 5319904,
-        "baseRecipeId": 2110322,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + пшеница"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "fruit-fiesta-donut",
@@ -7098,31 +4192,7 @@
           "quality": "purple"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110323,
-        "tableOffset": 5319592,
-        "baseRecipeId": 2110323,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_紫色&食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + фрукты"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "crimson-tassel-peach-bun",
@@ -7150,31 +4220,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "secret",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110326,
-        "tableOffset": 5319344,
-        "baseRecipeId": 2110326,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + пшеница"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_红色水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "красные фрукты"
-          }
-        ]
-      }
+      "kind": "secret"
     },
     {
       "id": "dreamy-strawberry-shortcake",
@@ -7208,45 +4254,7 @@
           "quality": "gold"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110328,
-        "tableOffset": 5319068,
-        "baseRecipeId": 2110328,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_金色&食材_草莓",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + клубника"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dreamy-stargazy-blueberry-pie",
@@ -7286,45 +4294,7 @@
           "quality": "gold"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110334,
-        "tableOffset": 5318672,
-        "baseRecipeId": 2110334,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_鱼",
-            "itemId": null,
-            "quantity": 1,
-            "label": "рыба"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_贝类",
-            "itemId": null,
-            "quantity": 1,
-            "label": "моллюски"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_金色&食材_蓝莓",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + черника"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "strawberry-mousse-cake",
@@ -7361,45 +4331,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110337,
-        "tableOffset": 5318088,
-        "baseRecipeId": 2110337,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_草莓",
-            "itemId": null,
-            "quantity": 1,
-            "label": "клубника"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "sunny-pineapple-cake",
@@ -7436,45 +4368,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110338,
-        "tableOffset": 5317752,
-        "baseRecipeId": 2110338,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_菠萝",
-            "itemId": null,
-            "quantity": 1,
-            "label": "ананас"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "golden-wheat-cake",
@@ -7505,45 +4399,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110339,
-        "tableOffset": 5317532,
-        "baseRecipeId": 2110339,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_水果",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фрукты"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "gingerbread-cookie",
@@ -7574,38 +4430,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110340,
-        "tableOffset": 5317344,
-        "baseRecipeId": 2110340,
-        "ingredientCount": 3,
-        "baseIngredientCount": 3,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_蛋",
-            "itemId": null,
-            "quantity": 1,
-            "label": "яйцо"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dreamy-tomato-noodle-soup",
@@ -7645,45 +4470,7 @@
           "quality": "gold"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2110508,
-        "tableOffset": 5315068,
-        "baseRecipeId": 2110508,
-        "ingredientCount": 4,
-        "baseIngredientCount": 4,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_大蒜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "чеснок"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_小麦",
-            "itemId": null,
-            "quantity": 1,
-            "label": "пшеница"
-          },
-          {
-            "slot": 3,
-            "condition": "食材_奶",
-            "itemId": null,
-            "quantity": 1,
-            "label": "молоко"
-          },
-          {
-            "slot": 4,
-            "condition": "食材_金色&食材_番茄",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + помидор"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "homestyle-blend",
@@ -7702,31 +4489,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2140010,
-        "tableOffset": 5314280,
-        "baseRecipeId": 2140010,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_素菜|食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "растительный ингредиент или животный ингредиент"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_素菜|食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "растительный ингредиент или животный ингредиент"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "rare-blend",
@@ -7754,31 +4517,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2140011,
-        "tableOffset": 5314004,
-        "baseRecipeId": 2140011,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_素菜|食材_紫色&食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + растительный ингредиент или фиолетовое качество + животный ингредиент"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_素菜|食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "растительный ингредиент или животный ингредиент"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dreamy-blend",
@@ -7806,31 +4545,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2140012,
-        "tableOffset": 5313728,
-        "baseRecipeId": 2140012,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_金色&食材_素菜|食材_金色&食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + растительный ингредиент или золотое качество + животный ингредиент"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_素菜|食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "растительный ингредиент или животный ингредиент"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "homestyle-mixed-grill",
@@ -7849,31 +4564,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2140013,
-        "tableOffset": 5313528,
-        "baseRecipeId": 2140013,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_素菜|食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "растительный ингредиент или животный ингредиент"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_素菜|食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "растительный ингредиент или животный ингредиент"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "rare-mixed-grill",
@@ -7901,31 +4592,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2140014,
-        "tableOffset": 5313252,
-        "baseRecipeId": 2140014,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_紫色&食材_素菜|食材_紫色&食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "фиолетовое качество + растительный ингредиент или фиолетовое качество + животный ингредиент"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_素菜|食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "растительный ингредиент или животный ингредиент"
-          }
-        ]
-      }
+      "kind": "standard"
     },
     {
       "id": "dreamy-mixed-grill",
@@ -7953,31 +4620,7 @@
           "quality": "normal"
         }
       ],
-      "kind": "standard",
-      "cooking": {
-        "status": "confirmed",
-        "recipeItemId": 2140015,
-        "tableOffset": 5312976,
-        "baseRecipeId": 2140015,
-        "ingredientCount": 2,
-        "baseIngredientCount": 2,
-        "slots": [
-          {
-            "slot": 1,
-            "condition": "食材_金色&食材_素菜|食材_金色&食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "золотое качество + растительный ингредиент или золотое качество + животный ингредиент"
-          },
-          {
-            "slot": 2,
-            "condition": "食材_素菜|食材_荤菜",
-            "itemId": null,
-            "quantity": 1,
-            "label": "растительный ингредиент или животный ингредиент"
-          }
-        ]
-      }
+      "kind": "standard"
     }
   ]
 }
